@@ -5,7 +5,8 @@
 
 ## 🚀 To-do list
 
-- update config, migrate content, styling on posts, post-lists etc
+- update config, migrate content, styling on posts, post-lists - done
+- update styling on tag pages to match
 - Design and make new home page
 - Migrate the about me page.
 - Improve Bio component

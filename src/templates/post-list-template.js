@@ -11,23 +11,26 @@ const PostList = ({ data, pageContext }) => {
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? '' : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
-  const pageTitle = `Posts (${currentPage} of ${numPages})`
+  //pageTitle = `Posts (${currentPage} of ${numPages})`
   return (
     <Layout>
-      <Seo title={pageTitle} />
-      <h1 className="title is-size-2">{pageTitle}</h1>
+      <Seo title="All Posts" />
+      <h1 className="title is-size-4">All Posts</h1>
       {posts.map(post => {
         const title = post.frontmatter.title || post.slug
         const tags = post.frontmatter.tags
         return (
-          <div className="block" key={post.id}>
-            <h2 className="is-size-4">
+          <div
+            className="block rounded-corners post-summary p-5 my-4"
+            key={post.id}
+          >
+            <h2 className="is-size-3 has-text-weight-bold">
               <Link to={`/posts/${post.slug}`}>{title}</Link>
             </h2>
-            <small className="is-size-7 mr-3">
-              Posted: {post.frontmatter.date}
-            </small>
-            <small className="is-size-7">
+            <p className="is-size-6">
+              <span className="is-size-7">
+                Posted: {post.frontmatter.date}{' '}
+              </span>
               {tags.map(tag => {
                 return (
                   <span key={tag} className="tag is-light mr-2">
@@ -35,8 +38,8 @@ const PostList = ({ data, pageContext }) => {
                   </span>
                 )
               })}
-            </small>
-            <p className="py-2">{post.excerpt}</p>
+            </p>
+            <p className="is-size-6 py-2">{post.excerpt}</p>
           </div>
         )
       })}
@@ -87,7 +90,7 @@ export const postListQuery = graphql`
       nodes {
         slug
         id
-        excerpt(pruneLength: 480)
+        excerpt(pruneLength: 400)
         frontmatter {
           date(formatString: "DD MMM YYYY")
           title

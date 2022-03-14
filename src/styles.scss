@@ -2,7 +2,13 @@
 
 // If need, change your variables before importing Bulma
 //$title-color: #ff0000;
-
-$family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, Segoe UI,
-  Helvetica, Arial, sans-serif;
+.post-summary {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: hsl(0, 0%, 86%);
+  border-style: solid;
+}
+.rounded-corners {
+  border-radius: 10px;
+}
 @import '~bulma/bulma.sass';
