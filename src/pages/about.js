@@ -13,7 +13,7 @@ const AboutPage = () => {
       <p>About page</p>
       <StaticImage
         alt="Cute dog smiling with his tongue out whilst being petted"
-        src="../images/page-images/cute-dog.jpg"
+        src="../images/page-images/cutedog.jpg"
       />
     </Layout>
   )

@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Gatsby Bulma Blog`,
+    siteTitle: `Hello Stu`,
     author: {
       name: `Stuart Mackenzie`,
       summary: `Stuart is an Executive Director and Coach at FutureGov (Becoming TPXimpact). Stuart is also known for being a father, husband, runner, photography nerd, dog owner and exotic disco dancer. He hates writing about himself in the third person!`,
     },
-    description: `A starter site with MDX ready (paginated) blog ready to style with Bulma.`,
-    siteUrl: `https://zealous-albattani-4659c1.netlify.app`,
+    description: `Hello Stu is the home page of Stuart Mackenzie - a change, design, delivery. `,
+    siteUrl: `https://hellostu.xyz`,
     social: {
       twitter: `_disco`,
     },
@@ -138,8 +138,8 @@ module.exports = {
               }
             }
             `,
-            output: '/rss.xml',
-            title: 'Gatsby Bulma Blog RSS Feed',
+            output: '/posts-rss.xml',
+            title: 'Hello Stu Posts RSS',
           },
         ],
       },
@@ -155,7 +155,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/hello-stu.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,

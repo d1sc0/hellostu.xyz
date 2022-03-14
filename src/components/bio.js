@@ -29,10 +29,7 @@ const Bio = () => {
         <div class="media-left">
           <figure class="image is-128x128">
             <StaticImage
-              className="bio-avatar"
-              layout="fixed"
-              formats={['auto', 'webp', 'avif']}
-              src="../images/profile-pic.png"
+              src="../images/hello-stu.png"
               width={128}
               height={128}
               quality={95}

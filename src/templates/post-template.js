@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import Bio from '../components/bio'
 import '../styles.scss'
 
 const PostTemplate = ({ data }) => {
@@ -17,24 +18,20 @@ const PostTemplate = ({ data }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <h1 className="title is-size-2">{post.frontmatter.title}</h1>
-      <div className="block">
-        <small className="is-size-7 mr-3">
-          Posted: {post.frontmatter.date}
-        </small>
-        <small className="is-size-7">
-          {tags.map(tag => {
-            return (
-              <span key={tag} className="tag is-light mr-2">
-                <Link to={`/tags/${tag}`}>{tag}</Link>
-              </span>
-            )
-          })}
-        </small>
-        <div className="content">
-          <MDXRenderer frontmatter={post.frontmatter}>{post.body}</MDXRenderer>
-        </div>
+      <small className="is-size-7 mr-3">Posted: {post.frontmatter.date}</small>
+      <small className="is-size-7">
+        {tags.map(tag => {
+          return (
+            <span key={tag} className="tag is-light mr-2">
+              <Link to={`/tags/${tag}`}>{tag}</Link>
+            </span>
+          )
+        })}
+      </small>
+      <div className="content py-5">
+        <MDXRenderer frontmatter={post.frontmatter}>{post.body}</MDXRenderer>
       </div>
-
+      <Bio />
       <nav
         className="pagination py-4"
         role="navigation"
