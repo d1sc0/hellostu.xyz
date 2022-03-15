@@ -18,11 +18,16 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav
+        className="navbar has-background-light"
+        role="navigation"
+        aria-label="main navigation"
+      >
         <div className="container is-max-widescreen">
-          <div className="navbar-brand">
+          <div className="navbar-brand py-4 pr-2">
             <Link className="navbar-item has-text-weight-bold is-size-4" to="/">
-              {data.site.siteMetadata.siteTitle}
+              &rsaquo; {data.site.siteMetadata.siteTitle}
+              <span className="cursor"></span>
             </Link>
             <button
               onClick={() => {

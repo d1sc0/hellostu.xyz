@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Hello Stu`,
+    siteTitle: `hello stu`,
     author: {
       name: `Stuart Mackenzie`,
-      summary: `Stuart is an Executive Director and Coach at FutureGov (Becoming TPXimpact). Stuart is also known for being a father, husband, runner, photography nerd, dog owner and exotic disco dancer. He hates writing about himself in the third person!`,
+      summary: `Stuart is a Director at the digital change agency FutureGov (becoming
+          TPXimpact). I'm also know for being a father, husband, runner,
+          photography nerd, dog owner and excotic disco dancer!`,
     },
-    description: `Hello Stu is the home page of Stuart Mackenzie - a change, design, delivery. `,
+    description: `hello stu is the home page of Stuart Mackenzie - Stuart is a Director at the digital change agency FutureGov (becoming TPXimpact). I'm also know for being a father, husband, runner, photography nerd, dog owner and excotic disco dancer!`,
     siteUrl: `https://hellostu.xyz`,
     social: {
       twitter: `_disco`,

@@ -2,13 +2,44 @@
 
 // If need, change your variables before importing Bulma
 //$title-color: #ff0000;
+
+// color pallette
+// https://coolors.co/140000-ffffff-da2c38-ffb238-3f7cac
+$weight-bold: 700;
+$link: #da2c38;
+$cyan: #3f7cac;
+$orange: #ffb238;
+$background: #ffffff;
+
+@import '~bulma/bulma.sass';
+
+//add any additonal styles dependant on variables below
+.cursor {
+  margin-top: 0.1rem;
+  margin-left: 0.3rem;
+  display: inline-block;
+  width: 14px;
+  height: 1.6rem;
+  background-color: $link;
+  animation: cursor-blink 1s steps(2) infinite;
+}
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
 .post-summary {
-  border-radius: 10px;
   border-width: 1px;
-  border-color: hsl(0, 0%, 86%);
+  border-color: $cyan;
   border-style: solid;
 }
 .rounded-corners {
   border-radius: 10px;
 }
-@import '~bulma/bulma.sass';
+
+.home p {
+  font-size: $size-3;
+  font-weight: $weight-bold;
+  line-height: 3.5rem;
+}

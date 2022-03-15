@@ -15,15 +15,12 @@ const PostsByTagList = ({ data, pageContext }) => {
   return (
     <Layout>
       <Seo title={pageTitle} />
-      <h1 className="title is-size-4">{pageTitle}</h1>
+      <h1 className="title is-size-4 is-capitalized">{pageTitle}</h1>
       {posts.map(post => {
         const title = post.frontmatter.title || post.slug
         const tags = post.frontmatter.tags
         return (
-          <div
-            className="block rounded-corners post-summary p-5 my-4"
-            key={post.id}
-          >
+          <div className="block post-summary p-5 my-4" key={post.id}>
             <h2 className="is-size-3 has-text-weight-bold">
               <Link to={`/posts/${post.slug}`}>{title}</Link>
             </h2>

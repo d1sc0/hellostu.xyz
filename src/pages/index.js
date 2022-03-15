@@ -1,19 +1,28 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
-import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 import '../styles.scss'
 
 const HomePage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <h1 className="title is-size-2">Home</h1>
-      <p>This is the home page</p>
-      <StaticImage
-        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-        src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
-      />
+      <div class="section home py-6 px-0">
+        <p class="title">
+          Hello, I'm <Link>Stuart Mackenzie</Link>.
+        </p>
+        <p class="title">
+          I work at the digital change agency <Link>FutureGov</Link> (becoming{' '}
+          <Link>TPXimpact</Link>). I'm also know for being a father, husband,
+          runner, photography nerd, dog owner and excotic disco dancer!
+        </p>
+        <p class="title">
+          This site mostly serves to make it easier for people to find me across
+          other bits of the internet but I also use it to{' '}
+          <Link>share ideas, experiments, thoughts and reflections.</Link>
+        </p>
+      </div>
     </Layout>
   )
 }
