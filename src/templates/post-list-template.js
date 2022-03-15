@@ -24,7 +24,7 @@ const PostList = ({ data, pageContext }) => {
             className="block p-5 my-6 rounded-corners has-background-white-ter"
             key={post.id}
           >
-            <h2 className="is-size-3 has-text-weight-bold">
+            <h2 className="is-size-3 has-text-weight-bold mb-2">
               <Link to={`/posts/${post.slug}`} className="post-title">
                 {title}
               </Link>
@@ -41,7 +41,12 @@ const PostList = ({ data, pageContext }) => {
                 )
               })}
             </p>
-            <p className="is-size-6 py-2">{post.excerpt}</p>
+            <p className="is-size-6 py-2">
+              {post.excerpt}
+              <Link to={`/posts/${post.slug}`} className="ml-2">
+                <strong>read more</strong>
+              </Link>
+            </p>
           </div>
         )
       })}
