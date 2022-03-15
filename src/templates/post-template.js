@@ -18,11 +18,13 @@ const PostTemplate = ({ data }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <h1 className="title is-size-2">{post.frontmatter.title}</h1>
-      <small className="is-size-7 mr-3">Posted: {post.frontmatter.date}</small>
+      <small className="tag is-success mr-3">
+        Posted: {post.frontmatter.date}
+      </small>
       <small className="is-size-7">
         {tags.map(tag => {
           return (
-            <span key={tag} className="tag is-light mr-2">
+            <span key={tag} className="tag is-info mr-2">
               <Link to={`/tags/${tag}`}>{tag}</Link>
             </span>
           )

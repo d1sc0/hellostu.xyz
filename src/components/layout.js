@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         role="navigation"
         aria-label="main navigation"
       >
-        <div className="container is-max-widescreen">
+        <div className="container is-max-desktop">
           <div className="navbar-brand py-4 pr-2">
             <Link className="navbar-item has-text-weight-bold is-size-4" to="/">
               &rsaquo; {data.site.siteMetadata.siteTitle}
@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
       </nav>
 
       <section class="section">
-        <div class="container is-max-widescreen">
+        <div class="container is-max-desktop">
           <div className="main-content">{children}</div>
         </div>
       </section>

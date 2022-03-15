@@ -10,6 +10,8 @@ $link: #da2c38;
 $cyan: #3f7cac;
 $orange: #ffb238;
 $background: #ffffff;
+$info: $cyan;
+$success: $orange;
 
 @import '~bulma/bulma.sass';
 
@@ -29,11 +31,6 @@ $background: #ffffff;
   }
 }
 
-.post-summary {
-  border-width: 1px;
-  border-color: $cyan;
-  border-style: solid;
-}
 .rounded-corners {
   border-radius: 10px;
 }
@@ -41,5 +38,22 @@ $background: #ffffff;
 .home p {
   font-size: $size-3;
   font-weight: $weight-bold;
-  line-height: 3.5rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.home a {
+  text-decoration: underline;
+}
+
+.tag a,
+.tag a:hover {
+  color: $white;
+}
+.tag a:hover {
+  text-decoration: underline;
+}
+
+.post-title:hover {
+  color: $link;
 }
