@@ -35,7 +35,7 @@ const PostList = ({ data, pageContext }) => {
               </span>
               {tags.map(tag => {
                 return (
-                  <span key={tag} className="tag is-info mr-2">
+                  <span key={tag} className="tag is-info mr-2 mb-1">
                     <Link to={`/tags/${tag}`}>{tag}</Link>
                   </span>
                 )

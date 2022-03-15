@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <div class="section home pt-4 pb-0 px-0">
+      <div class="section home pt-5 pb-0 px-0">
         <p>
           Hello, I'm <Link to="/about">Stuart Mackenzie</Link>.
         </p>
