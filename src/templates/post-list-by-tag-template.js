@@ -41,7 +41,7 @@ const PostsByTagList = ({ data, pageContext }) => {
                 )
               })}
             </p>
-            <p className="is-size-6 py-2">
+            <p className="content is-medium py-3">
               {post.excerpt}
               <Link to={`/posts/${post.slug}`} className="ml-2">
                 <strong>read more</strong>

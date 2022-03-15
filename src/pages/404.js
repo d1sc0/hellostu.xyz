@@ -9,7 +9,7 @@ const NotFoundPage = () => {
     <Layout>
       <Seo title="404: Not Found" />
       <h1 className="title is-size-2">404: Uh-oh! Something went wrong</h1>
-      <div class="content">
+      <div class="content is-medium">
         <p>
           We're not quite sure what you were looking for but we can't find it.{' '}
           <strong>Sorry!</strong>

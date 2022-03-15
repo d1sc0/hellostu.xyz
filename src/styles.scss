@@ -12,6 +12,7 @@ $orange: #ffb238;
 $background: #ffffff;
 $info: $cyan;
 $success: $orange;
+$size-1: 2.8rem;
 
 @import '~bulma/bulma.sass';
 
@@ -56,4 +57,22 @@ $success: $orange;
 
 .post-title:hover {
   color: $link;
+}
+
+.content a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.medium-post-image .gatsby-image-wrapper {
+  width: 50vw;
+  min-width: 30vw;
+}
+.small-post-image .gatsby-image-wrapper {
+  width: 40vw;
+  min-width: 30vw;
+}
+
+.content.is-medium {
+  font-size: 1.125rem;
 }

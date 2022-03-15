@@ -30,7 +30,7 @@ const PostTemplate = ({ data }) => {
           )
         })}
       </small>
-      <div className="content py-5">
+      <div className="content is-medium py-5">
         <MDXRenderer frontmatter={post.frontmatter}>{post.body}</MDXRenderer>
       </div>
       <Bio />

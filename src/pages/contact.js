@@ -47,7 +47,7 @@ const ContactPage = () => {
       />
       <h1 className="title is-size-3">Contact</h1>
       <div className="section px-0 pt-3">
-        <p className="Content mb-5">
+        <p className="content is-medium mb-5">
           Do you have a question for me? Don't be shy - drop me a message using
           this form and I'll try and get back to you as quickly as I can. Form
           submissions end up in my inbox which is pretty actively monitored. No

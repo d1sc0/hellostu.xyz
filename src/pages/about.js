@@ -3,18 +3,70 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 import '../styles.scss'
 
 const AboutPage = () => {
   return (
     <Layout>
       <Seo description="Everything you need to know ever" title="About" />
-      <h1 className="title is-size-2">About</h1>
-      <p>About page</p>
-      <StaticImage
-        alt="Cute dog smiling with his tongue out whilst being petted"
-        src="../images/page-images/cutedog.jpg"
-      />
+      <h1 className="title is-size-4">About Stuart Mackenzie</h1>
+      <div className="content is-medium">
+        <p>
+          <div className="small-post-image is-full-mobile">
+            <StaticImage
+              alt="Stuart Mackenzie"
+              title="My mug shot - Stuart Mackenzie"
+              src="../images/page-images/hellostu.jpg"
+              className="rounded-corners ml-4 mb-2 is-pulled-right"
+              width={450}
+            />
+          </div>
+          I live in <a href="https://www.visit-dorset.com/">Dorset</a> along
+          with my wife Chloe, daughter Robyn and{' '}
+          <a href="https://www.instagram.com/m0nty_d0g/">
+            four-legged friend Monty
+          </a>
+          . I now spend much of my time working out of London transforming
+          public services as a Director at{' '}
+          <a href="https://wearefuturegov.com/">FutureGov</a> (soon to be
+          TPXimpact).
+        </p>
+        <p>
+          I've worked in a variety of technology & management roles over the
+          last 20 years but largely I prefer people to computers and code. I'm
+          slightly obsessed (in a healthy way) in making change happen within
+          organisations and I'm happiest when supporting teams and clients
+          navigate complexity (human and technical) to deliver better outcomes
+          for users.
+        </p>
+        <p>
+          This website is largely a selfish endevaour. I don't write often but
+          it's a skill I know I should practice. Having the site gives me a
+          place to do just that. Often I write just as a method to bring
+          structure to the things I have floating around in my head. For this
+          reason I inevitably write more posts than I publish. Hopefully the few
+          that make it as far as publication might be useful to someone other
+          than me but that's not my primary goal. Having a website also provides
+          me a sandbox to test ideas and prototype in code. If things feel a
+          little broken or don't work as you expect then this might be as a
+          result of one of these experiments.
+        </p>
+        <p>
+          I'm always open to making new connections with people. My social
+          profiles are included at the top of this page if you want to get in
+          touch or just be nosey but I've also provided a good old-fashioned{' '}
+          <Link to="/about">contact form</Link> if that's more your thing! For
+          those interested in technology the site in it's current form has been
+          built using <a href="https://www.gatsbyjs.org/">Gatsby</a> which is
+          currently my favourite static site generator. I tend to write posts
+          using <a href="https://www.typora.io/">Typora</a> which is a beautiful
+          cross platform clutter-free markdown editor. I use{' '}
+          <a href="https://firebase.google.com/">Firebase</a> for hosting the
+          static files. All of the code and content is maintained in{' '}
+          <a href="https://github.com/d1sc0/hellostu.xyz">Github</a>.
+        </p>
+      </div>
     </Layout>
   )
 }

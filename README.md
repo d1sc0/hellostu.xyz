@@ -9,9 +9,9 @@
 - update styling on tag pages to match - done
 - Design and make new home page - done
 - update other styles - done
+- tweak Bio component - done
 - footer and nav
 - Migrate the about me page
-- Improve Bio component
 - deploy on firebase using github actions
 - update twitter and open graph in seo component to use postImage or fallback gracefully to an icon use || ?
 - add in some analytics
