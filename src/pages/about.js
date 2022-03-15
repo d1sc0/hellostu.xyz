@@ -3,7 +3,6 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
 import '../styles.scss'
 
 const AboutPage = () => {
@@ -11,7 +10,7 @@ const AboutPage = () => {
     <Layout>
       <Seo description="Everything you need to know ever" title="About" />
       <h1 className="title is-size-4">About Stuart Mackenzie</h1>
-      <div className="content is-medium">
+      <div className="content is-medium py-5">
         <p>
           <div className="small-post-image is-full-mobile">
             <StaticImage
@@ -41,27 +40,23 @@ const AboutPage = () => {
           for users.
         </p>
         <p>
-          This website is largely a selfish endevaour. I don't write often but
+          This website is largely a selfish endeavour. I don't write often but
           it's a skill I know I should practice. Having the site gives me a
           place to do just that. Often I write just as a method to bring
           structure to the things I have floating around in my head. For this
-          reason I inevitably write more posts than I publish. Hopefully the few
-          that make it as far as publication might be useful to someone other
-          than me but that's not my primary goal. Having a website also provides
-          me a sandbox to test ideas and prototype in code. If things feel a
-          little broken or don't work as you expect then this might be as a
-          result of one of these experiments.
+          reason, I inevitably write more posts than I publish. Hopefully, the
+          few that make it as far as publication might be useful to someone
+          other than me but that's not my primary goal.
         </p>
         <p>
-          I'm always open to making new connections with people. My social
-          profiles are included at the top of this page if you want to get in
-          touch or just be nosey but I've also provided a good old-fashioned{' '}
-          <Link to="/about">contact form</Link> if that's more your thing! For
-          those interested in technology the site in it's current form has been
-          built using <a href="https://www.gatsbyjs.org/">Gatsby</a> which is
-          currently my favourite static site generator. I tend to write posts
-          using <a href="https://www.typora.io/">Typora</a> which is a beautiful
-          cross platform clutter-free markdown editor. I use{' '}
+          Having a website also provides me with a sandbox to test ideas and
+          prototype in code. If things feel a little broken or don't work as you
+          expect then this might be as a result of one of these experiments.
+        </p>
+        <p>
+          For those interested in technology the site in it's current form has
+          been built using <a href="https://www.gatsbyjs.org/">Gatsby</a> which
+          is currently my favourite static site generator. I use{' '}
           <a href="https://firebase.google.com/">Firebase</a> for hosting the
           static files. All of the code and content is maintained in{' '}
           <a href="https://github.com/d1sc0/hellostu.xyz">Github</a>.

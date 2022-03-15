@@ -1,7 +1,13 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import '../styles.scss'
-import { FaRss } from 'react-icons/fa'
+import {
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaStrava,
+  FaGithub,
+} from 'react-icons/fa'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -57,24 +63,90 @@ const Layout = ({ children }) => {
               <Link to="/contact" className="navbar-item">
                 Contact
               </Link>
-              <Link to="/rss.xml" className="navbar-item">
-                <FaRss />
-              </Link>
+              <a
+                href="https://twitter.com/_disco"
+                className="navbar-item is-hidden-touch"
+                title="twitter"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://github.com/d1sc0"
+                className="navbar-item is-hidden-touch"
+                title="github"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.instagram.com/_d1sco/"
+                className="navbar-item is-hidden-touch"
+                title="instagram"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.strava.com/athletes/1170885"
+                className="navbar-item is-hidden-touch"
+                title="strava"
+              >
+                <FaStrava />
+              </a>
+              <a
+                href="https://uk.linkedin.com/in/stuartjmackenzie"
+                className="navbar-item is-hidden-touch"
+                title="strava"
+              >
+                <FaLinkedin />
+              </a>
             </div>
           </div>
         </div>
       </nav>
 
-      <section class="section">
-        <div class="container is-max-desktop">
+      <section className="section">
+        <div className="container is-max-desktop">
           <div className="main-content">{children}</div>
         </div>
       </section>
 
-      <footer className="footer has-background-white">
+      <footer className="footer has-background-white pt-1">
         <div className="content has-text-centered">
-          <strong>{data.site.siteMetadata.siteTitle}</strong> by{' '}
-          <a href="https://twitter.com/_disco">Stuart Mackenzie</a>.
+          <div className="socials pb-3">
+            <a
+              href="https://twitter.com/_disco"
+              className="mr-4"
+              title="twitter"
+            >
+              <FaTwitter size="1.6rem" />
+            </a>
+            <a href="https://github.com/d1sc0" className="mr-4" title="github">
+              <FaGithub size="1.6rem" />
+            </a>
+            <a
+              href="https://www.instagram.com/_d1sco/"
+              className="mr-4"
+              title="instagram"
+            >
+              <FaInstagram size="1.6rem" />
+            </a>
+            <a
+              href="https://www.strava.com/athletes/1170885"
+              className="mr-4"
+              title="strava"
+            >
+              <FaStrava size="1.6rem" />
+            </a>
+            <a
+              href="https://uk.linkedin.com/in/stuartjmackenzie"
+              className="mr-4"
+              title="strava"
+            >
+              <FaLinkedin size="1.6rem" />
+            </a>
+          </div>
+          <strong>{data.site.siteMetadata.siteTitle}</strong> was built by{' '}
+          <a href="https://twitter.com/_disco">Stuart Mackenzie</a> using
+          Gatsby.
         </div>
       </footer>
     </div>

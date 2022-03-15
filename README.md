@@ -10,8 +10,8 @@
 - Design and make new home page - done
 - update other styles - done
 - tweak Bio component - done
-- footer and nav
-- Migrate the about me page
+- footer and nav - done
+- Migrate the about me page - done
 - deploy on firebase using github actions
 - update twitter and open graph in seo component to use postImage or fallback gracefully to an icon use || ?
 - add in some analytics

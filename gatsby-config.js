@@ -120,7 +120,7 @@ module.exports = {
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + '/posts/' + node.slug,
-                  guid: site.siteMetadata.siteUrl + '/posts/' + node.slug,
+                  guid: '/posts/' + node.slug,
                 })
               })
             },
