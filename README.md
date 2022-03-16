@@ -12,9 +12,9 @@
 - tweak Bio component - done
 - footer and nav - done
 - Migrate the about me page - done
-- deploy on firebase using github actions
+- deploy on firebase using github actions - done
 - update twitter and open graph in seo component to use postImage - done
-- add in some analytics
+- add in some analytics (and relevant privacy notices)
 
 ## Maybe things for later (Roadmap)
 
