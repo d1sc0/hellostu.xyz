@@ -11,13 +11,13 @@ const PostTemplate = ({ data }) => {
   const post = data.mdx
   const tags = post.frontmatter.tags
   const { previous, next } = data
-  const socialImage = getSrc(post.frontmatter.socialImage)
+  const socialImg = getSrc(post.frontmatter.socialImage)
   return (
     <Layout>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={socialImage}
+        image={socialImg}
       />
       <h1 className="title is-size-2">{post.frontmatter.title}</h1>
       <small className="tag is-success mr-3">
