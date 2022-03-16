@@ -31,6 +31,7 @@ const Seo = ({ description, lang, meta, title, imageUrl }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.siteTitle
   const graphImage = imageUrl || '/social-image.jpg'
+  const graphUrl = site.siteMetadata.siteUrl + graphImage
   return (
     <Helmet
       htmlAttributes={{
@@ -49,7 +50,7 @@ const Seo = ({ description, lang, meta, title, imageUrl }) => {
         },
         {
           property: `og:image`,
-          content: graphImage,
+          content: graphUrl,
         },
         {
           property: `og:description`,
@@ -65,7 +66,7 @@ const Seo = ({ description, lang, meta, title, imageUrl }) => {
         },
         {
           property: `twitter:image`,
-          content: graphImage,
+          content: graphUrl,
         },
         {
           name: `twitter:creator`,
