@@ -11,13 +11,13 @@ const PostTemplate = ({ data }) => {
   const post = data.mdx
   const tags = post.frontmatter.tags
   const { previous, next } = data
-  const image = getSrc(post.frontmatter.postImages[0])
+  const socialImage = getSrc(post.frontmatter.socialImage)
   return (
     <Layout>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={image}
+        image={socialImage}
       />
       <h1 className="title is-size-2">{post.frontmatter.title}</h1>
       <small className="tag is-success mr-3">
@@ -87,6 +87,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        socialImage
         postImages {
           childImageSharp {
             gatsbyImageData
