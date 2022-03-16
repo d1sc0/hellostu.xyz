@@ -28,11 +28,11 @@ const Bio = () => {
     <div class="block rounded-corners py-4 has-background-white-ter">
       <article class="media p-4">
         <div class="media-left">
-          <figure class="image is-128x128">
+          <figure class="image is-64x64">
             <StaticImage
               src="../images/hello-stu.png"
-              width={128}
-              height={128}
+              width={64}
+              height={64}
               quality={95}
               alt="Profile picture"
             />
