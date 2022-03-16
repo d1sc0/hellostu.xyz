@@ -18,6 +18,7 @@
 
 ## Maybe things for later (Roadmap)
 
+- improve contact form error handling - maybe try using formik?
 - look at react leaflet and play with maps again
 - go through and selectively import bulma sass files need. Rather than all.
 - Split out Layout Component to create Layout, Header/Nav and Footer?!
