@@ -109,7 +109,7 @@ const Layout = ({ children }) => {
         </div>
       </section>
 
-      <footer className="footer has-background-white pt-1">
+      <footer className="footer has-background-white pt-2">
         <div className="content has-text-centered">
           <div className="socials pb-3">
             <a

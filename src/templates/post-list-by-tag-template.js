@@ -50,36 +50,33 @@ const PostsByTagList = ({ data, pageContext }) => {
           </div>
         )
       })}
-      {!isFirst && (
-        <nav
-          className="pagination py-4 is-pulled-left"
-          role="navigation"
-          aria-label="pagination"
-        >
-          <Link
-            to={`/tags/${tagName}/${prevPage}`}
-            className="pagination-previous"
-            rel="prev"
-          >
-            Previous Page
-          </Link>
-        </nav>
-      )}
-      {!isLast && (
-        <nav
-          className="pagination py-4 is-pulled-right"
-          role="navigation"
-          aria-label="pagination"
-        >
-          <Link
-            to={`/tags/${tagName}/${nextPage}`}
-            className="pagination-next"
-            rel="next"
-          >
-            Next Page
-          </Link>
-        </nav>
-      )}
+
+      <nav
+        className="pagination py-4"
+        role="navigation"
+        aria-label="pagination"
+      >
+        <div className="container">
+          {!isFirst && (
+            <Link
+              to={`/tags/${tagName}/${prevPage}`}
+              className="pagination-previous is-pulled-left"
+              rel="prev"
+            >
+              Previous Page
+            </Link>
+          )}
+          {!isLast && (
+            <Link
+              to={`/tags/${tagName}/${nextPage}`}
+              className="pagination-next is-pulled-right"
+              rel="next"
+            >
+              Next Page
+            </Link>
+          )}
+        </div>
+      </nav>
     </Layout>
   )
 }
