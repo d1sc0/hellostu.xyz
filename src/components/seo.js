@@ -31,7 +31,8 @@ const Seo = ({ description, lang, meta, title, image }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.siteTitle
   const graphImage =
-    `${site.siteUrl}/${image}` || `${site.siteUrl}/hello-stu.png`
+    `${site.siteMetadata.siteUrl}/${image}` ||
+    `${site.siteMetadata.siteUrl}/hello-stu.png`
   return (
     <Helmet
       htmlAttributes={{
