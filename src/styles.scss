@@ -64,10 +64,12 @@ $size-1: 2.8rem;
   font-weight: 500;
 }
 
+.medium-post-image,
 .medium-post-image .gatsby-image-wrapper {
   width: 50vw;
   min-width: 30vw;
 }
+.small-post-image,
 .small-post-image .gatsby-image-wrapper {
   width: 40vw;
   min-width: 30vw;
