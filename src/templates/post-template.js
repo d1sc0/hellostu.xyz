@@ -17,7 +17,7 @@ const PostTemplate = ({ data }) => {
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={socialImg}
+        imageUrl={socialImg}
       />
       <h1 className="title is-size-2">{post.frontmatter.title}</h1>
       <small className="tag is-success mr-3">
