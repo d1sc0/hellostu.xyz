@@ -13,7 +13,7 @@
 - footer and nav - done
 - Migrate the about me page - done
 - deploy on firebase using github actions
-- update twitter and open graph in seo component to use postImage or fallback gracefully to an icon use || ?
+- update twitter and open graph in seo component to use postImage - done
 - add in some analytics
 
 ## Maybe things for later (Roadmap)
