@@ -87,7 +87,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
-        socialImage
+        socialImage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
         postImages {
           childImageSharp {
             gatsbyImageData
