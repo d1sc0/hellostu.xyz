@@ -12,7 +12,7 @@ const AboutPage = () => {
       <h1 className="title is-size-4">About Stuart Mackenzie</h1>
       <div className="content is-medium py-5">
         <p>
-          <div className="small-post-image is-full-mobile">
+          <div className="is-gi-small is-full-mobile">
             <StaticImage
               alt="Stuart Mackenzie"
               title="My mug shot - Stuart Mackenzie"
