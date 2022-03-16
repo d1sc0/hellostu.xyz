@@ -4,18 +4,21 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Bio from '../components/bio'
+import { getSrc } from 'gatsby-plugin-image'
 import '../styles.scss'
 
 const PostTemplate = ({ data }) => {
   const post = data.mdx
   const tags = post.frontmatter.tags
   const { previous, next } = data
-
+  const image = getSrc(post.frontmatter.postImages[0])
+  console.log(image)
   return (
     <Layout>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        image={image}
       />
       <h1 className="title is-size-2">{post.frontmatter.title}</h1>
       <small className="tag is-success mr-3">
