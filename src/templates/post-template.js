@@ -12,7 +12,6 @@ const PostTemplate = ({ data }) => {
   const tags = post.frontmatter.tags
   const { previous, next } = data
   const image = getSrc(post.frontmatter.postImages[0])
-  console.log(image)
   return (
     <Layout>
       <Seo
