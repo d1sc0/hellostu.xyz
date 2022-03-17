@@ -98,6 +98,7 @@ $size-1: 2.8rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
   border-radius: 10px;
+  float: left !important;
 }
 
 .imageRight {
@@ -105,20 +106,20 @@ $size-1: 2.8rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
   border-radius: 10px;
+  float: right !important;
 }
 
-@include touch {
+@include mobile {
   .imageLeft {
     width: 100%;
+    margin: 0;
     margin-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     border-radius: 10px;
   }
   .imageRight {
-    width: 50%;
+    width: 100%;
+    margin: 0;
     margin-bottom: 1rem;
-    margin-left: 1rem;
     border-radius: 10px;
   }
 }
