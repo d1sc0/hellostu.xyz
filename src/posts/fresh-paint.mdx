@@ -10,14 +10,12 @@ postImages:
 
 import { getImage, GatsbyImage } from 'gatsby-plugin-image'
 
-<div className="is-gi-medium">
-  <GatsbyImage
-    alt="lots of colourful spray cans"
-    title="all the colours of fresh paint"
-    image={getImage(props.frontmatter.postImages[0])}
-    className="ml-4 is-pulled-right"
-  />
-</div>
+<GatsbyImage
+  alt="lots of colourful spray cans"
+  title="all the colours of fresh paint"
+  image={getImage(props.frontmatter.postImages[0])}
+  className="imageRight"
+/>
 
 It feels like I change blogging platforms more often than I actually write blog posts...but
 rather than just a desire to apply a fresh coat of paint this time my rebuild had

@@ -12,15 +12,13 @@ const AboutPage = () => {
       <h1 className="title is-size-4">About Stuart Mackenzie</h1>
       <div className="content is-medium py-5">
         <p>
-          <div className="is-gi-small is-full-mobile">
-            <StaticImage
-              alt="Stuart Mackenzie"
-              title="My mug shot - Stuart Mackenzie"
-              src="../images/page-images/hellostu.jpg"
-              className="rounded-corners ml-4 mb-2 is-pulled-right"
-              width={450}
-            />
-          </div>
+          <StaticImage
+            alt="Stuart Mackenzie"
+            title="My mug shot - Stuart Mackenzie"
+            src="../images/page-images/hellostu.jpg"
+            className="imageRight"
+            width={450}
+          />
           I live in <a href="https://www.visit-dorset.com/">Dorset</a> along
           with my wife Chloe, daughter Robyn and{' '}
           <a href="https://www.instagram.com/m0nty_d0g/">

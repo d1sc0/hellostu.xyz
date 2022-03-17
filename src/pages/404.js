@@ -19,7 +19,7 @@ const NotFoundPage = () => {
       <StaticImage
         alt="404 - We're sorry we can't find this! here's a picture of a cute dog!"
         src="../images/page-images/cutedog.jpg"
-        className="rounded-corners"
+        className="imageFull"
       />
     </Layout>
   )
