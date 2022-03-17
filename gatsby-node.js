@@ -115,6 +115,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+// specifiy type for troublesome custom field should probably do the same for -  postImage: [File] @fileByRelativePath
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
