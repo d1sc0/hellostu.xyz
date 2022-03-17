@@ -84,14 +84,10 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMM YY")
         description
         tags
-        socialImage {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
+        socialImage
         postImages {
           childImageSharp {
             gatsbyImageData
