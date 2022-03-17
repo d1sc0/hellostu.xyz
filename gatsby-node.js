@@ -117,6 +117,29 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 /* exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
+  const typeDefs = `
+    type Mdx implements Node {
+      frontmatter: MdxFrontmatter
+    }
+    type MdxFrontmatter {
+      title: String!
+      date(
+        formatString: String
+        fromNow: Boolean
+        difference: String
+        locale: String
+      ): Date
+      tags: [String]
+      socialImage: File
+      postImages: [File]
+      description: String
+    }
+  `
+  createTypes(typeDefs)
+} */
+
+/* exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
 
   // Explicitly define the siteMetadata {} object
   // This way those will always be defined even if removed from gatsby-config.js
