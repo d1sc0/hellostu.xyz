@@ -115,28 +115,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-/* exports.createSchemaCustomization = ({ actions }) => {
+exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
     type Mdx implements Node {
       frontmatter: MdxFrontmatter
     }
     type MdxFrontmatter {
-      title: String!
-      date(
-        formatString: String
-        fromNow: Boolean
-        difference: String
-        locale: String
-      ): Date
-      tags: [String]
-      socialImage: String
-      postImages: [File]
-      description: String
+      socialImage: File @fileByRelativePath
     }
   `
   createTypes(typeDefs)
-} */
+}
 
 /* exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
