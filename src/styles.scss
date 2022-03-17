@@ -84,3 +84,41 @@ $size-1: 2.8rem;
 .navbar-brand a:hover {
   color: #4a4a4a;
 }
+
+.imageFull {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+}
+
+.imageLeft {
+  width: 50%;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+.imageRight {
+  width: 50%;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+@include touch {
+  .imageLeft {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+  }
+  .imageRight {
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+  }
+}
