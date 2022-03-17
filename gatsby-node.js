@@ -130,7 +130,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         locale: String
       ): Date
       tags: [String]
-      socialImage: File
+      socialImage: String
       postImages: [File]
       description: String
     }
