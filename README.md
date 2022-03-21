@@ -14,7 +14,7 @@
 - Migrate the about me page - done
 - deploy on firebase using github actions - done
 - update twitter and open graph in seo component to use postImage - done
-- add in some analytics (and relevant privacy notices)
+- add in some analytics - panelbear?
 
 ## Maybe things for later (Roadmap)
 

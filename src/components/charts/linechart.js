@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { options, data } from './data.js'
+import { options, data } from './linechart-data.js'
 import { Line } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
