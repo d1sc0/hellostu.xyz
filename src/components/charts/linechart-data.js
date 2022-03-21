@@ -11,11 +11,12 @@ export const options = {
   },
   plugins: {
     legend: {
+      display: false,
       position: 'top',
     },
     title: {
-      display: false,
-      text: 'Chart.js Line Chart',
+      display: true,
+      text: 'Weekly Finishers at The Great Field',
     },
   },
 }
@@ -45,8 +46,11 @@ export const data = {
   ],
   datasets: [
     {
-      label: 'My First Dataset',
-      data: [65, 59, 80, 81, 56, 55, 40],
+      label: 'Finishers',
+      data: [
+        345, 317, 341, 325, 255, 223, 207, 261, 194, 257, 271, 275, 270, 262,
+        363, 243, 222, 243, 231, 230,
+      ],
       fill: false,
       borderColor: 'rgb(75, 192, 192)',
       tension: 0.2,
