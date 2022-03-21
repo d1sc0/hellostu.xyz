@@ -1,7 +1,7 @@
 ---
 title: TGF Data Dive
 date: 2022-03-19
-tags: ['experiments', 'tech', 'dataviz', 'parkrun']
+tags: ['experiments', 'data', 'tech', 'dataviz', 'parkrun']
 socialImage: '../images/post-images/parkrun1.jpg'
 postImages:
   - '../images/post-images/tgf_buses.jpg'
@@ -26,7 +26,7 @@ The parkrun tech fairies do an amazing job of making sure results from every eve
 
 Some basic research around available [parkrun APIs](https://developer.parkrun.com/) were a bit hit and miss. Plans for anything official look like they had been shelved a while back (which is sad but also understandable). The nerdier elements of the parkrun community (there are lots of us) have seemingly tried to fill these gaps over time by creating many things in this space but many were outdated, poorly documented. [Some seem promising](https://parkrun.js.org/index.html) but look like they'd add more complexity than I wanted to tackle right now.
 
-I decided a suitable compromise would be to use my web browser to [save local copies](https://www.dummies.com/article/technology/internet-basics/how-to-save-a-web-page-in-google-chrome-140687]) of the 20 event results pages into a folder and then create a script to make the process of extracting the data and adding it to a single spreadsheet friendly file of comma seperated values(csv) a little less tedious. I will keep looking into some of these other aproaches/tools though as there are limits baked into the results pages that are I'd like to explore (like knowing more about volunteers on the day, and knowing an athletes 'home' parkrun).
+I decided a suitable compromise might be to use my web browser to [save local copies](https://www.dummies.com/article/technology/internet-basics/how-to-save-a-web-page-in-google-chrome-140687]) of the 20 event results pages into a folder and then create a script to make the process of extracting the data and adding it to a single spreadsheet friendly file of comma seperated values(csv) a little less tedious. I will keep looking into some of these other aproaches/tools though as there are limits baked into the results pages that are I'd like to explore (like knowing more about volunteers on the day, and knowing an athletes 'home' parkrun).
 
 Given I am not a developer and that I've never done this before the process of creating the script involved more than a little bit of trial and error, lots of googling and some swearing but what I've written works! 🎉 The resulting script means I can now easily append my dataset with new results every week with a couple of clicks. I could likely also automate this part of the process but that's an experiment for another day. The script I created along with a short README file is [available on github](https://github.com/d1sc0/tgf-parkrun-stats) if you delight in hacking things together, have [node](https://nodejs.org/en/) running on your computer and want to achieve something similar. For any readers who can write code properly, please be kind - I was born before the internet!
 
@@ -53,23 +53,22 @@ A stat that suprised me a little was that out of those 1852 folks, **831 (44.87%
 
 Getting the word out to people who've never heard of parkrun or haven't heard we now have an event in Dorchester will likley take a little more time, patience and work from the events team and community. It's a metric I'm keenly interested in tracking closely - I hope our little parkrun provides an opportunity to build and strengthen our local community whilst also promoting improved physical and mental health outcomes. The more regular attendees we have the bigger the potential impact (because people don't often return to events they don't get value from). This is another reason why I'm keen to tinker some more with the stats and find easier ways to guage how many athletes list us as their 'home' event.
 
-I won't share names in this post but I can tell you we have **4 individuals who've crossed the line at all 20 events** at the Great Field. Two of those 4 (according to their parkrun profiles) were new to parkrun and have so far (in terms of parkrun attendance) only ever run with us, which is a most impressive streak indeed! ♥️
+I won't share names in this post but I can tell you we have **4 individuals who've crossed the line at all 20 events** at the Great Field. According to their parkrun profiles two of those four were new to parkrun and have so far (in terms of parkrun attendance) only ever run with us, which is a most impressive streak indeed! ♥️
 
-<Linechart />
-So far attendance has only dipped once below 200.
+<Linechart data="attendance" />
+
+So far attendance has only dipped below the 200 participants on one event. This happened to be New Year's day so I think we can safely say this is likely caused by a combination of people recovering from the night before or heading out to the [Broadstone quarter marathon](https://poolerunners.co.uk/broadstone-quarter/) which is a popular place to start the new year if you're a runner in Dorset.
 
 Rather than list out the number of athletes by age categories here I thought I'd turn to the dark side (marketing) and roughly show how our attendees break down by [generational groups](https://www.mentalfloss.com/article/609811/age-ranges-millennials-and-generation-z). Doing this actually helps me iron out/hide another interesting kink in the stats. When I total up the number athletes against the athletic categories used by parkrun - I'm out by a total of 32! I scratched my head for a while before noticing that 32 attendees in the last 20 events have had a birthday which has seen you listed in more than one age category. Many happy returns!! 🎂
 
-<Doughnutchart chartClass="imageLeft" />
+<Doughnutchart chartClass="imageRight" />
 
 Once again this won't be super accurate as I don't have people's actual birthdays and the generational groups won't perfectly align to the boundaries of parkrun age categories but it hints at the general shape of age groups attending our event. Clearly my fellow **Generation X'ers are as keen on parkrun as I am being our largest group and making up 37.2% of our athletes**. We have 86 young athletes in our Generation Alpha group. It'll be interesting to see if this continues to grow as part of family groups attending on a regular basis or whether it's a bit of a blip caused by event number 15 where young people from Dorchester Middle School joined us to raise money and awareness for Mental Health Causes. You can clearly see the spike this caused on the line chart further up this post.
 
-### Attendance (distribution age, sex, clubs)
+### Performance
 
-<Linechart />
+I'll try not to talk about running performance for too long. I think it's a topic for further analysis for another day. This graph shows the fastest times at each event.
 
-### Times/performance (fastest, slowest, average times over events, distribution of runners by 5 min chunks? number of walkers)
-
-###
+<Linechart data="fasttimes" />
 
 [Icon credits: London Bus by ATOM, Dog by Loka Mariella both found at NounProject.com]
