@@ -38,6 +38,7 @@ const Linechart = ({ data }) => {
     optionsfile = options2
     datafile = data2
   }
+  console.log({ datafile })
   return (
     //this is a comment
     <Line options={optionsfile} data={datafile} />
