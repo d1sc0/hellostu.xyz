@@ -21,7 +21,7 @@ export const options = {
 
 export const data = {
   labels: [
-    '0-15mins ',
+    '10-15 mins ',
     '15-20 mins ',
     '20-25 mins ',
     '25-30 mins ',
