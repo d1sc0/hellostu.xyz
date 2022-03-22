@@ -1,10 +1,9 @@
-import moment from 'moment'
-
 export const options1 = {
   layout: {
-    padding: 20,
+    padding: 0,
   },
   responsive: true,
+  aspectRatio: 1.5,
   scales: {
     y: {
       min: 0,
@@ -53,7 +52,7 @@ export const data1 = {
         345, 317, 341, 325, 255, 223, 207, 261, 194, 257, 271, 275, 270, 262,
         363, 243, 222, 243, 231, 230,
       ],
-      fill: false,
+      fill: true,
       borderColor: '#955196',
       borderWidth: 5,
       tension: 0.2,
@@ -63,26 +62,27 @@ export const data1 = {
 
 export const options2 = {
   layout: {
-    padding: 20,
+    padding: 10,
   },
   responsive: true,
+  aspectRatio: 1.5,
   scales: {
     y: {
-      min: '0:12:00',
-      max: '0:22:00',
+      min: '0:15:00',
+      max: '0:23:00',
       type: 'time',
       time: {
         parser: 'H:mm:ss',
         displayFormats: {
-          millisecond: 'H:mm:ss',
-          second: 'H:mm:ss',
-          minute: 'H:mm:ss',
-          hour: 'H:mm:ss',
-          day: 'H:mm:ss',
-          week: 'H:mm:ss',
-          month: 'H:mm:ss',
-          quarter: 'H:mm:ss',
-          year: 'H:mm:ss',
+          millisecond: 'mm:ss',
+          second: 'mm:ss',
+          minute: 'mm:ss',
+          hour: 'mm:ss',
+          day: 'mm:ss',
+          week: 'mm:ss',
+          month: 'mm:ss',
+          quarter: 'mm:ss',
+          year: 'mm:ss',
         },
         tooltipFormat: 'mm:ss',
       },
@@ -90,12 +90,12 @@ export const options2 = {
   },
   plugins: {
     legend: {
-      display: false,
-      position: 'top',
+      display: true,
+      position: 'bottom',
     },
     title: {
       display: true,
-      text: 'Times of fastest finisher weekly',
+      text: 'Fastest finishing time - Men and Women',
     },
   },
 }
@@ -125,7 +125,7 @@ export const data2 = {
   ],
   datasets: [
     {
-      label: 'Fastest time',
+      label: ' Time - Fastest Man ',
       data: [
         /* moment.duration(997, 'seconds'), */
         '0:16:37',
@@ -137,7 +137,7 @@ export const data2 = {
         '0:17:23',
         '0:16:37',
         '0:18:16',
-        '0:18:26',
+        '0:18:34',
         '0:18:01',
         '0:18:19',
         '0:18:41',
@@ -150,7 +150,37 @@ export const data2 = {
         '0:17:37',
       ],
       fill: false,
-      borderColor: '#ff6e54',
+      borderColor: '#58508d',
+      borderWidth: 5,
+      tension: 0.2,
+    },
+    {
+      label: ' Time - Fastest Women ',
+      data: [
+        /* moment.duration(997, 'seconds'), */
+        '0:20:17',
+        '0:20:53',
+        '0:20:02',
+        '0:21:02',
+        '0:21:44',
+        '0:21:19',
+        '0:21:43',
+        '0:18:40',
+        '0:20:42',
+        '0:18:26',
+        '0:21:32',
+        '0:20:15',
+        '0:22:10',
+        '0:21:39',
+        '0:21:47',
+        '0:20:01',
+        '0:21:49',
+        '0:21:10',
+        '0:20:38',
+        '0:21:33',
+      ],
+      fill: false,
+      borderColor: '#ff6361',
       borderWidth: 5,
       tension: 0.2,
     },

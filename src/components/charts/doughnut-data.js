@@ -1,6 +1,6 @@
 export const options = {
   layout: {
-    padding: 10,
+    padding: 0,
   },
   responsive: true,
 }

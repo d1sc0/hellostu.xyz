@@ -12,6 +12,7 @@ import {
   Tooltip,
   Legend,
   TimeScale,
+  Filler,
   TimeSeriesScale,
 } from 'chart.js'
 ChartJS.register(
@@ -22,11 +23,12 @@ ChartJS.register(
   PointElement,
   LineElement,
   Title,
+  Filler,
   Tooltip,
   Legend
 )
 
-const Linechart = ({ data }) => {
+const Linechart = ({ data, chartClass }) => {
   let optionsfile = ''
   let datafile = ''
 
@@ -40,8 +42,9 @@ const Linechart = ({ data }) => {
   }
   console.log({ datafile })
   return (
-    //this is a comment
-    <Line options={optionsfile} data={datafile} />
+    <div className={chartClass}>
+      <Line options={optionsfile} data={datafile} />
+    </div>
   )
 }
 

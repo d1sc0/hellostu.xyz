@@ -1,5 +1,5 @@
 ---
-title: TGF Data Dive
+title: TGF parkrun data dive
 date: 2022-03-19
 tags: ['experiments', 'data', 'tech', 'dataviz', 'parkrun']
 socialImage: '../images/post-images/parkrun1.jpg'
@@ -16,7 +16,7 @@ import Doughnutchart from '../components/charts/doughnutchart'
 
 The folks who follow [me on twitter](https://twitter.com/_disco) will have possibly noticed that parkrun has become a bit of an obsession for me lately. There are a few reasons for this which I'm sure i'll write about another day. The short story though is that I'm currently loving it and in my spare time I volunteer as part of the core event team for [The Great Field parkrun](https://www.parkrun.org.uk/thegreatfield/) which is conveniently just a few mins walk from my front door in Poundbury, Dorset.
 
-This week I decided it'd be an interesting exercise to pull together some of our event data to see what I could learn about our little community events. For context i'm no crack data scientist or analyst but thought it'd be an interesting challenge for me to blow the cobwebs off my limited skills and share some of what I found out. If the 'how I did this' bit doesn't interest you feel free to [skip down to the insights](#insights). 🌳❤️
+This week I decided it'd be an interesting exercise to pull together some of our event data to see what I could learn from the numbers about our little community event. For context I'm no crack data scientist or analyst but thought it'd be an interesting challenge for me to blow the cobwebs off my limited skills and share some of what I found out. Like all my little hobby projects I've tried to document the proces. If the 'how I did this' bit doesn't interest you feel free to [skip down to the insights](#insights). 🌳❤️
 
 ## Method
 
@@ -24,13 +24,13 @@ Glancing through the the stats on the parkrun website confirmed by suspcisions t
 
 The parkrun tech fairies do an amazing job of making sure results from every event across the globe are published in table form on the website every week and I started by just copying and pasting these into google sheets. It soon became a chore to try and tidy up and clean the HTML elements to get things in the right place and it certainly didn't feel something I'd want to repeat very often.
 
-Some basic research around available [parkrun APIs](https://developer.parkrun.com/) were a bit hit and miss. Plans for anything official look like they had been shelved a while back (which is sad but also understandable). The nerdier elements of the parkrun community (there are lots of us) have seemingly tried to fill these gaps over time by creating many things in this space but many were outdated, poorly documented. [Some seem promising](https://parkrun.js.org/index.html) but look like they'd add more complexity than I wanted to tackle right now.
+Some basic research around available [parkrun APIs](https://developer.parkrun.com/) were a bit hit and miss. Plans for anything official look like they had been shelved a while back (which is sad but also understandable). The nerdier elements of the parkrun community (there are lots of us) have seemingly tried to fill these gaps over time by creating many things in this space but many were outdated or poorly documented. [Some seem promising](https://parkrun.js.org/index.html) but look like they'd add more complexity than I wanted to tackle right now.
 
-I decided a suitable compromise might be to use my web browser to [save local copies](https://www.dummies.com/article/technology/internet-basics/how-to-save-a-web-page-in-google-chrome-140687]) of the 20 event results pages into a folder and then create a script to make the process of extracting the data and adding it to a single spreadsheet friendly file of comma seperated values(csv) a little less tedious. I will keep looking into some of these other aproaches/tools though as there are limits baked into the results pages that are I'd like to explore (like knowing more about volunteers on the day, and knowing an athletes 'home' parkrun).
+I decided a suitable compromise might be to use my web browser to [save local copies](https://www.dummies.com/article/technology/internet-basics/how-to-save-a-web-page-in-google-chrome-140687]) of the 20 event results pages into a folder and then create a script to make the process of extracting the data and adding it to a single spreadsheet friendly file of comma seperated values(csv) a little less tedious. I will keep looking into some of these other aproaches/tools though as there are limits baked into the results pages that are I'd like to overcome (like knowing more about volunteers on the day, and knowing an athletes 'home' parkrun).
 
 Given I am not a developer and that I've never done this before the process of creating the script involved more than a little bit of trial and error, lots of googling and some swearing but what I've written works! 🎉 The resulting script means I can now easily append my dataset with new results every week with a couple of clicks. I could likely also automate this part of the process but that's an experiment for another day. The script I created along with a short README file is [available on github](https://github.com/d1sc0/tgf-parkrun-stats) if you delight in hacking things together, have [node](https://nodejs.org/en/) running on your computer and want to achieve something similar. For any readers who can write code properly, please be kind - I was born before the internet!
 
-In terms of creating the couple of graphs included on this page I've used a react library called [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2) to present the data as chart components embedded into this [mdx](https://mdxjs.com/) formatted post on my [Gatsby blog](https://www.gatsbyjs.com/). Screenshots of graphs from the spreadsheet would have also been fine...but far less satisfying for my inner geek.
+In terms of creating the couple of interactive graphs included on this page I've used a react library called [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2) to present the data as chart components embedded into this [mdx](https://mdxjs.com/) formatted post on my [Gatsby blog](https://www.gatsbyjs.com/). Screenshots of graphs from the spreadsheet would have also been fine...but far less satisfying for my inner geek.
 
 ## Insights <a id="insights"></a>
 
@@ -55,20 +55,31 @@ Getting the word out to people who've never heard of parkrun or haven't heard we
 
 I won't share names in this post but I can tell you we have **4 individuals who've crossed the line at all 20 events** at the Great Field. According to their parkrun profiles two of those four were new to parkrun and have so far (in terms of parkrun attendance) only ever run with us, which is a most impressive streak indeed! ♥️
 
-<Linechart data="attendance" />
+<Linechart data="attendance" chartClass="imageFull" />
 
 So far attendance has only dipped below the 200 participants on one event. This happened to be New Year's day so I think we can safely say this is likely caused by a combination of people recovering from the night before or heading out to the [Broadstone quarter marathon](https://poolerunners.co.uk/broadstone-quarter/) which is a popular place to start the new year if you're a runner in Dorset.
 
-Rather than list out the number of athletes by age categories here I thought I'd turn to the dark side (marketing) and roughly show how our attendees break down by [generational groups](https://www.mentalfloss.com/article/609811/age-ranges-millennials-and-generation-z). Doing this actually helps me iron out/hide another interesting kink in the stats. When I total up the number athletes against the athletic categories used by parkrun - I'm out by a total of 32! I scratched my head for a while before noticing that 32 attendees in the last 20 events have had a birthday which has seen you listed in more than one age category. Many happy returns!! 🎂
+Rather than list out the number of athletes by age categories here I thought I'd turn to the dark side (marketing) and roughly show how our attendees break down by [generational groups](https://www.mentalfloss.com/article/609811/age-ranges-millennials-and-generation-z). Doing this actually helps me compensate slightly for an interesting quirk in the stats. When I total up the number athletes against the athletic age/gender categories used by parkrun - I'm out by a total of 32! I scratched my head for a while before noticing that 32 attendees in the last 20 events have had a birthday which means they get listed in more than one age category. Many happy returns birthday people!! 🎂
 
 <Doughnutchart chartClass="imageRight" />
 
-Once again this won't be super accurate as I don't have people's actual birthdays and the generational groups won't perfectly align to the boundaries of parkrun age categories but it hints at the general shape of age groups attending our event. Clearly my fellow **Generation X'ers are as keen on parkrun as I am being our largest group and making up 37.2% of our athletes**. We have 86 young athletes in our Generation Alpha group. It'll be interesting to see if this continues to grow as part of family groups attending on a regular basis or whether it's a bit of a blip caused by event number 15 where young people from Dorchester Middle School joined us to raise money and awareness for Mental Health Causes. You can clearly see the spike this caused on the line chart further up this post.
+Once again this data won't be totally accurate as I don't have people's actual birthdays and the generational groups won't perfectly align to the boundaries of parkrun age categories but it hints at the general shape of age groups attending our event. Clearly my fellow **Generation X'ers are as keen on parkrun as I am with them representing 37.2% of our athletes**. We have 86 young athletes in our Generation Alpha group. It'll be interesting to see if this continues to grow as part of family groups attending on a regular basis or whether it's a bit of a blip caused by event number 15 where young people from Dorchester Middle School joined us to raise money and awareness for Mental Health Causes. You can clearly see the impact of this on our overall attendance for event 15 in the previous line chart.
 
 ### Performance
 
-I'll try not to talk about running performance for too long. I think it's a topic for further analysis for another day. This graph shows the fastest times at each event.
+Even when I was much fitter than I am now and training often I never successfully managed to run 5km under 20 minutes (my closest effort falling short by 5 seconds) so I have a huge amount of respect for the people flying around the course that quickly. The graph below shows the fastest time at each event for both Men and Women. You can see our **current course record was set at 16:21 at our 3rd event**. It's subtle but it does oddly look like our first finishers times might start trending slower - maybe our marshalls are just providing too much on-course entertainment for these speedsters to concentrate 🧐😂.
 
-<Linechart data="fasttimes" />
+<Linechart data="fasttimes" chartClass="imageFull" />
 
-[Icon credits: London Bus by ATOM, Dog by Loka Mariella both found at NounProject.com]
+It's absolutely great to see our fastest woman cross the line quicker than our fastest man on the 8th January. We are trying really hard to [encourage as many women and girls to take part in parkrun as possible](https://blog.parkrun.com/uk/2022/02/16/gender-balance-through-the-parkrun-journey/) so hopefully this might become a trend in our results more often.
+
+<Barchart chartClass="imageLeft" />
+
+Parkrun really isn't just about the fast few though. The **average finish time across all participants is currently 29:06**. This correlates to the chart below where if we break down finishers into 5 minute finishing windows the majority of people cross the line between 25-30 mins, followed by the 30-35 minute grouping. For a future exercise it'd be good to compare this picture to that at other events to see how typical these stats are nationally or globally.
+
+Returning to the comment I made earlier about parkrun being an opportunity to promote improved physical and mental health outcomes... This for me makes the white space to the right of the bars the most interesting thing! There is a real opportunity to be promoting our event to people in the community who might not have the confidence to participate or be put off by the number of volume of people finishing ahead of 35 mins. Like all parkruns we have tailwalkers (not runners) at our event who make sure [nobody ever comes last at parkrun](https://blog.parkrun.com/uk/2020/04/20/walking-the-talk/). We've also become the graduation run setting for a couple of couch to 5km groups that are run locally which is fantastic. Posts like [this one from Conkers parkrun](https://blog.parkrun.com/uk/2020/06/30/everyone-is-equal/) though make me think there might be even more we can do to encourage people to be be part of our communuity, share the fun, feel the benefits and increase our impact!
+
+<small>
+  [Icon credits: London Bus by ATOM, Dog by Loka Mariella both found at
+  NounProject.com]
+</small>
