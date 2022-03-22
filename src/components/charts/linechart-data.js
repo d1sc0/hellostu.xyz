@@ -65,7 +65,7 @@ export const options2 = {
     padding: 10,
   },
   responsive: true,
-  aspectRatio: 1.5,
+  aspectRatio: 1,
   scales: {
     y: {
       min: '0:15:00',

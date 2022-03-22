@@ -10,7 +10,7 @@ export const options = {
     legend: { display: false, position: 'right' },
   },
   responsive: true,
-  aspectRatio: 1.5,
+  aspectRatio: 1.3,
   scales: {
     y: {
       min: 0,
