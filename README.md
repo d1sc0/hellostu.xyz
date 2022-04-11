@@ -15,6 +15,7 @@
 - deploy on firebase using github actions - done
 - update twitter and open graph in seo component to use postImage - done
 - add in some analytics - panelbear?
+- tidy up leaflet - maybe remove gatsy leaflet and ensure components use import css?
 
 ## Maybe things for later (Roadmap)
 
