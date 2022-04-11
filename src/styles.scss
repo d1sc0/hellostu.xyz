@@ -64,6 +64,15 @@ $size-1: 2.8rem;
   font-weight: 500;
 }
 
+.content blockquote {
+  background-color: #d9ecfb;
+}
+
+.leaflet-control-zoom a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
 .content.is-medium {
   font-size: 1.125rem;
 }
@@ -97,6 +106,39 @@ $size-1: 2.8rem;
   float: right !important;
 }
 
+.legend {
+  text-align: left;
+  line-height: 20px;
+  color: #555;
+  font-size: 1rem;
+  background-color: $background;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.legend i {
+  width: 19px;
+  height: 19px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.info {
+  padding: 6px 8px;
+  background: $background;
+  width: 300px;
+  font-size: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
 @include mobile {
   .imageLeft {
     width: 100%;
@@ -104,26 +146,15 @@ $size-1: 2.8rem;
     margin-bottom: 1rem;
     border-radius: 10px;
   }
+
   .imageRight {
     width: 100%;
     margin: 0;
     margin-bottom: 1rem;
     border-radius: 10px;
   }
-}
 
-.legend {
-  text-align: left;
-  line-height: 18px;
-  color: #555;
-  background-color: #ffffff;
-  padding: 10px;
-}
-
-.legend i {
-  width: 18px;
-  height: 18px;
-  float: left;
-  margin-right: 8px;
-  opacity: 0.7;
+  .legend {
+    display: none;
+  }
 }

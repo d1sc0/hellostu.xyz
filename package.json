@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-bulma-blog",
+  "name": "hello-stu-xyz",
   "private": true,
   "description": "A starter for a site with paginated blog and posts powered by Gatsby Markdown ready to style with Bulma",
-  "version": "0.1.0",
+  "version": "0.3.1",
   "author": "Stuart Mackenzie",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",

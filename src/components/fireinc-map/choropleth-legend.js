@@ -1,23 +1,10 @@
 import { useEffect } from 'react'
 import { useMap } from 'react-leaflet'
 import L from 'leaflet'
+import { getColor } from './choropleth-utils'
 
-const Legend = ({}) => {
+const Legend = () => {
   const map = useMap()
-
-  function getColor(d) {
-    return d > 24000
-      ? '#800026'
-      : d > 12000
-      ? '#BD0026'
-      : d > 6000
-      ? '#E31A1C'
-      : d > 4000
-      ? '#FC4E2A'
-      : d > 2000
-      ? '#FD8D3C'
-      : '#FEB24C'
-  }
 
   useEffect(() => {
     const legend = L.control({ position: 'bottomright' })
