@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { options1, data1, options2, data2 } from './linechart-data.js'
+import { options1, data1, options2, data2 } from './data/finishersData.js'
 import { Line } from 'react-chartjs-2'
 import 'chartjs-adapter-moment'
 import {
@@ -40,7 +40,7 @@ const Linechart = ({ data, chartClass }) => {
     optionsfile = options2
     datafile = data2
   }
-  console.log({ datafile })
+
   return (
     <div className={chartClass}>
       <Line options={optionsfile} data={datafile} />

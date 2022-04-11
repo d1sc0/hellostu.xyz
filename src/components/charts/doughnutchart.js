@@ -1,5 +1,5 @@
 import React from 'react'
-import { options, data } from './doughnut-data.js'
+import { options, data } from './data/finishersGen.js'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
 

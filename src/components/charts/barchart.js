@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { options, data } from './barchart-data.js'
+import { options, data } from './data/avgFinishTimes.js'
 import { Bar } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
