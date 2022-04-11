@@ -21,7 +21,7 @@ const ChoroData = () => {
         '<h4>Fire Incidents (Apr-Sep 2018)</h4>' +
         (props
           ? '<b>' + props.name + '</b><br />' + props.incidents + ' incidents'
-          : 'Hover over a region')
+          : '<small>Hover over or tap a region</small>')
     }
 
     info.addTo(map)
