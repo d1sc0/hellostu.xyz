@@ -15,7 +15,7 @@ const AboutPage = () => {
           <StaticImage
             alt="Stuart Mackenzie"
             title="My mug shot - Stuart Mackenzie"
-            src="../images/page-images/hellostu.jpg"
+            src="../images/page-images/stuart_mackenzie.jpg"
             className="imageRight"
             width={450}
           />
