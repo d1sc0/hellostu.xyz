@@ -5,7 +5,7 @@
 
 ## In progress
 
-- using _gatsby-source-google-photos_ and _@browniebroke/gatsby-image-gallery_ to creae a photo gallery using google photos as a source.
+- using _gatsby-source-google-photos_ and _@browniebroke/gatsby-image-gallery_ to create a photo gallery using google photos as a source. Maybe create my own gallery component and , dispence of the lightbox component (or implement my own) and link to full images
 
 ## 🚀 To-do list
 

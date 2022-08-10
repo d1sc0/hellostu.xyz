@@ -14,7 +14,7 @@ const PhotoPage = ({ data }) => {
 
   const lightboxOptions = {
     imageLoadErrorMessage: 'Oops, this image cannot be found',
-    enableZoom: false,
+    enableZoom: true,
     discourageDownloads: true,
     closeLabel: 'Close',
   }
