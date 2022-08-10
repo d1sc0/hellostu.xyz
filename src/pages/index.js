@@ -15,7 +15,7 @@ const HomePage = () => {
         <p>
           I work at the digital change agency{' '}
           <a href="https://wearefuturegov.com">FutureGov</a> (soon to be{' '}
-          <a href="https://tpximpact.com">TPXimpact</a>). I'm also know for
+          <a href="https://tpximpact.com">TPXimpact</a>). I'm also known for
           being a father, husband, runner, photography nerd, dog owner and
           excotic disco dancer!
         </p>
