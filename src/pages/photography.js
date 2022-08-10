@@ -9,15 +9,27 @@ import '../styles.scss'
 const PhotoPage = ({ data }) => {
   const images = data.allGooglePhotosPhoto.edges.map(({ node }) => ({
     ...node.file.childImageSharp,
-    caption: `${node.description}`,
+    title: `${node.description}`,
   }))
+
+  const lightboxOptions = {
+    imageLoadErrorMessage: 'Oops, this image cannot be found',
+    enableZoom: false,
+    discourageDownloads: true,
+    closeLabel: 'Close',
+  }
+
   return (
     <Layout>
       <Seo description="Photography" title="Photography" />
       <h1 className="title is-size-4">Photography</h1>
       <div className="content is-medium py-5">
         <p>
-          <Gallery images={images} />
+          <Gallery
+            images={images}
+            gutter="0.5rem"
+            lightboxOptions={lightboxOptions}
+          />
         </p>
       </div>
     </Layout>
