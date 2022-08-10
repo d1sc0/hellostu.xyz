@@ -49,8 +49,8 @@ export const pageQuery = graphql`
           file {
             childImageSharp {
               thumb: gatsbyImageData(
-                width: 270
-                height: 270
+                width: 500
+                height: 500
                 placeholder: BLURRED
               )
               full: gatsbyImageData(layout: FULL_WIDTH)
