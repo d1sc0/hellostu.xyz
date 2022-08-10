@@ -21,7 +21,11 @@ const PhotoPage = ({ data }) => {
 
   return (
     <Layout>
-      <Seo description="Photography" title="Photography" />
+      <Seo
+        description="Photography"
+        title="Photography"
+        imageURL="../images/post-images/social/oly-trip.jpg"
+      />
       <h1 className="title is-size-4">Photography</h1>
       <div className="content is-medium py-5">
         <p>
