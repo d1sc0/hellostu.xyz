@@ -5,7 +5,7 @@
 
 ## In progress
 
-- using _gatsby-source-google-photos_ and _@browniebroke/gatsby-image-gallery_ to creae a photo gallery using google photos as a source. check out the /photography route for a sneaky peak
+- using _gatsby-source-google-photos_ and _@browniebroke/gatsby-image-gallery_ to creae a photo gallery using google photos as a source.
 
 ## 🚀 To-do list
 

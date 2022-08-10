@@ -7,7 +7,7 @@ module.exports = {
           TPXimpact). He's also known for being a father, husband, runner,
           photography nerd, dog owner and excotic disco dancer!`,
     },
-    description: `hello stu is the website of Stuart Mackenzie - Stuart is a Director at the digital change agency FutureGov (becoming TPXimpact). I'm also know for being a father, husband, runner, photography nerd, dog owner and excotic disco dancer!`,
+    description: `hello stu is the website of Stuart Mackenzie - Stuart is a Director at the digital change agency FutureGov (becoming TPXimpact). I'm also known for being a father, husband, runner, photography nerd, dog owner and excotic disco dancer!`,
     siteUrl: `https://hellostu.xyz`,
     social: {
       twitter: `_disco`,
