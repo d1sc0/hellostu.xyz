@@ -3,7 +3,18 @@
 </h1>
 <p>Just my little personal website</p>
 
+## In progress
+
+- using _gatsby-source-google-photos_ to creae a photo gallery using google photos as a source
+
 ## 🚀 To-do list
+
+- tidy up leaflet - maybe remove gatsy leaflet and ensure components use import css?
+- improve contact form error handling - maybe try using formik?
+- go through and selectively import bulma sass files need. Rather than all.
+- Split out Layout Component to create Layout, Header/Nav and Footer?!
+
+## Done
 
 - update config, migrate content, styling on posts, post-lists - done
 - update styling on tag pages to match - done
@@ -14,12 +25,5 @@
 - Migrate the about me page - done
 - deploy on firebase using github actions - done
 - update twitter and open graph in seo component to use postImage - done
-- add in some analytics - panelbear?
-- tidy up leaflet - maybe remove gatsy leaflet and ensure components use import css?
-
-## Maybe things for later (Roadmap)
-
-- improve contact form error handling - maybe try using formik?
-- look at react leaflet and play with maps again
-- go through and selectively import bulma sass files need. Rather than all.
-- Split out Layout Component to create Layout, Header/Nav and Footer?!
+- add in some analytics - panelbear? - done
+- look at react leaflet and play with maps again - done
