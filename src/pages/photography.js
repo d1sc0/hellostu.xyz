@@ -23,7 +23,7 @@ const PhotoPage = ({ data }) => {
       <Seo
         description="Photography"
         title="Photography"
-        imageURL={images[0].original}
+        imageUrl={images[0].original}
       />
       <h1 className="title is-size-4">Photography</h1>
       <div className="content is-medium py-2">
