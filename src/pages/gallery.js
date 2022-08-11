@@ -14,7 +14,7 @@ const GalleryPage = ({ data }) => {
     container.original = item.file.publicURL
     container.thumbnail =
       item.file.childImageSharp.thumbnail.images.fallback.src
-    container.originalTitle = item.description
+    container.description = item.description
     return container
   })
 
