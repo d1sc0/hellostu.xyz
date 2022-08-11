@@ -21,7 +21,8 @@ const PhotoPage = ({ data }) => {
   return (
     <Layout>
       <Seo
-        description="Photography"
+        description="A small selection of my favourite photographs. If you're interested in
+          any prints do please get in touch."
         title="Photography"
         imageUrl={images[0].original}
       />
