@@ -82,8 +82,8 @@ module.exports = {
         //},
         //
         // Download smaller or bigger photos
-        photosMaxWidth: 1200,
-        photosMaxHeight: 1200,
+        photosMaxWidth: 950,
+        photosMaxHeight: 950,
         photosCrop: false,
         //
         // For a better stack trace and more information
