@@ -7,7 +7,7 @@ import Gallery from 'react-image-gallery'
 import '../styles.scss'
 import '../../node_modules/react-image-gallery/styles/scss/image-gallery.scss'
 
-const GalleryPage = ({ data }) => {
+const PhotoPage = ({ data }) => {
   const album = data.allGooglePhotosAlbum.edges[0].node.photos
   const images = album.map(item => {
     const container = {}
@@ -26,7 +26,7 @@ const GalleryPage = ({ data }) => {
         imageURL={images[0].original}
       />
       <h1 className="title is-size-4">Photography</h1>
-      <div className="content is-medium py-5">
+      <div className="content is-medium py-2">
         <p>
           <Gallery
             items={images}
@@ -64,4 +64,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default GalleryPage
+export default PhotoPage
