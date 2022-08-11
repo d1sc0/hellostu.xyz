@@ -28,13 +28,15 @@ const PhotoPage = ({ data }) => {
       <h1 className="title is-size-4">Photography</h1>
       <div className="content is-medium py-2">
         <p>
-          <Gallery
-            items={images}
-            thumbnailPosition="top"
-            showPlayButton={false}
-            showFullscreenButton={false}
-          />
+          A small selection of my favourite photographs. If you're interested in
+          any prints do please get in touch.
         </p>
+        <Gallery
+          items={images}
+          thumbnailPosition="top"
+          showPlayButton={false}
+          showFullscreenButton={false}
+        />
       </div>
     </Layout>
   )
