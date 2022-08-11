@@ -14,7 +14,7 @@ const GalleryPage = ({ data }) => {
     container.original = item.file.publicURL
     container.thumbnail =
       item.file.childImageSharp.thumbnail.images.fallback.src
-    container.description = item.description
+    container.originalTitle = item.description
     return container
   })
 
@@ -32,6 +32,7 @@ const GalleryPage = ({ data }) => {
             items={images}
             thumbnailPosition="top"
             showPlayButton={false}
+            showFullscreenButton={false}
           />
         </p>
       </div>
