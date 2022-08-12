@@ -1,5 +1,5 @@
 import * as React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
@@ -29,8 +29,9 @@ const PhotoPage = ({ data }) => {
       <h1 className="title is-size-4">Photography</h1>
       <div className="content is-medium py-2">
         <p>
-          A small selection of my favourite photographs. If you're interested in
-          any prints do please get in touch.
+          A small selection of my favourite photographs taken over the last few
+          years. I've included a range of styles, outputs from different
+          projects and a mix of film and digital.
         </p>
         <Gallery
           items={images}
@@ -38,6 +39,10 @@ const PhotoPage = ({ data }) => {
           showPlayButton={false}
           showFullscreenButton={false}
         />
+        <p className="py-4">
+          If you're interested in any prints do please{' '}
+          <Link to="/contact">get in touch.</Link>
+        </p>
       </div>
     </Layout>
   )
