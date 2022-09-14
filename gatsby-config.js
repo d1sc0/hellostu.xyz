@@ -57,7 +57,7 @@ module.exports = {
         siteID: '8jx5vUYPjkx',
       },
     },
-    {
+    /* {
       resolve: 'gatsby-source-google-photos',
       options: {
         albumsTitles: ['Portfolio'],
@@ -90,7 +90,7 @@ module.exports = {
         // Useful when you open a issue to report a bug
         //debug: true,
       },
-    },
+    }, */
     {
       resolve: `gatsby-plugin-feed`,
       options: {
