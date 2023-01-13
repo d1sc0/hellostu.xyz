@@ -5,6 +5,7 @@
 
 ## In progress
 
+- upgraded to gatsby 5.x and resolving issues
 - using _gatsby-source-google-photos_ and _react-image-gallery_ to create a photo gallery using google photos as a source.
 
 ## 🚀 To-do list

@@ -17,7 +17,7 @@ const PostList = ({ data, pageContext }) => {
       <Seo title="All Posts" />
       <h1 className="title is-size-4">All Posts</h1>
       {posts.map(post => {
-        const title = post.frontmatter.title || post.slug
+        const title = post.frontmatter.title || post.fields.slug
         const tags = post.frontmatter.tags
         return (
           <div
@@ -25,7 +25,7 @@ const PostList = ({ data, pageContext }) => {
             key={post.id}
           >
             <h2 className="is-size-3 has-text-weight-bold mb-2">
-              <Link to={`/posts/${post.slug}`} className="post-title">
+              <Link to={`/posts${post.fields.slug}`} className="post-title">
                 {title}
               </Link>
             </h2>
@@ -43,7 +43,7 @@ const PostList = ({ data, pageContext }) => {
             </p>
             <p className="content is-medium py-3">
               {post.excerpt}
-              <Link to={`/posts/${post.slug}`} className="ml-2">
+              <Link to={`/posts${post.fields.slug}`} className="ml-2">
                 <strong>read more</strong>
               </Link>
             </p>
@@ -85,13 +85,8 @@ export default PostList
 
 export const postListQuery = graphql`
   query postListQuery($skip: Int!, $limit: Int!) {
-    allMdx(
-      sort: { order: DESC, fields: frontmatter___date }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMdx(sort: { frontmatter: { date: DESC } }, limit: $limit, skip: $skip) {
       nodes {
-        slug
         id
         excerpt(pruneLength: 400)
         frontmatter {
@@ -99,6 +94,9 @@ export const postListQuery = graphql`
           title
           description
           tags
+        }
+        fields {
+          slug
         }
       }
     }

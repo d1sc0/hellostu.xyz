@@ -1,13 +1,13 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+// import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Bio from '../components/bio'
 import { getSrc } from 'gatsby-plugin-image'
 import '../styles.scss'
 
-const PostTemplate = ({ data }) => {
+const PostTemplate = ({ data, children }) => {
   const post = data.mdx
   const tags = post.frontmatter.tags
   const { previous, next } = data
@@ -33,7 +33,8 @@ const PostTemplate = ({ data }) => {
         })}
       </small>
       <div className="content is-medium py-5">
-        <MDXRenderer frontmatter={post.frontmatter}>{post.body}</MDXRenderer>
+        {/* <MDXRenderer frontmatter={post.frontmatter}>{post.body}</MDXRenderer> */}
+        {children}
       </div>
       <Bio />
       <nav
@@ -47,7 +48,7 @@ const PostTemplate = ({ data }) => {
           </h4>
           {previous && (
             <Link
-              to={`/posts/${previous.slug}`}
+              to={`/posts${previous.fields.slug}`}
               className="pagination-previous"
               rel="prev"
             >
@@ -56,7 +57,7 @@ const PostTemplate = ({ data }) => {
           )}
           {next && (
             <Link
-              to={`/posts/${next.slug}`}
+              to={`/posts${next.fields.slug}`}
               className="pagination-next"
               rel="next"
             >
@@ -81,7 +82,6 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       excerpt
-      body
       frontmatter {
         title
         date(formatString: "DD MMM YY")
@@ -100,13 +100,17 @@ export const pageQuery = graphql`
       }
     }
     previous: mdx(id: { eq: $previousPostId }) {
-      slug
+      fields {
+        slug
+      }
       frontmatter {
         title
       }
     }
     next: mdx(id: { eq: $nextPostId }) {
-      slug
+      fields {
+        slug
+      }
       frontmatter {
         title
       }

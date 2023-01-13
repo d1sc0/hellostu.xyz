@@ -13,7 +13,7 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image'
 <GatsbyImage
   alt="lots of colourful spray cans"
   title="all the colours of fresh paint"
-  image={getImage(props.frontmatter.postImages[0])}
+  image={getImage(props.data.mdx.frontmatter.postImages[0])}
   className="imageRight"
 />
 

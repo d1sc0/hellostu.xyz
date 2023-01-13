@@ -15,7 +15,7 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image'
 <GatsbyImage
   alt="avengers assemble movie poster"
   title="avengers assemble -  and please bring sharpies"
-  image={getImage(props.frontmatter.postImages[0])}
+  image={getImage(props.data.mdx.frontmatter.postImages[0])}
   className="imageFull"
 />
 

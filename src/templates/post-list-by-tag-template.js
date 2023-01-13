@@ -17,7 +17,7 @@ const PostsByTagList = ({ data, pageContext }) => {
       <Seo title={pageTitle} />
       <h1 className="title is-size-4 is-capitalized">{pageTitle}</h1>
       {posts.map(post => {
-        const title = post.frontmatter.title || post.slug
+        const title = post.frontmatter.title || post.fields.slug
         const tags = post.frontmatter.tags
         return (
           <div
@@ -25,7 +25,7 @@ const PostsByTagList = ({ data, pageContext }) => {
             key={post.id}
           >
             <h2 className="is-size-3 has-text-weight-bold mb-2">
-              <Link to={`/posts/${post.slug}`} className="post-title">
+              <Link to={`/posts${post.fields.slug}`} className="post-title">
                 {title}
               </Link>
             </h2>
@@ -43,7 +43,7 @@ const PostsByTagList = ({ data, pageContext }) => {
             </p>
             <p className="content is-medium py-3">
               {post.excerpt}
-              <Link to={`/posts/${post.slug}`} className="ml-2">
+              <Link to={`/posts${post.fields.slug}`} className="ml-2">
                 <strong>read more</strong>
               </Link>
             </p>
@@ -86,13 +86,15 @@ export default PostsByTagList
 export const PostsByTagListQuery = graphql`
   query PostsByTagListQuery($tagName: String, $skip: Int!, $limit: Int!) {
     allMdx(
-      sort: { order: DESC, fields: frontmatter___date }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { tags: { in: [$tagName] } } }
       limit: $limit
       skip: $skip
     ) {
       nodes {
-        slug
+        fields {
+          slug
+        }
         id
         excerpt(pruneLength: 480)
         frontmatter {

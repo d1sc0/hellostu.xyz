@@ -10,10 +10,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-      query {
-        allMdx(sort: { order: DESC, fields: frontmatter___date }) {
+      {
+        allMdx(sort: { frontmatter: { date: DESC } }) {
           nodes {
-            slug
             id
             excerpt
             frontmatter {
@@ -22,10 +21,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               tags
               description
             }
+            fields {
+              slug
+            }
+            internal {
+              contentFilePath
+            }
           }
         }
         tagsGroup: allMdx {
-          group(field: frontmatter___tags) {
+          group(field: { frontmatter: { tags: SELECT } }) {
             fieldValue
             totalCount
           }
@@ -89,8 +94,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
-        path: `posts/${post.slug}`,
-        component: postTemplate,
+        path: `posts${post.fields.slug}`,
+        // component: postTemplate,
+        component: `${postTemplate}?__contentFilePath=${post.internal.contentFilePath}`,
         context: {
           id: post.id,
           previousPostId,
@@ -104,7 +110,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `mdx`) {
+  if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
 
     createNodeField({
