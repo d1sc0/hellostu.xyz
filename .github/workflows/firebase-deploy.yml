@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
+      - name: Set node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
       - name: Build
