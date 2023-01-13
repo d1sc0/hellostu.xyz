@@ -80,8 +80,8 @@ module.exports = {
                   title: node.frontmatter.title,
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + '/posts/' + node.slug,
-                  guid: '/posts/' + node.fields.slug,
+                  url: site.siteMetadata.siteUrl + '/posts' + node.fields.slug,
+                  guid: '/posts' + node.fields.slug,
                 })
               })
             },
