@@ -16,7 +16,7 @@ const HomePage = () => {
           I work at <a href="https://tpximpact.com">TPXimpact</a> (previously
           known as <a href="https://wearefuturegov.com">FutureGov</a>
           ). I'm also known for being a father, husband, runner, photography
-          nerd, dog owner and excotic disco dancer!
+          nerd and excotic disco dancer!
         </p>
         <p>
           I occasionally use this site to{' '}
