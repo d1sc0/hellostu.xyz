@@ -3,11 +3,11 @@ module.exports = {
     siteTitle: `hello stu`,
     author: {
       name: `Stuart Mackenzie`,
-      summary: `Stuart works at the digital change agency FutureGov (soon to be 
-          TPXimpact). He's also known for being a father, husband, runner,
+      summary: `Stuart works at the digital consultancy TPXimpact (previously known as 
+          FutureGov). He's also known for being a father, husband, runner,
           photography nerd, dog owner and excotic disco dancer!`,
     },
-    description: `hello stu is the website of Stuart Mackenzie - Stuart is a Director at the digital change agency FutureGov (becoming TPXimpact). I'm also known for being a father, husband, runner, photography nerd, dog owner and excotic disco dancer!`,
+    description: `hello stu is the website of Stuart Mackenzie - Stuart is a Senior Parnter at the digital consultancy TPXimpact (previously known as FutureGov). I'm also known for being a father, husband, runner, photography nerd, dog owner and excotic disco dancer!`,
     siteUrl: `https://hellostu.xyz`,
     social: {
       twitter: `_disco`,

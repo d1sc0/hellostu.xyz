@@ -25,9 +25,9 @@ const AboutPage = () => {
             four-legged friend Monty
           </a>
           . I now spend much of my time working out of London transforming
-          public services as a Director at{' '}
-          <a href="https://wearefuturegov.com/">FutureGov</a> (soon to be
-          TPXimpact).
+          public services as a Senior Partner at{' '}
+          <a href="https://tpximpact.com">TPXimpact</a> (previously known as{' '}
+          <a href="https://wearefuturegov.com">FutureGov</a>.
         </p>
         <p>
           I've worked in a variety of technology & management roles over the
