@@ -54,27 +54,27 @@ const Layout = ({ children }) => {
             className={`navbar-menu ${isActive ? 'is-active' : ''}`}
           >
             <div className="navbar-end">
-              <Link to="/posts" className="navbar-item">
+              <Link to="/posts/" className="navbar-item">
                 Posts
               </Link>
               {/* <Link to="/photography" className="navbar-item">
                 Photography
               </Link> */}
-              <Link to="/about" className="navbar-item">
+              <Link to="/about/" className="navbar-item">
                 About
               </Link>
-              <Link to="/contact" className="navbar-item">
+              <Link to="/contact/" className="navbar-item">
                 Contact
               </Link>
               <a
-                href="https://twitter.com/_disco"
+                href="https://twitter.com/_disco/"
                 className="navbar-item is-hidden-touch"
                 title="twitter"
               >
                 <FaTwitter />
               </a>
               <a
-                href="https://github.com/d1sc0"
+                href="https://github.com/d1sc0/"
                 className="navbar-item is-hidden-touch"
                 title="github"
               >
@@ -88,14 +88,14 @@ const Layout = ({ children }) => {
                 <FaInstagram />
               </a>
               <a
-                href="https://www.strava.com/athletes/1170885"
+                href="https://www.strava.com/athletes/1170885/"
                 className="navbar-item is-hidden-touch"
                 title="strava"
               >
                 <FaStrava />
               </a>
               <a
-                href="https://uk.linkedin.com/in/stuartjmackenzie"
+                href="https://uk.linkedin.com/in/stuartjmackenzie/"
                 className="navbar-item is-hidden-touch"
                 title="strava"
               >
@@ -116,13 +116,13 @@ const Layout = ({ children }) => {
         <div className="content has-text-centered">
           <div className="socials pb-3">
             <a
-              href="https://twitter.com/_disco"
+              href="https://twitter.com/_disco/"
               className="mr-4"
               title="twitter"
             >
               <FaTwitter size="1.6rem" />
             </a>
-            <a href="https://github.com/d1sc0" className="mr-4" title="github">
+            <a href="https://github.com/d1sc0/" className="mr-4" title="github">
               <FaGithub size="1.6rem" />
             </a>
             <a
@@ -133,14 +133,14 @@ const Layout = ({ children }) => {
               <FaInstagram size="1.6rem" />
             </a>
             <a
-              href="https://www.strava.com/athletes/1170885"
+              href="https://www.strava.com/athletes/1170885/"
               className="mr-4"
               title="strava"
             >
               <FaStrava size="1.6rem" />
             </a>
             <a
-              href="https://uk.linkedin.com/in/stuartjmackenzie"
+              href="https://uk.linkedin.com/in/stuartjmackenzie/"
               className="mr-4"
               title="strava"
             >
@@ -148,7 +148,7 @@ const Layout = ({ children }) => {
             </a>
           </div>
           <strong>{data.site.siteMetadata.siteTitle}</strong> was built by{' '}
-          <a href="https://twitter.com/_disco">Stuart Mackenzie</a> using
+          <a href="https://twitter.com/_disco/">Stuart Mackenzie</a> using
           Gatsby.
         </div>
       </footer>
