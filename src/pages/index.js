@@ -13,9 +13,8 @@ const HomePage = () => {
           Hello, I'm <Link to="/about">Stuart Mackenzie</Link>.
         </p>
         <p>
-          I work at the digital consultancy{' '}
-          <a href="https://tpximpact.com">TPXimpact</a> (previously known as{' '}
-          <a href="https://wearefuturegov.com">FutureGov</a>
+          I work at <a href="https://tpximpact.com">TPXimpact</a> (previously
+          known as <a href="https://wearefuturegov.com">FutureGov</a>
           ). I'm also known for being a father, husband, runner, photography
           nerd, dog owner and excotic disco dancer!
         </p>
