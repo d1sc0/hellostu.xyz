@@ -23,6 +23,7 @@
     "gatsby-plugin-react-leaflet": "^4.0.3",
     "gatsby-plugin-sass": "^6.4.0",
     "gatsby-plugin-sharp": "^5.4.0",
+    "gatsby-plugin-sitemap": "^6.5.0",
     "gatsby-remark-copy-linked-files": "^6.4.0",
     "gatsby-remark-images": "^7.4.0",
     "gatsby-remark-prismjs": "^7.4.0",

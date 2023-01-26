@@ -30,6 +30,7 @@ module.exports = {
     },
     `gatsby-plugin-react-leaflet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
