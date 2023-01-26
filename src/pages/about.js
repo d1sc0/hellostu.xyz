@@ -20,13 +20,9 @@ const AboutPage = () => {
             width={450}
           />
           I live in <a href="https://www.visit-dorset.com/">Dorset</a> along
-          with my wife Chloe, daughter Robyn and{' '}
-          <a href="https://www.instagram.com/m0nty_d0g/">
-            four-legged friend Monty
-          </a>
-          . I now spend much of my time working out of London transforming
-          public services as a Senior Partner at{' '}
-          <a href="https://tpximpact.com">TPXimpact</a> (previously known as{' '}
+          with my wife Chloe and daugther Robyn. I now spend much of my time
+          working out of London transforming public services as a Senior Partner
+          at <a href="https://tpximpact.com">TPXimpact</a> (previously known as{' '}
           <a href="https://wearefuturegov.com">FutureGov</a>.
         </p>
         <p>

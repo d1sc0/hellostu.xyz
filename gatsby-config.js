@@ -5,7 +5,7 @@ module.exports = {
       name: `Stuart Mackenzie`,
       summary: `Stuart works at TPXimpact (previously known as 
           FutureGov) changing and improving our public services. He's also known for being a father, husband, runner,
-          photography nerd, dog owner and excotic disco dancer!`,
+          photography nerd and excotic disco dancer!`,
     },
     description: `hello stu is the website of Stuart Mackenzie - Stuart is a Senior Partner at TPXimpact (previously known as FutureGov). He is also known for being a father, husband, runner, photography nerd and excotic disco dancer!`,
     siteUrl: `https://hellostu.xyz`,
