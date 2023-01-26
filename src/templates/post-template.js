@@ -6,6 +6,7 @@ import Seo from '../components/seo'
 import Bio from '../components/bio'
 import { getSrc } from 'gatsby-plugin-image'
 import '../styles.scss'
+import { Embed } from 'hyvor-talk-react'
 
 const PostTemplate = ({ data, children }) => {
   const post = data.mdx
@@ -32,10 +33,11 @@ const PostTemplate = ({ data, children }) => {
           )
         })}
       </small>
-      <div className="content is-medium py-5">
+      <div className="content is-medium pt-5">
         {/* <MDXRenderer frontmatter={post.frontmatter}>{post.body}</MDXRenderer> */}
         {children}
       </div>
+      <Embed websiteId="8376" id={post.fields.slug} />
       <Bio />
       <nav
         className="pagination py-4"
@@ -82,6 +84,9 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       excerpt
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "DD MMM YY")

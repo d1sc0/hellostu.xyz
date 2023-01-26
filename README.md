@@ -5,8 +5,7 @@
 
 ## In progress
 
-- upgraded to gatsby 5.x and resolving issues
-- using _gatsby-source-google-photos_ and _react-image-gallery_ to create a photo gallery using google photos as a source.
+- adding hyvor talk commenting
 
 ## 🚀 To-do list
 
@@ -18,6 +17,7 @@
 
 ## Done
 
+- upgraded to gatsby 5.x and resolving issues
 - update config, migrate content, styling on posts, post-lists - done
 - update styling on tag pages to match - done
 - Design and make new home page - done
