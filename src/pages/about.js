@@ -23,7 +23,7 @@ const AboutPage = () => {
           with my wife Chloe and daughter Robyn. I spend much of my time working
           out of London transforming public services as a Senior Partner at{' '}
           <a href="https://tpximpact.com">TPXimpact</a> (previously known as{' '}
-          <a href="https://wearefuturegov.com">FutureGov</a>.
+          <a href="https://wearefuturegov.com">FutureGov</a>).
         </p>
         <p>
           I've worked in a variety of technology & management roles over the
