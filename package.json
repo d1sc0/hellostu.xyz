@@ -1,13 +1,13 @@
 {
   "name": "hello-stu-xyz",
   "private": true,
-  "description": "A starter for a site with paginated blog and posts powered by Gatsby Markdown ready to style with Bulma",
-  "version": "0.3.1",
+  "description": "A basic gatsby site build with paginated blog, tagging and posts using MDX for post content and ready to style with Bulma",
+  "version": "0.4.1",
   "author": "Stuart Mackenzie",
   "dependencies": {
     "@mdx-js/mdx": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
-    "axios": "^1.2.5",
+    "axios": "^1.3.2",
     "bulma": "^0.9.3",
     "chart.js": "^4.2.0",
     "chartjs-adapter-moment": "^1.0.1",
@@ -35,6 +35,7 @@
     "hyvor-talk-react": "^2.0.1",
     "leaflet": "^1.9.3",
     "moment": "^2.29.3",
+    "npm-check": "^6.0.1",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
@@ -43,7 +44,8 @@
     "react-icons": "^4.7.1",
     "react-image-gallery": "^1.2.11",
     "react-leaflet": "^4.2.0",
-    "sass": "^1.57.1"
+    "sass": "^1.58.0",
+    "update": "^0.7.4"
   },
   "devDependencies": {
     "prettier": "^2.8.3"
