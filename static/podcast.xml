@@ -21,7 +21,7 @@
    <itunes:email>mail@hellostu.xyz</itunes:email>
   </itunes:owner>
   <itunes:image href="https://hellostu.xyz/podcast_cover.jpg"/>
-  <itunes:category text="Society &amp; Culture"></itunes:category>
+  <itunes:category text="Society &amp; Culture"><itunes:category text="Relationships" /></itunes:category>
   <itunes:category text="Arts"></itunes:category>
   <itunes:category text="Health &amp; Fitness"><itunes:category text="Mental Health" /><itunes:category text="Fitness" /></itunes:category>
    <!--Add podcast items here-->
