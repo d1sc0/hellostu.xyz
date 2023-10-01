@@ -9,13 +9,13 @@
   <link>https://hellostu.xyz/</link>
   <generator>Hello Stu</generator>
   <!--Make sure to update lastBuildDate when publishing-->
-  <lastBuildDate>Sun, 1 Oct 2023 16:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 1 Oct 2023 18:25:00 GMT</lastBuildDate>
   <atom:link href="https://hellostu.xyz/podcast.xml" rel="self" type="application/rss+xml"/>
   <copyright><![CDATA[Copyright Stuart Mackenzie]]></copyright>
   <language><![CDATA[en]]></language>
   <itunes:author>Hello Stu</itunes:author>
   <itunes:explicit>false</itunes:explicit>
-  <itunes:summary>A podcast of audio notes, shared openly for those that want to hear them. These might contain information about my health &amp; fitness activites or about design, photogrpahy, film, music, society and everything else in between.</itunes:summary>
+  <itunes:summary>A podcast of audio notes, shared openly for those that want to hear them. This podcast will likely touch on topics such as my health &amp; fitness activites, design, photography, film, music, society and everything else in between.</itunes:summary>
   <itunes:owner>
    <itunes:name>Stuart Mackenzie</itunes:name>
    <itunes:email>mail@hellostu.xyz</itunes:email>
