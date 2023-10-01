@@ -5,7 +5,7 @@
  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
  <channel>
   <title><![CDATA[Hello Stu]]></title>
-  <description><![CDATA[A podcast of voice memos, shared openly for those that want to hear them. These might contain information about my health & fitness activites or about design, photogrpahy, film, music, society and everything else in between.]]></description>
+  <description><![CDATA[A podcast of audio notes, shared openly for those that want to hear them. This podcast will likely touch on topics such as my health & fitness activites, design, photography, film, music, society and everything else in between.]]></description>
   <link>https://hellostu.xyz/</link>
   <generator>Hello Stu</generator>
   <!--Make sure to update lastBuildDate when publishing-->
