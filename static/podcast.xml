@@ -15,7 +15,7 @@
   <language><![CDATA[en]]></language>
   <itunes:author>Hello Stu</itunes:author>
   <itunes:explicit>false</itunes:explicit>
-  <itunes:summary>A podcast of voice memos, shared openly for those that want to hear them. These might contain information about my health &amp; fitness activites or about design, photogrpahy, film, music, society and everything else in between.</itunes:summary>
+  <itunes:summary>A podcast of audio notes, shared openly for those that want to hear them. These might contain information about my health &amp; fitness activites or about design, photogrpahy, film, music, society and everything else in between.</itunes:summary>
   <itunes:owner>
    <itunes:name>Stuart Mackenzie</itunes:name>
    <itunes:email>mail@hellostu.xyz</itunes:email>
@@ -26,16 +26,16 @@
   <itunes:category text="Health &amp; Fitness"><itunes:category text="Mental Health" /><itunes:category text="Fitness" /></itunes:category>
    <!--Add podcast items here-->
   <item>
-   <title><![CDATA[Latest Item]]></title>
-   <description><![CDATA[A short description of the episode]]></description>
-   <link>https://hellostu.xyz/posts/16-fever-dream/</link>
-   <guid isPermaLink="false">/posts/16-fever-dream/</guid>
-   <pubDate>Sun, 24 Sep 2023 10:22:24 GMT</pubDate>
-   <enclosure url="https://storage.googleapis.com/hello-stu/1-test.mp3" length="21547008" type="audio/mpeg"/>
-   <itunes:title>Latest Item</itunes:title>
-   <itunes:summary>A short description of the episode</itunes:summary>
+   <title><![CDATA[Rambling man]]></title>
+   <description><![CDATA[A quick introduction to the hello stu audio notes.]]></description>
+   <link>https://hellostu.xyz/posts/rambling-man/</link>
+   <guid isPermaLink="false">/posts/rambling-man/</guid>
+   <pubDate>Sun, 1 Oct 2023 16:00:00 GMT</pubDate>
+   <enclosure url="https://storage.googleapis.com/hello-stu/1-rambling-man.mp3" length="11796480" type="audio/mpeg"/>
+   <itunes:title>Rambling man</itunes:title>
+   <itunes:summary>A quick introduction to the hello stu audio notes.</itunes:summary>
    <itunes:episode>1</itunes:episode>
-   <itunes:duration>1354</itunes:duration>
+   <itunes:duration>748</itunes:duration>
    <itunes:author>Stuart Mackenzie</itunes:author>
   </item>
  </channel>
