@@ -143,6 +143,12 @@ $size-1: 2.8rem;
   margin: 0 0 5px;
 }
 
+.audioplayer {
+  margin-bottom: 0.75rem;
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
 @include mobile {
   .imageFull {
       border-radius: 10px;
