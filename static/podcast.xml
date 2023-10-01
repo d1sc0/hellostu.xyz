@@ -13,7 +13,7 @@
   <atom:link href="https://hellostu.xyz/podcast.xml" rel="self" type="application/rss+xml"/>
   <copyright><![CDATA[Copyright Stuart Mackenzie]]></copyright>
   <language><![CDATA[en]]></language>
-  <itunes:author>Hello Stu</itunes:author>
+  <itunes:author>Stuart Mackenzie</itunes:author>
   <itunes:explicit>false</itunes:explicit>
   <itunes:summary>A podcast of audio notes, shared openly for those that want to hear them. This podcast will likely touch on topics such as my health &amp; fitness activites, design, photography, film, music, society and everything else in between.</itunes:summary>
   <itunes:owner>
