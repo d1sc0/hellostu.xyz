@@ -54,6 +54,7 @@ $size-1: 2.8rem;
 .tag a:hover {
   text-decoration: underline;
 }
+.tag.is-light a {font-weight: 400; color: $black;}
 
 .post-title:hover {
   color: $link;
