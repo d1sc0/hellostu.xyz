@@ -9,7 +9,7 @@
   <link>https://hellostu.xyz/</link>
   <generator>Hello Stu</generator>
   <!--Make sure to update lastBuildDate when publishing-->
-  <lastBuildDate>Sun, 1 Oct 2023 18:25:00 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 20 Oct 2023 16:58:00 GMT</lastBuildDate>
   <atom:link href="https://hellostu.xyz/podcast.xml" rel="self" type="application/rss+xml"/>
   <copyright><![CDATA[Copyright Stuart Mackenzie]]></copyright>
   <language><![CDATA[en]]></language>
@@ -25,6 +25,19 @@
   <itunes:category text="Arts"></itunes:category>
   <itunes:category text="Health &amp; Fitness"><itunes:category text="Mental Health" /><itunes:category text="Fitness" /></itunes:category>
    <!--Add podcast items here-->
+   <item>
+   <title><![CDATA[Zen Friday]]></title>
+   <description><![CDATA[A random update recorded whilst hiking around Maiden Castle. I briefly cover work, friends, fitness and 100 parkruns!]]></description>
+   <link>https://hellostu.xyz/posts/zen-friday/</link>
+   <guid isPermaLink="false">/posts/zen-friday/</guid>
+   <pubDate>Fri, 20 Oct 2023 16:58:00 GMT</pubDate>
+   <enclosure url="https://storage.googleapis.com/hello-stu/2-zen-friday.mp3" length="38733824" type="audio/mpeg"/>
+   <itunes:title>Zen Friday</itunes:title>
+   <itunes:summary>A random update recorded whilst hiking around Maiden Castle. I briefly cover work, friends, fitness and 100 parkruns!</itunes:summary>
+   <itunes:episode>2</itunes:episode>
+   <itunes:duration>1208</itunes:duration>
+   <itunes:author>Stuart Mackenzie</itunes:author>
+  </item>
   <item>
    <title><![CDATA[Rambling man]]></title>
    <description><![CDATA[A quick introduction to the hello stu audio notes.]]></description>
