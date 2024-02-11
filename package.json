@@ -5,8 +5,8 @@
   "version": "0.4.1",
   "author": "Stuart Mackenzie",
   "dependencies": {
-    "@mdx-js/mdx": "^2.3.0",
-    "@mdx-js/react": "^2.3.0",
+    "@mdx-js/mdx": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
     "axios": "^1.6.7",
     "bulma": "^0.9.3",
     "chart.js": "^4.4.1",
