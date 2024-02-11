@@ -66,6 +66,9 @@ const Layout = ({ children }) => {
               <Link to="/contact/" className="navbar-item">
                 Contact
               </Link>
+              <Link to="/jcc/" className="navbar-item">
+                JCC
+              </Link>
               <a
                 href="https://twitter.com/_disco/"
                 className="navbar-item is-hidden-touch"
