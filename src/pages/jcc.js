@@ -24,7 +24,7 @@ const JccPage = () => {
           className="imageFull"
         />
         <p>
-          On 18th May 20024 I'll be attempting to complete a{' '}
+          On 18th May 2024 I'll be attempting to complete a{' '}
           <strong>56km hike (36 miles)</strong> along the Jurassic Coast from
           Corfe Castle to Weymouth. The route includes 1700m of elevation and is
           the first half of the full{' '}
