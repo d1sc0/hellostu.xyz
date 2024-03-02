@@ -11,7 +11,7 @@ const JccPage = () => {
       <Seo
         description="Jurassic Coast Challenge for Mind"
         title="My Jurassic Coast Challenge for Mind"
-        imageUrl="/page-images/jcc_page_image.jpg"
+        imageUrl="/jcc_social_image.jpg"
       />
       <h1 className="title is-size-4">
         My Jurassic Coast Ultra Challenge 2024
