@@ -39,7 +39,7 @@ const JccPage = () => {
           acute anxiety. I've also spent time caring for a close family member
           who has suffered from severe depression and reached several points of
           crisis. This journey has involved navigating the best and the worst of
-          our national health service, hospital stays, and a mix of self-funded
+          our National Health Service, hospital stays, and a mix of self-funded
           care and therapy. Dealing with these things has at times been complex
           and the information provided by Mind has been extremely helpful and a
           great source of support.{' '}
@@ -53,7 +53,7 @@ const JccPage = () => {
               illness
             </li>
             <li>
-              campaigning and lobbying to improve leglislation and services
+              campaigning and lobbying to improve legislation and services
             </li>
             <li>raising public awareness and understanding of issues</li>
             <li>
@@ -72,7 +72,7 @@ const JccPage = () => {
         <p className="has-text-centered">
           <a href="https://www.justgiving.com/page/disco-jurassic-challenge">
             <button class="button is-primary is-medium">
-              Donate to Mind using my JustGiving page
+              Donate at my JustGiving page
             </button>
           </a>
         </p>
