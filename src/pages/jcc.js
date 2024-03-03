@@ -25,7 +25,7 @@ const JccPage = () => {
         />
         <p>
           On 18th May 2024 I'll be attempting to complete a{' '}
-          <strong>56km hike (36 miles)</strong> along the Jurassic Coast from
+          <strong>58km hike (36 miles)</strong> along the Jurassic Coast from
           Corfe Castle to Weymouth. The route includes 1700m of elevation and is
           the first half of the full{' '}
           <a href="https://www.ultrachallenge.com/jurassic-coast-challenge/">
