@@ -30,3 +30,5 @@
 - add in some analytics - panelbear? - done
 - look at react leaflet and play with maps again - done
 - updated actions with environment and secrets - done
+
+update 5th March 24 - removing panelbear and adding simple analytics

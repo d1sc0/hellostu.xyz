@@ -18,7 +18,6 @@
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-mdx": "^5.13.1",
     "gatsby-plugin-offline": "^6.13.1",
-    "gatsby-plugin-panelbear": "^1.1.0",
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-react-leaflet": "^4.0.3",
     "gatsby-plugin-sass": "^6.13.1",
@@ -47,6 +46,7 @@
     "update": "^0.7.4"
   },
   "devDependencies": {
+    "gatsby-plugin-simple-analytics": "^1.0.4",
     "prettier": "^2.8.7"
   },
   "license": "0BSD",

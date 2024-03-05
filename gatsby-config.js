@@ -53,12 +53,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-panelbear`,
-      options: {
-        siteID: '8jx5vUYPjkx',
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -118,6 +112,15 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/hello-stu.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-simple-analytics',
+      options: {
+        trackPageViews: true,
+        events: true,
+        eventsGlobal: 'sa_event',
+        ignorePages: ['pathname'],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
