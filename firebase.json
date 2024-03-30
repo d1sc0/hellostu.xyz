@@ -5,6 +5,11 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "redirects": [ {
+    "source": "/podcast.xml",
+    "destination": "https://feeds.acast.com/public/shows/hello-stu",
+    "type": 301
+  } ]
   }
 }
