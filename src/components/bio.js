@@ -25,10 +25,10 @@ const Bio = () => {
   //const social = data.site.siteMetadata.social
 
   return (
-    <div class="block rounded-corners py-4 has-background-white-ter">
-      <article class="media p-4">
-        <div class="media-left">
-          <figure class="image is-64x64">
+    <div className="block rounded-corners py-4 has-background-white-ter">
+      <article className="media p-4">
+        <div className="media-left">
+          <figure className="image is-64x64">
             <StaticImage
               src="../images/hello-stu.png"
               width={64}
@@ -38,8 +38,8 @@ const Bio = () => {
             />
           </figure>
         </div>
-        <div class="media-content">
-          <div class="content">
+        <div className="media-content">
+          <div className="content">
             <p>
               This post was written by <strong>{author.name}</strong>
             </p>
