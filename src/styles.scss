@@ -197,6 +197,8 @@ $size-1: 2.8rem;
   height: 100%;
 }
 
+.jccmap {height: 450px; padding-left: 0; padding-right: 0;}
+
 @include mobile {
   .imageFull {
       border-radius: 10px;
@@ -224,4 +226,6 @@ $size-1: 2.8rem;
     width: 250px;
     font-size: 0.8rem;
   }
+
+  .jccmap {height: 300px; padding-left: 0; padding-right: 0;}
 }
