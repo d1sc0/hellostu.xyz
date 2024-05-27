@@ -24,8 +24,7 @@
 - Sitemap - done
 - 404 - done
 - Backup old site - done
-
-- Check Github Action, deploy, test
+- Check Github Action, deploy, test - done
 
 - Comments via Hyvor talk
 - Sort out cover images and component
