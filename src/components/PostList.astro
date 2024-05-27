@@ -1,6 +1,6 @@
 ---
 const { posts, gridTitle } = Astro.props;
-import PostPreview from './PostPreview.astro';
+import TagPostPreview from './TagPostPreview.astro';
 ---
 
 <section class="tag-post-list">
@@ -8,7 +8,7 @@ import PostPreview from './PostPreview.astro';
   <div class="content-padding">
     {
       posts.map(post => (
-        <PostPreview url={'/posts/' + post.slug} data={post.data} />
+        <TagPostPreview url={'/posts/' + post.slug} data={post.data} />
       ))
     }
   </div>
