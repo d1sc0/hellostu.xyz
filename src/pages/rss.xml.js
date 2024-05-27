@@ -8,7 +8,8 @@ export async function GET(context) {
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   return rss({
     title: 'Hello Stu',
-    description: 'This is the default description',
+    description:
+      'Hello Stu is the personal website and blog of Stuart Mackenzie. Stuart works hard to improve and transform public services as a Senior Partner at TPXimpact. Outside of work he is a photographer, amatuer web developer, runner, parkrun enthsiast and excotic disco dancer!',
     site: context.site,
     items: posts.map(post => ({
       title: post.data.title,
@@ -16,6 +17,6 @@ export async function GET(context) {
       description: post.data.description,
       link: `/posts/${post.slug}/`,
     })),
-    customData: `<language>en-us</language>`,
+    customData: `<language>en-uk</language>`,
   });
 }
