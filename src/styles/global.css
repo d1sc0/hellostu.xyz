@@ -304,7 +304,10 @@ a:hover {
 @media (min-width: 768px) and (orientation: landscape) {
   /*  IMPORTANT: min-width:60em rule will stop the container from resizing  
 --------------------------------------------------------------------------------------- */
-
+.content-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
     .imageFull, img[src*="FULL"] {
       width: 100%;
