@@ -138,8 +138,8 @@ h2 {
 }
 
 .content-padding {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
 }
 
 p.toplink {text-align: center;}
@@ -307,8 +307,8 @@ a:hover {
   /*  IMPORTANT: min-width:60em rule will stop the container from resizing  
 --------------------------------------------------------------------------------------- */
 .content-padding {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
     .imageFull, img[src*="FULL"] {
