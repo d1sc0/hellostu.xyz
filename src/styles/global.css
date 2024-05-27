@@ -1,0 +1,338 @@
+/*  all the em measurements start from this setting
+--------------------------------------------------------------------------------------- */
+html {
+  font-size: 18px;
+}
+
+/*  global styles to reset default values
+--------------------------------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+div,
+ul,
+li,
+img,
+video,
+section,
+figure,
+figcaption,
+main,
+footer,
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+colors
+--yellow: #fafa00ff;
+--rusty-red: #d33643ff;
+--pale-azure: #70d6ffff;
+--black: #000000ff;
+--white: #ffffffff;
+*/
+
+
+body {
+  position: relative;
+  font-display: swap;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+    background-image: linear-gradient(#b1e9ff 1px, transparent 1px),
+      linear-gradient(to right, #b1e9ff 1px, #ffffff 1px);
+    background-size: 20px 20px;
+}
+
+
+/* general page layout styles
+--------------------------------------------------------------------------------------- */
+.container {
+  padding: .5rem
+}
+
+main, header, footer {
+  max-width: 72rem;
+  margin: 0 auto;
+  background-color: #ffffff; 
+  border: 1px solid;
+  border-radius: .3rem;
+  box-shadow: 5px 8px;
+}
+
+header{
+  margin-top: 
+  .5rem; 
+  margin-bottom: 1rem;
+}
+
+footer {
+  min-height: 110px;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+
+section.latest {
+  background-color: #fafa00ff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+section.home {margin-bottom: 5rem; margin-top: 3rem;}
+section.home img, section.post.img{
+  width: 100%;
+  height: auto;
+}
+section.about {margin-bottom: 6rem;
+  margin-top: 3rem;}
+section.tag-post-list article {margin-bottom: 2rem; padding-top: 1rem; padding-bottom:1rem; border: 3px dashed #000000; padding-left: 1rem;}
+section.tag-post-list article img {display: none;}
+
+section.tag-post-list article:nth-child(odd) {background-color: #70d6ffff;
+  margin-bottom: 2rem;
+}
+
+section.post {margin-bottom: 6rem;}
+section.post h2.title {
+  font-size: 2.2rem;
+}
+
+section.footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section.footer .social-icon {font-size: 1.5rem; padding-left: .8rem; padding-right: .8rem}
+
+section.social-links {margin-bottom: 4rem;}
+section.social-links h2 {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: left;}
+
+section.social-links p, section.social-links li {font-size: 1.6rem;}
+
+strong {
+  font-weight: 900;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+h2 {
+  margin-bottom: .5rem
+}
+
+.content-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+p.toplink {text-align: center;}
+
+/*  Tag styling
+--------------------------------------------------------------------------------------- */
+
+.taglist {text-wrap: wrap; text-align: center; margin-top: 2rem; margin-bottom: 4rem;}
+
+.tag {
+  font-size: 0.9rem;
+  display: inline-block; 
+  background-color:#d33643ff; 
+  margin-right: 15px; 
+  margin-bottom: 20px; 
+  padding: 3px; 
+  padding-left: 11px; 
+  padding-right: 11px; 
+  border-radius: 8px;
+}
+
+.smalltag {
+  font-size: 0.8rem;
+  display: inline-block;
+  background-color: #d33643ff;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 6px;
+}
+.tag a, .smalltag a {
+  color: #ffffff;
+}
+.tag a:hover, .smalltag a:hover {
+  color: #fafa00ff;
+}
+
+/*  default paragraph styling
+--------------------------------------------------------------------------------------- */
+p {
+  margin: 0 0 0.8rem 0;
+  line-height: 1.375em;
+}
+
+.post p {margin: 1.2rem 0 1.2rem 0;
+  line-height: 1.375em;}
+
+blockquote {
+  background-color: #fafa00ff;
+  margin: 0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 8px solid black;
+}
+
+ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+li {margin-bottom: 0.3rem;}
+
+/*  link styling
+--------------------------------------------------------------------------------------- */
+a {
+  color: #d33643ff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #049bd6;
+  text-decoration: underline;
+}
+
+.audioplayer {
+  margin-bottom: 0rem;
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
+.vidcontainer169 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/*  Media Styling
+--------------------------------------------------------------------------------------- */
+
+
+.vidcontainer43 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%;
+  /* 4:3 Aspect Ratio */
+}
+
+.vidcontainer32 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 66.66%;
+  /* 3:2 Aspect Ratio */
+}
+
+.vidcontainer85 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 62.5%;
+  /* 8:5 Aspect Ratio */
+}
+
+.vidcontainer11 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio */
+}
+
+.responsive-vid-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imageFull, img[src*="FULL"] {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0rem;
+  border-radius: .3rem;
+}
+
+.imageLeft, img[src*="RIGHT"] {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+}
+
+.imageRight, img[src*="LEFT"] {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+}
+
+/* IMPORTANT: media query - switches on grid layout if page width is wider than 768px
+--------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) and (orientation: landscape) {
+  /*  IMPORTANT: min-width:60em rule will stop the container from resizing  
+--------------------------------------------------------------------------------------- */
+
+
+    .imageFull, img[src*="FULL"] {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0rem;
+      border-radius: .3rem;
+    }
+  
+    .imageLeft, img[src*="LEFT"] {
+      width: 50%;
+      height:auto;
+      margin-top: 0.2rem;
+      margin-bottom: 0.8rem;
+      margin-right: 1.5rem;
+      border-radius: .3rem;
+      float: left !important;
+    }
+  
+    .imageRight, img[src*="RIGHT"]{
+      width: 50%;
+      height: auto;
+      margin-top: 0.2rem;
+      margin-bottom: 0.8rem;
+      margin-left: 1.5rem;
+      border-radius: .3rem;
+      float: right !important;
+    }
+
+  
+  }
+

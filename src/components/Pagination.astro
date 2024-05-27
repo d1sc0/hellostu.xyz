@@ -1,0 +1,34 @@
+---
+import '../styles/component-styles/pagination.css';
+const { pageData } = Astro.props;
+---
+
+<section class="pagination">
+  <nav aria-label="Pagination">
+    <div class="content-padding">
+      {
+        pageData.url.prev && (
+          <a
+            href={pageData.url.prev}
+            aria-label={`Go to page ${pageData.currentPage - 1} of ${pageData.lastPage}`}
+          >
+            Prev
+          </a>
+        )
+      }
+      <span aria-current="page">
+        &nbsp;Page {pageData.currentPage} of {pageData.lastPage}&nbsp;
+      </span>
+      {
+        pageData.url.next && (
+          <a
+            href={pageData.url.next}
+            aria-label={`Go to page ${pageData.currentPage + 1} of ${pageData.lastPage}`}
+          >
+            Next
+          </a>
+        )
+      }
+    </div>
+  </nav>
+</section>

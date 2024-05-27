@@ -1,0 +1,145 @@
+.site-title {
+ font-size: 3.5rem;
+ color: #000000;
+ font-display: swap;
+ font-family: 'Gochi Hand', cursive;
+ text-decoration: none;
+ margin-top: 0.5rem;
+ margin-left: 1rem;
+}
+
+.site-title a,
+.site-title a:hover, .links-list a {
+ text-decoration: none;
+ color: #000000;
+}
+
+.links-list a:hover {text-decoration: none;}
+
+nav.main-nav {
+ display: grid;
+ grid-template-columns: 3fr 1fr;
+ grid-template-rows: auto;
+ grid-template-areas:
+  'brand burger'
+  'links links';
+ padding: 0.5rem;
+ min-height: 2rem;
+ background-color: transparent;
+ align-items: center;
+}
+
+nav.main-nav .brand {
+ grid-area: brand;
+}
+
+nav.main-nav .burger {
+ grid-area: burger;
+ text-align: right;
+ cursor: pointer;
+}
+
+nav.main-nav .links-list {
+ grid-area: links;
+ display: none;
+}
+
+/*  is-active toggled by JS when button pressed to show the links hidden above */
+.is-active {
+ display: initial !important;
+}
+
+nav ul {
+ list-style-type: none;
+ text-transform: uppercase;
+}
+
+nav ul li {
+ font-size: 1.1rem;
+ text-align: left;
+ margin-left: 1rem;
+ margin-top: 0.5rem;
+}
+
+/*  hamburger styles and css anim */
+.burger-button {
+ background-color: transparent;
+ border: none;
+}
+
+.line {
+ fill: none;
+ stroke: #2b2d44;
+ stroke-width: 6;
+ transition:
+  stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1,
+.line3 {
+ stroke-dasharray: 60 207;
+ stroke-width: 6;
+}
+
+.line2 {
+ stroke-dasharray: 60 60;
+ stroke-width: 6;
+}
+
+.opened .line1,
+.opened .line3 {
+ stroke-dasharray: 90 207;
+ stroke-dashoffset: -134;
+ stroke-width: 6;
+}
+
+.opened .line2 {
+ stroke-dasharray: 1 60;
+ stroke-dashoffset: -30;
+ stroke-width: 6;
+}
+
+/* IMPORTANT: media query - switches on grid layout if page width is wider than 768px
+--------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) and (orientation: landscape) {
+ /*  IMPORTANT: min-width:60em rule will stop the container from resizing  
+--------------------------------------------------------------------------------------- */
+
+ nav.main-nav {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: 'brand links';
+  background-color: transparent;
+  align-items: center;
+ }
+
+ nav.main-nav .brand {
+  grid-area: brand;
+ }
+
+ nav.main-nav .burger {
+  display: none;
+ }
+
+ nav.main-nav .links-list {
+  grid-area: links;
+  display: initial !important;
+ }
+
+ nav ul {
+  margin-left: 10px;
+  text-align: right;
+ }
+
+ nav ul li {
+  display: inline;
+  border: none;
+  padding-right: 29px;
+ }
+
+ nav ul li:first-of-type {
+  border: none;
+ }
+}

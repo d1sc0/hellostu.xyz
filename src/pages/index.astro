@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LatestPosts from '../components/LatestPosts.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+const pageTitle = 'Hello Stu | Home';
+import { Image } from 'astro:assets';
+import Selfie from '/src/content/post_images/jcc-selfie.jpg';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class="home">
+    <div class="content-padding">
+      <div class="welcome-grid">
+        <div class="profile-pic">
+          <figure>
+            <Image src={Selfie} alt="Stuart Mackenzie profile picture" />
+            <figcaption>Stuart Mackenzie</figcaption>
+          </figure>
+        </div>
+        <div class="welcome-text">
+          <p>
+            Hello, I'm <a href="#">Stuart Mackenzie</a>. I spend most of my days
+            working hard to improve and transform public services as a Senior
+            Partner at <a href="https://tpximpact.com">TPXimpact</a>. Outside of
+            work I'm known for being a <a href="/tags/photography"
+              >photography nerd</a
+            >, <a href="/podcasts">occassional podcaster</a>, <a
+              href="/tags/tech">amatuer web developer</a
+            >, <a href="/tags/running">keen runner</a>, <a href="/tags/parkrun"
+              >regular parkrun volunteer</a
+            > and excotic disco dancer!
+          </p>
+          <p>
+            <strong>
+              This personal website functions as a space to share my thoughts
+              and ideas, work on experiments and make it easier for people to
+              <a href="/#socials">find me</a> across other bits of the internet.
+              You can find out more about me <a href="/about">here</a>.</strong
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <LatestPosts />
+  <SocialLinks />
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+const { posts, gridTitle } = Astro.props;
+import '../styles/component-styles/grids.css';
+import PostPreview from './PostPreview.astro';
+---
+
+<section class="audiogrid">
+  <h2 class="content-padding">{gridTitle}</h2>
+  <p class="notes-intro content-padding">
+    Ocassionally rather than write content I record and publish audio notes!
+    I've created this section to make these posts easier to find. If you like
+    these then you can subscribe and have them delivered direct to your
+    favourite podcast app using the links below.
+  </p>
+  <ul class="content-padding subscription">
+    <li>
+      <a href="https://podcasts.apple.com/ca/podcast/hello-stu/id1709876510"
+        >Apple Podcasts</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://open.spotify.com/show/21LDbQx6BlTudyfoT3oQH5?si=1eda958aaab0403e"
+        >Spotify</a
+      >
+    </li>
+    <li>
+      <a href="https://feeds.acast.com/public/shows/hello-stu">Podcast RSS</a>
+    </li>
+  </ul>
+
+  <div class="grid content-padding">
+    {
+      posts.map(post => (
+        <PostPreview
+          url={'/posts/' + post.slug}
+          data={post.data}
+          id={post.id}
+        />
+      ))
+    }
+  </div>
+</section>

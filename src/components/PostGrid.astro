@@ -1,0 +1,16 @@
+---
+const { posts, gridTitle } = Astro.props;
+import '../styles/component-styles/grids.css';
+import PostPreview from './PostPreview.astro';
+---
+
+<section class="postgrid">
+  <h2 class="content-padding">{gridTitle}</h2>
+  <div class="grid content-padding">
+    {
+      posts.map(post => (
+        <PostPreview url={'/posts/' + post.slug} data={post.data} />
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const posts = await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+const tags = [...new Set(posts.map(post => post.data.tags).flat())];
+const tagCounts = tags.map(tag => {
+  const filteredPosts = posts.filter(post => post.data.tags.includes(tag));
+  const tagCount = filteredPosts.length;
+  return [tagCount, tag];
+});
+const pageTitle = 'Hello Stu | Tags';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class="tag-index">
+    <h2 class="content-padding">Tag Collection</h2>
+    <div class="taglist content-padding">
+      {
+        tagCounts.map(tag => (
+          <span class="tag">
+            <a href={`/tags/${tag[1]}`}>
+              #{tag[1]} &lpar;{tag[0]}&rpar;
+            </a>
+          </span>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

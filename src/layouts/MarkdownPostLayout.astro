@@ -1,0 +1,31 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+
+const dateOptions: object = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
+const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
+  'en-UK',
+  dateOptions
+);
+---
+
+<BaseLayout frontmatter={frontmatter}>
+  <section class="post content-padding">
+    <h2 class="title">{frontmatter.title}</h2>
+    <p>{formattedPublishDate}</p>
+    <slot />
+    <div class="tags">
+      {
+        frontmatter.tags.map(tag => (
+          <span class="tag">
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </span>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

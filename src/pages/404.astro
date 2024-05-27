@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Hello Stu | About Me';
+import { Image } from 'astro:assets';
+import ProfilePic from '/src/content/post_images/stuart-mackenzie.jpg';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class="about content-padding">
+    <h2>404 | Sorry that page doesn't exist!</h2>
+    <p>
+      <Image
+        src={ProfilePic}
+        alt="Stuart Mackenzie profile picture"
+        class="imageLeft"
+      />
+      Uh-oh. Something has gone wrong. Return to the homepage and take another look.
+    </p>
+  </section>
+</BaseLayout>

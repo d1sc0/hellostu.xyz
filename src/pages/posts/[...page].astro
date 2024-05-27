@@ -1,0 +1,27 @@
+---
+import type { Page } from 'astro';
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostGrid from '../../components/PostGrid.astro';
+import Pagination from '../../components/Pagination.astro';
+
+export async function getStaticPaths({ paginate }) {
+  const posts = await getCollection('posts', ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
+  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  return paginate(posts, { pageSize: 9 });
+}
+
+// All paginated data is passed on the "page" prop
+type Props = { page: Page<CollectionEntry<'posts'>> };
+const { page } = Astro.props;
+const posts = page.data;
+const pageTitle = 'Hello Stu | Posts';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <PostGrid posts={posts} gridTitle={pageTitle} />
+  <Pagination pageData={page} />
+</BaseLayout>

@@ -1,0 +1,29 @@
+---
+const { data, url } = Astro.props;
+
+const dateOptions: object = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
+const formattedPublishDate = new Date(data.pubDate).toLocaleDateString(
+  'en-UK',
+  dateOptions
+);
+---
+
+<article>
+  <img src={data.postImage.src} alt={data.postImage.alt} />
+  <a href={url}><h3>{data.title}</h3></a>
+  <p>{formattedPublishDate}</p>
+  <p>{data.description}</p>
+  <p>
+    {
+      data.tags.map(tag => (
+        <span class="smalltag">
+          <a href={`/tags/${tag}`}>#{tag}</a>
+        </span>
+      ))
+    }
+  </p>
+</article>

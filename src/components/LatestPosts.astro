@@ -1,0 +1,29 @@
+---
+import '../styles/component-styles/grids.css';
+import PostPreview from './PostPreview.astro';
+import { getCollection } from 'astro:content';
+const allPosts = await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const latestPosts = allPosts.slice(0, 3);
+const gridTitle = 'Latest Posts';
+---
+
+<section class="latest">
+  <h2 class="content-padding">{gridTitle}</h2>
+  <div class="grid content-padding">
+    {
+      latestPosts.map(post => (
+        <PostPreview
+          url={'/posts/' + post.slug}
+          data={post.data}
+          id={post.id}
+        />
+      ))
+    }
+  </div>
+  <p class="morelink content-padding">
+    <a href="/posts">[..More posts]</a>
+  </p>
+</section>

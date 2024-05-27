@@ -1,0 +1,30 @@
+---
+import type { Page } from 'astro';
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AudioGrid from '../../components/AudioGrid.astro';
+import Pagination from '../../components/Pagination.astro';
+
+export async function getStaticPaths({ paginate }) {
+  const posts = await getCollection('posts', ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
+  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const filteredPosts = posts.filter(post =>
+    post.data.tags.includes('audio-note')
+  );
+
+  return paginate(filteredPosts, { pageSize: 9 });
+}
+
+// All paginated data is passed on the "page" prop
+type Props = { page: Page<CollectionEntry<'posts'>> };
+const { page } = Astro.props;
+const posts = page.data;
+const pageTitle = 'Audio Notes';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <AudioGrid posts={posts} gridTitle={pageTitle} />
+  <Pagination pageData={page} />
+</BaseLayout>
