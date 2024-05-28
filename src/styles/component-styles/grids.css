@@ -31,9 +31,11 @@ section.home .profile-pic {
   box-shadow: 5px 8px;
   border-radius: .3rem;
   background-color: #ffffff;
+  height: min-content;
 }
 section.home .profile-pic img {
   border: 1px solid #000000;
+  min-width: 280px;
 }
 
 section.home .profile-pic figcaption {
@@ -62,6 +64,12 @@ section.postgrid .grid article:nth-child(6) {background-color: #70d6ffff;}
 section.postgrid .grid article:nth-child(7) {background-color: #fafa00ff;}
 section.postgrid .grid article:nth-child(8) {background-color: #fafa00ff;}
 section.postgrid .grid article:nth-child(9) {background-color: #ffffff;}
+
+section.pagination {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
 
 /* IMPORTANT: media query - switches on grid layout if page width is wider than 768px
 --------------------------------------------------------------------------------------- */
