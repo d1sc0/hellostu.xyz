@@ -27,8 +27,9 @@
 - Check Github Action, deploy, test - done
 - Sort out cover images and component - DONE! YAsssss
 
+- Properly revisit 404
 - Comments via Hyvor talk
-- investigate online services for images and content (Storyblok) - Think I may just use Bear a while longer!
-
 - Simple analytics
 - bugger around with MDX posts and react components I'll be missing
+
+- investigate online services for images and content (Storyblok) - Think I may just use Bear a while longer!

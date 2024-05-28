@@ -95,9 +95,16 @@ section.home img, section.post.img{
 }
 section.about {margin-bottom: 6rem;
   margin-top: 3rem;}
-section.tag-post-list article {margin-bottom: 2rem; padding-top: 1rem; padding-bottom:1rem; border: 3px dashed #000000; padding-left: 1rem; padding-right: 1rem;}
+section.tag-post-list article {
+  margin-bottom: 2rem; 
+  padding-top: 1rem; 
+  padding-bottom:1rem; 
+  border-left: 3px dashed #000000; 
+  padding-left: 1rem; 
+  padding-right: 1rem;}
 
-section.tag-post-list article:nth-child(odd) {background-color: #70d6ffff;
+section.tag-post-list article:nth-child(odd) {
+  background-color: #70d6ffff;
   margin-bottom: 2rem;
 }
 
