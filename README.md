@@ -25,10 +25,10 @@
 - 404 - done
 - Backup old site - done
 - Check Github Action, deploy, test - done
+- Sort out cover images and component - DONE! YAsssss
 
 - Comments via Hyvor talk
-- Sort out cover images and component
-- investigate online services for images and content (Storyblok)
+- investigate online services for images and content (Storyblok) - Think I may just use Bear a while longer!
 
 - Simple analytics
 - bugger around with MDX posts and react components I'll be missing

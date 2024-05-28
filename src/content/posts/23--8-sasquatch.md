@@ -5,7 +5,7 @@ slug: 8-sasquatch
 pubDate: 2023-03-13
 description: 'The eigth in a weekly series of photographic self-portraits of Stuart Mackenzie. This week I am playing with new lighting setups but the photo does not quite satisfy my artistic needs!'
 postImage:
-  src: '/preview_images/23-sasquatch.jpg'
+  src: '../post_images/52weeks/52_2023_8_FULL.jpg'
   alt: 'black and white photo of me pouting'
 socialImage: '/social_images/23-sasquatch.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'half_naked']

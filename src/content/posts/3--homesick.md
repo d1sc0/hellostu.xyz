@@ -5,7 +5,7 @@ slug: homesick
 pubDate: 2018-11-25
 description: 'A reflection about working away from home'
 postImage:
-  src: '/preview_images/3-homesick.jpg'
+  src: '../post_images/one-man-islandFULL.jpg'
   alt: 'one man sitting on a rock in the ocean'
 socialImage: '/social_images/3-homesick.jpg'
 tags: ['life', 'homesick', 'reflection']

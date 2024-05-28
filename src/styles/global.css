@@ -276,14 +276,14 @@ a:hover {
   height: 100%;
 }
 
-.imageFull, img[src*="FULL"] {
+.imageFull, section.post img[src*="FULL"] {
   width: 100%;
   height: auto;
   margin-bottom: 0rem;
   border-radius: .3rem;
 }
 
-.imageLeft, img[src*="RIGHT"] {
+.imageLeft, section.post img[src*="RIGHT"] {
   width: 100%;
   height: auto;
   margin: 0;
@@ -291,7 +291,7 @@ a:hover {
   border-radius: .3rem;
 }
 
-.imageRight, img[src*="LEFT"] {
+.imageRight, section.post img[src*="LEFT"] {
   width: 100%;
   height: auto;
   margin: 0;
@@ -310,14 +310,14 @@ a:hover {
     padding-right: 2rem;
   }
 
-    .imageFull, img[src*="FULL"] {
+    .imageFull, section.post img[src*="FULL"] {
       width: 100%;
       height: auto;
       margin-bottom: 0rem;
       border-radius: .3rem;
     }
   
-    .imageLeft, img[src*="LEFT"] {
+    .imageLeft, section.post img[src*="LEFT"] {
       width: 50%;
       height:auto;
       margin-top: 0.2rem;
@@ -327,7 +327,7 @@ a:hover {
       float: left !important;
     }
   
-    .imageRight, img[src*="RIGHT"]{
+    .imageRight, section.post img[src*="RIGHT"]{
       width: 50%;
       height: auto;
       margin-top: 0.2rem;

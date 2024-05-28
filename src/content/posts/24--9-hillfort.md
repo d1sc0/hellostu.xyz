@@ -5,7 +5,7 @@ slug: 9-hillfort
 pubDate: 2023-03-25
 description: 'The ninth in a weekly series of photographic self-portraits of Stuart Mackenzie. This weeks photo land extremely late and was taken whilst our on the run'
 postImage:
-  src: '/preview_images/24-hillfort.jpg'
+  src: '../post_images/52weeks/52_2023_9_FULL.jpg'
   alt: 'a blurry runner in the distance of an iron age hillfort'
 socialImage: '/social_images/24-hillfort.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'running']

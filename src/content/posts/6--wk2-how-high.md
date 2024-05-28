@@ -5,7 +5,7 @@ slug: wk2-how-high
 pubDate: 2019-03-29
 description: 'pushing myself - relfections from the high ropes'
 postImage:
-  src: '/preview_images/6-high-fives.jpg'
+  src: '../post_images/high-fivesLEFT.jpg'
   alt: 'high fives high up in a tree'
 socialImage: '/social_images/6-high-fives.jpg'
 tags: ['weeknotes']

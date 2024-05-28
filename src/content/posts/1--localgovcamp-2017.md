@@ -5,7 +5,7 @@ slug: localgovcamp-2017
 pubDate: 2017-09-26
 description: 'My thoughts after taking a trip to LocalGovCamp in Bristol'
 postImage:
-  src: '/preview_images/1-localgovcamp.jpg'
+  src: '../post_images/localgovcampRIGHT.jpg'
   alt: 'no tents at localgovcamp'
 socialImage: '/social_images/1-localgovcamp.jpg'
 tags: ['work', 'localgovcamp']

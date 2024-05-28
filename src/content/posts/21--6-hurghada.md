@@ -5,7 +5,7 @@ slug: 6-hurghada
 pubDate: 2023-02-26
 description: 'The sixth in a weekly series of photographic self-portraits of Stuart Mackenzie. This one shot in Egypt!'
 postImage:
-  src: '/preview_images/21-hurghada.jpg'
+  src: '../post_images/52weeks/52_2023_6_FULL.jpg'
   alt: 'me standing on a beach peering from behind a surf board'
 socialImage: '/social_images/21-hurghada.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'travel', 'egypt']

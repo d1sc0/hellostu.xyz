@@ -5,7 +5,7 @@ slug: 12-these-hands
 pubDate: 2023-04-10
 description: 'The twelfth in a weekly series of photographic self-portraits of Stuart Mackenzie. In this weeks photo I am trying out a new backdrop and embracing the mono vibes'
 postImage:
-  src: '/preview_images/27-these-hands.jpg'
+  src: '../post_images/52weeks/52_2023_12_FULL.jpg'
   alt: 'black and white photo of me holding my hands up in front of my face'
 socialImage: '/social_images/27-these-hands.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'mono']

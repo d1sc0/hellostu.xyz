@@ -5,7 +5,7 @@ slug: bye-bye-flickr
 pubDate: 2022-05-15
 description: 'Deleting my flickr account causes some reflections and thoughts of how to share my creations'
 postImage:
-  src: '/preview_images/15-bye-bye-flickr.jpg'
+  src: '../post_images/bye-bye-flickr/solo-bikeFULL.jpg'
   alt: 'black and white macro photograph of an olympus trip 35m camera'
 socialImage: '/social_images/15-bye-bye-flickr.jpg'
 tags: ['photography', 'flickr', 'tech', 'reflections', 'photos']

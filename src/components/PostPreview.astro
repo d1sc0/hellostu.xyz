@@ -1,6 +1,6 @@
 ---
 const { data, url } = Astro.props;
-
+import { Image } from 'astro:assets';
 const dateOptions: object = {
   year: 'numeric',
   month: 'long',
@@ -13,7 +13,12 @@ const formattedPublishDate = new Date(data.pubDate).toLocaleDateString(
 ---
 
 <article>
-  <img src={data.postImage.src} alt={data.postImage.alt} />
+  <Image
+    src={data.postImage.src}
+    alt={data.postImage.alt}
+    width="300"
+    quality="med"
+  />
   <a href={url}><h3>{data.title}</h3></a>
   <p>{formattedPublishDate}</p>
   <p>{data.description}</p>

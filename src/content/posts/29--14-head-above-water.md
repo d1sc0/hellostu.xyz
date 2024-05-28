@@ -5,7 +5,7 @@ slug: 14-head-above-water
 pubDate: 2023-05-24
 description: 'The fourteenth in a weekly series of photographic self-portaits accopained by a journal entry and revealing a new side-project!'
 postImage:
-  src: '/preview_images/29-head-above-water.jpg'
+  src: '../post_images/52weeks/52_2023_14_FULL.jpg'
   alt: 'a photo of me in the sea with a wave in front of my face'
 socialImage: '/social_images/29-head-above-water.jpg'
 tags:

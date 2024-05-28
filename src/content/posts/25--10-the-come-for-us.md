@@ -5,7 +5,7 @@ slug: 10-they-come-for-me
 pubDate: 2023-03-26
 description: 'The tenth in a weekly series of photographic self-portraits of Stuart Mackenzie. This weeks photo I appear to be starring in my own sci-fi b-movie'
 postImage:
-  src: '/preview_images/25-theycomeforme.jpg'
+  src: '../post_images/52weeks/52_2023_10_FULL.jpg'
   alt: 'me dazzled by an alien light'
 socialImage: '/social_images/25-theycomeforme.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'sci-fi']

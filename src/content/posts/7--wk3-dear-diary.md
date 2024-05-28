@@ -5,7 +5,7 @@ slug: wk3-dear-diary
 pubDate: 2019-04-06
 description: 'a summary fo the week that was...'
 postImage:
-  src: '/preview_images/7-computer-monkey.jpg'
+  src: '../post_images/monkeyRIGHT.gif'
   alt: 'monkey sat at a desk smashing a laptop'
 socialImage: '/social_images/7-computer-monkey.jpg'
 tags: ['weeknotes']
