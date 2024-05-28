@@ -1,4 +1,4 @@
-.site-title {
+h1.site-title {
  font-size: 2.8rem;
  color: #000000;
  font-display: swap;
@@ -144,5 +144,5 @@ nav ul li {
  }
 }
 
-.site-title {
+h1.site-title {
   font-size: 3.5rem;}
