@@ -1,5 +1,5 @@
 .site-title {
- font-size: 3.4rem;
+ font-size: 3.1rem;
  color: #000000;
  font-display: swap;
  font-family: 'Gochi Hand', cursive;
@@ -143,3 +143,6 @@ nav ul li {
   border: none;
  }
 }
+
+.site-title {
+  font-size: 3.5rem;}
