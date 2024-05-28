@@ -1,11 +1,6 @@
-h1.site-title {
- font-size: 2.8rem;
- color: #000000;
- font-display: swap;
- font-family: 'Gochi Hand', cursive;
- text-decoration: none;
- margin-top: 0.5rem;
- margin-left: 1rem;
+img.site-title {
+ width: 85%;
+ height: auto;
 }
 
 .site-title a,
@@ -143,8 +138,9 @@ nav ul li {
   border: none;
  }
 
- h1.site-title {
-   font-size: 3.5rem;
+ img.site-title {
+   width: 350px;
+   height: 102px;
  }
 }
 

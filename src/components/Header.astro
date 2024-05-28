@@ -1,11 +1,15 @@
 ---
 import '../styles/component-styles/header.css';
+import { Image } from 'astro:assets';
+import Logo from '/src/content/page_images/hello-stu-title.png';
 ---
 
 <header id="top">
   <nav class="main-nav" role="navigation">
     <div class="brand">
-      <h1 class="site-title"><a href="/">Hello Stu</a></h1>
+      <a href="/"
+        ><Image src={Logo} alt="Hello Stu logo" class="site-title" /></a
+      >
     </div>
 
     <div class="burger">
