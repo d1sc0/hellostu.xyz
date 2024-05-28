@@ -182,11 +182,10 @@ p.toplink {text-align: center;}
 --------------------------------------------------------------------------------------- */
 p {
   margin: 0 0 0.8rem 0;
-  line-height: 1.375em;
 }
 
 .post p {margin: 1.2rem 0 1.2rem 0;
-  line-height: 1.375em;}
+  line-height: 1.5em;}
 
 blockquote {
   background-color: #fafa00ff;
