@@ -1,5 +1,6 @@
 img.site-title {
  width: 85%;
+ max-width: 350px;
  height: auto;
 }
 
