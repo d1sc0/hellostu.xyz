@@ -315,6 +315,20 @@ section.pagination {
   font-size: 1.3rem;
 }
 
+    .button-p {
+      text-align: center;
+    }
+  
+    .button {
+      background-color: #17b5ee;
+      width: 350px;
+      padding: 1rem;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: .5rem;
+      cursor: pointer;
+    }
 
 /*  Tag styling
 --------------------------------------------------------------------------------------- */
@@ -547,7 +561,9 @@ nav ul li {
         padding-left: 2rem;
         padding-right: 2rem;
       }
-
+      .button-p {
+        text-align: left;
+        }
     /* desktop media styles */
 
      .imageFull, section.post img[src*="FULL"] {

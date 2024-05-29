@@ -9,14 +9,17 @@ const pageMeta = {
 import { Image } from 'astro:assets';
 import JccPic from '/src/content/page_images/jcc_page_image.jpg';
 ---
-<style>
-  .button-p{text-align: left;}
-  .button {background-color: rgb(44, 197, 44); width: 350px; height 50px; padding: 1rem; color: white; border: none; font-size: 1.2rem; border-radius: .5rem; cursor:pointer;}
-  
-</style>
+
 <BaseLayout pageMeta={pageMeta}>
   <section class="about content-padding">
     <h2>My Jurassic Coast Ultra Challenge 2024</h2>
+    <p>
+      <blockquote>
+        Update: Challenge succesfully completed! It took me just under 16 hours
+        to complete the 36 mile hike. In total I raised over £1200 for Mind! A
+        massive thank you to all those who donated.
+      </blockquote>
+    </p>
     <p>
       <Image
         src={JccPic}
@@ -70,9 +73,7 @@ import JccPic from '/src/content/page_images/jcc_page_image.jpg';
     </p>
     <p class="button-p">
       <a href="https://www.justgiving.com/page/disco-jurassic-challenge">
-        <button class="button">
-          Donate at my JustGiving page
-        </button>
+        <button class="button"> Donate at my JustGiving page </button>
       </a>
     </p>
     <p>Every donation, however small helps. Thank you!</p>
