@@ -29,10 +29,8 @@
 - jcc page migration - done
 - Simple analytics - Done
 - Properly revisit 404 - done
-
-- consolidate styles and tidy into global
-- Comments via Hyvor talk - or just cancel and add some sharing buttons
+- consolidate styles and tidy into global - done
 
 - bugger around with MDX posts and react components I'll be missing
-
-- investigate online services for images and content (Storyblok) - Think I may just use Bear a while longer!
+- Maybe look at setting up Decap CMS
+- maybe add some sharing buttons or at least a prompt
