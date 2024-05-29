@@ -2,6 +2,7 @@
 import { SEO } from 'astro-seo';
 const { frontmatter, pageMeta } = Astro.props;
 import Fonts from '../components/Fonts.astro';
+const siteURL = 'https://hellostu.xyz';
 ---
 
 <head>
@@ -23,8 +24,8 @@ import Fonts from '../components/Fonts.astro';
         type: frontmatter !== undefined ? 'article' : 'website',
         image:
           frontmatter !== undefined
-            ? frontmatter.socialImage
-            : pageMeta.imageUrl,
+            ? siteURL + frontmatter.socialImage
+            : siteURL + pageMeta.imageUrl,
       },
       optional: {
         description:
