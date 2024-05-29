@@ -35,5 +35,18 @@ const siteURL = 'https://hellostu.xyz';
       },
       article: { authors: ['Stuart Mackenzie'] },
     }}
+    twitter={{
+      creator: '@_disco',
+      card: 'summary_large_image',
+      title: pageMeta != undefined ? pageMeta.title : frontmatter.title,
+      image:
+        frontmatter !== undefined
+          ? siteURL + frontmatter.socialImage
+          : siteURL + pageMeta.imageUrl,
+      description:
+        frontmatter !== undefined
+          ? frontmatter.description
+          : pageMeta.description,
+    }}
   />
 </head>
