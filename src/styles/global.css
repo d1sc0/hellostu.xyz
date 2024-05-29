@@ -36,7 +36,7 @@ a {
 /*
 colors
 --yellow: #fafa00ff;
---rusty-red: #d33643ff;
+--#D12E3A - better red for contrast
 --pale-azure: #70d6ffff;
 --black: #000000ff;
 --white: #ffffffff;
@@ -100,7 +100,7 @@ strong {
 }
 
 a {
-  color: #d33643ff;
+  color: #D12E3A;
   text-decoration: underline;
 }
 
@@ -326,7 +326,7 @@ section.pagination {
 .tag {
   font-size: 0.9rem;
   display: inline-block; 
-  background-color:#d33643ff; 
+  background-color:#D12E3A; 
   margin-right: 15px; 
   margin-bottom: 20px; 
   padding: 3px; 
@@ -338,7 +338,7 @@ section.pagination {
 .smalltag {
   font-size: 0.8rem;
   display: inline-block;
-  background-color: #d33643ff;
+  background-color: #D12E3A;
   margin-right: 8px;
   margin-bottom: 5px;
   padding: 2px;
