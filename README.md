@@ -26,10 +26,13 @@
 - Backup old site - done
 - Check Github Action, deploy, test - done
 - Sort out cover images and component - DONE! YAsssss
+- jcc page migration - done
+- Simple analytics - Done
+- Properly revisit 404 - done
 
-- Properly revisit 404
-- Comments via Hyvor talk
-- Simple analytics
+- consolidate styles and tidy into global
+- Comments via Hyvor talk - or just cancel and add some sharing buttons
+
 - bugger around with MDX posts and react components I'll be missing
 
 - investigate online services for images and content (Storyblok) - Think I may just use Bear a while longer!
