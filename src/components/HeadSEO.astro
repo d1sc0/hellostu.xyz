@@ -26,6 +26,12 @@ import Fonts from '../components/Fonts.astro';
             ? frontmatter.socialImage
             : pageMeta.imageUrl,
       },
+      optional: {
+        description:
+          frontmatter !== undefined
+            ? frontmatter.description
+            : pageMeta.description,
+      },
     }}
   />
 </head>
