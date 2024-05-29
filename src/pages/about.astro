@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = 'Hello Stu | About Me';
+const pageMeta = {
+  title: 'Hello Stu | About Me',
+  description: 'A little bit of background about me - Stuart Mackenzie ',
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 import { Image } from 'astro:assets';
 import ProfilePic from '/src/content/page_images/stuart-mackenzie.jpg';
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageMeta={pageMeta}>
   <section class="about content-padding">
     <h2>About Stuart Mackenzie</h2>
     <p>

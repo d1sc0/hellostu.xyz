@@ -10,10 +10,15 @@ const tagCounts = tags.map(tag => {
   const tagCount = filteredPosts.length;
   return [tagCount, tag];
 });
-const pageTitle = 'Hello Stu | Tags';
+const pageMeta = {
+  title: 'Hello Stu | Tags',
+  description:
+    'An index of all the tags that have been used to categorise my blog posts and audio notes',
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageMeta={pageMeta}>
   <section class="tag-index">
     <h2 class="content-padding">Tag Collection</h2>
     <div class="taglist content-padding">

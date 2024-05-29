@@ -2,12 +2,17 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LatestPosts from '../components/LatestPosts.astro';
 import SocialLinks from '../components/SocialLinks.astro';
-const pageTitle = 'Hello Stu | Home';
+const pageMeta = {
+  title: 'Hello Stu | Home',
+  description:
+    'Hello Stu is the personal website and blog of Stuart Mackenzie. Stuart works hard to improve and transform public services as a Senior Partner at TPXimpact. Outside of work he is a photographer, amatuer web developer, runner, parkrun enthsiast and excotic disco dancer! ',
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 import { Image } from 'astro:assets';
 import Selfie from '/src/content/page_images/jcc-selfie.jpg';
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageMeta={pageMeta}>
   <section class="home">
     <div class="content-padding">
       <div class="welcome-grid">

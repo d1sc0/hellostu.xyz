@@ -22,9 +22,15 @@ type Props = { page: Page<CollectionEntry<'posts'>> };
 const { page } = Astro.props;
 const posts = page.data;
 const pageTitle = 'Audio Notes';
+const pageMeta = {
+  title: 'Hello Stu | ' + pageTitle,
+  description:
+    'Audio notes recorded by Stuart Mackenzie and published as a podcast',
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageMeta={pageMeta}>
   <AudioGrid posts={posts} gridTitle={pageTitle} />
   <Pagination pageData={page} />
 </BaseLayout>

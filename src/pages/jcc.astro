@@ -1,6 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = 'Hello Stu | My Jurassic Coast Challenge';
+const pageMeta = {
+  title: 'Hello Stu | My Jurassic Coast Challenge',
+  description:
+    "Information about why I've signed up to complete the Jurassic Ultra challenge and how I hope to rise funds for the mental health charity Mind",
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 import { Image } from 'astro:assets';
 import JccPic from '/src/content/page_images/jcc_page_image.jpg';
 ---
@@ -9,7 +14,7 @@ import JccPic from '/src/content/page_images/jcc_page_image.jpg';
   .button {background-color: rgb(44, 197, 44); width: 350px; height 50px; padding: 1rem; color: white; border: none; font-size: 1.2rem; border-radius: .5rem; cursor:pointer;}
   
 </style>
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageMeta={pageMeta}>
   <section class="about content-padding">
     <h2>My Jurassic Coast Ultra Challenge 2024</h2>
     <p>

@@ -1,11 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
-const { frontmatter, pageTitle } = Astro.props;
-const siteInfo = {
-  description:
-    'Hello Stu is the personal website and blog of Stuart Mackenzie. Stuart works hard to improve and transform public services as a Senior Partner at TPXimpact. Outside of work he is a photographer, amatuer web developer, runner, parkrun enthsiast and excotic disco dancer! ',
-  imageUrl: '/social_images/hellostu-social.jpg',
-};
+const { frontmatter, pageMeta } = Astro.props;
 import Fonts from '../components/Fonts.astro';
 ---
 
@@ -16,20 +11,20 @@ import Fonts from '../components/Fonts.astro';
   <meta name="generator" content={Astro.generator} />
   <Fonts />
   <SEO
-    title={pageTitle != undefined
-      ? pageTitle
+    title={pageMeta != undefined
+      ? pageMeta.title
       : 'Hello Stu | ' + frontmatter.title}
     description={frontmatter !== undefined
       ? frontmatter.description
-      : siteInfo.description}
+      : pageMeta.description}
     openGraph={{
       basic: {
-        title: pageTitle != undefined ? pageTitle : frontmatter.title,
+        title: pageMeta != undefined ? pageMeta.title : frontmatter.title,
         type: frontmatter !== undefined ? 'article' : 'website',
         image:
           frontmatter !== undefined
             ? frontmatter.socialImage
-            : siteInfo.imageUrl,
+            : pageMeta.imageUrl,
       },
     }}
   />

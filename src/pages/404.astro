@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = 'Hello Stu | About Me';
+const pageMeta = {
+  title: 'Hello Stu | 404',
+  description: 'Sorry!',
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 import { Image } from 'astro:assets';
 import NotFound from '/src/content/page_images/not-the-droids.jpg';
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageMeta={pageMeta}>
   <section class="about content-padding">
     <h2>404 | Sorry that page doesn't exist!</h2>
     <p>

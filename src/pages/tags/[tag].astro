@@ -20,8 +20,14 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
+
+const pageMeta = {
+  title: 'Hello Stu | ' + tag,
+  description: 'All of my posts that have been tagged with #' + tag,
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 ---
 
-<BaseLayout pageTitle={'Hello Stu | ' + tag}>
+<BaseLayout pageMeta={pageMeta}>
   <PostList posts={posts} gridTitle={'Posts tagged: ' + tag} />
 </BaseLayout>

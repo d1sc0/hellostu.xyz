@@ -18,10 +18,15 @@ export async function getStaticPaths({ paginate }) {
 type Props = { page: Page<CollectionEntry<'posts'>> };
 const { page } = Astro.props;
 const posts = page.data;
-const pageTitle = 'Hello Stu | Posts';
+const pageTitle = 'All Posts';
+const pageMeta = {
+  title: 'Hello Stu | Posts',
+  description: 'All of my blog posts and audio notes in one place',
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <PostGrid posts={posts} gridTitle="All Posts" />
+<BaseLayout pageMeta={pageMeta}>
+  <PostGrid posts={posts} gridTitle={pageTitle} />
   <Pagination pageData={page} />
 </BaseLayout>

@@ -4,11 +4,11 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import PageScripts from '../components/PageScripts.astro';
 import '../styles/global.css';
-const { frontmatter, pageTitle } = Astro.props;
+const { frontmatter, pageMeta } = Astro.props;
 ---
 
 <html lang="en">
-  <HeadSEO frontmatter={frontmatter} pageTitle={pageTitle} />
+  <HeadSEO frontmatter={frontmatter} pageMeta={pageMeta} />
   <body>
     <div class="container">
       <Header />
