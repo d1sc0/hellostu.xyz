@@ -45,8 +45,6 @@ colors
 
 body {
   position: relative;
-  font-display: swap;
-  font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
     background-image: linear-gradient(#b1e9ff 1px, transparent 1px),
       linear-gradient(to right, #b1e9ff 1px, #ffffff 1px);
@@ -189,7 +187,7 @@ section.footer .social-icon {font-size: 1.5rem; padding-left: .8rem; padding-rig
 section.social-links {margin-bottom: 4rem;}
 
 section.social-links h2 {
-    font-family: 'Gochi Hand', cursive;
+    font-family: var(--GochiHand), sans-serif;
     font-size: 3rem;
     line-height: 3.5rem;
     text-align: left;}
@@ -250,7 +248,7 @@ section.home .profile-pic img {
 }
 
 section.home .profile-pic figcaption {
-  font-family: 'Gochi Hand', cursive;
+  font-family: var(--GochiHand), sans-serif;
   font-size: 2rem;
   line-height: 3.5rem;
   text-align: center;
@@ -355,10 +353,10 @@ section.pagination {
 
 /*  Head and main nav styling */
 
-img.site-title {
-  width: 85%;
-  max-width: 350px;
-  height: auto;
+h1.site-title {
+  font-family: var(--GochiHand), sans-serif;
+  margin: .5rem;
+  font-size: 3.5rem;
 }
 
 .site-title a,
@@ -374,7 +372,7 @@ img.site-title {
 
 nav.main-nav {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 85% 15%;
   grid-template-rows: auto;
   grid-template-areas:
     'brand burger'

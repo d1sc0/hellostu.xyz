@@ -6,6 +6,7 @@ const siteInfo = {
     'Hello Stu is the personal website and blog of Stuart Mackenzie. Stuart works hard to improve and transform public services as a Senior Partner at TPXimpact. Outside of work he is a photographer, amatuer web developer, runner, parkrun enthsiast and excotic disco dancer! ',
   imageUrl: '/social_images/hellostu-social.jpg',
 };
+import Fonts from '../components/Fonts.astro';
 ---
 
 <head>
@@ -13,6 +14,7 @@ const siteInfo = {
   <link rel="icon" type="image/svg+xml" href="/favicon.png" />
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
+  <Fonts />
   <SEO
     title={pageTitle != undefined
       ? pageTitle
