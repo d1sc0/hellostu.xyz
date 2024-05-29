@@ -1,0 +1,34 @@
+---
+import { SEO } from 'astro-seo';
+const { frontmatter, pageTitle } = Astro.props;
+const siteInfo = {
+  description:
+    'Hello Stu is the personal website and blog of Stuart Mackenzie. Stuart works hard to improve and transform public services as a Senior Partner at TPXimpact. Outside of work he is a photographer, amatuer web developer, runner, parkrun enthsiast and excotic disco dancer! ',
+  imageUrl: '/social_images/hellostu-social.jpg',
+};
+---
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <SEO
+    title={pageTitle != undefined
+      ? pageTitle
+      : 'Hello Stu | ' + frontmatter.title}
+    description={frontmatter !== undefined
+      ? frontmatter.description
+      : siteInfo.description}
+    openGraph={{
+      basic: {
+        title: pageTitle != undefined ? pageTitle : frontmatter.title,
+        type: frontmatter !== undefined ? 'article' : 'website',
+        image:
+          frontmatter !== undefined
+            ? frontmatter.socialImage
+            : siteInfo.imageUrl,
+      },
+    }}
+  />
+</head>
