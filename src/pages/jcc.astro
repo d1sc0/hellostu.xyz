@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Hello Stu | My Jurassic Coast Challenge';
+import { Image } from 'astro:assets';
+import JccPic from '/src/content/page_images/jcc_page_image.jpg';
+---
+<style>
+  .button-p{text-align: left;}
+  .button {background-color: rgb(44, 197, 44); width: 350px; height 50px; padding: 1rem; color: white; border: none; font-size: 1.2rem; border-radius: .5rem; cursor:pointer;}
+  
+</style>
+<BaseLayout pageTitle={pageTitle}>
+  <section class="about content-padding">
+    <h2>My Jurassic Coast Ultra Challenge 2024</h2>
+    <p>
+      <Image
+        src={JccPic}
+        alt="Dorset coast line and logos for mind and the jurassic coast challenge"
+        class="imageFull"
+      />
+    </p>
+    <p>
+      On 18th May 2024 I'll be attempting to complete a{' '}
+      <strong>58km hike (36 miles)</strong> along the Jurassic Coast from Corfe Castle
+      to Weymouth. The route includes 1700m of elevation and is the first half of
+      the full{' '}
+      <a href="https://www.ultrachallenge.com/jurassic-coast-challenge/">
+        Jurassic Coast Ultra Challenge
+      </a>{' '}
+      of 100km. I'm taking part to challenge myself physically and to raise funds
+      for the charity <a href="https://www.mind.org.uk/">Mind</a>.
+    </p>
+    <h3>Why I'm fundraising for Mind</h3>
+    <p>
+      Over the last couple of years, I have suffered through long periods of
+      acute anxiety. I've also spent time caring for a close family member who
+      has suffered from severe depression and reached several points of crisis.
+      This journey has involved navigating the best and the worst of our
+      National Health Service, hospital stays, and a mix of self-funded care and
+      therapy. Dealing with these things has at times been complex and the
+      information provided by Mind has been extremely helpful and a great source
+      of support.
+    </p>
+    <p>
+      The work of Mind is important. I'm fundraising to help them in their work
+      which involves;
+      <ul>
+        <li>
+          publishing useful, accessible information about mental health illness
+        </li>
+        <li>campaigning and lobbying to improve legislation and services</li>
+        <li>raising public awareness and understanding of issues</li>
+        <li>
+          running a network of mental health support services up and down the
+          country
+        </li>
+      </ul>
+    </p>
+    <p>
+      <strong>
+        Poor mental health can impact anybody and the work of MIND can benefit
+        everybody. Please support me in my challenge and donate to MIND using
+        the JustGiving page linked below.
+      </strong>
+    </p>
+    <p class="button-p">
+      <a href="https://www.justgiving.com/page/disco-jurassic-challenge">
+        <button class="button">
+          Donate at my JustGiving page
+        </button>
+      </a>
+    </p>
+    <p>Every donation, however small helps. Thank you!</p>
+    <p>Stuart x o x</p>
+  </section>
+</BaseLayout>
