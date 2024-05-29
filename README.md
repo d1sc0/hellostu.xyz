@@ -30,7 +30,7 @@
 - Simple analytics - Done
 - Properly revisit 404 - done
 - consolidate styles and tidy into global - done
+- bugger around with MDX posts and react components I'll be missing. Done for now!
 
-- bugger around with MDX posts and react components I'll be missing
 - Maybe look at setting up Decap CMS
 - maybe add some sharing buttons or at least a prompt
