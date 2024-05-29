@@ -30,6 +30,7 @@
 - Simple analytics - Done
 - Properly revisit 404 - done
 
+- consolidate styles and tidy into global
 - Comments via Hyvor talk - or just cancel and add some sharing buttons
 
 - bugger around with MDX posts and react components I'll be missing
