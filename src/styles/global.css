@@ -566,6 +566,13 @@ nav ul li {
         }
     /* desktop media styles */
 
+     .chartFull{
+      width: 80%;
+      height: auto;
+      margin-bottom: 0rem;
+      margin:auto;
+    }
+
      .imageFull, section.post img[src*="FULL"] {
       width: 100%;
       height: auto;

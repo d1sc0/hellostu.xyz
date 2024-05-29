@@ -11,15 +11,13 @@ socialImage: '/social_images/14-choropleth.jpg'
 tags: ['dataviz', 'maps', 'tech', 'code', 'experiments']
 ---
 
-/* import Choropleth from '../components/fireinc-map/choropleth' */
-
-> This post was originally written on 19 April 2019 whilst I was still using the ghost blogging platform. ~~I haven't had time during migration to get this experiment working within my new Gatsby setup but if you are interested you can still see the results over at this [static page on github](https://d1sc0.github.io/choropleth_experiment/index.html).~~ I've now finally updated the experiment (3 years later) to use react-leaflet components and embed them into this Mdx formatted blog post. I've added some more details towards the end of the post.
+> This post was originally written on 19 April 2019 whilst I was still using the ghost blogging platform. I then migrated to Gatsby and reimplemented the map using react-leaflet. I've now migrated a 3rd time to Astro and as yet I've not had time to rebuild my choropleth component and get it working again. If you are interested you can still see the original working map over at this [static page on github](https://d1sc0.github.io/choropleth_experiment/index.html).
 
 So I think I've now mentioned several times in my weeknotes that I've been bitten by the data visualisation bug during my recent course with the ODI. I've also mentioned that I found using Public Tableau for [one of my assignments](https://d1sc0.github.io/odi_assignment3/) fairly frustrating so wanted to play with some other tools and methods. The interactive [choropleth map](https://en.wikipedia.org/wiki/Choropleth_map) below is one of my first experiments in doing just that.
 
-It's a pretty throw-away experiment and I put my hands up to having done no analysis of the data. The reason for keeping it themed to fire incidents for the moment was purely based on knowing it was relatively simple to get hold of data that would be ready to work with. It's showing the total number of incidents attended by Fire Authorities in England between Apr and Sep 2018. Data was sourced from [gov.uk (FIRE0102)](https://www.gov.uk/government/statistical-data-sets/fire-statistics-data-tables#incidents-attended).
+![14 buses plus one for the doggies](../post_images/choroLEFT.png)
 
-{/* <Choropleth mapClass="imageFull" /> */}
+It's a pretty throw-away experiment and I put my hands up to having done no analysis of the data. The reason for keeping it themed to fire incidents for the moment was purely based on knowing it was relatively simple to get hold of data that would be ready to work with. It's showing the total number of incidents attended by Fire Authorities in England between Apr and Sep 2018. Data was sourced from [gov.uk (FIRE0102)](https://www.gov.uk/government/statistical-data-sets/fire-statistics-data-tables#incidents-attended).
 
 I've used a combination of [leaflet js](https://leafletjs.com/) and [mapbox](https://www.mapbox.com/) for the presentation and interactivity. [This tutorial on the leaflet site](https://leafletjs.com/examples/choropleth/) was super helpful in getting me started.
 
@@ -30,5 +28,3 @@ I also wanted a method of keeping this [geometry data](https://s3.amazonaws.com/
 One thing I liked about leaflet was that it gave some nice easy ways to turn off all the crazy map features. The 1st draft of this the map allowed zooming and panning and zoomed in on selection etc etc. All fine and dandy but a pretty crappy experience on a mobile device where you want people to be able to scroll a page with their thumb not pan a map to another continent. In the context of using a map to visualise this kind of data it was massive interaction overkill and totally pointless. Good to know I can play with those things for other uses though.
 
 I need to play with the styling and layout options some more. It's a pretty big flaw to have the key sat within the map window - as again on mobile it totally obscures London and most of the South East 😂...but I'm also keen to crack on and explore some other formats of visualisation. Maybe something for the weekend!
-
-> **Update:** Most of the above is still accurate. I've made some small changes to get it working again. I'm now using react-leaflet components and a gatsby plugin to make things a bit neater and grab the leaflet styles etc. I've now also combined the data and geometry in one file. Although keeping the geometry and data felt like a good idea at the time...time proved it to be of little benefit! The react components I've built will be far more valuable in terms of re-use. I've also added some conditional styles so that the legend hides when reaching the mobile breakpoint.
