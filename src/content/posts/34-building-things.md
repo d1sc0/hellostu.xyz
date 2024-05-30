@@ -11,7 +11,9 @@ socialImage: '/social_images/34-old-new-site.jpg'
 tags: ['astro', 'gatsby', 'build', 'design', 'code', 'tech']
 ---
 
-![screenshot of old website with a TNT block overlayed](../post_images/34-old-siteRIGHT.jpg) So over the bank holiday weekend I decided to redesign and rebuild this website. The motivation for this largely just came from a desire to create something - **I wanted to build a thing!** Many of my projects at work over the last 12-18 months have been at the service, organisation and strategy end of the spectrum. I’m cool with that and I have plenty of experience to bring but a little bit of me has missed being closer to product work and the joy that I get from making digital things.
+![screenshot of old website with a TNT block overlayed](../post_images/34-old-siteRIGHT.jpg) So over the bank holiday weekend I decided to redesign and rebuild this website. The motivation for this largely just came from a desire to create something - **I wanted to build a thing!**
+
+Many of my projects at work over the last 12-18 months have been at the service, organisation and strategy end of the spectrum. I’m cool with that and I have plenty of experience to bring but a little bit of me has missed being closer to product work and the joy that I get from making digital things.
 
 The old version of the site was also starting to feel a bit stale, bland and dull. Given I don’t post often and when I do it tends to be about my personal life and hobbies, it felt like there was an opportunity to make my personal site look and feel a bit more…err….personal!
 
