@@ -34,4 +34,5 @@
 - Maybe look at setting up a headless CMS - have tried - Decap CMS, Tina, VSCode Front Matter and they all suck. Stick to Bear and the code editor for the time being
 
 - post some content
+- and then maybe some more
 - maybe add some sharing buttons or at least a prompt
