@@ -1,0 +1,14 @@
+---
+const { stravaClass, activity } = Astro.props;
+---
+
+<div class={stravaClass}>
+  <div
+    class="strava-embed-placeholder"
+    data-embed-type="activity"
+    data-embed-id={activity}
+    data-style="standard"
+  >
+  </div>
+  <script src="https://strava-embeds.com/embed.js"></script>
+</div>
