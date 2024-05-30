@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
       - name: Install Dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
       - name: Build
         env:
           GOOGLE_OAUTH_CLIENT_ID: '${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}'
