@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { options1, data1, options2, data2 } from './data/finishersData.js'
 import { Line } from 'react-chartjs-2'
-import 'chartjs-adapter-moment'
+import '/node_modules/chartjs-adapter-moment'
 import {
   Chart as ChartJS,
   CategoryScale,
