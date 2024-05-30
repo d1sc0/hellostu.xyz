@@ -5,7 +5,7 @@ slug: building-things
 pubDate: 2024-05-30
 description: 'Some reflections from spending some time re-building this website over the weekend'
 postImage:
-  src: '../post_images/34-new-siteFULL.jpg'
+  src: '../post_images/34-old-siteRIGHT.jpg'
   alt: 'screenshot of old website with a TNT block overlayed'
 socialImage: '/social_images/34-old-new-site.jpg'
 tags: ['astro', 'gatsby', 'build', 'design', 'code', 'tech']
