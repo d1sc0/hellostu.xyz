@@ -31,6 +31,7 @@
 - Properly revisit 404 - done
 - consolidate styles and tidy into global - done
 - bugger around with MDX posts and react components I'll be missing. Done for now!
+- Maybe look at setting up a headless CMS - have tried - Decap CMS, Tina, VSCode Front Matter and they all suck. Stick to Bear and the code editor for the time being
 
-- Maybe look at setting up Decap CMS
+- post some content
 - maybe add some sharing buttons or at least a prompt
