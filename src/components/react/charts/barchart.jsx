@@ -14,7 +14,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const Barchart = ({ chartClass }) => {
   return (
-    <div class={chartClass}>
+    <div className={chartClass}>
       <Bar options={options} data={data} />
     </div>
   )

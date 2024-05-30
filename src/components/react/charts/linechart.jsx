@@ -15,6 +15,7 @@ import {
   Filler,
   TimeSeriesScale,
 } from 'chart.js'
+
 ChartJS.register(
   TimeScale,
   TimeSeriesScale,
@@ -42,7 +43,7 @@ const Linechart = ({ data, chartClass }) => {
   }
 
   return (
-    <div class={chartClass}>
+    <div className={chartClass}>
       <Line options={optionsfile} data={datafile} />
     </div>
   )

@@ -8,7 +8,7 @@ ChartJS.register(ArcElement, Tooltip, Legend)
 const Doughnutchart = ({ chartClass }) => {
   return (
     //this is a comment
-    <div class={chartClass}>
+    <div className={chartClass}>
       <Doughnut options={options} data={data} />
     </div>
   )
