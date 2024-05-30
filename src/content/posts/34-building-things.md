@@ -22,9 +22,8 @@ So this is the brand new [hellostu.xyz](https://hellostu.xyz). Yes - visual desi
 ![screenshot of the new website](../post_images/34-new-siteFULL.jpg)
 
 The rebuild was a great opportunity to play with some new technology - I’m by no means a developer but I find the process of trying to turn the ideas in my head into real things through the medium of code extremely satisfying. Learning, trying, failing fast, problem solving and fixing things in rapid repeating cycles over a couple of days can be oddly exhilarating for a nerd like me!
-The site is still built using a [static site generator](https://www.cloudflare.com/learning/performance/static-site-generator/).
 
-The performance, security and hosting cost benefits (i.e. zero cost) that come from this approach just far outweigh the bells and whistles of the alternatives for me. I have switched platforms though and have migrated from [Gatsby](https://www.gatsbyjs.com/) to [Astro](https://astro.build/).
+The site is still built using a [static site generator](https://www.cloudflare.com/learning/performance/static-site-generator/). The performance, security and hosting cost benefits (i.e. zero cost) that come from this approach just far outweigh the bells and whistles of the alternatives for me. I have switched platforms though and have migrated from [Gatsby](https://www.gatsbyjs.com/) to [Astro](https://astro.build/).
 
 Gatsby served me well, but moving things over to Astro gave me an excuse for a clean slate and to learn something new. I’ve actually been really impressed. The learning curve felt much flatter with Astro, it’s still extremely flexible but feels more nimble. Writing and storing my content in [Markdown](https://en.wikipedia.org/wiki/Markdown) has meant the content migration a fairly simple process. One of the advantages of Astro is that you can mix and match components in [React, Preact, Svelte, Vue and SolidJS](https://docs.astro.build/en/concepts/islands/) on a single page. It’s very unlikely I will need to do that but it feels reassuring to have the ability to experiment with a bunch of different frameworks so flexibly without having to worry about impacting the basics.
 
