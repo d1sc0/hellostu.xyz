@@ -6,6 +6,7 @@ export async function GET(context) {
     return import.meta.env.PROD ? data.draft !== true : true;
   });
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
   return rss({
     title: 'Hello Stu',
     description:
@@ -23,10 +24,9 @@ export async function GET(context) {
           type="image/${
             post.data.postImage.src.format == 'jpg' ? 'jpeg' : 'png'
           }"
-          width="${post.data.postImage.src.width}"
-          height="${post.data.postImage.src.height}"
+          width="800"
           medium="image"
-          url="${context.site + post.data.postImage.src.src}" />
+          url="https://hellostu.xyz${post.data.postImage.src.src}" />
       `,
     })),
   });
