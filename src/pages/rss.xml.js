@@ -11,12 +11,23 @@ export async function GET(context) {
     description:
       'Hello Stu is the personal website and blog of Stuart Mackenzie. Stuart works hard to improve and transform public services as a Senior Partner at TPXimpact. Outside of work he is a photographer, amatuer web developer, runner, parkrun enthsiast and excotic disco dancer!',
     site: context.site,
+    xmlns: {
+      media: 'http://search.yahoo.com/mrss/',
+    },
     items: posts.map(post => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
       link: `/posts/${post.slug}/`,
+      customData: `<media:content
+          type="image/${
+            post.data.postImage.src.format == 'jpg' ? 'jpeg' : 'png'
+          }"
+          width="${post.data.postImage.src.width}"
+          height="${post.data.postImage.src.height}"
+          medium="image"
+          url="${context.site + post.data.postImage.src.src}" />
+      `,
     })),
-    customData: `<language>en-uk</language>`,
   });
 }

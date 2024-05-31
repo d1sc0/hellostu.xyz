@@ -2,7 +2,7 @@
 title: Building Things
 draft: false
 slug: building-things
-pubDate: 2024-05-30
+pubDate: 2024-05-30T16:00:00
 description: 'Some reflections from spending some time re-building this website over the weekend'
 postImage:
   src: '../post_images/34-old-siteRIGHT.jpg'
