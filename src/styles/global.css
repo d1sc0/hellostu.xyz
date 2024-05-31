@@ -124,9 +124,9 @@ blockquote {
   border-left: 8px solid black;
 }
 
-.PieFull {border: 1px black solid; padding-bottom: 2rem;;}
+.PieFull {border: 1px black solid; padding-bottom: 2rem;}
 
-#reactgooglegraph-1 {margin-top: 2rem;}
+#reactgooglegraph-1 {margin-top: 2rem;margin-left: auto;margin-right: auto;}
 
 .PieFull p {
   background-color: #6dcded;

@@ -26,7 +26,7 @@ const options = {
       chartType="PieChart"
       data={data}
       options={options}
-      width={"100%"}
+      width={"95%"}
       height={"450px"}
     />
     </div>
