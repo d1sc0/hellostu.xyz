@@ -124,6 +124,17 @@ blockquote {
   border-left: 8px solid black;
 }
 
+.PieFull {border: 1px black solid; padding-bottom: 2rem;;}
+
+#reactgooglegraph-1 {margin-top: 2rem;}
+
+.PieFull p {
+  background-color: #6dcded;
+  margin: 0;
+  padding: .5rem;
+  border-left: 8px solid black;
+}
+
 ul {
   margin-left: 1.5rem;
   margin-top: 0.5rem;
@@ -549,6 +560,7 @@ nav ul li {
   border-radius: .3rem;
 }
 
+
 /*----------------------------------------------------------------------------------------------*/
 /* IMPORTANT: DESKTOP media query - switches on grid layout if page width is wider than 768px   */
 /*--------------------------------------------------------------------------------------------- */
@@ -670,7 +682,7 @@ nav ul li {
         section.home .welcome-grid p {
           font-size: 1.6rem;
         }
-  
+
 }
   
 
