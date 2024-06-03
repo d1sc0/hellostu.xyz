@@ -10,6 +10,10 @@
     "source": "/podcast.xml",
     "destination": "https://feeds.acast.com/public/shows/hello-stu",
     "type": 301
+  } ,{
+    "source": "/posts-rss.xml",
+    "destination": "https://hellostu.xyz/rss.xml",
+    "type": 301
   } ]
   }
 }
