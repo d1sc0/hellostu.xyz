@@ -11,19 +11,19 @@ socialImage: '/social_images/14-choropleth.jpg'
 tags: ['dataviz', 'maps', 'tech', 'code', 'experiments']
 ---
 
-> This post was originally written on 19 April 2019 whilst I was still using the ghost blogging platform. I then migrated to Gatsby and reimplemented the map using react-leaflet. I've now migrated a 3rd time to Astro and as yet I've not had time to rebuild my choropleth component and get it working again. If you are interested you can still see the original working map over at this [static page on github](https://d1sc0.github.io/choropleth_experiment/index.html).
+import Fire from '/src/components/other/Fire.astro'
+
+> This post was originally written on 19 April 2019 whilst I was still using the ghost blogging platform. I then migrated to Gatsby and reimplemented the map using react-leaflet. I've now migrated a 3rd time to Astro. I've managed to get it working again but this time I've cut react leaflet out of the mix and just using plain old javascript imported into a skeleton astro component.
 
 So I think I've now mentioned several times in my weeknotes that I've been bitten by the data visualisation bug during my recent course with the ODI. I've also mentioned that I found using Public Tableau for [one of my assignments](https://d1sc0.github.io/odi_assignment3/) fairly frustrating so wanted to play with some other tools and methods. The interactive [choropleth map](https://en.wikipedia.org/wiki/Choropleth_map) below is one of my first experiments in doing just that.
 
-![14 buses plus one for the doggies](../post_images/choroLEFT.png)
+<Fire mapAlign="imageLeft"/>
 
 It's a pretty throw-away experiment and I put my hands up to having done no analysis of the data. The reason for keeping it themed to fire incidents for the moment was purely based on knowing it was relatively simple to get hold of data that would be ready to work with. It's showing the total number of incidents attended by Fire Authorities in England between Apr and Sep 2018. Data was sourced from [gov.uk (FIRE0102)](https://www.gov.uk/government/statistical-data-sets/fire-statistics-data-tables#incidents-attended).
 
 I've used a combination of [leaflet js](https://leafletjs.com/) and [mapbox](https://www.mapbox.com/) for the presentation and interactivity. [This tutorial on the leaflet site](https://leafletjs.com/examples/choropleth/) was super helpful in getting me started.
 
 I was keen to be able to use some of the geometry from the [ONS geography portal](http://geoportal.statistics.gov.uk/) in my experiment as they have quite a few different geojson sets for things I'm interested in (boundaries of local authorities as an example). I did at one point go down the rabbit hole of directly using their API for the geometry and although I did get it working it meant using an additional leaflet plugin and some other complications which weren't really necessary whilst I'm not visualising live or changing data. I took a step back and decided to keep it simple for the moment.
-
-I also wanted a method of keeping this [geometry data](https://s3.amazonaws.com/words.lost.extra/firedata2.js) a little more segregated from the actual statistical data than they did in the sample tutorial. I'm now holding the data in [another external js file](https://s3.amazonaws.com/words.lost.extra/fireincdata2.js) and using some very ugly javascript (I mostly understand) to link the two together using a common key (I'm no coder 🤪). However dirty and ugly the code might be it works 🎉 and that's mostly what I'm concerned about whilst playing and prototyping. Taking this approach means that I can swap data and geometry in and out fairly easily when needing to create new versions and different experiments across different posts on this site without really having to do anything other than make very small tweaks to a copy of the script and reference the two external files (geometry and data). It also means I can easily work with and update my dataset in something like google sheets and convert into json pretty easily and be ready to rock.
 
 One thing I liked about leaflet was that it gave some nice easy ways to turn off all the crazy map features. The 1st draft of this the map allowed zooming and panning and zoomed in on selection etc etc. All fine and dandy but a pretty crappy experience on a mobile device where you want people to be able to scroll a page with their thumb not pan a map to another continent. In the context of using a map to visualise this kind of data it was massive interaction overkill and totally pointless. Good to know I can play with those things for other uses though.
 

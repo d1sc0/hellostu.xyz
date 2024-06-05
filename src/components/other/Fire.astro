@@ -1,0 +1,11 @@
+---
+import '../../styles/maps.css';
+const { mapAlign } = Astro.props;
+---
+
+<script>
+  import '../../scripts/fire-inc-map.js';
+</script>
+<div class={mapAlign}>
+  <div id="map"></div>
+</div>
