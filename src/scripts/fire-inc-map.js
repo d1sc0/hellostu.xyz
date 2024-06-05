@@ -1,5 +1,4 @@
 import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import { incData } from './data/fire-inc-data';
 ('./data/fire-inc-data.js');
 
