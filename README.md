@@ -36,3 +36,5 @@
 - post some content
 - and then maybe some more
 - maybe add some sharing buttons or at least a prompt
+- add next and previous post buttons?
+- improve pagination component?
