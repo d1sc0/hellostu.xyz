@@ -186,6 +186,8 @@ section.post h2.title {
   font-size: 2.2rem;
 }
 
+section.post li {margin-bottom: 1rem;}
+
 section.post .tags {margin-top:2rem;}
 
 section.footer {
