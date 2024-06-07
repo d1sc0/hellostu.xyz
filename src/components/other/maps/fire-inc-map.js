@@ -1,6 +1,5 @@
 import L from 'leaflet';
-import { incData } from './data/fire-inc-data';
-('./data/fire-inc-data.js');
+import { incData } from './data/fire-inc-data.js';
 
 const map = L.map('map', {
   zoomControl: false,
