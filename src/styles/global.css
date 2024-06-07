@@ -124,16 +124,6 @@ blockquote {
   border-left: 8px solid black;
 }
 
-.PieFull {border: 1px black solid; padding-bottom: 2rem;}
-
-#reactgooglegraph-1 {margin-top: 2rem;margin-left: auto;margin-right: auto;}
-
-.PieFull p {
-  background-color: #6dcded;
-  margin: 0;
-  padding: .5rem;
-  border-left: 8px solid black;
-}
 
 ul {
   margin-left: 1.5rem;
@@ -342,6 +332,20 @@ section.pagination {
       border-radius: .5rem;
       cursor: pointer;
     }
+
+.pieFull {
+  border: 1px black solid;
+  padding-bottom: 2rem;
+}
+
+.pieFull p {
+  background-color: #6dcded;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: .5rem;
+  border-left: 8px solid black;}
+
+#blogging-chart .apexcharts-legend-text {font-size: 0.8rem !important; margin-right: 10px;}
 
 /*  Tag styling
 --------------------------------------------------------------------------------------- */
@@ -586,6 +590,11 @@ nav ul li {
       margin-bottom: 0rem;
       margin:auto;
     }
+
+        #blogging-chart .apexcharts-legend-text {
+          font-size: 1rem !important;
+          margin-right: 10px;
+        }
 
      .imageFull, section.post img[src*="FULL"] {
       width: 100%;
