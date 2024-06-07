@@ -566,6 +566,16 @@ nav ul li {
   border-radius: .3rem;
 }
 
+.chartFull {
+  width: 100%;
+  margin-bottom: 0rem;
+  margin: auto;
+  padding: 1rem;
+  padding-top: 3rem;
+  border: 1px #acacac solid;
+}
+
+
 
 /*----------------------------------------------------------------------------------------------*/
 /* IMPORTANT: DESKTOP media query - switches on grid layout if page width is wider than 768px   */
@@ -582,19 +592,8 @@ nav ul li {
       .button-p {
         text-align: left;
         }
+
     /* desktop media styles */
-
-     .chartFull{
-      width: 80%;
-      height: auto;
-      margin-bottom: 0rem;
-      margin:auto;
-    }
-
-        #blogging-chart .apexcharts-legend-text {
-          font-size: 1rem !important;
-          margin-right: 10px;
-        }
 
      .imageFull, section.post img[src*="FULL"] {
       width: 100%;
@@ -621,6 +620,11 @@ nav ul li {
       margin-left: 1.5rem;
       border-radius: .3rem;
       float: right !important;
+    }
+
+    .apexcharts-legend-text {
+      font-size: 1rem !important;
+      margin-right: 10px;
     }
 
     /* desktop nav styles */

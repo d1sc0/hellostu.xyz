@@ -11,9 +11,10 @@ socialImage: '/social_images/13-tgf-parkrun.jpg'
 tags: ['experiments', 'data', 'tech', 'dataviz', 'parkrun']
 ---
 
-import Barchart from '/src/components/react/tgf-data/barchart.jsx'
-import Linechart from '/src/components/react/tgf-data/linechart.jsx'
-import Doughnutchart from '/src/components/react/tgf-data/doughnutchart.jsx'
+import Barchart from '/src/components/other/TGF-TimeDistribution.astro'
+import Linechart from '/src/components/other/TGF-Attendance.astro'
+import Linechart2 from '/src/components/other/TGF-FinishingTimes.astro'
+import Doughnutchart from '/src/components/other/TGF-Generations.astro'
 
 Anyone who follows [me on twitter](https://twitter.com/_disco) will have possibly noticed that parkrun has become a bit of an obsession for me lately. There are a few reasons for this which I'm sure I'll write about another day. The short story though is that I'm currently loving it and in my spare time I volunteer as part of the core event team for [The Great Field parkrun](https://www.parkrun.org.uk/thegreatfield/) which is conveniently just a few minutes walk from my front door in Poundbury, Dorset.
 
@@ -51,13 +52,13 @@ Getting the word out to people who've never heard of parkrun or haven't heard we
 
 I won't share names in this post but I can tell you we've had **4 individuals who've crossed the line at all 20 events** at The Great Field. According to their parkrun profiles two of those four were brand new to parkrun at our first event and have so far (in terms of parkrun attendance) only ever run with us, which is a most impressive streak indeed! ♥️
 
-<Linechart data="attendance" chartClass="chartFull" client:visible/>
+<Linechart chartClass="chartFull"/>
 
 Attendance has only dipped below the 200 participants mark for one event. This happened to be New Year's day so I think we can safely say this is likely caused by a combination of people recovering from the night before or heading out to the [Broadstone quarter marathon](https://poolerunners.co.uk/broadstone-quarter/), which is a popular place to start the new year if you're a runner in Dorset.
 
 Rather than simply list out the number of athletes by parkrun age categories I thought I'd turn to the dark side (marketing 😈) and roughly show how our attendees break down by [generational groups](https://www.mentalfloss.com/article/609811/age-ranges-millennials-and-generation-z). Doing this also helps compensate for an interesting quirk in the stats. When I totalled up the number of athletes against the athletic age/gender categories used by parkrun - I was out by a total of 32! I scratched my head for a while before noticing that 32 attendees in the last 20 events have had a birthday which means they've been listed in more than one age category. Many happy returns birthday people!! 🎂
 
-<Doughnutchart chartClass="imageRight" client:visible />
+<Doughnutchart chartClass="imageRight" />
 
 This data won't be totally accurate as I don't have people's actual birthdays and the generational groups won't perfectly align to the boundaries of parkrun age categories but it more than hints at the general shape of age groups attending our event. Clearly my fellow **Generation X'ers are as keen on parkrun as I am with them representing 37.2% of our athletes**. We have 86 young athletes in our Generation Alpha group. It'll be interesting to see if this continues to grow as part of family groups attending on a regular basis or whether it's a bit of a blip caused by event number 15 where young people from Dorchester Middle School joined us to raise money and awareness around young people suffering from [Mental Health Issues](https://dorsetmind.uk/). You can clearly see the impact of this on our overall attendance for event 15 in the line chart above
 
@@ -65,13 +66,13 @@ This data won't be totally accurate as I don't have people's actual birthdays an
 
 Even when I was much fitter than I am now and training often, I never successfully managed to run 5km under 20 minutes (my [closest effort](https://www.parkrun.org.uk/parkrunner/633637/) falling short by 6 seconds) so I have a huge amount of respect for the people flying around the course that quickly. The graph below shows the fastest finish time at each event for both Men and Women. You can see our **current course record of 16:21 was set at our 3rd event**. It's subtle but it does oddly look like our first finishers times might start trending slower - maybe our marshalls are just providing too much on-course entertainment for these speedsters to concentrate 🧐😂.
 
-<Linechart data="fasttimes" chartClass="chartFull" client:visible /> 
+<Linechart2 chartClass="chartFull" /> 
 
 It's absolutely great to see our fastest woman cross the line quicker than our fastest man on the 8th January. We are trying really hard to [encourage as many women and girls to take part in parkrun as possible](https://blog.parkrun.com/uk/2022/02/16/gender-balance-through-the-parkrun-journey/) so hopefully this might become a trend in our results more often.
 
 parkrun really isn't just about the fast few though. The **average finish time across all participants is currently 29:06**. This correlates to the chart below where if we break down our finishers into 5 minute finishing windows the majority of people cross the line between 25-30 mins, followed by the 30-35 minute grouping.
 
-<Barchart chartClass="imageRight" client:visible/>
+<Barchart chartClass="imageRight" />
 
 For a future experiment I'd be keen to compare this picture to that of other events to see how typical these stats are across the wider parkrun event community. I'm very interested in that white space to the right of the bars on the chart! There is a real opportunity to be promoting our event to people in the community who might not have the confidence to participate or be put off by the number of people finishing ahead of 35 mins. Like all parkruns we have tailwalkers (not runners) at our event who make sure [nobody ever comes last at parkrun](https://blog.parkrun.com/uk/2020/04/20/walking-the-talk/). We've also become the graduation run setting for a couple of couch to 5km groups that are run locally which is fantastic. Posts like [this one from Conkers parkrun](https://blog.parkrun.com/uk/2020/06/30/everyone-is-equal/) though make me think there might be even more we can do to encourage people to be be part of our communuity, share the fun, get active and increase our impact!
 
