@@ -8,7 +8,7 @@ postImage:
   src: '../post_images/36-whitechapelLEFT.jpg'
   alt: 'a black and white high contrast photograph taken on the escalator at Whitechapel station.'
 socialImage: '/social_images/36-whitechapel.jpg'
-tags: ['weeknote', 'london', 'website', 'fitness', 'work']
+tags: ['weeknotes', 'london', 'website', 'fitness', 'work']
 ---
 
 It’s been an odd week. I’ve continued to wrestle with some profoundly depressing and complicated personal life stuff that I won’t share. I write this as a reminder that despite the intense thoughts and feelings surrounding this ‘stuff’, I have continued to put one foot in front of the other and move forward. I might not always be able to, but this week, I have, and I’m pretty proud of what I’ve achieved at work and in terms of self-care.
