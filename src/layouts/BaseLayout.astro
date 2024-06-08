@@ -19,24 +19,26 @@ const { frontmatter, pageMeta, prevPost, nextPost } = Astro.props;
         </p>
       </main>
       <section class="postNav">
-        <div class="prevNav">
-          {
-            prevPost && (
+        {
+          prevPost && (
+            <div class="prevNav">
               <a href={`/posts/${prevPost.slug}/`}>
                 &lt&lt {prevPost.data.title}
               </a>
-            )
-          }
-        </div>
-        <div class="nextNav">
-          {
-            nextPost && (
+            </div>
+          )
+        }
+        {!nextPost && prevPost && <div class="nextNav"> (｡◕‿‿◕｡) </div>}
+        {!prevPost && nextPost && <div class="prevNav"> (｡◕‿‿◕｡) </div>}
+        {
+          nextPost && (
+            <div class="nextNav">
               <a href={`/posts/${nextPost.slug}/`}>
                 {nextPost.data.title} &gt&gt
               </a>
-            )
-          }
-        </div>
+            </div>
+          )
+        }
       </section>
       <Footer />
       <PageScripts />
