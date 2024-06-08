@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import PageScripts from '../components/PageScripts.astro';
 import '../styles/global.css';
-const { frontmatter, pageMeta } = Astro.props;
+const { frontmatter, pageMeta, prevPost, nextPost } = Astro.props;
 ---
 
 <html lang="en">
@@ -18,8 +18,29 @@ const { frontmatter, pageMeta } = Astro.props;
           <a href="#top">[Back to top]</a>
         </p>
       </main>
+      <section class="postNav">
+        {
+          prevPost && (
+            <div class="prevNav">
+              <a href={`/posts/${prevPost.slug}/`}>
+                &lt&lt {prevPost.data.title}
+              </a>
+            </div>
+          )
+        }
+
+        {
+          nextPost && (
+            <div class="nextNav">
+              <a href={`/posts/${nextPost.slug}/`}>
+                {nextPost.data.title} &gt&gt
+              </a>
+            </div>
+          )
+        }
+      </section>
       <Footer />
+      <PageScripts />
     </div>
-    <PageScripts />
   </body>
 </html>

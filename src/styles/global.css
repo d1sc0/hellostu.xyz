@@ -64,6 +64,9 @@ main, header, footer {
   box-shadow: 5px 8px;
 }
 
+.postNav {max-width: 72rem;
+  margin: 0 auto;}
+
 header{
   margin-top: 
   .5rem; 
@@ -178,7 +181,18 @@ section.post h2.title {
 
 section.post li {margin-bottom: 1rem;}
 
-section.post .tags {margin-top:2rem;}
+section.post .tags {margin-top: 0.2rem;}
+section.post .postDate {
+    margin-top: 0.2rem;
+    display: inline-block;
+    background-color: #70d6ffff;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 3px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 8px;
+}
 
 section.footer {
   text-align: center;
@@ -318,6 +332,27 @@ section.pagination {
   font-size: 1.3rem;
 }
 
+.postNav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.nextNav,
+.prevNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .5rem;
+  margin-top: 1rem;;
+  height: 6rem;
+  border: 1px solid #000000;
+  box-shadow: 5px 8px;
+  border-radius: .3rem;
+  background-color: #fafa00ff;
+}
+
     .button-p {
       text-align: center;
     }
@@ -357,7 +392,7 @@ section.pagination {
   display: inline-block; 
   background-color:#D12E3A; 
   margin-right: 15px; 
-  margin-bottom: 20px; 
+  margin-bottom: 10px; 
   padding: 3px; 
   padding-left: 11px; 
   padding-right: 11px; 
@@ -576,7 +611,6 @@ nav ul li {
 }
 
 
-
 /*----------------------------------------------------------------------------------------------*/
 /* IMPORTANT: DESKTOP media query - switches on grid layout if page width is wider than 768px   */
 /*--------------------------------------------------------------------------------------------- */
@@ -697,6 +731,7 @@ nav ul li {
         section.home .welcome-grid p {
           font-size: 1.6rem;
         }
+
 
 }
   
