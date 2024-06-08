@@ -3,7 +3,7 @@ title: What Makes a Great Retrospective
 draft: false
 slug: what-makes-a-great-retrospective
 pubDate: 2017-12-04
-description: 'Some basic advice from me on how to run a great agile retrospective as part of any project'
+description: 'I give advice on what makes a great retrospective: dedicating time, celebrating successes, fostering team building, encouraging honesty, and focusing on actionable outcomes.'
 postImage:
   src: '../post_images/avengers-assembleFULL.jpg'
   alt: 'the avengers assembling'
