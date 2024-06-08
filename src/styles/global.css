@@ -342,6 +342,7 @@ section.pagination {
 .nextNav,
 .prevNav {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   width: 100%;
