@@ -3,7 +3,7 @@ title: Week3 - Dear Diary
 draft: false
 slug: wk3-dear-diary
 pubDate: 2019-04-06
-description: 'I detail a busy week with a daily journal format. Includes project work, team meetings, personal reflections, and balancing work and family.'
+description: 'I summarize a week of accomplishments, including completing an ODI course and learning about GDPR.'
 postImage:
   src: '../post_images/monkeyRIGHT.gif'
   alt: 'monkey sat at a desk smashing a laptop'
