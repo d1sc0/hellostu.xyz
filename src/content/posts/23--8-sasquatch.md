@@ -3,7 +3,7 @@ title: 8 | Sasquatch
 draft: false
 slug: 8-sasquatch
 pubDate: 2023-03-13
-description: 'The eigth in a weekly series of photographic self-portraits of Stuart Mackenzie. This week I am playing with new lighting setups but the photo does not quite satisfy my artistic needs!'
+description: 'Experimenting with lighting in self-portraits, feeling artistically unsatisfied and pushing creative boundaries.'
 postImage:
   src: '../post_images/52weeks/52_2023_8_FULL.jpg'
   alt: 'black and white photo of me pouting'

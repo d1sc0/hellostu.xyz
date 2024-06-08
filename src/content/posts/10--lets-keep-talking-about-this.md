@@ -3,7 +3,7 @@ title: Let's keep talking about this
 draft: false
 slug: lets-keep-talking-about-this
 pubDate: 2019-10-15
-description: 'a short but important post about baby loss awareness week'
+description: 'Discussing Baby Loss Awareness Week, emphasizing the importance of breaking the silence and sharing personal stories.'
 postImage:
   src: '../post_images/morganbethanyFULL.jpg'
   alt: 'two tattered teddies sitting by the side of a grave'

@@ -3,7 +3,7 @@ title: Weeknote - London calling
 draft: false
 slug: weeknote-london-calling
 pubDate: 2024-06-07
-description: 'A weeknote covering the period 1st-7th June. Reflections from the weekend, the working week, my return to London, progress in fitness, web projects, etc.'
+description: 'A weeknote covering the period 1st-7th June. Reflecting on a week of returning to London, work, fitness progress, web projects, and balancing family time.'
 postImage:
   src: '../post_images/36-whitechapelLEFT.jpg'
   alt: 'a black and white high contrast photograph taken on the escalator at Whitechapel station.'

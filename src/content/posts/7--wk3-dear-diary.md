@@ -3,7 +3,7 @@ title: Week3 - Dear Diary
 draft: false
 slug: wk3-dear-diary
 pubDate: 2019-04-06
-description: 'I summarize a week of accomplishments, including completing an ODI course and learning about GDPR.'
+description: 'I share late notes from a busy week, feeling refreshed after Easter break. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.'
 postImage:
   src: '../post_images/monkeyRIGHT.gif'
   alt: 'monkey sat at a desk smashing a laptop'

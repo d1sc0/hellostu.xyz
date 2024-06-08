@@ -3,7 +3,7 @@ title: 15 | Geometry
 draft: false
 slug: 15-geometry
 pubDate: 2023-06-07
-description: 'The fifteenth in a weekly series of photographic self-portaits accopained by a journal entry contianing thoughts about organisation strucutre and ways of working'
+description: 'A self-portrait series entry with thoughts on organization, work, and personal growth, inspired by geometric art.'
 postImage:
   src: '../post_images/52weeks/52_2023_15_FULL.jpg'
   alt: 'blacka and white photo in front of two geometric pictures hanging on the wall'

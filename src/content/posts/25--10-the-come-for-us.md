@@ -3,7 +3,7 @@ title: 10 | They come for me
 draft: false
 slug: 10-they-come-for-me
 pubDate: 2023-03-26
-description: 'The tenth in a weekly series of photographic self-portraits of Stuart Mackenzie. This weeks photo I appear to be starring in my own sci-fi b-movie'
+description: 'Sci-fi themed self-portrait, exploring creativity and storytelling through photography.'
 postImage:
   src: '../post_images/52weeks/52_2023_10_FULL.jpg'
   alt: 'me dazzled by an alien light'

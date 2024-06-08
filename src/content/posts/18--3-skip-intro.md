@@ -3,7 +3,7 @@ title: 3 | Skip intro
 draft: false
 slug: 3-skip-intro
 pubDate: 2023-02-05
-description: 'The third in a weekly series of photographic self-portraits of Stuart Mackenzie.'
+description: 'Reflections in self-portrait series, exploring identity, perception, and the impact of self-view.'
 postImage:
   src: '../post_images/52weeks/52_2023_3_FULL.jpg'
   alt: 'a closeup picture of my face'

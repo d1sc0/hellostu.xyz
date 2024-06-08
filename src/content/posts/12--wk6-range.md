@@ -3,7 +3,7 @@ title: Week6 - Range
 draft: false
 slug: wk6-range
 pubDate: 2020-02-21
-description: 'reflections from a busy challenging week and some thoughts on multi-hythenates'
+description: 'Reflecting on a busy, challenging week and thoughts on being a multi-hyphenate, balancing various roles and interests.'
 postImage:
   src: '../post_images/hackney_animalFULL.jpg'
   alt: 'a wig lying on the pavement'

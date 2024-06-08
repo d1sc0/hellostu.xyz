@@ -3,7 +3,7 @@ title: 9 | Hillfort
 draft: false
 slug: 9-hillfort
 pubDate: 2023-03-25
-description: 'The ninth in a weekly series of photographic self-portraits of Stuart Mackenzie. This weeks photo land extremely late and was taken whilst our on the run'
+description: 'Late self-portrait taken while running at an Iron Age hillfort, blending history and personal fitness.'
 postImage:
   src: '../post_images/52weeks/52_2023_9_FULL.jpg'
   alt: 'a blurry runner in the distance of an iron age hillfort'

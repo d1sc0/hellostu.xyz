@@ -3,7 +3,7 @@ title: 13 | Healing wounds
 draft: false
 slug: 13-healing-wounds
 pubDate: 2023-05-15
-description: 'The thirteenth in a weekly series of photographic self-portraits of Stuart Mackenzie. In this weeks photo I show off my new tattoos, which are at the start of a healing process'
+description: 'A self-portrait showing new tattoos beginning to heal, reflecting on creativity and the healing process.'
 postImage:
   src: '../post_images/52weeks/52_2023_13_FULL.jpg'
   alt: 'closeup photograph of my arms and new astronaut tattoo'

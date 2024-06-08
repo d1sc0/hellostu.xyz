@@ -3,7 +3,7 @@ title: 16 | Fever dream
 draft: false
 slug: 16-fever-dream
 pubDate: 2023-07-14
-description: 'The Sixteenth in a weekly series of photographic self-portaits accopained by a journal entry contianing thoughts about organisation strucutre and ways of working'
+description: 'A self-portrait and journal entry exploring organizational structure and working methods, created during a flu bout.'
 postImage:
   src: '../post_images/52weeks/52_2023_16_FULL.jpg'
   alt: 'me with the flu and wrapped in tissues'

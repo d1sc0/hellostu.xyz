@@ -3,7 +3,7 @@ title: 14 | Head above water
 draft: false
 slug: 14-head-above-water
 pubDate: 2023-05-24
-description: 'The fourteenth in a weekly series of photographic self-portaits accopained by a journal entry and revealing a new side-project!'
+description: 'A self-portrait and journal entry revealing a new side project, discussing work-life balance and personal challenges.'
 postImage:
   src: '../post_images/52weeks/52_2023_14_FULL.jpg'
   alt: 'a photo of me in the sea with a wave in front of my face'

@@ -3,7 +3,7 @@ title: 4 | Stepping into the light
 draft: false
 slug: 4-stepping-into-the-light
 pubDate: 2023-02-12
-description: 'The fourth in a weekly series of photographic self-portraits of Stuart Mackenzie.'
+description: 'Self-portrait on stairs, exploring light, shadow, and personal journeys.'
 postImage:
   src: '../post_images/52weeks/52_2023_4_FULL.jpg'
   alt: 'a mono picture of me sitting on the stairs'

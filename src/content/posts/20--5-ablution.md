@@ -3,7 +3,7 @@ title: 5 | Ablution
 draft: false
 slug: 5-ablution
 pubDate: 2023-02-18
-description: 'The fifth in a weekly series of photographic self-portraits of Stuart Mackenzie.'
+description: 'Shower-themed self-portrait, contemplating routine, creativity, and personal rituals.'
 postImage:
   src: '../post_images/52weeks/52_2023_5_FULL.jpg'
   alt: 'a mirror image of me in the shower'

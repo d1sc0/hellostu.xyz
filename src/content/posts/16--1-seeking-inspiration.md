@@ -3,7 +3,7 @@ title: 1 | Seeking inspiration and comfort
 draft: false
 slug: 1-seeking-inspiration-and-comfort
 pubDate: 2023-01-19
-description: 'The first in a weekly series of photographic self-portraits.'
+description: 'Starting a self-portrait series, setting the tone for personal exploration and artistic expression.'
 postImage:
   src: '../post_images/52weeks/52_2023_1_FULL.jpg'
   alt: 'stu sits in his office in front of a wall with guitars'

@@ -3,7 +3,7 @@ title: Zen Friday
 draft: false
 slug: zen-friday
 pubDate: 2023-10-20
-description: 'A random update recorded whilst hiking around Maiden Castle. I briefly cover work, friends, fitness and 100 parkruns!'
+description: 'An audio note covering work, fitness, friendships, and achieving 100 parkruns, recorded during a hike around Maiden Castle.'
 postImage:
   src: '../post_images/33-zen-friday.jpg'
   alt: 'a photo of concentric circles of gravel from a zen garden'
