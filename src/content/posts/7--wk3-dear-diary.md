@@ -3,7 +3,7 @@ title: Week3 - Dear Diary
 draft: false
 slug: wk3-dear-diary
 pubDate: 2019-04-06
-description: 'a summary fo the week that was...'
+description: 'I detail a busy week with a daily journal format. Includes project work, team meetings, personal reflections, and balancing work and family.'
 postImage:
   src: '../post_images/monkeyRIGHT.gif'
   alt: 'monkey sat at a desk smashing a laptop'
