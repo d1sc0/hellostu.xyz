@@ -3,7 +3,7 @@ title: Homesick
 draft: false
 slug: homesick
 pubDate: 2018-11-25
-description: 'A reflection about working away from home'
+description: 'I reflect on homesickness after two years of splitting my life between Dorset and London, discussing the persistent feelings of anxiety and displacement.'
 postImage:
   src: '../post_images/one-man-islandFULL.jpg'
   alt: 'one man sitting on a rock in the ocean'
