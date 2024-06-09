@@ -31,13 +31,13 @@
 - [x] Properly revisit 404
 - [x] consolidate styles and tidy into global
 - [x] bugger around with MDX posts and react components I'll be missing.
-- [x] Maybe look at setting up a headless CMS - have tried - Decap CMS, Tina, VSCode Front Matter and they all suck. Stick to Bear and the code editor for the time being
+- [x] Maybe look at setting up a headless CMS - have tried - Decap CMS, Tina, VSCode Front Matter and they all suck.
 - [x] post some content
 - [x] and then maybe some more
 - [x] add next and previous post buttons?
 
-- maybe add some sharing buttons or at least a prompt
-- improve pagination component?
+- [ ] maybe add some sharing buttons or at least a prompt
+- [ ] improve pagination component?
 
 # Bulit on top of the Minimal starter below
 
