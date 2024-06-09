@@ -35,7 +35,7 @@
 - [x] post some content
 - [x] and then maybe some more
 - [x] add next and previous post buttons?
-
+- [ ] leaflet map with legend on the outside of map 
 - [ ] maybe add some sharing buttons or at least a prompt
 - [ ] improve pagination component?
 
