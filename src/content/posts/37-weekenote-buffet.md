@@ -2,7 +2,7 @@
 title: Weeknote - Buffet
 draft: false
 slug: weeknote-buffet
-pubDate: 2024-06-14 10:00:00
+pubDate: 2024-06-14T10:25:00
 description: 'A Weeknote covering the period 7th-14th June. This week was an assorted buffet including sales work, leadership training, reconnecting socially and making things '
 postImage:
   src: '../post_images/37-man-at-buffet.jpg'
