@@ -1,0 +1,23 @@
+---
+import 'leaflet/dist/leaflet.css';
+import '../../styles/maps.css';
+const { mapAlign } = Astro.props;
+---
+
+<script>
+  import './maps/tgf-visitors-map.js';
+</script>
+<div class={mapAlign}>
+  <div id="TGFmap"></div>
+  <p class="tgfMapLegend">Parkrun territories</p>
+  <button id="UK">UK</button>
+  <button id="Ireland">Ireland</button>
+  <button id="France">France</button>
+  <button id="Germany">Germany</button>
+  <button id="Finland">Finland</button>
+  <button id="USA">USA</button>
+  <button id="Australia">Australia</button>
+  <button id="NewZealand">New Zealand</button>
+  <button id="SouthAfrica">South Africa</button>
+  <button id="SouthEastAsia">South East Asia</button>
+</div>
