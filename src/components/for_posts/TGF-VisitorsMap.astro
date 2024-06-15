@@ -9,7 +9,7 @@ const { mapAlign } = Astro.props;
 </script>
 <div class={mapAlign}>
   <div id="TGFmap"></div>
-  <p class="tgfMapLegend">Parkrun territories</p>
+  <p class="tgfMapTitle">Map of TGF parkrun visitors home locations</p>
   <button id="UK">UK</button>
   <button id="Ireland">Ireland</button>
   <button id="France">France</button>
@@ -20,4 +20,9 @@ const { mapAlign } = Astro.props;
   <button id="NewZealand">New Zealand</button>
   <button id="SouthAfrica">South Africa</button>
   <button id="SouthEastAsia">South East Asia</button>
+  <p class="tgfMapLegend">
+    <small
+      >Use these buttons to help pan the map to different parkrun territories</small
+    >
+  </p>
 </div>

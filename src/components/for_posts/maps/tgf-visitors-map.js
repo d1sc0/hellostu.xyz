@@ -1,7 +1,10 @@
 import L from 'leaflet';
 import { VisitorData } from './data/tgfVisitorHomes.js';
 
-var map = L.map('TGFmap').setView([54.09354272113172, -2.765121459960938], 6);
+var map = L.map('TGFmap', { zoomSnap: 0.5 }).setView(
+  [54.09354272113172, -2.765121459960938],
+  5.5
+);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
@@ -65,7 +68,7 @@ L.geoJSON(VisitorData, {
 }).addTo(map);
 
 document.getElementById('UK').addEventListener('click', () => {
-  map.setView([54.09354272113172, -2.765121459960938], 6);
+  map.setView([54.09354272113172, -2.765121459960938], 5.5);
 });
 
 document.getElementById('Ireland').addEventListener('click', () => {

@@ -12,7 +12,22 @@
 }
 
 p.tgfMapLegend {
+  margin-top: 3px;
   margin-bottom: 0px;
+}
+
+p.tgfMapTitle {
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+.mapFull {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border: 1px black solid;
+  margin-bottom: 0rem;
+  border-radius: 0.3rem;
 }
 
 .info {
