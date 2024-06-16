@@ -1,3 +1,21 @@
+export const HomeData = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-2.458095, 50.713642],
+      },
+      properties: {
+        HomeName: 'The Great Field parkrun',
+        HomeID: 2159,
+        NoOfAthletes: 1183,
+      },
+    },
+  ],
+};
+
 export const VisitorData = {
   type: 'FeatureCollection',
   features: [

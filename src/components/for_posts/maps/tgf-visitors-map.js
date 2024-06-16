@@ -1,5 +1,5 @@
 import L from 'leaflet';
-import { VisitorData } from './data/tgfVisitorHomes.js';
+import { VisitorData, HomeData } from './data/tgfVisitorHomes.js';
 
 var map = L.map('TGFmap', { zoomSnap: 0.5 }).setView(
   [54.09354272113172, -2.765121459960938],
@@ -42,6 +42,12 @@ function circleWithText(latLng, txt, radius, borderWidth, circleClass) {
   return marker;
 }
 
+L.geoJSON(HomeData, {
+  pointToLayer: function (feature, latlng) {
+    return circleWithText(latlng, 'TGF', 13, 2, 'circle2');
+  },
+}).addTo(map);
+
 function onEachFeature(feature, layer) {
   // does this feature have a property named popupContent?
   if (feature.properties && feature.properties.HomeName) {
@@ -59,7 +65,7 @@ L.geoJSON(VisitorData, {
     return circleWithText(
       latlng,
       feature.properties.NoOfAthletes,
-      15,
+      18,
       2,
       'circle1'
     );

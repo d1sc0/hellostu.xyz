@@ -66,12 +66,24 @@ p.tgfMapTitle {
   border-style: solid;
   font-size: 14px;
   font-weight: bold;
+  position: relative;
 }
 
 .circle.circle1 {
   background: rgba(255, 176, 18, 0.621);
   border-color: #f5970b;
   color: white;
+}
+
+.circle.circle2 {
+  background: #1279ff9e;
+  font-size: 10px;
+  border-color: hsl(201, 92%, 50%);
+  color: white;
+}
+
+.leaflet-marker-icon:has(.circle2) {
+  z-index: 2000 !important;
 }
 
 .my-control {
