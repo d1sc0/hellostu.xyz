@@ -3,7 +3,7 @@ title: Weeknote - The Uber
 draft: false
 slug: weeknote-the-uber
 pubDate: 2024-06-28T12:50:00
-description: 'This weeks notes about work, life and random encounters with strangers following more train chaos. Covers the period 21th-28th June'
+description: 'This weeks notes about work, life and random encounters with strangers in an uber adventure. Covers the period 21th-28th June'
 postImage:
   src: '../post_images/40-stuber.jpg'
   alt: 'a stick man sketch of me with beard, glasses and a peaked hat.'
