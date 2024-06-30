@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+import img1 from '/src/content/page_images/jcc-selfie.jpg';
+import img2 from '/src/content/page_images/jcc-selfie2.jpg';
+import img3 from '/src/content/page_images/jcc-selfie3.jpg';
+import img4 from '/src/content/page_images/jcc-selfie4.jpg';
+import img5 from '/src/content/page_images/jcc-selfie5.jpg';
+import img6 from '/src/content/page_images/jcc-selfie6.jpg';
+const arr = [img1, img2, img3, img4, img5, img6];
+const RandomSelfie = arr[Math.floor(Math.random() * arr.length)];
+---
+
+<figure>
+  <Image src={RandomSelfie} alt="Stuart Mackenzie profile picture" />
+  <figcaption>Stuart Mackenzie</figcaption>
+</figure>
