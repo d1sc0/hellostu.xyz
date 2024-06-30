@@ -1,14 +1,20 @@
 ---
-title: Weeknote - The Uber
-draft: false
-slug: weeknote-the-uber
+title: The title
+draft: true
+slug: this-is-the-slug
 pubDate: 2024-06-28T12:50:00
-description: 'This weeks notes about work, life and random encounters with strangers in an uber adventure. Covers the period 21th-28th June'
+description: A description of the post
 postImage:
-  src: 'post_images/40-stuber.jpg'
-  alt: 'a stick man sketch of me with beard, glasses and a peaked hat.'
-socialImage: '/social_images/40-stuber.jpg'
-tags: ['weeknote', 'work', 'life', 'car', 'people', 'team']
+  src: post_images/40-stuber.jpg
+  alt: a stick man sketch of me with beard.
+socialImage: /social_images/40-stuber.jpg
+tags:
+  - weeknote
+  - work
+  - life
+  - car
+  - people
+  - team
 ---
 
 ### Last weekend

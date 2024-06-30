@@ -3,12 +3,13 @@ title: Week5 - Late Notes
 draft: false
 slug: wk5-late-notes
 pubDate: 2019-05-01
-description: 'I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.'
+description: I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.
 postImage:
-  src: 'post_images/9-pocket-watch.jpg'
-  alt: 'an old antique pocket watch held in the hand'
-socialImage: '/social_images/9-pocket-watch.jpg'
-tags: ['weeknotes']
+  src: post_images/9-pocket-watch.jpg
+  alt: an old antique pocket watch held in the hand
+socialImage: /social_images/9-pocket-watch.jpg
+tags:
+  - weeknotes
 ---
 
 I was hoping to post these last Friday but I got side-tracked with all of the other things! Main point to note was that I returned back from a much needed Easter Break feeling massively refreshed.
