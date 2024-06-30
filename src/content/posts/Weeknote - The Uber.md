@@ -19,7 +19,7 @@ tags:
 
 ## Last weekend
 
-The weekend is mostly now a blurry memory. I marshalled at parkrun. I caught up for a much-needed pint and chatted about the deep life stuff with my good friend Paul. The rest of it was life admin connected to pending life changes. This was draining but necessary.
+The weekend is mostly now a blurry memory. I marshalled at parkrun. I caught up for a much-needed pint and chatted about the deep life stuff with my good friend Paul. The rest of it was life admin connected to pending life changes. This was draining but necessary. 
 
 ## The work
 
