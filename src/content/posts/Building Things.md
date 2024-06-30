@@ -15,7 +15,7 @@ tags: ['astro', 'gatsby', 'build', 'design', 'code', 'tech']
 
 Many of my projects at work over the last 12-18 months have been at the service, organisation and strategy end of the spectrum. I’m cool with that and I have plenty of experience to bring but a little bit of me has missed being closer to product work and the joy that I get from making digital things.
 
-The old version of the site was also starting to feel a bit stale, bland and dull. Given I don’t post often and when I do it tends to be about my personal life and hobbies, it felt like there was an opportunity to make my personal site look and feel a bit more…err….personal!
+The old version of the site was also starting to feel a bit stale, bland and dull. Given I don’t post often and when I do it tends to be about my personal life and hobbies, it felt like there was an opportunity to make my personal site look and feel a bit more…err…personal!
 
 So this is the brand new [hellostu.xyz](https://hellostu.xyz). Yes - visual design skills are not my superpower 😂. Not everyone will enjoy the busy aesthetic and wild colours and that’s fine! I’ve purposefully leant into a quirkier, hand-built kind of vibe. It’s not quite the Wild West of the early [GeoCities](https://en.wikipedia.org/wiki/GeoCities) days but I wanted the site to embody some of that early web creativity before our corporate overlords made everything whitespace and widgets.
 
@@ -30,3 +30,4 @@ Gatsby served me well, but moving things over to Astro gave me an excuse for a c
 One of the advantages of Astro that I'm keen to explore is that you can mix and match components from [React, Preact, Svelte, Vue and SolidJS](https://docs.astro.build/en/concepts/islands/) on a single page. It’s very unlikely I will need to do that but having the ability to experiment with a bunch of different frameworks so flexibly without having to worry about breaking the more fundamental site components is compelling.
 
 So what’s next? I guess giving the website some attention might encourage me to post and share content on a more frequent basis but given my life has been a little complicated over recent months I’m not going to make promises I can’t keep. It’s been fun though - Let’s build more things…just not in Sharepoint pls 🙏
+
