@@ -8,7 +8,7 @@ postImage:
   src: 'post_images/high-fivesLEFT.jpg'
   alt: 'high fives high up in a tree'
 socialImage: '/social_images/6-high-fives.jpg'
-tags: ['weeknotes']
+tags: ['weeknote']
 ---
 
 _I'm back for a second week. Yay! but no longer on Medium. It potentially limits my audience but I'm not writing for fame and fortune so that's ok._

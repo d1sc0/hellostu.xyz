@@ -9,7 +9,7 @@ postImage:
   alt: an old antique pocket watch held in the hand
 socialImage: /social_images/9-pocket-watch.jpg
 tags:
-  - weeknotes
+  - weeknote
 ---
 
 I was hoping to post these last Friday but I got side-tracked with all of the other things! Main point to note was that I returned back from a much needed Easter Break feeling massively refreshed.

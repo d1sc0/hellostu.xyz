@@ -8,10 +8,10 @@ postImage:
   src: 'post_images/monkeyRIGHT.gif'
   alt: 'monkey sat at a desk smashing a laptop'
 socialImage: '/social_images/7-computer-monkey.jpg'
-tags: ['weeknotes']
+tags: ['weeknote']
 ---
 
-_3 weeks of #weeknotes and 3 weeks without smoking! 🎉_
+_3 weeks of weeknotes and 3 weeks without smoking! 🎉_
 
 I thought I'd try a different format this week and give a daily digest of my week. I'm not sure it's something I'm likely to repeat often. I've left out hefty amounts of what actually happens with clients and projects as that feels a little odd to share without permission. It's still a very long read (but then it's felt like a very long week 😃). I've drawn out my key reflections in bold if the detail doesn't float your boat...
 

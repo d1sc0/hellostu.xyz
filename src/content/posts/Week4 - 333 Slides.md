@@ -8,7 +8,7 @@ postImage:
   src: 'post_images/8-333.jpg'
   alt: '3 lego stormtrooper minifigs sitting and having a cuppa'
 socialImage: '/social_images/8-333.jpg'
-tags: ['weeknotes']
+tags: ['weeknote']
 ---
 
 This is going to have to be brief. I'm on a train, batteries dying (mostly mine) and dodgy wifi. I will try harder in future.
