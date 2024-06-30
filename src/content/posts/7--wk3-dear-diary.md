@@ -5,7 +5,7 @@ slug: wk3-dear-diary
 pubDate: 2019-04-06
 description: 'I share late notes from a busy week, feeling refreshed after Easter break. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.'
 postImage:
-  src: '../post_images/monkeyRIGHT.gif'
+  src: 'post_images/monkeyRIGHT.gif'
   alt: 'monkey sat at a desk smashing a laptop'
 socialImage: '/social_images/7-computer-monkey.jpg'
 tags: ['weeknotes']
@@ -61,7 +61,7 @@ Alex and Kris had organised a social event for the team. After racking up a fair
 
 Another reasonably early start to pack up by bag and head to the office to grab supplies for a project kick-off. My Macbook Air decided to attempt an update, failed miserably and went into an annoying boot loop. After demonstrating all of the normal behaviours of swearing and gently beating my fists on the keyboard like a tired and confused ape, the internet came to the rescue with '[how to boot a mac into safe mode](https://www.google.com/search?q=how+to+boot+a+mac+into+safe+mode&rlz=1C5CHFA_enGB814GB814&oq=how+to+boot+a+mac+into+safe+mode&aqs=chrome..69i57j0l5.6606j0j4&sourceid=chrome&ie=UTF-8)'. I was then able to sort out the rogue update and get on with my day. Still a frustrating waste of an hour.
 
-![computer says no](../post_images/monkeyRIGHT.gif)
+![computer says no](post_images/monkeyRIGHT.gif)
 
 Shortly after resolving the laptop thing [Robyn (my daughter)](https://www.instagram.com/sleepyrobyn/?hl=en) Whatsapp'd me. She is 16 so this in itself is unusual. She'd found [Jon Bellion](http://www.jonbellion.com/) (who's music we both love) was going to be playing in [London in October](https://www.roundhouse.org.uk/whats-on/2019/jon-bellion/) and she'd snapped us up some tickets for my 40th Birthday. My mood instantly improved. Not only at the thought of going to the gig but **equally how proud I am that Robyn has turned out to be both thoughtful, generous and have ok musical tastes!** She is still the best project I've ever worked on, even if it has run seriously over budget 🤪.
 

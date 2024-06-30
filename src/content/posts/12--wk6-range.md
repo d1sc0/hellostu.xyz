@@ -5,7 +5,7 @@ slug: wk6-range
 pubDate: 2020-02-21
 description: 'Reflecting on a busy, challenging week and thoughts on being a multi-hyphenate, balancing various roles and interests.'
 postImage:
-  src: '../post_images/hackney_animalFULL.jpg'
+  src: 'post_images/hackney_animalFULL.jpg'
   alt: 'a wig lying on the pavement'
 socialImage: '/social_images/12-range.jpg'
 tags: ['weeknotes', 'rarenotes']
@@ -23,7 +23,7 @@ In addition to doing a great job of re-stocking my sticker collection this week 
 
 ### Photo of the week...
 
-![only in hackney - a wig animal on the street](../post_images/hackney_animalFULL.jpg)
+![only in hackney - a wig animal on the street](post_images/hackney_animalFULL.jpg)
 
 ### Top tunes...
 

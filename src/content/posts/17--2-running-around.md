@@ -3,14 +3,14 @@ title: 2 | Running around
 slug: 2-running-around
 description: 'Collaborative self-portrait, experimenting with duality, connection, and shared creativity.'
 postImage:
-  src: '../post_images/52weeks/52_2023_2_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_2_FULL.jpg'
   alt: 'stu stands in the street after a run'
 socialImage: '/social_images/17-running-around.jpg'
 pubDate: 2023-01-29
 tags: ['52weeks', 'photography', 'creativity', 'self', 'running']
 ---
 
-![Stuart stands in the road in front of some nice white rendered houses in his running attire looking a bit grumpy](../post_images/52weeks/52_2023_2_FULL.jpg)
+![Stuart stands in the road in front of some nice white rendered houses in his running attire looking a bit grumpy](post_images/52weeks/52_2023_2_FULL.jpg)
 
 This is the second in my series of self-portraits ([read about more about the project here](/posts/1-seeking-inspiration-and-comfort/)). As I suggested in the first post some of the project would likley be snaps taken on my iphone - and this one falls into that category. I've only recently switched to an iphone and actually I'm quite happy with the quality of this shot. The photo was taken by setting a 10 second timer and propping up the phone precariously on the top of a fence post with suport from a small rock I found nearby. I'm annoyed I've got a bit of a grumpy expression on my face and my hair is all squiffy. This was partly caused by the exhaustion of the preceeding run kicking in and partly by me trying to figure out the camera settings required to get something passable quickly before I returned home to warm up again. Out of 5 or 6 frames this is about the only one where I got the focus right so we'll all have to put up with my silly grumpy face. I guess it adds some interest if nothing else. Tell me what you think in the comments below.
 

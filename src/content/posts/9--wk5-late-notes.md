@@ -5,7 +5,7 @@ slug: wk5-late-notes
 pubDate: 2019-05-01
 description: 'I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.'
 postImage:
-  src: '../post_images/9-pocket-watch.jpg'
+  src: 'post_images/9-pocket-watch.jpg'
   alt: 'an old antique pocket watch held in the hand'
 socialImage: '/social_images/9-pocket-watch.jpg'
 tags: ['weeknotes']

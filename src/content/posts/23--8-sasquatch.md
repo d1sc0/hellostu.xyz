@@ -5,13 +5,13 @@ slug: 8-sasquatch
 pubDate: 2023-03-13
 description: 'Experimenting with lighting in self-portraits, feeling artistically unsatisfied and pushing creative boundaries.'
 postImage:
-  src: '../post_images/52weeks/52_2023_8_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_8_FULL.jpg'
   alt: 'black and white photo of me pouting'
 socialImage: '/social_images/23-sasquatch.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'half_naked']
 ---
 
-![Half naked Stu appears to comically pout for the camera!](../post_images/52weeks/52_2023_8_FULL.jpg)
+![Half naked Stu appears to comically pout for the camera!](post_images/52weeks/52_2023_8_FULL.jpg)
 
 I took this shot on Saturday and nearly didn’t post it. I’m not pleased with it. It was taken while playing with a new lighting setup. I just ordered a second flash unit so I wanted to play with different configurations using two flashes off-camera and using shoot-through umbrellas to soften the light. The lighting is good. During the same shoot I got some fun pictures of Chloe which I [shared here on Instagram](https://www.instagram.com/p/CpqKBQRNfLy/). The same lighting setup doesn’t work quite so nicely here as it doesn’t account for the shadows created by my spectacles.
 

@@ -5,7 +5,7 @@ slug: weeknote-london-calling
 pubDate: 2024-06-07
 description: 'A weeknote covering the period 1st-7th June. Reflecting on a week of returning to London, work, fitness progress, web projects, and balancing family time.'
 postImage:
-  src: '../post_images/36-whitechapelLEFT.jpg'
+  src: 'post_images/36-whitechapelLEFT.jpg'
   alt: 'a black and white high contrast photograph taken on the escalator at Whitechapel station.'
 socialImage: '/social_images/36-whitechapel.jpg'
 tags: ['weeknotes', 'london', 'website', 'fitness', 'work']
@@ -15,7 +15,7 @@ It’s been an odd week. I’ve continued to wrestle with some depressing and co
 
 ## Last weekend
 
-![a picture taken of a parkrun finisher crossing the line at the great field parkrun](../post_images/36-parkrun-finishRIGHT.jpg) Last weekend was a relatively chilled mix of family and domestic activities. I vaguely recall a trip to Portland Bill to watch the waves break on the rocks, mowing the lawn, and a trip to the recycling centre. I was also the Run Director at the Great Field parkrun. Everything went well; the sun came out, there were no incidents, there was a great gang of volunteers, and we had a massive turnout of 300 people starting and finishing.
+![a picture taken of a parkrun finisher crossing the line at the great field parkrun](post_images/36-parkrun-finishRIGHT.jpg) Last weekend was a relatively chilled mix of family and domestic activities. I vaguely recall a trip to Portland Bill to watch the waves break on the rocks, mowing the lawn, and a trip to the recycling centre. I was also the Run Director at the Great Field parkrun. Everything went well; the sun came out, there were no incidents, there was a great gang of volunteers, and we had a massive turnout of 300 people starting and finishing.
 
 ## The work week (sorry it’s long!)
 
@@ -29,7 +29,7 @@ Thursday, I planned to spend a day at the London office. I haven’t done this f
 
 The day was, for the most part, a success. I was a little overwhelmed at various points in the day, but nothing quite tipped me into a meltdown. I had some nice micro catchups with some colleagues I haven’t seen or spoken to in ages. If anything, people’s kindness overwhelmed me more than my reaction to the space and the recollection of memories I was fearing. The couple of people in the office who were more aware of my circumstances checked in on me but also gave me the space I needed when I needed it. I may have even managed to get some work done!
 
-![a black and white high contrast photograph taken on the escalator at Whitechapel station.](../post_images/36-whitechapelLEFT.jpg) I met my good friend Sally for a late lunch. She was her usual kind, clever self with lots of advice, ideas and reassurance for me. She bought me a cheese straw and a coffee! Before I headed home, I grabbed a pint with our new starter, Ben U. Ben isn’t new to me - we worked together back in the FG days, and our paths have crossed a few times over the intervening years. We share many common interests, so catching up and hanging out was a lovely end to the London portion of the day.
+![a black and white high contrast photograph taken on the escalator at Whitechapel station.](post_images/36-whitechapelLEFT.jpg) I met my good friend Sally for a late lunch. She was her usual kind, clever self with lots of advice, ideas and reassurance for me. She bought me a cheese straw and a coffee! Before I headed home, I grabbed a pint with our new starter, Ben U. Ben isn’t new to me - we worked together back in the FG days, and our paths have crossed a few times over the intervening years. We share many common interests, so catching up and hanging out was a lovely end to the London portion of the day.
 
 Those who endured my Instagram stories yesterday will be surprised I have yet to mention THE F\*\*CKING TRAINS. Well, it’s best not to dwell, but my travel yesterday should have consisted of two 2hr 47min direct train journeys—one out and one back.
 The outward journey to London took five and a half hours across three trains. The return journey was three trains and took six hours—not the same trains or routes. It was quite an adventure. So yeah, nearly 12 hours on trains for what resulted in about 4 hours in the office. Was it worth it? Yeah, probably! I have no regrets. Next week, I’ll be back for an overnight stay and a training course. Let’s hope the trains work.

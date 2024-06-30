@@ -5,13 +5,13 @@ slug: 3-skip-intro
 pubDate: 2023-02-05
 description: 'Reflections in self-portrait series, exploring identity, perception, and the impact of self-view.'
 postImage:
-  src: '../post_images/52weeks/52_2023_3_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_3_FULL.jpg'
   alt: 'a closeup picture of my face'
 socialImage: '/social_images/18-skip-intro.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'closeup']
 ---
 
-![My grumpy, pitted, wrinkled face illunminated in a dark frame by a desk lamp](../post_images/52weeks/52_2023_3_FULL.jpg)
+![My grumpy, pitted, wrinkled face illunminated in a dark frame by a desk lamp](post_images/52weeks/52_2023_3_FULL.jpg)
 
 I almost copped out and posted yet another running selfie today! All of the snaps on my phone were pretty lame though and I’m _trying_ not to be lazy with this project. Instead, I reached for my Olympus DSLR and tried to create something a little more interesting. I didn’t have any clear idea, vision or concept in mind so I shot off 6-8 frames of me holding an LED desk lamp over my head in a dark room and then tweaked things a little in Adobe Lightroom. The shot won’t win any prizes but there is something honest and appealing to me about the closeup framing showing my pitted, wrinkled skin, my giant nose and my unkempt facial fuzz. I’m not a model, I’m just a guy, getting older by the day - this is me.
 

@@ -5,7 +5,7 @@ slug: tinkering-monday
 pubDate: 2019-03-25
 description: 'A post about my some website experiments - from ghost blogging throught to static site generators and all the things in between'
 postImage:
-  src: '../post_images/robot-unsplashFULL.jpg'
+  src: 'post_images/robot-unsplashFULL.jpg'
   alt: 'toy robot'
 socialImage: '/social_images/5-tinkering.jpg'
 tags: ['tech', 'experiment', 'website']
@@ -13,7 +13,7 @@ tags: ['tech', 'experiment', 'website']
 
 Publishing my first set of [weeknotes on Friday](http://words.lostinthe.uk/weeknotes-1-be-more-like-robbie/) reminded me how much I find [Medium](http://words.lostinthe.uk/tinkering-monday/medium.com) a bit of an irritating experience. I really do appreciate how Medium removes all the distracting guff and allows you to focus on the content and writing...but as someone who has played with content management systems and websites for a number of years - it also grates a little not to have more control. I realise that's the point but I like to tinker on the web and I've learnt a lot this this way.
 
-![Toy robot](../post_images/robot-unsplashFULL.jpg)
+![Toy robot](post_images/robot-unsplashFULL.jpg)
 
 Today I decided to revisit the [Ghost blogging platform](https://ghost.org/). I had tried it out some time back but had a few issues migrating an image heavy wordpress site and ultimately ended up moving on. Since that time I've also played with a few [static](https://gohugo.io/) [site](https://jekyllrb.com/) [generators](https://www.gatsbyjs.org/) and wrap around content editing tools like [forestry.io](https://forestry.io/) and although these are amazing I then found I was spending too much time tinkering and not enough time writing. I'm hoping Ghost will give me something in between. Ghost can also be used in [headless configurations](https://blog.ghost.org/jamstack/) so if I ever decide to explore that route, it isn't closed to me.
 

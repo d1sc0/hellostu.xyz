@@ -5,13 +5,13 @@ slug: 6-hurghada
 pubDate: 2023-02-26
 description: 'Capturing a self-portrait on a beach in Egypt, reflecting on travel and personal moments.'
 postImage:
-  src: '../post_images/52weeks/52_2023_6_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_6_FULL.jpg'
   alt: 'me standing on a beach peering from behind a surf board'
 socialImage: '/social_images/21-hurghada.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'travel', 'egypt']
 ---
 
-![A surf board stands upright on the short of a beach, Stu peers out from behind it!](../post_images/52weeks/52_2023_6_FULL.jpg)
+![A surf board stands upright on the short of a beach, Stu peers out from behind it!](post_images/52weeks/52_2023_6_FULL.jpg)
 
 So a shot from my iPhone this week with no fancy flash work. I did splash out on an exotic location though! For the next few days, I’m in Hurghada, Egypt on the shore of the Red Sea for a little mini break. I’m nearly two full days in and have another two full days left, returning home late Wednesday. I used a little pocket [Gorillapod](https://joby.com/global/griptight-one-micro-stand-white-chrome-jb01493-0ww/) to hold the iPhone, attached it to a large ashtray thingy and set a 10-second timer before dashing behind the surfboard. I picked my moment as the sun was going down so that I didn’t have 50 other tourists crowding the scene. It does the job and keeps me on track to get 52 of these self-portraits in roughly a year.
 

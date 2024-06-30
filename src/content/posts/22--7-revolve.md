@@ -5,13 +5,13 @@ slug: 7-revolve
 pubDate: 2023-03-05
 description: 'Debating falling or flying in self-portrait series with dynamic backgrounds, exploring movement and change.'
 postImage:
-  src: '../post_images/52weeks/52_2023_7_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_7_FULL.jpg'
   alt: 'me falling through a revolving background'
 socialImage: '/social_images/22-revolve.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'dorset']
 ---
 
-![Stu appears to be falling center frame into some kind of spirally revolving portal!](../post_images/52weeks/52_2023_7_FULL.jpg)
+![Stu appears to be falling center frame into some kind of spirally revolving portal!](post_images/52weeks/52_2023_7_FULL.jpg)
 
 This week I’m back in the more familiar surroundings of Dorset. Not that you can tell but this shot was taken at the top of [Hambledon Hill](https://www.nationaltrust.org.uk/visit/dorset/hambledon-hill). Chloe and I went for a short 5-mile hike around this and another nearby hill fort ([Hod Hill](https://www.nationaltrust.org.uk/visit/dorset/hod-hill)). I thought it’d be nice to get a shot with the beautiful countryside behind me. Chloe stepped into the role of portable light stand and pointed the flash in my general direction (just off to the right of the frame). I set up a remote shutter using my phone and added a 5-second countdown to try and time some jumping photos. This and one other shot reasonably captured me at the right point in the jump, many others just froze me in mid-squat or awkward landing 😂.
 

@@ -5,13 +5,13 @@ slug: 12-these-hands
 pubDate: 2023-04-10
 description: 'Exploring new backdrops and monochrome vibes in self-portrait series, reflecting on the artistic process and personal growth.'
 postImage:
-  src: '../post_images/52weeks/52_2023_12_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_12_FULL.jpg'
   alt: 'black and white photo of me holding my hands up in front of my face'
 socialImage: '/social_images/27-these-hands.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'mono']
 ---
 
-![I stare into the camera lens with my hands up in front of my face](../post_images/52weeks/52_2023_12_FULL.jpg)
+![I stare into the camera lens with my hands up in front of my face](post_images/52weeks/52_2023_12_FULL.jpg)
 
 I’m pleased with this photograph. I like the black and white tones, the shadows and the detail captured. I changed some camera settings this weekend, making setting focus and checking the shot’s framing easier. A small win, but making my workflow more efficient reduces the draw on my time. The black background is also a new addition. I’ve had an old set of background stands in the garage for some time, so it’s nice to have some new fabric to hang and use finally.
 

@@ -5,13 +5,13 @@ slug: 4-stepping-into-the-light
 pubDate: 2023-02-12
 description: 'Self-portrait on stairs, exploring light, shadow, and personal journeys.'
 postImage:
-  src: '../post_images/52weeks/52_2023_4_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_4_FULL.jpg'
   alt: 'a mono picture of me sitting on the stairs'
 socialImage: '/social_images/19-step-into-the-light.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist']
 ---
 
-![sat on the stairs in my house with a strong shadows cast against the wall](../post_images/52weeks/52_2023_4_FULL.jpg)
+![sat on the stairs in my house with a strong shadows cast against the wall](post_images/52weeks/52_2023_4_FULL.jpg)
 
 A little bit more effort in this week’s photograph. To follow up on my intention of using this project to refresh and improve my photography skills, I purchased some new gear this week to increase my creative options. The two significant purchases that made this shot possible were a cheap flash unit and a remote trigger.
 

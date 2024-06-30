@@ -5,7 +5,7 @@ slug: weeknote-the-uber
 pubDate: 2024-06-28T12:50:00
 description: 'This weeks notes about work, life and random encounters with strangers in an uber adventure. Covers the period 21th-28th June'
 postImage:
-  src: '../post_images/40-stuber.jpg'
+  src: 'post_images/40-stuber.jpg'
   alt: 'a stick man sketch of me with beard, glasses and a peaked hat.'
 socialImage: '/social_images/40-stuber.jpg'
 tags: ['weeknote', 'work', 'life', 'car', 'people', 'team']
@@ -21,7 +21,7 @@ The weekend is mostly now a blurry memory. I marshalled at parkrun. I caught up 
 
 Two of the three bits of future work are now signed off, and my effort has shifted to securing the right team. I look forward to setting up delivery and moving on to the first of these projects next week. I’m happier when I’m leaning into projects and surrounded by a team. The 3rd is still nudging ahead slowly, but now it looks likely not to be a thing until late summer - that’s ok. I’d rather we do the work when it’s ready to be worked on than rush and compromise our ability to deliver value.
 
-![a stick man sketch of me with beard, glasses and a peaked hat.](../post_images/40-stuber-LEFT.jpg)
+![a stick man sketch of me with beard, glasses and a peaked hat.](post_images/40-stuber-LEFT.jpg)
 
 On Wednesday, I met up with my fellow team members IRL. There isn’t a bad apple in the barrel - everybody is hardworking, smart, talented and caring. Sickening! We spent time together chewing over meaty problems, being human, breaking out post-it notes and thinking through ways to support the broader community of project leads (and ourselves). Many good discussions were had, and plans are starting to come together about how we, as a team and a community of practice, can work in the open more, get advice/support/challenge, and share knowledge more easily across our growing internal & external networks. I’m hopeful that if we lead these things well, we also have an opportunity to reduce the amount of time spent feeding the accountability and reporting machine that, in places, has become burdensome. Things were documented, we took away actions, and I enjoyed getting to know folks better. A good day!
 

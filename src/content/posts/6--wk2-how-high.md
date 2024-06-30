@@ -5,7 +5,7 @@ slug: wk2-how-high
 pubDate: 2019-03-29
 description: 'I tackle a high ropes course, pushing my limits and reflecting on the experience. I share insights on teamwork, challenge, and progress, plus weekly highlights in study, projects, and social events.'
 postImage:
-  src: '../post_images/high-fivesLEFT.jpg'
+  src: 'post_images/high-fivesLEFT.jpg'
   alt: 'high fives high up in a tree'
 socialImage: '/social_images/6-high-fives.jpg'
 tags: ['weeknotes']
@@ -19,7 +19,7 @@ I won't go into all the details of the day but it was a great experience and a f
 
 I've been reflecting on the factors that got me both beyond my comfort zone and to a position where I could value the new perspective that this gave me (in a literal sense when your [30ft above the ground](https://www.instagram.com/p/BvZG9bIASM7/)). I appreciate it's a bit of a cliché to draw parallels between this and practicing as a consultant but it was a really well facilitated experience over a period of just a few hours which makes it super easy to identify the things that were put in place that helped achieve this positive outcome.
 
-![team mackenzie on the high ropes](../post_images/high-fivesLEFT.jpg)
+![team mackenzie on the high ropes](post_images/high-fivesLEFT.jpg)
 
 Here's what I noted...
 
@@ -44,7 +44,7 @@ I like to think there is plenty above I already bring into my work practice but 
 
 **New projects and teams...** I've been in a couple of planning sessions this week for new projects. The projects are super interesting and I'm looking forward to working with some new team members. One project in particular will see me contributing to some strategy work (which is well timed based on my learning from last week). **I'm very excited!**
 
-![yass queen - the queer eye crew scream](../post_images/queer-eyeRIGHT.gif)
+![yass queen - the queer eye crew scream](post_images/queer-eyeRIGHT.gif)
 
 **Being social...** The week also included a nice breakfast catch-up with an old FG friend, a pint or 3 with [Jan](https://twitter.com/Jottblum) on Wednesday night and some team food and drinks to mark an important milestone on a critical project on Thursday. Probably a more boozy week than it should be? Yes. #notsorry
 

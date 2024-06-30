@@ -5,7 +5,7 @@ slug: weeknote-chimp
 pubDate: 2024-06-21T19:13:00
 description: 'A weeknote with some reflections on what became a very short week due to sickness. Covers the period 14th-21st June'
 postImage:
-  src: '../post_images/39-ape-FULL.jpg'
+  src: 'post_images/39-ape-FULL.jpg'
   alt: 'a chimpanzee sits in the long grass picking up insects.'
 socialImage: '/social_images/39-ape.jpg'
 tags: ['weeknote', 'sick', 'solstice', 'monkeys', 'work']
@@ -20,7 +20,7 @@ The work week was cut short by a two-day migraine, which followed a weekend of f
 - We had our regular divisional ‘all hands’ meeting on Thursday. Jen kicked it off by sharing some wisdom, adeptly navigating some quite challenging/sensitive content and creating a short pause for folks to reflect. It felt wholesome and cheerful, and I think maybe I needed that moment, so I feel grateful 🙏
 - I had a few interactions with colleagues in my team this week that have made me feel more grounded and reminded me I’m in great company. I look forward to spending more time with some of them IRL next week. Equally, at times, I do look around and feel like the odd one out…like they are all great, and I suck. I’m hoping that little imposter anxiety voice in my head can shut the f\*\*k up; cos, frankly, I have other more important things to be anxious about right now 😂
 
-![a chimpanzee sits in the long grass picking up insects.](../post_images/39-ape-FULL.jpg)
+![a chimpanzee sits in the long grass picking up insects.](post_images/39-ape-FULL.jpg)
 
 ### Life
 

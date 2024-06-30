@@ -5,13 +5,13 @@ slug: homesick
 pubDate: 2018-11-25
 description: 'I reflect on homesickness after two years of splitting my life between Dorset and London, discussing the persistent feelings of anxiety and displacement.'
 postImage:
-  src: '../post_images/one-man-islandFULL.jpg'
+  src: 'post_images/one-man-islandFULL.jpg'
   alt: 'one man sitting on a rock in the ocean'
 socialImage: '/social_images/3-homesick.jpg'
 tags: ['life', 'homesick', 'reflection']
 ---
 
-![Stuart sat on a rock out at sea](../post_images/one-man-islandFULL.jpg)
+![Stuart sat on a rock out at sea](post_images/one-man-islandFULL.jpg)
 
 I’m often surprised that after nearly 2 years of splitting my life between Dorset (home) and London (work) that I still suffer from homesickness. I assumed that after a period of adjustment this feeling would just go away.
 

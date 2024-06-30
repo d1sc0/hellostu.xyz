@@ -5,13 +5,13 @@ slug: 11-panda
 pubDate: 2023-04-03
 description: 'Wearing a panda mask in a self-portrait series, reflecting on distractions and maintaining focus.'
 postImage:
-  src: '../post_images/52weeks/52_2023_11_FULL.jpg'
+  src: 'post_images/52weeks/52_2023_11_FULL.jpg'
   alt: 'me sat at the kitchen table in a panda mask'
 socialImage: '/social_images/26-panda.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'mask']
 ---
 
-![I sit at the table weaking a panda mask, staring at my phone](../post_images/52weeks/52_2023_11_FULL.jpg)
+![I sit at the table weaking a panda mask, staring at my phone](post_images/52weeks/52_2023_11_FULL.jpg)
 
 Sometimes you have to abandon interesting locations, complex lighting and creative composition. Some days you need to put on a panda mask and take a snap at your kitchen table. Yesterday was that day…and I LOVE IT! 😂😍
 

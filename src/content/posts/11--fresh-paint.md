@@ -5,13 +5,13 @@ slug: fresh-paint
 pubDate: 2020-01-28
 description: 'a post explaining my foray into re-building my blog and my desire to both reduce my hosting costs, save the planet and play with the JAM stack'
 postImage:
-  src: '../post_images/spraycansFULL.jpg'
+  src: 'post_images/spraycansFULL.jpg'
   alt: 'lots of spray cans stacked high'
 socialImage: '/social_images/11-fresh-paint.jpg'
 tags: ['data', 'tech', 'experiments', 'climate']
 ---
 
-![some coloutful spray cans](../post_images/spraycansFULL.jpg)
+![some coloutful spray cans](post_images/spraycansFULL.jpg)
 
 It feels like I change blogging platforms more often than I actually write blog posts...but
 rather than just a desire to apply a fresh coat of paint this time my rebuild had

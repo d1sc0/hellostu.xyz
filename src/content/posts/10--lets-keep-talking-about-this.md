@@ -5,7 +5,7 @@ slug: lets-keep-talking-about-this
 pubDate: 2019-10-15
 description: 'Discussing Baby Loss Awareness Week, emphasizing the importance of breaking the silence and sharing personal stories.'
 postImage:
-  src: '../post_images/morganbethanyFULL.jpg'
+  src: 'post_images/morganbethanyFULL.jpg'
   alt: 'two tattered teddies sitting by the side of a grave'
 socialImage: '/social_images/10-blaw.jpg'
 tags: ['BLAW', 'babyloss', 'reflection', 'breakthesilence']
@@ -20,4 +20,4 @@ Buried there are 3 of my daughters. The twins - Morgan & Bethany and Pob. Time h
 Today marks the end of Baby Loss Awareness Week. Baby Loss is common and hard on Mothers, Fathers and supporting family members. It's important we talk about it and support each other and fight to help improve bereavement care.
 Normal cheery Instagram activity of me battling public transport resumes tomorrow. #babyloss #blaw2018 #breakthesilence
 
-![morgan and Bethany](../post_images/morganbethanyFULL.jpg)
+![morgan and Bethany](post_images/morganbethanyFULL.jpg)
