@@ -3,7 +3,7 @@ title: Weeknote - Tired Bunny
 draft: false
 slug: weeknote-tired-bunny
 pubDate: 2024-07-05T17:40:00
-description: A description of the post
+description: A brief look at the good, the bad and the ugly through tired eyes. Covers the period 28th June to 5th July.
 postImage:
   src: 'post_images/41-tired-bunnyFULL.jpg'
   alt: 'an anime bunny sat on the grass looking sad and tired'
