@@ -1,6 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-const { frontmatter, prevPost, nextPost } = Astro.props;
+const { frontmatter, prevPost, nextPost, slug } = Astro.props;
 
 const dateOptions: object = {
   year: 'numeric',
@@ -14,8 +14,8 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
 ---
 
 <BaseLayout frontmatter={frontmatter} prevPost={prevPost} nextPost={nextPost}>
-  <section class="post content-padding">
-    <h2 class="title">{frontmatter.title}</h2>
+  <section class="post content-padding h-entry">
+    <h2 class="title p-name">{frontmatter.title}</h2>
     <div class="tags">
       {
         frontmatter.tags.map(tag => (
@@ -25,7 +25,12 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
         ))
       }
     </div>
-    <p class="postDate">Published: {formattedPublishDate}</p>
-    <slot />
+    <p class="postDate dt-published">
+      Published: {formattedPublishDate}
+    </p>
+    <p class="e-content">
+      <slot />
+    </p>
+    <a href={slug} class="u-url" style="display: none;">permalink</a>
   </section>
 </BaseLayout>
