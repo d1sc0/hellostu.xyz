@@ -15,7 +15,7 @@ export async function GET(context) {
     items: posts.map(post => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
-      description: `Post summary: ${post.data.description} <a href="/posts/${post.slug}">[...]</a>`,
+      description: `${post.data.description} <a href="/posts/${post.slug}">[...]</a>`,
       author: 'Stuart Mackenzie',
       link: `/posts/${post.slug}/`,
       enclosure: {
