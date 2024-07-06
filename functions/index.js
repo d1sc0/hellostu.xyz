@@ -2,7 +2,7 @@ const functions = require('firebase-functions');
 const axios = require('axios');
 
 exports.submitForm = functions.https.onRequest(
-  { cors: [/firebase\.com$/, '/hellostu.xyz$/'] },
+  { cors: [/hellostu\.xyz$/] },
   async (req, res) => {
     if (req.method !== 'POST') {
       return res.status(405).send('Method Not Allowed');
