@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["https://hellostu.xyz"],
+    "method": ["GET", "POST"],
+    "maxAgeSeconds": 3600
+  }
+]
