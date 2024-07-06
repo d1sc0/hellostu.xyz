@@ -10,7 +10,14 @@ const arr = [img1, img2, img3, img4, img5, img6];
 const RandomSelfie = arr[Math.floor(Math.random() * arr.length)];
 ---
 
-<figure>
-  <Image src={RandomSelfie} alt="Stuart Mackenzie profile picture" />
-  <figcaption>Stuart Mackenzie</figcaption>
+<figure class="h-card">
+  <Image
+    src={RandomSelfie}
+    alt="Stuart Mackenzie profile picture"
+    class="u-photo"
+  />
+  <figcaption class="p-name">Stuart Mackenzie</figcaption>
+  <a href="https://hellostu.xyz" class="u-url" style="display: none;"
+    >hellostu.xyz</a
+  >
 </figure>
