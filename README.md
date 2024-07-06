@@ -39,6 +39,7 @@
 - [ ] consider a NOW page
 - [ ] leaflet map with legend on the outside of map
 - [ ] maybe add some sharing buttons or at least a prompt
+- [ ] Commenting?
 - [ ] improve pagination component?
 
 # Bulit on top of the Minimal starter below
