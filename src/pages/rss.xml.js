@@ -27,8 +27,8 @@ export async function GET(context) {
           type="image/${
             post.data.postImage.src.format == 'jpg' ? 'jpeg' : 'png'
           }"
-          width="${post.data.postImage.src.width}px"
-          height="${post.data.postImage.src.height}px"
+          width="${post.data.postImage.src.width}"
+          height="${post.data.postImage.src.height}"
           medium="image"
           url="${post.data.postImage.src.src}" />
       `,
