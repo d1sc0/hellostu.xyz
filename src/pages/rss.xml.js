@@ -20,18 +20,17 @@ export async function GET(context) {
     items: posts.map(post => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
+      trailingSlash: false,
+      customData: `<media:content
+          type="image/jpg"
+          width="600"
+          height="315"
+          medium="image"
+          url="${post.data.socialImage}" />
+      `,
       description: `${post.data.description} [...]`,
       author: 'Stuart Mackenzie',
       link: `/posts/${post.slug}/`,
-      customData: `<media:content
-          type="image/${
-            post.data.postImage.src.format == 'jpg' ? 'jpeg' : 'png'
-          }"
-          width="${post.data.postImage.src.width}"
-          height="${post.data.postImage.src.height}"
-          medium="image"
-          url="${post.data.postImage.src.src}" />
-      `,
     })),
   });
 }
