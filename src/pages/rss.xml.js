@@ -16,6 +16,7 @@ export async function GET(context) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
+      author: 'Stuart Mackenzie',
       link: `/posts/${post.slug}/`,
     })),
   });
