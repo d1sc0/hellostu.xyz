@@ -23,9 +23,6 @@ jobs:
         env:
           GOOGLE_OAUTH_CLIENT_ID: '${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}'
           GOOGLE_OAUTH_CLIENT_SECRET: '${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}'
-          GOOGLE_PHOTOS_TOKEN: '${{ secrets.GOOGLE_PHOTOS_TOKEN }}'
-          JAM_COMMENTS_DOMAIN: '${{ secrets.JAM_COMMENTS_DOMAIN }}'
-          JAM_COMMENTS_API_KEY: '${{ secrets.JAM_COMMENTS_API_KEY }}'
         run: npm run build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
