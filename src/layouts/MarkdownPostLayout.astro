@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import JamComments from '@jam-comments/astro';
 const { frontmatter, prevPost, nextPost } = Astro.props;
 
 const dateOptions: object = {
@@ -27,5 +28,6 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
     </div>
     <p class="postDate">Published: {formattedPublishDate}</p>
     <slot />
+    <JamComments />
   </section>
 </BaseLayout>
