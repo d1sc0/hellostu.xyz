@@ -8,7 +8,7 @@ export async function GET(context) {
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Hello Stu - Stuart Mackenzie',
+    title: 'Stuart Mackenzie - Hello Stu',
     description:
       'Hello Stu is the personal website and blog of Stuart Mackenzie. Stuart works hard to improve and transform public services as a Senior Partner at TPXimpact. Outside of work he is a photographer, amatuer web developer, runner, parkrun enthsiast and excotic disco dancer!',
     site: context.site,
@@ -20,6 +20,8 @@ export async function GET(context) {
     items: posts.map(post => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
+      description: `${post.data.description} [...]`,
+      link: `/posts/${post.slug}/`,
       trailingSlash: false,
       customData: `<media:content
           type="image/jpg"
@@ -28,8 +30,6 @@ export async function GET(context) {
           medium="image"
           url="${context.site + post.data.socialImage}" />
       `,
-      description: `${post.data.description} [...]`,
-      link: `/posts/${post.slug}/`,
     })),
   });
 }
