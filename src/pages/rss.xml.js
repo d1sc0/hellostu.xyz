@@ -26,7 +26,7 @@ export async function GET(context) {
           width="600"
           height="315"
           medium="image"
-          url="${post.data.socialImage}" />
+          url="${context.site + post.data.socialImage}" />
       `,
       description: `${post.data.description} [...]`,
       author: 'Stuart Mackenzie',
