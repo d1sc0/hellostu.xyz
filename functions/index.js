@@ -14,7 +14,7 @@ exports.submitform = onRequest(
     const repoOwner = 'd1sc0';
     const repoName = 'hellostu.xyz';
     const filePath = 'src/comments/comments.json';
-    const githubToken = functions.config().github.token;
+    const githubToken = onRequest.config().github.token;
 
     const fileUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
     const headers = {
