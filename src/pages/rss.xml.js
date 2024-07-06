@@ -30,7 +30,7 @@ export async function GET(context) {
           width="${post.data.postImage.src.width}px"
           height="${post.data.postImage.src.height}px"
           medium="image"
-          url="${context.site + post.data.postImage.src.src}" />
+          url="${post.data.postImage.src.src}" />
       `,
     })),
   });
