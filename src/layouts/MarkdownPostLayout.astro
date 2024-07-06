@@ -39,7 +39,8 @@ const isoDate = new Date(frontmatter.pubDate).toISOString();
     </p>
     <p style="display: none;">
       <a href={slug} class="u-url dt-published">{isoDate}</a>
-      <a href={siteURL} rel="author">Stuart Mackenzie</a>
+      <a href={siteURL} class="p-author h-card" rel="author">Stuart Mackenzie</a
+      >
     </p>
   </section>
 </BaseLayout>
