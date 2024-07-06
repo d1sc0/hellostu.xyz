@@ -15,9 +15,15 @@ export async function GET(context) {
     items: posts.map(post => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
-      description: `Summary: ${post.data.description} <a href="/posts/${post.slug}">[...]</a>`,
+      description: `Post summary: ${post.data.description} <a href="/posts/${post.slug}">[...]</a>`,
       author: 'Stuart Mackenzie',
       link: `/posts/${post.slug}/`,
+      enclosure: {
+        url: post.data.postImage.src,
+        type: 'image/' + post.data.postImage.format,
+        width: post.data.postImage.width,
+        height: post.data.postImage.height,
+      },
     })),
   });
 }
