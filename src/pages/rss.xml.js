@@ -24,11 +24,13 @@ export async function GET(context) {
       author: 'Stuart Mackenzie',
       link: `/posts/${post.slug}/`,
       customData: `<media:content
-          type="image/${post.data.postImage.format == 'jpg' ? 'jpeg' : 'png'}"
-          width="${post.data.postImage.width}"
-          height="${post.data.postImage.height}"
+          type="image/${
+            post.data.postImage.src.format == 'jpg' ? 'jpeg' : 'png'
+          }"
+          width="${post.data.postImage.src.width}px"
+          height="${post.data.postImage.src.height}px"
           medium="image"
-          url="${context.site + post.data.postImage.src}" />
+          url="${context.site + post.data.postImage.src.src}" />
       `,
     })),
   });
