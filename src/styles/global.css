@@ -670,6 +670,7 @@ button.jc-CommentBox-button {
 }
 
 button.jc-Comment-actionButton {
+  display: none;
   background-color: #ee7117;
   width: 75px;
   padding: 0.5rem;
