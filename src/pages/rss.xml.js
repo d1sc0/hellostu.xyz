@@ -23,21 +23,9 @@ export async function GET(context) {
     items: posts.map(post => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
-      description: `${post.data.description} [...]`,
+      description: `${post.data.description}`,
       link: `/posts/${post.slug}/`,
-      content:
-        sanitizeHtml(
-          parser
-            .render(post.body)
-            .replace('src="post_images/', `src="${context.site}post_images/`)
-            .replace('href="/', `href="${context.site}`)
-            .split(' ')
-            .slice(0, 95)
-            .join(' '),
-          {
-            // allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
-          }
-        ) + ` <a href="${context.site}posts/${post.slug}/">[read more...]</a>`,
+      content: `<p>${post.data.description} <a href="${context.site}posts/${post.slug}/">[read more...]</a></p>`,
       trailingSlash: false,
       customData: `<media:content
           type="image/jpg"
@@ -49,3 +37,17 @@ export async function GET(context) {
     })),
   });
 }
+
+/*  content:
+        sanitizeHtml(
+          parser
+            .render(post.body)
+            .replace('src="post_images/', `src="${context.site}post_images/`)
+            .replace('href="/', `href="${context.site}`)
+            .split(' ')
+            .slice(0, 95)
+            .join(' '),
+          {
+            // allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+          }
+        ) + ` <a href="${context.site}posts/${post.slug}/">[read more...]</a>`, */
