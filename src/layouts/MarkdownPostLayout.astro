@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 const siteURL = 'https://hellostu.xyz';
 const { frontmatter, prevPost, nextPost, slug } = Astro.props;
+import JamComments from '@jam-comments/astro';
 
 const dateOptions: object = {
   year: 'numeric',
@@ -42,5 +43,8 @@ const isoDate = new Date(frontmatter.pubDate).toISOString();
       <a href={siteURL} class="p-author h-card" rel="author">Stuart Mackenzie</a
       >
     </p>
+    <p>&nbsp;</p>
+    <h2>Comments</h2>
+    <JamComments />
   </section>
 </BaseLayout>
