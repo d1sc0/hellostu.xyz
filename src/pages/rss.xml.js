@@ -32,16 +32,16 @@ export async function GET(context) {
           .replace('src="post_images/', `src="${context.site}post_images/`)
           .replace('href="/', `href="${context.site}`),
         {
-          allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+          // allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
         }
       ),
-      /* customData: `<media:content
+      customData: `<media:content
           type="image/jpg"
           width="600"
           height="315"
           medium="image"
           url="${context.site + post.data.socialImage}" />
-      `, */
+      `,
     })),
   });
 }
