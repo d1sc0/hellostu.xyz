@@ -29,8 +29,8 @@ export async function GET(context) {
       trailingSlash: false,
       customData: `<media:content
           type="image/jpg"
-          width="600"
-          height="315"
+          width="450"
+          height="236"
           medium="image"
           url="https://hellostu.xyz${post.data.socialImage}" />
       `,
