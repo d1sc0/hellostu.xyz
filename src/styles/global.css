@@ -652,6 +652,7 @@ ul.jc-Editor-tabs {
   display: none;
 }
 small.jc-CommentBox-attribution {
+  display: inital;
 }
 div.jc-Auth-container {
   display: none;
