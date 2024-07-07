@@ -26,15 +26,19 @@ export async function GET(context) {
       description: `${post.data.description} [...]`,
       link: `/posts/${post.slug}/`,
       trailingSlash: false,
-      content: sanitizeHtml(
-        parser
-          .render(post.body)
-          .replace('src="post_images/', `src="${context.site}post_images/`)
-          .replace('href="/', `href="${context.site}`),
-        {
-          // allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
-        }
-      ),
+      content:
+        sanitizeHtml(
+          parser
+            .render(post.body)
+            .replace('src="post_images/', `src="${context.site}post_images/`)
+            .replace('href="/', `href="${context.site}`)
+            .split(' ')
+            .slice(0, 50)
+            .join(' '),
+          {
+            // allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+          }
+        ) + ` <a href="${context.site}posts/${post.slug}/">[read more...]</a>`,
       customData: `<media:content
           type="image/jpg"
           width="600"
