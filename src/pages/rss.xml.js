@@ -29,7 +29,7 @@ export async function GET(context) {
       content: sanitizeHtml(
         parser
           .render(post.body)
-          .replace('src="post_images/', `src="${context.site}post_images`)
+          .replace('src="post_images/', `src="${context.site}post_images/`)
           .replace('href="/', `href="${context.site}`),
         {
           allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
