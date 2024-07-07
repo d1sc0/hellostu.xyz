@@ -26,9 +26,14 @@ export async function GET(context) {
       description: `</br> ${post.data.description} [...]`,
       link: `/posts/${post.slug}/`,
       trailingSlash: false,
-      content: sanitizeHtml(parser.render(post.body), {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
-      }),
+      content: sanitizeHtml(
+        parser
+          .render(post.body)
+          .replace('src="post_images/', `src="${context.site}/post_images`),
+        {
+          allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+        }
+      ),
       /* customData: `<media:content
           type="image/jpg"
           width="600"
