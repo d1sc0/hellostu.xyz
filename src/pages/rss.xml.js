@@ -23,7 +23,7 @@ export async function GET(context) {
     items: posts.map(post => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
-      description: `</br> ${post.data.description} [...]`,
+      description: `${post.data.description} [...]`,
       link: `/posts/${post.slug}/`,
       trailingSlash: false,
       content: sanitizeHtml(
