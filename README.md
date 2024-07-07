@@ -36,7 +36,7 @@
 - [x] and then maybe some more
 - [x] add next and previous post buttons?
 - [ ] rewrite about page (maybe random profile images)
-- [ ] consider a NOW page
+- [ ] consider a NOW page.
 - [ ] leaflet map with legend on the outside of map
 - [ ] maybe add some sharing buttons or at least a prompt
 - [ ] Commenting?
