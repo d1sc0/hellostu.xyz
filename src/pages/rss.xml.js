@@ -44,7 +44,7 @@ export async function GET(context) {
           width="600"
           height="315"
           medium="image"
-          url="${context.site + post.data.socialImage}" />
+          url="https://hellostu.xyz${post.data.socialImage}" />
       `,
     })),
   });
