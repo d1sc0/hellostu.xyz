@@ -682,7 +682,8 @@ button.jc-Comment-actionButton {
 }
 
 div.jc-Comment-actions:before,
-span.jc-CommentList-count:after {
+span.jc-CommentList-count:after,
+div.jc-Comment-actions {
   display: none;
 }
 
