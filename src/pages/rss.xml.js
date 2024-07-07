@@ -25,7 +25,6 @@ export async function GET(context) {
       pubDate: post.data.pubDate,
       description: `${post.data.description} [...]`,
       link: `/posts/${post.slug}/`,
-      trailingSlash: false,
       content:
         sanitizeHtml(
           parser
@@ -39,6 +38,7 @@ export async function GET(context) {
             // allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
           }
         ) + ` <a href="${context.site}posts/${post.slug}/">[read more...]</a>`,
+      trailingSlash: false,
       customData: `<media:content
           type="image/jpg"
           width="600"
