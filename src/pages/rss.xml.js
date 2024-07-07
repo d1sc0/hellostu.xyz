@@ -32,7 +32,7 @@ export async function GET(context) {
             .replace('src="post_images/', `src="${context.site}post_images/`)
             .replace('href="/', `href="${context.site}`)
             .split(' ')
-            .slice(0, 150)
+            .slice(0, 110)
             .join(' '),
           {
             // allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
