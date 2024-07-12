@@ -82,7 +82,7 @@ Calling back to my earlier musing, I've got to figure out how I shape myself as 
 
 This [month note](https://weeknot.es/monthnote-june-2024-03b84abc9e5b?source=rss-3da1ca860999------2) from James Higgott is a good read and this is an excellent example of how to publish a [public service roadmap](https://digital.nhs.uk/services/nhs-app/roadmap)
 
-Stef W's post on [Planing Reform](https://www.linkedin.com/pulse/planning-reform-stefan-webb-7wafe?utm_source=share&utm_medium=member_ios&utm_campaign=share_via) is a great read. He's very smart and also just a lovely bloke!
+Stef W's post on [Planning Reform](https://www.linkedin.com/pulse/planning-reform-stefan-webb-7wafe?utm_source=share&utm_medium=member_ios&utm_campaign=share_via) is a great read. He's very smart and also just a lovely bloke!
 
 Another smart post from yet another smart TPX colleague - [What to expect (when you're graduating)](https://www.designswarm.com/blog/2024/07/what-to-expect-when-youre-graduating/) from Alex Deschamps-Sonsino. I only properly met Alex a few weeks back, primarily cos' she admired my taste in t-shirts! Proof I might not have the smarts but I've got the looks 🤣 - FASHION DARLING!!
 
