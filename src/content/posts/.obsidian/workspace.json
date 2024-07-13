@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "bc0d7bb3e280335f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ddb81ad88ef50657",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9dd9e1ed17aabd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "(42) Weeknote - Main Character Energy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f7b79bd034270782",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3e0a275f9d89264",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56f4f9b06eabddb8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse"
+              }
+            }
+          },
+          {
+            "id": "a6604b5eae8528b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9055e99fe2b97ca7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fc0d1edb5d6a8da2",
+    "type": "split",
+    "children": [
+      {
+        "id": "c58b565dd656cfc7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8367de78b321531c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "(42) Weeknote - Main Character Energy.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ec6eb5cbb4b7e6f7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "(42) Weeknote - Main Character Energy.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6564b886ab5cb8bb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "bd710f8eb8f95e8f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "(42) Weeknote - Main Character Energy.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d9dd9e1ed17aabd0",
+  "lastOpenFiles": [
+    "post_images/42-main-character-energyFULL.jpg",
+    "(42) Weeknote - Main Character Energy.md",
+    "(41) Weeknote - Tired Bunny.md",
+    "post_images/42-main-character-energy-1.jpg",
+    "(39) Weeknote - Chimp.md",
+    "(40) Weeknote - The Uber.md",
+    "post_images/41-tired-bunnyFULL.jpg",
+    "_Template - Copy Me.md",
+    "9-pocket-watch.jpg",
+    "35-blogging_cover.jpg",
+    "(34) Building Things.md",
+    "post_images/39-ape-FULL.jpg",
+    "post_images/avengers-assembleFULL.jpg",
+    "post_images/hackney_animalFULL.jpg",
+    "post_images/localgovcampRIGHT.jpg",
+    "post_images/monkeyRIGHT.gif",
+    "(38) TGF Visitors Map.mdx",
+    "(37) Weeknote - Buffet.md",
+    "(36) Weeknote - London calling.md",
+    "(35) Blogging about not blogging.mdx",
+    "(33) Zen Friday.md",
+    "(32) Rambling man.md",
+    "(31) 16 - Fever dream.md",
+    "(30) 15 - Geometry.md",
+    "(29) 14 - Head above water.md",
+    "(28) 13 - Healing wounds.md",
+    "(27) 12 - These hands.md",
+    "(26) 11 - Panda.md",
+    "(25) 10 - They come for me.md",
+    "(24) 9 - Hillfort.md",
+    "(23) 8 - Sasquatch.md",
+    "(22) 7 - Revolve.md",
+    "(21) 6 - Hurghada.md",
+    "(20) 5 - Ablution.md",
+    "(19) 4 - Stepping into the light.md",
+    "(18) 3 - Skip intro.md",
+    "(17) 2 - Running around.md",
+    "(14) Choropleth Experiments.mdx",
+    "_ Strava Test.mdx",
+    "(12) TGF parkrun data dive.mdx",
+    "Week1 - Be more like Robbie.mdx",
+    "Untitled.canvas"
+  ]
+}

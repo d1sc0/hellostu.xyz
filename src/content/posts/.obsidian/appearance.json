@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Things",
+  "accentColor": "#f74040",
+  "enabledCssSnippets": [
+    "stu-styles"
+  ],
+  "theme": "moonstone"
+}
