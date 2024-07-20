@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(42) Weeknote - Main Character Energy.md",
+                "file": "(43) Weeknote -  Some Assembly Required.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(42) Weeknote - Main Character Energy.md",
+                "file": "(43) Weeknote -  Some Assembly Required.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(42) Weeknote - Main Character Energy.md",
+                "file": "(43) Weeknote -  Some Assembly Required.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(42) Weeknote - Main Character Energy.md"
+                "file": "(43) Weeknote -  Some Assembly Required.md"
               }
             }
           }
@@ -146,9 +146,12 @@
   },
   "active": "d9dd9e1ed17aabd0",
   "lastOpenFiles": [
-    "post_images/42-main-character-energyFULL.jpg",
     "(42) Weeknote - Main Character Energy.md",
+    "(43) Weeknote -  Some Assembly Required.md",
+    "post_images/43-assembly-requiredFULL.jpg",
+    "post_images/43-assembly-required.jpg",
     "(41) Weeknote - Tired Bunny.md",
+    "post_images/42-main-character-energyFULL.jpg",
     "post_images/42-main-character-energy-1.jpg",
     "(39) Weeknote - Chimp.md",
     "(40) Weeknote - The Uber.md",
@@ -160,8 +163,6 @@
     "post_images/39-ape-FULL.jpg",
     "post_images/avengers-assembleFULL.jpg",
     "post_images/hackney_animalFULL.jpg",
-    "post_images/localgovcampRIGHT.jpg",
-    "post_images/monkeyRIGHT.gif",
     "(38) TGF Visitors Map.mdx",
     "(37) Weeknote - Buffet.md",
     "(36) Weeknote - London calling.md",
@@ -182,7 +183,6 @@
     "(20) 5 - Ablution.md",
     "(19) 4 - Stepping into the light.md",
     "(18) 3 - Skip intro.md",
-    "(17) 2 - Running around.md",
     "(14) Choropleth Experiments.mdx",
     "_ Strava Test.mdx",
     "(12) TGF parkrun data dive.mdx",
