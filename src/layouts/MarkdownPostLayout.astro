@@ -45,6 +45,11 @@ const isoDate = new Date(frontmatter.pubDate).toISOString();
     </p>
     <p>&nbsp;</p>
     <h2>Comment</h2>
-    <JamComments />
+    <JamComments
+      dateFormat="d M Y"
+      copy={{
+        confirmationMessage: 'Comment successfully submitted for moderation!',
+      }}
+    />
   </section>
 </BaseLayout>

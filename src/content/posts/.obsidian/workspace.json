@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(44) Weeknote -  Summer Rain.md",
+                "file": "(44) Weeknote - Bullet Train.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(44) Weeknote -  Summer Rain.md",
+                "file": "(44) Weeknote - Bullet Train.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(44) Weeknote -  Summer Rain.md",
+                "file": "(44) Weeknote - Bullet Train.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(44) Weeknote -  Summer Rain.md"
+                "file": "(44) Weeknote - Bullet Train.md"
               }
             }
           }
@@ -146,8 +146,10 @@
   },
   "active": "d9dd9e1ed17aabd0",
   "lastOpenFiles": [
-    "(43) Weeknote -  Some Assembly Required.md",
-    "(44) Weeknote -  Summer Rain.md",
+    "(43) Weeknote - Some Assembly Required.md",
+    "(44) Weeknote - Bullet Train.md",
+    "post_images/44-bullet-trainRIGHT.jpg",
+    "post_images/44-bullet-train-1.jpg",
     "(42) Weeknote - Main Character Energy.md",
     "post_images/43-assembly-requiredFULL.jpg",
     "post_images/43-assembly-required.jpg",
@@ -162,8 +164,6 @@
     "35-blogging_cover.jpg",
     "(34) Building Things.md",
     "post_images/39-ape-FULL.jpg",
-    "post_images/avengers-assembleFULL.jpg",
-    "post_images/hackney_animalFULL.jpg",
     "(38) TGF Visitors Map.mdx",
     "(37) Weeknote - Buffet.md",
     "(36) Weeknote - London calling.md",
@@ -183,7 +183,6 @@
     "(21) 6 - Hurghada.md",
     "(20) 5 - Ablution.md",
     "(19) 4 - Stepping into the light.md",
-    "(18) 3 - Skip intro.md",
     "(14) Choropleth Experiments.mdx",
     "_ Strava Test.mdx",
     "(12) TGF parkrun data dive.mdx",
