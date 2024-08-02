@@ -29,7 +29,7 @@ tags:
 
 ## The short working week in bullets
 
-- We successfully created some needed space to ensure wider strategy and roadmap conversations are happening outside our regular sprint rituals for one of our cyber projects and with a slightly smaller group. This was needed to avoid these constantly cropping up and distracting the team, which needs to focus on more immediate problems.
+- I helped create some needed space to ensure wider strategy and roadmap conversations are happening outside our regular sprint rituals for one of our cyber projects and with a slightly smaller group. This was needed to avoid these topics constantly cropping up and distracting the team, who need (and want) to focus on more immediate problems.
 - I really enjoyed contributing to some ideation and 'could-be' journey mapping sessions. Working on this with Leo and Liberty in person towards the end of the week was even better. As expected, these emerging outputs are helping with some of my earlier alignment concerns.
 - Another team I'm supporting did their first show-and-tell. They packed a lot in and received thoughtful feedback and challenging questions from attendees—a great start.
 - Some colleagues described me this week as a 'secret weapon'. I'll take that as a compliment, but I am left pondering what sort of weapon I'd like to be - sharp precision blade or big-ass bazooka! (maybe just a water pistol?)
@@ -43,7 +43,7 @@ tags:
 - I started today in London with a hangover, but this was quickly cured by having a lovely breakfast in the Hackney sunshine with Emily, followed by more sunshine, coffee and hugs with Dom.
 - I've managed to avoid smoking for six out of seven days. Next week, I plan on lacing up my running shoes more often.
 - There has been some progress on the EV front, but it's slow. I'm not sure I'll get anything delivered this month, which makes me sad. The sun is out, and I want to go places and do things.
-- I gave some feedback to [Alex](https://macarthur.me/), who created [JamComments](https://jamcomments.com/). This has already resulted in the deployment of new features and [updated](https://jamcomments.com/docs/integrations/astro/#setting-a-date-format) [docs](https://jamcomments.com/docs/integrations/astro/#overriding-copy-in-ui). Thanks, Alex.
+- I gave some feedback to [Alex](https://macarthur.me/), who created [JamComments](https://jamcomments.com/). This has already resulted in the deployment of new features I suggested and [updated](https://jamcomments.com/docs/integrations/astro/#setting-a-date-format) [docs](https://jamcomments.com/docs/integrations/astro/#overriding-copy-in-ui). Thanks, Alex.
 - I want to start meditating again, and I'm writing this down to help me turn my desire into action.
 - I have been enjoying [Alchemy - The Magic of Original Thinking in a World of Mind-Numbing Conformity](https://www.audible.co.uk/pd/Alchemy-Audiobook/1473566800) on Audible.
 - I re-watched a bunch of the newer Planet of the Apes movies because I was tired, and the algorithm suggested it.
