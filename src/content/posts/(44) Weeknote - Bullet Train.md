@@ -2,7 +2,7 @@
 title: Weeknote - Bullet Train
 draft: false
 slug: weeknote-bullet-train
-pubDate: 2024-08-02T10:20:00
+pubDate: 2024-08-02T20:20:00
 description: The weekly notes—This week, I bring you not one, not two, but THREE bullet-pointed lists of stuff that covers the period 26 July to 2 August.
 postImage:
   src: post_images/44-bullet-trainRIGHT.jpg
@@ -27,7 +27,6 @@ tags:
 - Sunday involved more work sorting things around the house and a big food shop.
 - Monday was a day of leave - I went to the pool for a swim and cycled to Weymouth to see the sea. I cheated and got the train home.
 
-
 ## The short working week in bullets
 
 - We successfully created some needed space to ensure wider strategy and roadmap conversations are happening outside our regular sprint rituals for one of our cyber projects and with a slightly smaller group. This was needed to avoid these constantly cropping up and distracting the team, which needs to focus on more immediate problems.
@@ -39,7 +38,6 @@ tags:
 - There has been a lot of async juggling of other minor things via Slack. This has made me want to find time for another Slack channel cull and tidy up next week; finding the signal in the noise is messy and time-consuming.
 - Leaving drinks for Zung, Iain, and Jukesie was lots of fun. Although Matt didn't make it :0(
 
-
 ## MOOAR bullets
 
 - I started today in London with a hangover, but this was quickly cured by having a lovely breakfast in the Hackney sunshine with Emily, followed by more sunshine, coffee and hugs with Dom.
@@ -50,4 +48,3 @@ tags:
 - I have been enjoying [Alchemy - The Magic of Original Thinking in a World of Mind-Numbing Conformity](https://www.audible.co.uk/pd/Alchemy-Audiobook/1473566800) on Audible.
 - I re-watched a bunch of the newer Planet of the Apes movies because I was tired, and the algorithm suggested it.
 - I watched more of the [Kardashians](https://en.wikipedia.org/wiki/The_Kardashians) with Robyn and some of the new season of [The Rookie](https://www.imdb.com/title/tt7587890/)— gravy for the brain.
-
