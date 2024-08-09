@@ -15,4 +15,4 @@ tags:
   - bullets
 ---
 
-![a sketch image of a fast moving bullet train - lines have been added to create the sense of motion](post_images/44-bullet-trainRIGHT.jpg)
+![a sketch image of a fast moving bullet train- lines have been added to create the sense of motion](post_images/44-bullet-trainRIGHT.jpg)
