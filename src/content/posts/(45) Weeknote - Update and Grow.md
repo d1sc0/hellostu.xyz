@@ -12,7 +12,7 @@ tags:
   - weeknote
   - work
   - life
-  - self-portait
+  - self
   - sick
   - car
 ---
