@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "98a28d7d769903b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "(44) Weeknote - Bullet Train.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "668536e59a31743e",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"

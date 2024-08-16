@@ -1,6 +1,6 @@
 ---
 title: Weeknote - Update and Grow
-draft: true
+draft: false
 slug: weeknote-update-and-grow
 pubDate: 2024-08-16T10:20:00
 description: a note containing some excuses, a plan, some updates and some reminders of things I should celebrate. This note covers the last couple of week until today 16th August 24.
