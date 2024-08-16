@@ -5,9 +5,9 @@ slug: weeknote-update-and-grow
 pubDate: 2024-08-16T10:20:00
 description: Words.
 postImage:
-  src: post_images/45-update_and_growFULL.jpg
+  src: post_images/45-update-and-growFULL.jpg
   alt: a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands
-socialImage: /social_images/45-update_and_grow.jpg
+socialImage: /social_images/45-update-and-grow.jpg
 tags:
   - weeknote
   - work
@@ -15,4 +15,4 @@ tags:
   - self-portait
 ---
 
-![a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands](post_images/45-update_and_growFULL.jpg)
+![a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands](post_images/45-update-and-growFULL.jpg)
