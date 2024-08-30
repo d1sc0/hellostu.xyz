@@ -6,7 +6,7 @@ pubDate: 2024-08-30T10:20:00
 description: more excuses, some work stuff, cornwall and exploring the world of dating in a digital age. This note covers the last couple of week until today 30th August 24.
 postImage:
   src: post_images/46-swipe-rightFULL.jpg
-  alt: a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands
+  alt: a landscape photograph of the coast of cornwall, taken on the coast path near to Zennor, looking towards St Ives
 socialImage: /social_images/46-swipe-right.jpg
 tags:
   - weeknote
@@ -59,4 +59,4 @@ The main things that have crossed my mind so far;
 - Meditation fail ❌ - Can do better!
 - A couple of sea swims but not been to the pool 🏊🏻‍♂️
 - Next to no reading (not even other weeknotes) - Must do better!
-- Audiobook currently [Scary Monsters and Super Creeps by Dom Joly](https://www.audible.co.uk/pd/Scary-Monsters-and-Super-Creeps-Audiobook/B09XJFCCHD?ref_pageloadid=UsMdgAlHmYgbyGOg&ref=a_author_Do_c9_lProduct_1_3&pf_rd_p=af5062e9-57de-425c-9e02-6d8ad006b9aa&pf_rd_r=NPSG2Z074M9WA6TTA3HD&pageLoadId=o8OMGP9C8y6drvdK&creativeId=83220593-1d50-4883-bad4-b5d505543719) 
+- Audiobook currently [Scary Monsters and Super Creeps by Dom Joly](https://www.audible.co.uk/pd/Scary-Monsters-and-Super-Creeps-Audiobook/B09XJFCCHD?ref_pageloadid=UsMdgAlHmYgbyGOg&ref=a_author_Do_c9_lProduct_1_3&pf_rd_p=af5062e9-57de-425c-9e02-6d8ad006b9aa&pf_rd_r=NPSG2Z074M9WA6TTA3HD&pageLoadId=o8OMGP9C8y6drvdK&creativeId=83220593-1d50-4883-bad4-b5d505543719)
