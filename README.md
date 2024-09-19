@@ -35,12 +35,13 @@
 - [x] post some content
 - [x] and then maybe some more
 - [x] add next and previous post buttons?
-- [ ] rewrite about page (maybe random profile images)
+- [x] Commenting?
+- [ ] rewrite/update about page (maybe random profile images)
 - [ ] consider a NOW page.
-- [ ] leaflet map with legend on the outside of map
-- [ ] maybe add some sharing buttons or at least a prompt
-- [ ] Commenting?
+- [ ] maybe add some sharing buttons or at least a prompt (https://astro-social-share.mckerlie.com/start-here/advanced-usage/) -[ ] maybe temp remove audionotes from Nav]
 - [ ] improve pagination component?
+- [ ] potential new content type and setup for photo/art gallery
+- [ ] leaflet map with legend on the outside of map
 
 # Bulit on top of the Minimal starter below
 
