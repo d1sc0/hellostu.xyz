@@ -38,7 +38,8 @@
 - [x] Commenting?
 - [ ] rewrite/update about page (maybe random profile images)
 - [ ] consider a NOW page.
-- [ ] maybe add some sharing buttons or at least a prompt (https://astro-social-share.mckerlie.com/start-here/advanced-usage/) -[ ] maybe temp remove audionotes from Nav]
+- [ ] maybe add some sharing buttons or at least a prompt (https://astro-social-share.mckerlie.com/start-here/advanced-usage/)
+- [ ] maybe temp remove audionotes from Nav]
 - [ ] improve pagination component?
 - [ ] potential new content type and setup for photo/art gallery
 - [ ] leaflet map with legend on the outside of map
