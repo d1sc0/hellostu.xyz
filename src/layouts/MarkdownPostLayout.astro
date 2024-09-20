@@ -3,6 +3,22 @@ import BaseLayout from './BaseLayout.astro';
 const siteURL = 'https://hellostu.xyz';
 const { frontmatter, prevPost, nextPost, slug } = Astro.props;
 import JamComments from '@jam-comments/astro';
+import {
+  FacebookShareButton,
+  LinkedInShareButton,
+  RedditShareButton,
+  EmailShareButton,
+  WhatsAppShareButton,
+  SocialShare,
+} from 'astro-social-share';
+
+const BUTTONS = [
+  LinkedInShareButton,
+  RedditShareButton,
+  FacebookShareButton,
+  WhatsAppShareButton,
+  EmailShareButton,
+];
 
 const dateOptions: object = {
   year: 'numeric',
@@ -43,6 +59,11 @@ const isoDate = new Date(frontmatter.pubDate).toISOString();
       <a href={siteURL} class="p-author h-card" rel="author">Stuart Mackenzie</a
       >
     </p>
+    <SocialShare
+      buttons={BUTTONS}
+      description={frontmatter.description}
+      title={frontmatter.title}
+    />
     <p>&nbsp;</p>
     <h2>Comment</h2>
     <JamComments
