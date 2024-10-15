@@ -15,9 +15,9 @@ tags: ['BLAW', 'babyloss', 'reflection', 'breakthesilence']
 
 These two toys once sat in a beautiful garden at our local cemetery. That beautiful garden is the resting place of many babies lost before, during or shortly after birth.
 
-![morgan and Bethany](post_images/morganbethanyFULL.jpg)
-
 Buried there are 3 of my daughters. The twins - Morgan & Bethany and Pob. Time has passed, the sadness has faded but I still hold them dear. Over 18 years on and I have drawn strength from these experiences but still remember the darker days we went through.
+
+![morgan and Bethany](post_images/morganbethanyFULL.jpg)
 
 Today marks the end of Baby Loss Awareness Week. Baby Loss is common and hard on Mothers, Fathers and supporting family members. It's important we talk about it and support each other and fight to help improve bereavement care.
 Normal cheery Instagram activity of me battling public transport resumes tomorrow.
