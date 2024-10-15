@@ -11,7 +11,7 @@ socialImage: '/social_images/10-blaw.jpg'
 tags: ['BLAW', 'babyloss', 'reflection', 'breakthesilence']
 ---
 
-> This is a repost of the image and text I shared last year on instagram at the end of baby loss awareness week in 2019. After posting I had two people come and talk to me about recent experiences they had gone through, who seemed genuinely grateful that I shared (I don't often get this reaction to my social posts 😂). I repost with the same sentiment. Baby loss is common and hard on all of those involved. It's important we talk about it and support each other, fighting to help improve bereavement care.
+> This is a repost of the image and text I shared on instagram at the end of baby loss awareness week in 2019. After posting I had two people come and talk to me about recent experiences they had gone through, who seemed genuinely grateful that I shared (I don't often get this reaction to my social posts 😂). I repost with the same sentiment. Baby loss is common and hard on all of those involved. It's important we talk about it and support each other, fighting to help improve bereavement care.
 
 These two toys once sat in a beautiful garden at our local cemetery. That beautiful garden is the resting place of many babies lost before, during or shortly after birth.
 
