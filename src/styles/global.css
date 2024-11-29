@@ -802,21 +802,21 @@ div.jc-CommentList {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
   }
 
   section.latest .grid {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
   }
 
   section.home .welcome-grid {
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-template-areas: 'profile welcome';
-    grid-gap: 2rem;
+    grid-gap: 3rem;
   }
 
   section.home .welcome-grid p {
