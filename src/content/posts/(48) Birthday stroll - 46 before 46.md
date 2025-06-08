@@ -26,4 +26,4 @@ Details will be confirmed nearer the time, but the rough plan in my head is to s
 
 I could and will do this alone if needed - but I reckon it'd be much more fun to have some company along the way, and maybe you are also looking for a challenge? **So this is an open invite to friends, acquaintances, colleagues and even the odd random stranger to join me on part or all of this little adventure. It doesn't matter if you want to join me for 1km or all 46km I'll be happy to have you join in.**
 
-[If you are interested (even if it is just to help me celebrate at the pub afterwards), please complete this form and mark the 30th August in your diaries](https://forms.gle/JA3yyxdrUoLpzPU17).
+[If you are interested (even if it is just to help me celebrate at the pub afterwards), please complete this form and mark the 30th August in your diaries](https://forms.gle/vPa9XTHRmVftogJX9).
