@@ -19,7 +19,7 @@ tags:
 
 Okay, so I [previously posted](https://hellostu.xyz/posts/46-before-46/) about challenging myself to a 46km walk at the end of August for my Birthday, and a few lovely folks showed an interest in tagging along. Thank you! I now need to let you all know that I've changed my mind and decided against it. Sorry!
 
-I don't often back down or quit from a challenge once I set my sights on it but this one just doesn't appeal right now. At the moment I'm loving filling my weekends with short runs, tiny photo walks, sea swims and hanging out with my friends getting squiffy. Committing the next few weekends to long training walks on my own, resting aching muscles and and nursing blisters is just not how I want to spend my August. So a new plan has been hatched.
+I don't often back down or quit from a challenge once I set my sights on it but this one just doesn't appeal right now. At the moment I'm loving filling my weekends with short runs, tiny photo walks, sea swims and hanging out with my friends getting squiffy. Committing the next few weekends to long training walks on my own, resting aching muscles and nursing blisters is just not how I want to spend my August. So a new plan has been hatched.
 
 Friends, family and internet stalkers are welcome to join for any of these activities. All are optional and I'm happy to fly solo if needed - but it is my birthday and you wouldn't want to make me cry? right?
 
