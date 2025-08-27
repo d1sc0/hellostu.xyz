@@ -27,11 +27,11 @@ Friends, family and internet stalkers are welcome to join for any of these activ
 
 08:50 - The great field parkrun. Everyone welcome - runners, walkers and cheer squad
 
-10:00 - Morning coffee at Seventh Seal
+10:30 - Morning coffee at Seventh Seal
 
-12:00 - Walk around the coast path of Portland starting at the Cove Pub. Its about 16km (10 miles) and roughly takes 3.5 hours at a steady pace.
+13:00 - Walk around the coast path of Portland starting at the Cove Pub. Its about 16km (10 miles) and roughly takes 3.5 hours at a steady pace.
 
-18:00 - Food and beers back in Dorchester. Location to be determined (slide into my DMs or whatsapp me on the day)
+19:00 - Beers back in Dorchester. Location to be determined (slide into my DMs or whatsapp me on the day). Probably heading to Weybiza in search of music at some point.
 
 23:59 - Briefly stop dancing to celebrate me turning another year older!
 
