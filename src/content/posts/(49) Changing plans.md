@@ -21,7 +21,7 @@ Okay, so I [previously posted](https://hellostu.xyz/posts/46-before-46/) about c
 
 I don't often back down or quit from a challenge once I set my sights on it but this one just doesn't appeal right now. At the moment I'm loving filling my weekends with short runs, tiny photo walks, sea swims and hanging out with my friends getting squiffy. Committing the next few weekends to long training walks on my own, resting aching muscles and nursing blisters is just not how I want to spend my August. So a new plan has been hatched.
 
-Friends, family and internet stalkers are welcome to join for any of these activities. All are optional and I'm happy to fly solo if needed - but it is my birthday and you wouldn't want to make me cry! right?
+Friends and internet stalkers are welcome to join for any of these activities. All are optional and I'm happy to fly solo if needed - but it is my birthday and you wouldn't want to make me cry! right?
 
 **August 30th**
 
