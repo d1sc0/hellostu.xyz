@@ -19,6 +19,6 @@ Buried there are 3 of my daughters. The twins - Morgan & Bethany and Pob. Time h
 
 ![morgan and Bethany](post_images/morganbethanyFULL.jpg)
 
-This week is [Baby Loss Awareness Week](https://babyloss-awareness.org/). Baby Loss is common and hard on Mothers, Fathers and supporting family members. It's important we talk about it and support each other and fight to help improve bereavement care.
+This week is [Baby Loss Awareness Week](https://babyloss-awareness.org/). Baby Loss is common and hard on Mothers, Fathers, Siblings and supporting family members. It's important we talk about it and support each other and fight to help improve bereavement care.
 
-I'm always happy to talk to people about my own experiences but more importantly equally happy to just listen if that's what you need. Dont hesitate to reach out. Stu x ✌️
+I'm always happy to talk to people about my own experiences but more importantly happy to just listen if that's what you need. Dont hesitate to reach out. Stu x ✌️
