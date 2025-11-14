@@ -7,12 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Songs for Laa Laa</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Landscape (default) */
+    body {
+      background-image: url('/laalaa_background.jpg');
+    }
+
+    /* Portrait orientation */
+    @media (orientation: portrait) {
+      body {
+        background-image: url('/laalaa_background_portrait.jpg');
+      }
+    }
+  </style>
 </head>
 
-<body class="bg-blue-200 bg-[url('/laalaa_background.jpg')] bg-cover bg-fixed bg-center min-h-screen">
-  <div class="container mx-auto px-4 max-w-2xl pt-10">
+<body class="bg-blue-200 bg-cover bg-fixed bg-center min-h-screen">
+  <div class="container mx-auto px-4 max-w-2xl mt-20">
     <!-- Header Section -->
-    <header class="py-8 text-center bg-white/80 p-3 rounded-t-lg">
+    <header class="py-8 text-center bg-white/70 p-3 rounded-t-lg">
       <h1 class="text-4xl font-bold text-gray-800 mb-4">Songs for Laa Laa</h1>
       <p class="text-gray-600 leading-relaxed">
         A library of carefully curated playlists, made for a good friend. Musical mixtapes for
@@ -24,7 +37,7 @@
     </header>
 
     <!-- Cards Section -->
-    <main class="grid grid-cols-2 gap-6 mb-12 bg-white/80 p-6 rounded-b-lg">
+    <main class="grid grid-cols-2 gap-6 mb-12 bg-white/70 p-6 rounded-b-lg">
 
       <!-- Daily Drop Card -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
@@ -111,13 +124,14 @@
 
       <!-- MORE Card -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="hover:brightness-125 transition duration-300">
+        <!-- use data-youtube-id and prevent default navigation — JS will open the modal -->
+        <a href="#" data-youtube-id="dQw4w9WgXcQ" class="open-youtube hover:brightness-125 transition duration-300">
           <img src="/more400.jpg" alt="MOARRR playlists cming soon" class="w-full aspect-square object-cover" />
         </a>
         <div class="p-3 space-y-1">
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="no-underline">More Coming - Maybe?</a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            class="text-sm mt-2 text-blue-600 hover:text-blue-800 block">Coming soon...</a>
+          <a href="#" data-youtube-id="dQw4w9WgXcQ" class="open-youtube no-underline">More Coming - Maybe?</a>
+          <a href="#" data-youtube-id="dQw4w9WgXcQ" +
+            class="open-youtube text-sm mt-2 text-blue-600 hover:text-blue-800 block">Coming soon...</a>
         </div>
       </div>
       <!-- Card End -->
@@ -134,13 +148,64 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="py-6 text-center">
-      <p class="text-white text-sm bg-black/60 rounded mx-auto mb-6 p-2">Created with care and sprinkled with love by
+    <footer class="py-6 text-center bg-white/70 rounded-lg mb-10">
+      <p class="text-black text-sm">Created with care and sprinkled with love by
         Tinky Winky.
       </p>
     </footer>
   </div>
 
+  <!-- YouTube modal (hidden by default) -->
+  <div id="yt-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
+    <div class="relative w-full max-w-3xl aspect-video bg-black rounded">
+      <button id="yt-close" aria-label="Close video"
+        class="absolute top-2 right-2 text-white bg-black/40 hover:bg-black/60 rounded-full p-2">✕</button>
+      <iframe id="yt-iframe" src="" class="w-full h-full rounded" frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    // Open modal and autoplay YouTube embed; stop when closed.
+    (function () {
+      const modal = document.getElementById('yt-modal');
+      const iframe = document.getElementById('yt-iframe');
+      const closeBtn = document.getElementById('yt-close');
+
+      function openVideo(id) {
+        iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+
+      function closeVideo() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        // stop playback by removing src
+        iframe.src = '';
+      }
+
+      document.querySelectorAll('.open-youtube').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const id = el.dataset.youtubeId;
+          if (id) openVideo(id);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeVideo);
+
+      // click outside player closes modal
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeVideo();
+      });
+
+      // Esc key closes modal
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeVideo();
+      });
+    })();
+  </script>
 </body>
 
 </html>
