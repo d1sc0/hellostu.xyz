@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <!-- Prevent search engines and bots from indexing or following this page -->
+ <meta name="robots" content="noindex, nofollow, noarchive" />
+ <meta name="googlebot" content="noindex, nofollow" />
+ <title>Wrapped / Story Player</title>
+ <style>
+  :root {
+   --bg: #0b0b0c;
+   --accent: #1db954;
+   --muted: rgba(255, 255, 255, 0.18);
+   --text: #fff;
+  }
+
+  html,
+  body {
+   height: 100%;
+   margin: 0;
+   background: var(--bg);
+   color: var(--text);
+   font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  }
+
+  .player {
+   /* maintain 1080x1980 aspect ratio, centered, with black background */
+   position: fixed;
+   inset: 0;
+   margin: auto;
+   width: 100%;
+   height: 100%;
+   aspect-ratio: 1080 / 1980;
+   overflow: hidden;
+   background: #000;
+   /* on portrait (mobile): scale to fit viewport width */
+   max-width: 100vw;
+   max-height: 100vh;
+  }
+
+  /* landscape/desktop: constrain width, keep aspect ratio */
+  @media (min-aspect-ratio: 1080 / 1980) {
+   .player {
+    width: auto;
+    height: 100vh;
+   }
+  }
+
+  /* portrait/mobile: constrain height, keep aspect ratio */
+  @media (max-aspect-ratio: 1080 / 1980) {
+   .player {
+    width: 100vw;
+    height: auto;
+   }
+  }
+
+  .stage {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   touch-action: none;
+   background: #111;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .story {
+   position: absolute;
+   inset: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-start;
+   padding: 22px;
+   box-sizing: border-box;
+   transition: transform .35s ease, opacity .35s ease;
+   opacity: 0;
+   transform: translateX(20px);
+   background-size: cover;
+   background-position: center;
+  }
+
+  .story.visible {
+   opacity: 1;
+   transform: none;
+   /* keep stories below the skip zones so skip zones remain clickable */
+   z-index: 2;
+  }
+
+  .overlay {
+   backdrop-filter: blur(6px) saturate(1.1);
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.12));
+   width: 100%;
+   padding: 18px;
+   border-radius: 12px;
+  }
+
+  h1 {
+   margin: 0 0 6px;
+   font-size: 20px;
+   letter-spacing: -0.2px;
+  }
+
+  p {
+   margin: 0;
+   color: rgba(255, 255, 255, 0.86);
+   font-size: 13px;
+   line-height: 1.3
+  }
+
+  /* top progress bars */
+  .bars {
+   position: absolute;
+   top: 12px;
+   left: 12px;
+   right: 12px;
+   display: flex;
+   gap: 8px;
+   z-index: 5
+  }
+
+  .bar {
+   flex: 1;
+   height: 3.8px;
+   background: var(--muted);
+   border-radius: 4px;
+   overflow: hidden
+  }
+
+  .bar>i {
+   display: block;
+   height: 100%;
+   background: linear-gradient(90deg, var(--accent), #7ef0b8);
+   width: 0%
+  }
+
+  /* controls */
+  .controls {
+   position: absolute;
+   bottom: 16px;
+   right: 16px;
+   display: flex;
+   gap: 12px;
+   z-index: 6
+  }
+
+  /* play/pause icon handling */
+  .btn .icon-play,
+  .btn .icon-pause {
+   display: none;
+  }
+
+  .btn.playing .icon-pause {
+   display: block;
+  }
+
+  .btn:not(.playing) .icon-play {
+   display: block;
+  }
+
+  .btn svg {
+   width: 18px;
+   height: 18px;
+   display: block;
+  }
+
+  .btn.icon-btn {
+   /* controls icon buttons: black background + white outline icons */
+   padding: 8px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   background: #000;
+   color: #fff;
+   /* svg stroke uses currentColor */
+   border: 1px solid rgba(255, 255, 255, 0.12);
+   border-radius: 8px;
+   transition: background .12s ease, transform .06s ease, box-shadow .12s ease;
+  }
+
+  /* hover / active / focus states for controls */
+  .controls .btn.icon-btn:hover {
+   background: #111;
+   transform: translateY(-1px);
+  }
+
+  .controls .btn.icon-btn:active {
+   transform: translateY(0);
+  }
+
+  .controls .btn.icon-btn:focus-visible {
+   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06);
+   outline: none;
+  }
+
+  .btn .icon-muted {
+   display: none;
+  }
+
+  .btn.muted .icon-muted {
+   display: block;
+  }
+
+  .btn.muted .icon-unmuted {
+   display: none;
+  }
+
+  .skip-zones {
+   position: absolute;
+   inset: 0;
+   display: flex;
+   z-index: 4
+  }
+
+  .skip-left,
+  .skip-right {
+   flex: 1
+  }
+
+  .skip-left {
+   cursor: ew-resize
+  }
+
+  .skip-right {
+   cursor: ew-resize
+  }
+
+  /* small footer */
+  .footer {
+   position: absolute;
+   bottom: 12px;
+   left: 12px;
+   z-index: 6;
+   font-size: 12px;
+   color: rgba(255, 255, 255, 0.9);
+   display: flex;
+   align-items: center;
+   gap: 10px
+  }
+
+  .music-input {
+   display: flex;
+   gap: 8px;
+   align-items: center
+  }
+
+  input[type=file] {
+   display: none
+  }
+
+  label.file {
+   cursor: pointer;
+   background: rgba(255, 255, 255, 0.04);
+   padding: 6px 8px;
+   border-radius: 8px;
+   font-size: 13px
+  }
+
+  /* small story index dots */
+  .dots {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 12px;
+   display: none
+  }
+
+  @media(min-width:600px) {
+
+   /* ensure player isn't constrained by earlier max-width at larger viewport sizes */
+   .player {
+    max-width: none;
+   }
+
+   .dots {
+    display: none
+   }
+  }
+
+  /* centered, larger start button shown on the first story */
+  .start-btn {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   padding: 14px 22px;
+   font-size: 18px;
+   border-radius: 12px;
+   background: var(--accent);
+   color: #000;
+   border: none;
+   box-shadow: 0 6px 18px rgba(29, 185, 84, 0.18);
+   z-index: 9;
+   /* ensure start button is above skip zones */
+   cursor: pointer;
+   outline: none;
+  }
+
+  .start-btn:focus-visible {
+   box-shadow: 0 6px 18px rgba(29, 185, 84, 0.22), 0 0 0 3px rgba(29, 185, 84, 0.12);
+  }
+ </style>
+</head>
+
+<body>
+ <div class="player" id="player" aria-roledescription="stories player">
+  <div class="bars" id="bars" aria-hidden="true"></div>
+
+  <div class="stage" id="stage">
+   <!-- stories inserted by JS -->
+   <div class="skip-zones" id="skipZones">
+    <div class="skip-left" data-action="prev"></div>
+    <div class="skip-right" data-action="next"></div>
+   </div>
+  </div>
+
+  <div class="controls" id="controls">
+   <button class="btn icon-btn" id="playPauseBtn" title="Play / Pause" aria-pressed="false" aria-label="Play">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+     <path class="icon-play" d="M5 3v18l15-9z"></path>
+     <g class="icon-pause">
+      <path d="M6 4h4v16H6z"></path>
+      <path d="M14 4h4v16h-4z"></path>
+     </g>
+    </svg>
+   </button>
+   <button class="btn icon-btn" id="muteBtn" title="Mute" aria-pressed="false" aria-label="Mute">
+    <!-- unmuted icon + muted icon, toggled via .muted class on button -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+     stroke-linejoin="round" aria-hidden="true">
+     <!-- speaker -->
+     <path class="icon-unmuted" d="M11 5L6 9H2v6h4l5 4V5z"></path>
+     <!-- sound waves -->
+     <path class="icon-unmuted" d="M19 9c1.5 1.5 1.5 4.5 0 6"></path>
+     <path class="icon-unmuted" d="M16 6c2.5 2.5 2.5 6.5 0 9"></path>
+     <!-- muted X -->
+     <g class="icon-muted" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 9l-6 6"></path>
+      <path d="M10 9l6 6"></path>
+     </g>
+    </svg>
+   </button>
+   <button class="btn icon-btn" id="downloadBtn" title="Download image" aria-label="Download">
+    <!-- simple download icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+     <polyline points="7 10 12 15 17 10"></polyline>
+     <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+   </button>
+  </div>
+
+  <div class="footer">
+   <div class="music-input" style="gap:8px">
+    <audio id="bgAudio" crossorigin="anonymous"></audio>
+   </div>
+  </div>
+ </div>
+
+ <script>
+  /*
+   Simple Stories player:
+   - Define stories array below (image, title, text, durationMs).
+   - Click left/right halves to navigate. Space/Arrow keys supported.
+   - Upload local audio file to use as background music (or set audio.src programmatically).
+   - Autoplay of audio will require a user gesture in most browsers.
+  */
+  const stories = [
+   {
+    image: "/wrapped/start.png",
+    title: "Wrapped",
+    text: "Your top moments, wrapped — from tracks you loved to memories you created.",
+    duration: 4500
+   },
+   {
+    image: "/wrapped/1.png",
+    title: "Top Genre",
+    text: "Indie pop dominated this year. You listened to this vibe more than any other.",
+    duration: 4200
+   },
+   {
+    image: "/wrapped/2.png",
+    title: "Most Played",
+    text: "That one song on repeat — the soundtrack to your moments.",
+    duration: 4800
+   },
+   {
+    image: "/wrapped/3.png",
+    title: "Memories",
+    text: "Places you explored and the moods that came with them.",
+    duration: 5000
+   },
+   {
+    image: "/wrapped/4.png",
+    title: "Artist Spotlight",
+    text: "This artist was your constant companion all year.",
+    duration: 4600
+   },
+   {
+    image: "/wrapped/5.png",
+    title: "Playlist Gems",
+    text: "Hidden tracks that became your new favorites.",
+    duration: 4400
+   },
+   {
+    image: "/wrapped/6.png",
+    title: "Peak Hours",
+    text: "When you listened most: late nights and early mornings.",
+    duration: 4700
+   },
+   {
+    image: "/wrapped/7.png",
+    title: "Thanks for Listening",
+    text: "See you again next year. Keep the music playing.",
+    duration: 5200
+   },
+   // added stories
+   {
+    image: "/wrapped/8.png",
+    title: "Night Drives",
+    text: "Late-night playlists that carried you through quiet streets and open skies.",
+    duration: 4600
+   },
+   {
+    image: "/wrapped/9.png",
+    title: "New Discoveries",
+    text: "Tracks you found by chance that became instant favorites.",
+    duration: 4400
+   },
+   {
+    image: "/wrapped/finish.png",
+    title: "Local Favorites",
+    text: "Sounds from nearby artists that felt like home this year.",
+    duration: 4800
+   }
+  ];
+
+  const stage = document.getElementById('stage');
+  const bars = document.getElementById('bars');
+  let current = 0;
+  let timers = [];
+  let isPaused = true;
+  // separate flag: when true the story progress/timer is paused.
+  let progressPaused = true;
+  const audio = document.getElementById('bgAudio');
+  // use the packaged file in public/wrapped
+  audio.src = '/wrapped/dancing_in_the_kitchen.mp3';
+  audio.loop = true;
+  audio.preload = 'auto';
+  // make sure audio is loaded and not muted by default; set a reasonable volume
+  audio.muted = false;
+  audio.volume = 0.8;
+  audio.load();
+
+  // Play/Pause button wiring (controls story timer only)
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  function updatePlayButton() {
+   if (!playPauseBtn) return;
+   playPauseBtn.classList.toggle('playing', !progressPaused);
+   playPauseBtn.setAttribute('aria-pressed', (!progressPaused).toString());
+   playPauseBtn.setAttribute('title', progressPaused ? 'Play' : 'Pause');
+  }
+  if (playPauseBtn) {
+   playPauseBtn.addEventListener('click', () => {
+    if (progressPaused) {
+     progressPaused = false;
+     resumeProgress();
+    } else {
+     progressPaused = true;
+     pauseProgress();
+    }
+    updatePlayButton();
+   });
+  }
+  updatePlayButton();
+
+  const muteBtn = document.getElementById('muteBtn');
+  const downloadBtn = document.getElementById('downloadBtn');
+
+  // download current story image
+  if (downloadBtn) {
+   downloadBtn.addEventListener('click', async () => {
+    try {
+     const imgUrl = (stories && stories[current] && stories[current].image) ? stories[current].image : null;
+     if (!imgUrl) return;
+     // derive filename
+     const urlParts = imgUrl.split('?')[0].split('/');
+     let filename = 'laalaa-wrapped' + urlParts[urlParts.length - 1] || 'laalaa-wrapped.png';
+     // ensure a filename with extension
+     if (!filename.includes('.')) filename += '.png';
+     // fetch the image and trigger download
+     const res = await fetch(imgUrl, { cache: 'no-store' });
+     if (!res.ok) throw new Error('Network response not ok');
+     const blob = await res.blob();
+     const objUrl = URL.createObjectURL(blob);
+     const a = document.createElement('a');
+     a.href = objUrl;
+     a.download = filename;
+     document.body.appendChild(a);
+     a.click();
+     a.remove();
+     setTimeout(() => URL.revokeObjectURL(objUrl), 1500);
+    } catch (err) {
+     console.warn('Failed to download image', err);
+    }
+   });
+  }
+
+  // autoplay settings: once started, each story advances every 5s
+  const AUTOPLAY_DUR = 5_000;
+  let useAutoplay = false;
+
+  // Start button state (moved out of the story element so it can sit above skip zones)
+  let startBtn = null;
+  let started = false;
+
+  // Start Again button (shown on final story)
+  let startAgainBtn = null;
+
+  // Build DOM
+  stories.forEach((s, i) => {
+   const el = document.createElement('div');
+   el.className = 'story';
+   el.style.backgroundImage = `url(${s.image})`;
+   el.setAttribute('data-idx', i);
+   // no overlay content needed
+   el.innerHTML = '';
+   stage.appendChild(el);
+
+   // for the first story, append a centered Start button (positioned over the story)
+   if (i === 0) {
+    startBtn = document.createElement('button');
+    startBtn.id = 'storyStartBtn';
+    startBtn.className = 'btn start-btn';
+    startBtn.textContent = "Let's Go!";
+    // append to stage so it is not covered by skip-zones
+    stage.appendChild(startBtn);
+    startBtn.addEventListener('click', () => {
+     startBtn.style.display = 'none';
+     started = true;
+     show(1); // advance to first actual story (index 1)
+     playAll();
+     // ensure audio play is triggered by the user gesture
+     audio.play().catch((err) => { console.warn('Audio play failed on Start:', err); });
+    });
+   }
+
+   // for the last story, append a centered Start Again button (positioned over the story)
+   if (i === stories.length - 1) {
+    startAgainBtn = document.createElement('button');
+    startAgainBtn.id = 'storyStartAgainBtn';
+    startAgainBtn.className = 'btn start-btn';
+    startAgainBtn.textContent = 'Go Again!';
+    // append to stage so it is not covered by skip-zones
+    stage.appendChild(startAgainBtn);
+    startAgainBtn.addEventListener('click', () => {
+     startAgainBtn.style.display = 'none';
+     started = false;
+     started = true;
+     show(1); // advance to first actual story (index 1)
+     playAll();
+     // ensure audio play is triggered by the user gesture
+     audio.currentTime = 0;
+     audio.play().catch((err) => { console.warn('Audio play failed on Start Again:', err); });
+    });
+   }
+
+   const bar = document.createElement('div');
+   bar.className = 'bar';
+   bar.innerHTML = '<i></i>';
+   bars.appendChild(bar);
+  });
+
+  // Helpers
+  function show(index) {
+   index = (index + stories.length) % stories.length;
+   // hide previous
+   stage.querySelectorAll('.story').forEach(s => s.classList.remove('visible'));
+   // show current
+   const cur = stage.querySelector(`.story[data-idx="${index}"]`);
+   cur.classList.add('visible');
+   current = index;
+   // hide play/pause and download buttons on first story (index 0), show on others
+   if (playPauseBtn) playPauseBtn.style.display = (index === 0) ? 'none' : '';
+   if (downloadBtn) downloadBtn.style.display = (index === 0) ? 'none' : '';
+
+   // toggle visibility of the Start button: only show when on first story
+   if (startBtn) {
+    if (index === 0) startBtn.style.display = '';
+    else startBtn.style.display = 'none';
+   }
+   // toggle visibility of the Start Again button: only show when on last story
+   if (startAgainBtn) {
+    if (index === stories.length - 1) startAgainBtn.style.display = '';
+    else startAgainBtn.style.display = 'none';
+   }
+   // reset bars progress up to current
+   const barEls = bars.querySelectorAll('.bar > i');
+   barEls.forEach((b, idx) => {
+    if (idx < index) b.style.width = '100%';
+    else b.style.width = '0%';
+   });
+  }
+  show(0);
+
+  let progressTimer = null;
+  function startProgress() {
+   // cancel any previous animation frame
+   if (progressTimer) cancelAnimationFrame(progressTimer);
+   // choose duration: autoplay override when enabled, otherwise story-specific duration
+   const dur = useAutoplay ? AUTOPLAY_DUR : stories[current].duration;
+   const bar = bars.querySelectorAll('.bar > i')[current];
+   const start = performance.now();
+   const step = (t) => {
+    if (progressPaused) return;
+    const elapsed = t - start;
+    const pct = Math.min(1, elapsed / dur);
+    bar.style.width = (pct * 100) + '%';
+    if (pct >= 1) {
+     next();
+    } else {
+     progressTimer = requestAnimationFrame(step);
+    }
+   };
+   progressTimer = requestAnimationFrame(step);
+  }
+
+  function pauseProgress() {
+   // pause only the story timer
+   progressPaused = true;
+   cancelAnimationFrame(progressTimer);
+  }
+
+  function resumeProgress() {
+   // clear and restart the current story's progress (restart story on resume)
+   progressPaused = false;
+   if (progressTimer) cancelAnimationFrame(progressTimer);
+   const dur = useAutoplay ? AUTOPLAY_DUR : stories[current].duration;
+   const bar = bars.querySelectorAll('.bar > i')[current];
+   bar.style.width = '0%';
+   const start = performance.now();
+   const step = (t) => {
+    // check progressPaused at the beginning of each frame
+    if (progressPaused) return;
+    const elapsed = t - start;
+    const pct = Math.min(1, elapsed / dur);
+    bar.style.width = (pct * 100) + '%';
+    if (pct >= 1) {
+     next();
+    } else {
+     // schedule next frame
+     progressTimer = requestAnimationFrame(step);
+    }
+   };
+   // immediately request first animation frame
+   progressTimer = requestAnimationFrame(step);
+  }
+
+  function playAll() {
+   // enable autoplay mode (5s per story) when starting playback
+   useAutoplay = true;
+   isPaused = false;
+   // ensure timer is active when starting playback
+   progressPaused = false;
+   if (audio.src && audio.paused) {
+    audio.play().catch(() => {/* user gesture may be required */ });
+   }
+   startProgress(); // start the animation
+   updatePlayButton();
+  }
+
+  function pauseAll() {
+   // global pause: pause both audio and timer
+   isPaused = true;
+   audio.pause();
+   progressPaused = true;
+   pauseProgress();
+   updatePlayButton();
+  }
+
+  function next() {
+   // mark current bar full
+   bars.querySelectorAll('.bar > i')[current].style.width = '100%';
+   // stop progression on final story
+   if (current === stories.length - 1) {
+    pauseAll();
+    show(current);
+   } else {
+    show(current + 1);
+    if (!isPaused) startProgress();
+   }
+  }
+
+  function prev() {
+   bars.querySelectorAll('.bar > i')[current].style.width = '0%';
+   show(current - 1);
+   if (!isPaused) startProgress();
+  }
+
+  // Interactions
+  document.getElementById('skipZones').addEventListener('click', (e) => {
+   const rect = e.currentTarget.getBoundingClientRect();
+   const x = e.clientX - rect.left;
+   const half = rect.width / 2;
+   if (x < half) {
+    prev();
+   } else {
+    next();
+   }
+  });
+
+  // Buttons
+  function updateMuteButton() {
+   muteBtn.classList.toggle('muted', !!audio.muted);
+   muteBtn.setAttribute('aria-pressed', audio.muted ? 'true' : 'false');
+   muteBtn.setAttribute('title', audio.muted ? 'Unmute' : 'Mute');
+   muteBtn.setAttribute('aria-label', audio.muted ? 'Unmute' : 'Mute');
+  }
+
+  muteBtn.addEventListener('click', () => {
+   audio.muted = !audio.muted;
+   updateMuteButton();
+  });
+
+  // initialize button state
+  updateMuteButton();
+
+  // Keyboard
+  window.addEventListener('keydown', (e) => {
+   if (e.key === 'ArrowRight') next();
+   if (e.key === 'ArrowLeft') prev();
+   if (e.key === ' ') { e.preventDefault(); if (isPaused) playAll(); else pauseAll(); }
+  });
+
+  // Touch swipe
+  let touchStartX = null;
+  stage.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
+  stage.addEventListener('touchend', (e) => {
+   if (touchStartX === null) return;
+   const dx = e.changedTouches[0].clientX - touchStartX;
+   if (Math.abs(dx) > 40) {
+    if (dx < 0) next(); else prev();
+   }
+   touchStartX = null;
+  });
+
+  // Initialize: preload images
+  stories.forEach(s => { const im = new Image(); im.src = s.image; });
+
+  // Start paused; you can auto-start if desired after user gesture:
+  /* initialize bars to 0 without starting animation */
+ </script>
+</body>
+
+</html>
