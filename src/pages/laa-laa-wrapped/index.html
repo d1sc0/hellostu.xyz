@@ -11,7 +11,7 @@
  <style>
   :root {
    --bg: #0b0b0c;
-   --accent: #1db954;
+   --accent: #fbb125;
    --muted: rgba(255, 255, 255, 0.18);
    --text: #fff;
   }
@@ -284,14 +284,14 @@
   .start-btn {
    position: absolute;
    left: 50%;
-   top: 50%;
+   top: 45%;
    transform: translate(-50%, -50%);
    padding: 14px 22px;
-   font-size: 18px;
+   font-size: 16px;
    border-radius: 12px;
    background: var(--accent);
    color: #000;
-   border: none;
+   border: 1px solid white;
    box-shadow: 0 6px 18px rgba(29, 185, 84, 0.18);
    z-index: 9;
    /* ensure start button is above skip zones */
@@ -535,16 +535,18 @@
     startBtn = document.createElement('button');
     startBtn.id = 'storyStartBtn';
     startBtn.className = 'btn start-btn';
-    startBtn.textContent = "Let's Go!";
+    startBtn.textContent = "LETS GO!";
     // append to stage so it is not covered by skip-zones
     stage.appendChild(startBtn);
     startBtn.addEventListener('click', () => {
      startBtn.style.display = 'none';
-     started = true;
-     show(1); // advance to first actual story (index 1)
-     playAll();
      // ensure audio play is triggered by the user gesture
      audio.play().catch((err) => { console.warn('Audio play failed on Start:', err); });
+     setTimeout(() => {
+      started = true;
+      show(1); // advance to first actual story (index 1)
+      playAll();
+     }, 3000);
     });
    }
 
@@ -585,7 +587,7 @@
    current = index;
    // hide play/pause and download buttons on first story (index 0), show on others
    if (playPauseBtn) playPauseBtn.style.display = (index === 0) ? 'none' : '';
-   if (downloadBtn) downloadBtn.style.display = (index === 0) ? 'none' : '';
+   if (downloadBtn) downloadBtn.style.display = (index === 0) ? '' : '';
 
    // toggle visibility of the Start button: only show when on first story
    if (startBtn) {
