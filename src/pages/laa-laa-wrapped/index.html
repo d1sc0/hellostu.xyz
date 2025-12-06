@@ -373,19 +373,19 @@
     image: "/wrapped/start.png",
     title: "Wrapped",
     text: "Your top moments, wrapped — from tracks you loved to memories you created.",
-    duration: 4500
+    duration: 5000
    },
    {
     image: "/wrapped/1.png",
     title: "Top Genre",
     text: "Indie pop dominated this year. You listened to this vibe more than any other.",
-    duration: 4200
+    duration: 5000
    },
    {
     image: "/wrapped/2.png",
     title: "Most Played",
     text: "That one song on repeat — the soundtrack to your moments.",
-    duration: 4800
+    duration: 5000
    },
    {
     image: "/wrapped/3.png",
@@ -397,19 +397,19 @@
     image: "/wrapped/4.png",
     title: "Artist Spotlight",
     text: "This artist was your constant companion all year.",
-    duration: 4600
+    duration: 5000
    },
    {
     image: "/wrapped/5.png",
     title: "Playlist Gems",
     text: "Hidden tracks that became your new favorites.",
-    duration: 4400
+    duration: 5000
    },
    {
     image: "/wrapped/6.png",
     title: "Peak Hours",
     text: "When you listened most: late nights and early mornings.",
-    duration: 4700
+    duration: 5000
    },
    {
     image: "/wrapped/7.png",
@@ -422,19 +422,19 @@
     image: "/wrapped/8.png",
     title: "Night Drives",
     text: "Late-night playlists that carried you through quiet streets and open skies.",
-    duration: 4600
+    duration: 5000
    },
    {
     image: "/wrapped/9.png",
     title: "New Discoveries",
     text: "Tracks you found by chance that became instant favorites.",
-    duration: 4400
+    duration: 5000
    },
    {
     image: "/wrapped/finish.png",
     title: "Local Favorites",
     text: "Sounds from nearby artists that felt like home this year.",
-    duration: 4800
+    duration: 40000
    }
   ];
 
@@ -613,7 +613,7 @@
    // cancel any previous animation frame
    if (progressTimer) cancelAnimationFrame(progressTimer);
    // choose duration: autoplay override when enabled, otherwise story-specific duration
-   const dur = useAutoplay ? AUTOPLAY_DUR : stories[current].duration;
+   const dur = stories[current].duration;
    const bar = bars.querySelectorAll('.bar > i')[current];
    const start = performance.now();
    const step = (t) => {
