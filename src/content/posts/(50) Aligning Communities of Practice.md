@@ -74,4 +74,4 @@ If we co-design our goals, align our activities to them, and actually support ou
 - Constructive Alignment: [A Guide to Constructive Alignment](https://www.qmul.ac.uk/queenmaryacademy/educators/resources/curriculum-design/constructive-alignment/) (Queen Mary University of London)
 - Visible Learning: [Visible Learning - Information About What Works Best](https://visible-learning.org/) (John Hattie)
 - Situated Learning / LPP: [Lave and Wenger on Situated Learning](https://newlearningonline.com/new-learning/chapter-6/supporting-material/lave-and-wenger-on-situated-learning) (New Learning Online)
-- Practical guidance on [Communities of Practice](https://communitiesofpractice.work/) (Emily Webber)\*\*
+- Practical guidance on [Communities of Practice](https://communitiesofpractice.work/) (Emily Webber)
