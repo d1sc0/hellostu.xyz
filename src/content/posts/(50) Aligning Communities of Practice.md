@@ -5,7 +5,7 @@ slug: making-them-count-creating-alignment-within-communities-of-practice
 pubDate: 2026-03-10
 description: Some thoughts on how to use learning design theory to align goals and activities in a Community of Practice. Move from "humaning together" and great vibes to practicing with purpose.
 postImage:
-  src: post_images/50-CoPFull.jpg
+  src: post_images/50-CoPFULL.jpg
   alt: a photo of me standing in an AI-generated office filled with beautiful plants...my ideal mind palace
 socialImage: /social_images/50-CoP.jpg
 tags:
@@ -47,7 +47,7 @@ When the activity actually helps us reach the goal, the "hard work" Tash mention
 
 A knock-on effect of this intentionality might be in making it easier to evidence to Senior Leaders the benefits and impact CoPs bring to an organisation, thus making holding the time and space for these crucial learning spaces easier. It’s not what **John Hattie** was talking about when he suggested **"making learning visible"** but I’m happy to build on his thoughts. If learning is visible it can be seen and valued, and not necessarily just from the perspective of the learner but by those who need to create the conditions in which learning can happen.
 
-**Emily Webber** (another super smart CoP legend) has written and [shared some really practical tips](https://emilywebber.co.uk/measuring-your-community-of-practice/) on the subject of measuring communities of practices but I’m intrigued by something that might be more valuable in shaping the learning activities happening within the community. Note to self - I need to get hold of Emily’s book and read more.
+**Emily Webber** (another super smart CoP legend) has written and [shared some really practical tips](https://emilywebber.co.uk/measuring-your-community-of-practice/) on the subject of measuring communities of practices. Note to self - I need to get hold of Emily’s book and read more.
 
 One of the trickiest bits of a CoP is that we aren't all at the same level. In Situated Learning, this is called **Legitimate Peripheral Participation**. It’s the journey from being the overwhelmed new person on the edge of a community (the novice) to a seasoned old hand, showing and telling us how things can be done in the centre (the expert).
 
