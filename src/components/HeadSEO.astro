@@ -3,6 +3,13 @@ import { SEO } from 'astro-seo';
 const { frontmatter, pageMeta } = Astro.props;
 import Fonts from '../components/Fonts.astro';
 const siteURL = 'https://hellostu.xyz';
+
+// Resolve OG Image: Manual > Generated > Default
+const ogImage = frontmatter?.socialImage
+  ? siteURL + frontmatter.socialImage
+  : frontmatter?.slug || pageMeta?.slug
+    ? `${siteURL}/generated_OG_images/${frontmatter?.slug || pageMeta?.slug}.png`
+    : siteURL + (pageMeta?.imageUrl || '/favicon.png');
 ---
 
 <head>
@@ -24,10 +31,7 @@ const siteURL = 'https://hellostu.xyz';
       basic: {
         title: pageMeta != undefined ? pageMeta.title : frontmatter.title,
         type: frontmatter !== undefined ? 'article' : 'website',
-        image:
-          frontmatter !== undefined
-            ? siteURL + frontmatter.socialImage
-            : siteURL + pageMeta.imageUrl,
+        image: ogImage,
       },
       optional: {
         description:
@@ -41,10 +45,7 @@ const siteURL = 'https://hellostu.xyz';
       creator: '@_disco',
       card: 'summary_large_image',
       title: pageMeta != undefined ? pageMeta.title : frontmatter.title,
-      image:
-        frontmatter !== undefined
-          ? siteURL + frontmatter.socialImage
-          : siteURL + pageMeta.imageUrl,
+      image: ogImage,
       description:
         frontmatter !== undefined
           ? frontmatter.description

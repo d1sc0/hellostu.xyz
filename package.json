@@ -14,6 +14,7 @@
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "@jam-comments/astro": "^2.12.0",
+    "@sveltia/cms": "^0.152.2",
     "apexcharts": "^5.10.3",
     "astro": "^5.18.0",
     "astro-font": "^1.1.0",
@@ -21,7 +22,9 @@
     "astro-imagetools": "^0.9.0",
     "astro-seo": "^0.8.4",
     "astro-social-share": "^2.2.0",
+    "gray-matter": "^4.0.3",
     "leaflet": "^1.9.4",
-    "moment": "^2.30.1"
+    "moment": "^2.30.1",
+    "puppeteer": "^24.40.0"
   }
 }

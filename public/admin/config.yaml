@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: your-username/hellostu.xyz # Replace with your GitHub username and repository name
+  branch: main # Replace with your default branch
+
+media_folder: 'src/content/posts/post_images'
+public_folder: 'post_images'
+
+collections:
+  - name: 'posts'
+    label: 'Blog Posts'
+    folder: 'src/content/posts'
+    create: true
+    slug: '{{slug}}'
+    extension: 'md'
+    format: 'yaml-frontmatter'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Slug',
+          name: 'slug',
+          widget: 'string',
+          hint: 'Used for the URL and filename',
+        }
+      - {
+          label: 'Draft',
+          name: 'draft',
+          widget: 'boolean',
+          default: false,
+          required: false,
+        }
+      - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - label: 'Post Image'
+        name: 'postImage'
+        widget: 'object'
+        fields:
+          - { label: 'Image File', name: 'src', widget: 'image' }
+          - { label: 'Alt Text', name: 'alt', widget: 'string' }
+      - {
+          label: 'Social Image',
+          name: 'socialImage',
+          widget: 'image',
+          required: false,
+          hint: 'Used for OpenGraph tags',
+        }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        summary: '{{fields.tag}}'
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+site_url: https://hellostu.xyz
+display_url: https://hellostu.xyz
+logo_url: https://hellostu.xyz/favicon.svg
