@@ -5,6 +5,35 @@ import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 import matter from 'gray-matter';
 
+/** Recursive helper to find all markdown and astro files */
+function getFilesRecursive(dir: string, allFiles: string[] = []) {
+  if (!fs.existsSync(dir)) return allFiles;
+  const files = fs.readdirSync(dir);
+  files.forEach(file => {
+    const name = path.join(dir, file);
+    if (fs.statSync(name).isDirectory()) {
+      getFilesRecursive(name, allFiles);
+    } else if (
+      file.endsWith('.md') ||
+      file.endsWith('.mdx') ||
+      file.endsWith('.astro')
+    ) {
+      // Filter out dynamic routes like [slug].astro or [...path].astro
+      if (!file.includes('[') && !file.includes(']')) {
+        allFiles.push(name);
+      }
+    }
+  });
+  return allFiles;
+}
+
+// Title mapping for static Astro pages
+const PAGE_TITLES: Record<string, string> = {
+  index: 'Hello Stu',
+  about: 'About Me',
+  '404': 'Page Not Found',
+};
+
 export default function ogImageGenerator(): AstroIntegration {
   return {
     name: 'og-image-generator',
@@ -28,11 +57,14 @@ export default function ogImageGenerator(): AstroIntegration {
         }
 
         const postsDir = path.resolve('./src/content/posts');
-        const files = fs
-          .readdirSync(postsDir)
-          .filter(file => file.endsWith('.md') || file.endsWith('.mdx'));
+        const pagesDir = path.resolve('./src/pages');
 
-        const totalPosts = files.length;
+        const allFiles = [
+          ...getFilesRecursive(postsDir),
+          ...getFilesRecursive(pagesDir),
+        ];
+
+        const totalPosts = allFiles.length;
         let generatedCount = 0;
 
         // Read favicon once and prepare base64 URI for inlining
@@ -54,15 +86,43 @@ export default function ogImageGenerator(): AstroIntegration {
         });
 
         // Function to process a single file and generate its OG image
-        const processPost = async (file: string) => {
+        const processFile = async (filePath: string) => {
           let page;
           try {
-            const filePath = path.join(postsDir, file);
-            const fileContent = fs.readFileSync(filePath, 'utf-8');
-            const { data } = matter(fileContent);
+            const isMarkdown =
+              filePath.endsWith('.md') || filePath.endsWith('.mdx');
+            let title = '';
+            let slug = '';
+            let postImageSrc = '';
 
-            // Use the slug from frontmatter, or fallback to filename without extension
-            const slug = data.slug || path.parse(file).name;
+            if (isMarkdown) {
+              const fileContent = fs.readFileSync(filePath, 'utf-8');
+              const { data } = matter(fileContent);
+              title = data.title;
+              slug = data.slug || path.parse(filePath).name;
+              postImageSrc = data.postImage?.src;
+            } else {
+              // Handle .astro pages
+              const parsedPath = path.parse(filePath);
+              // If it's index.astro, use the parent folder name as the slug
+              slug =
+                parsedPath.name === 'index'
+                  ? path.basename(parsedPath.dir)
+                  : parsedPath.name;
+
+              // Fallback to "index" if it's the root src/pages/index.astro
+              if (slug === 'pages') slug = 'index';
+
+              title =
+                PAGE_TITLES[slug] ||
+                slug.charAt(0).toUpperCase() + slug.slice(1);
+
+              // Set the default image for Astro pages
+              postImageSrc = path.resolve(
+                './src/assets/page_images/default-social-image.jpg',
+              );
+            }
+
             const outputPath = path.join(outputDir, `${slug}.png`);
 
             // Skip if image already exists
@@ -75,13 +135,14 @@ export default function ogImageGenerator(): AstroIntegration {
             await page.setViewport({ width: 1200, height: 630 });
             page.setDefaultNavigationTimeout(60000);
 
-            const title = data.title;
-            // We use the raw path from the data for the background image
-            const postImageSrc = data.postImage?.src;
-
             let postImageBase64Uri = '';
             if (postImageSrc) {
-              const fullImagePath = path.join(postsDir, postImageSrc);
+              // If the path is absolute (like our default image), use it directly.
+              // Otherwise, resolve it relative to the markdown file.
+              const fullImagePath = path.isAbsolute(postImageSrc)
+                ? postImageSrc
+                : path.resolve(path.dirname(filePath), postImageSrc);
+
               if (fs.existsSync(fullImagePath)) {
                 const imageBuffer = fs.readFileSync(fullImagePath);
                 const ext = path
@@ -142,7 +203,7 @@ export default function ogImageGenerator(): AstroIntegration {
             fs.writeFileSync(path.join(buildOutputDir, `${slug}.png`), buffer);
           } catch (error) {
             logger.error(
-              `Error generating OG image for ${file}: ${error.message}`,
+              `Error generating OG image for ${filePath}: ${error.message}`,
             );
           } finally {
             if (page) await page.close(); // Close the page after processing
@@ -152,9 +213,9 @@ export default function ogImageGenerator(): AstroIntegration {
         // Process posts in small batches to prevent resource exhaustion and crashes
         // A limit of 2-3 is usually stable for most systems and CI environments
         const BATCH_SIZE = 2;
-        for (let i = 0; i < files.length; i += BATCH_SIZE) {
-          const batch = files.slice(i, i + BATCH_SIZE);
-          await Promise.all(batch.map(file => processPost(file)));
+        for (let i = 0; i < allFiles.length; i += BATCH_SIZE) {
+          const batch = allFiles.slice(i, i + BATCH_SIZE);
+          await Promise.all(batch.map(file => processFile(file)));
         }
 
         await browser.close(); // Close the browser once all pages are done
