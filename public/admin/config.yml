@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: d1sc0/hellostu.xyz # Replace with your GitHub username and repository name
-  branch: main # Replace with your default branch
+  branch: master # Replace with your default branch
 
 media_folder: 'src/content/posts/post_images'
 public_folder: '@content/posts/post_images'

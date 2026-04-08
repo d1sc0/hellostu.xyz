@@ -31,6 +31,7 @@ function getFilesRecursive(dir: string, allFiles: string[] = []) {
 const PAGE_TITLES: Record<string, string> = {
   index: 'Hello Stu',
   about: 'About Me',
+  posts: 'Blog Posts',
   '404': 'Page Not Found',
 };
 
