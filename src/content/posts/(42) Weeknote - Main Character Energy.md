@@ -5,7 +5,7 @@ slug: weeknote-main-character-energy
 pubDate: 2024-07-12T15:00:00
 description: A day-by-day breakdown of the week that was. This note covers the period 5th July to 12th July.
 postImage:
-  src: 'post_images/42-main-character-energyFULL.jpg'
+  src: '../../assets/post_images/42-main-character-energyFULL.jpg'
   alt: 'An AI-generated image of a graffiti wall showing a strong male hero character centre frame'
 tags:
   - weeknote
@@ -43,7 +43,7 @@ The rest of the day was spent in kick-off sessions for a new Local Digital cyber
 
 In the evening, we went to keep our Daughter company, who is staying nearby, dog-sitting for family.
 
-![An AI-generated image of a graffiti wall showing a strong male hero character centre frame](post_images/42-main-character-energyFULL.jpg)
+![An AI-generated image of a graffiti wall showing a strong male hero character centre frame](../../assets/post_images/42-main-character-energyFULL.jpg)
 
 ## Wednesday
 

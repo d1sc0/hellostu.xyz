@@ -5,12 +5,12 @@ slug: building-things
 pubDate: 2024-05-30T16:00:00
 description: 'Reflecting on the experience and insights gained from rebuilding the website, focusing on design, technology, and development challenges.'
 postImage:
-  src: 'post_images/34-old-siteRIGHT.jpg'
+  src: '../../assets/post_images/34-old-siteRIGHT.jpg'
   alt: 'screenshot of old website with a TNT block overlayed'
 tags: ['astro', 'gatsby', 'build', 'design', 'code', 'tech']
 ---
 
-![screenshot of old website with a TNT block overlayed](post_images/34-old-siteRIGHT.jpg) So over the bank holiday weekend I decided to redesign and rebuild this website. The motivation for this largely just came from a desire to create something - **I wanted to build a thing!**
+![screenshot of old website with a TNT block overlayed](../../assets/post_images/34-old-siteRIGHT.jpg) So over the bank holiday weekend I decided to redesign and rebuild this website. The motivation for this largely just came from a desire to create something - **I wanted to build a thing!**
 
 Many of my projects at work over the last 12-18 months have been at the service, organisation and strategy end of the spectrum. I’m cool with that and I have plenty of experience to bring but a little bit of me has missed being closer to product work and the joy that I get from making digital things.
 
@@ -18,7 +18,7 @@ The old version of the site was also starting to feel a bit stale, bland and dul
 
 So this is the brand new [hellostu.xyz](https://hellostu.xyz). Yes - visual design skills are not my superpower 😂. Not everyone will enjoy the busy aesthetic and wild colours and that’s fine! I’ve purposefully leant into a quirkier, hand-built kind of vibe. It’s not quite the Wild West of the early [GeoCities](https://en.wikipedia.org/wiki/GeoCities) days but I wanted the site to embody some of that early web creativity before our corporate overlords made everything whitespace and widgets.
 
-![screenshot of the new website](post_images/34-new-siteFULL.jpg)
+![screenshot of the new website](../../assets/post_images/34-new-siteFULL.jpg)
 
 The rebuild was a great opportunity to play with some new technology - I’m by no means a developer but I find the process of trying to turn the ideas in my head into real things through the medium of code extremely satisfying. Learning, trying, failing fast, problem solving and fixing things in rapid repeating cycles over a couple of days can be oddly exhilarating for a nerd like me!
 

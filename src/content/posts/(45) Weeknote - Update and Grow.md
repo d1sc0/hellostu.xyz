@@ -5,7 +5,7 @@ slug: weeknote-update-and-grow
 pubDate: 2024-08-16T10:20:00
 description: a note containing some excuses, a plan, some updates and some reminders of things I should celebrate. This note covers the last couple of week until today 16th August 24.
 postImage:
-  src: post_images/45-update-and-growFULL.jpg
+  src: ../../assets/post_images/45-update-and-growFULL.jpg
   alt: a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands
 tags:
   - weeknote
@@ -16,7 +16,7 @@ tags:
   - car
 ---
 
-![a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands](post_images/45-update-and-growFULL.jpg)
+![a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands](../../assets/post_images/45-update-and-growFULL.jpg)
 
 ## Excuses
 

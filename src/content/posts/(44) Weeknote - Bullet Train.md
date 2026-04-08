@@ -5,7 +5,7 @@ slug: weeknote-bullet-train
 pubDate: 2024-08-02T20:20:00
 description: The weekly notes—This week, I bring you not one, not two, but THREE bullet-pointed lists of stuff that covers the period 26 July to 2 August.
 postImage:
-  src: post_images/44-bullet-trainRIGHT.jpg
+  src: ../../assets/post_images/44-bullet-trainRIGHT.jpg
   alt: a sketch image of a fast moving bullet train - lines have been added to create the sense of motion
 tags:
   - weeknote
@@ -14,7 +14,7 @@ tags:
   - bullets
 ---
 
-![a sketch image of a fast moving bullet train - lines have been added to create the sense of motion](post_images/44-bullet-trainRIGHT.jpg)
+![a sketch image of a fast moving bullet train - lines have been added to create the sense of motion](../../assets/post_images/44-bullet-trainRIGHT.jpg)
 
 ## The long weekend in bullets
 

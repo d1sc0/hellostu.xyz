@@ -5,7 +5,7 @@ slug: weeknote-swipe-right
 pubDate: 2024-08-30T10:20:00
 description: more excuses, some work stuff, cornwall and exploring the world of dating in a digital age. This note covers the last couple of week until today 30th August 24.
 postImage:
-  src: post_images/46-swipe-rightFULL.jpg
+  src: ../../assets/post_images/46-swipe-rightFULL.jpg
   alt: a landscape photograph of the coast of cornwall, taken on the coast path near to Zennor, looking towards St Ives
 tags:
   - weeknote
@@ -36,7 +36,7 @@ There were some lowlights, including a little anxiety/panic attack one morning. 
 
 It was a good trip, though. The highlights were the views and one evening spent 'out-out' with Robyn. Many cocktails were consumed, and much silly fun was had.
 
-![a landscape photograph of the coast of cornwall, taken on the coast path near to Zennor, looking towards St Ives](post_images/46-swipe-rightFULL.jpg)
+![a landscape photograph of the coast of cornwall, taken on the coast path near to Zennor, looking towards St Ives](../../assets/post_images/46-swipe-rightFULL.jpg)
 
 ## Dating - peaking into the abyss
 

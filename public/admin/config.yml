@@ -3,8 +3,8 @@ backend:
   repo: d1sc0/hellostu.xyz # Replace with your GitHub username and repository name
   branch: master # Replace with your default branch
 
-media_folder: 'src/content/posts/post_images'
-public_folder: 'post_images'
+media_folder: 'src/assets/post_images'
+public_folder: '../../assets/post_images'
 
 collections:
   - name: 'posts'
