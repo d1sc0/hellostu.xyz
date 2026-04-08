@@ -7,7 +7,6 @@ description: 'A weeknote with some reflections on what became a very short week 
 postImage:
   src: 'post_images/39-ape-FULL.jpg'
   alt: 'a chimpanzee sits in the long grass picking up insects.'
-socialImage: '/social_images/39-ape.jpg'
 tags: ['weeknote', 'sick', 'solstice', 'monkeys', 'work']
 ---
 

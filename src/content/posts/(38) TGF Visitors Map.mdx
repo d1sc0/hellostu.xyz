@@ -7,19 +7,18 @@ description: 'Some quick and dirty analysis of where visitors to the Great Field
 postImage:
   src: 'post_images/38-parkrun-map.jpg'
   alt: 'a screenshot of a uk map with markers showing where visitors to the great field parkrun come from'
-socialImage: '/social_images/38-parkrun-map.jpg'
 tags: ['dataviz', 'maps', 'parkrun', 'data', 'making']
 ---
 
-import VisitorsMap from '/src/components/for_posts/TGF-VisitorsMap.astro'
+import VisitorsMap from '/src/components/for_posts/TGF-VisitorsMap.astro';
 
 I said I was going to play with some data, and I didn’t want to disappoint, so yesterday I made a little map that charts where our visitors to [The Great Field parkrun](https://www.parkrun.org.uk/thegreatfield/) come from.
 
 <VisitorsMap mapAlign="mapFull" />
 
-The Great Field parkrun is now over two years old. This map has been drawn using data from our first 135 events—it doesn’t include data from our Junior parkrun. Over these 135 events, we’ve been joined by approximately **6391 unique runners and volunteers**. It’s only an approximate number because each week, we’ll have a small handful of participants who have either not registered or not remembered their parkrun barcode. In each athlete or volunteer’s online profile is an option to set a ‘home parkrun’. 
+The Great Field parkrun is now over two years old. This map has been drawn using data from our first 135 events—it doesn’t include data from our Junior parkrun. Over these 135 events, we’ve been joined by approximately **6391 unique runners and volunteers**. It’s only an approximate number because each week, we’ll have a small handful of participants who have either not registered or not remembered their parkrun barcode. In each athlete or volunteer’s online profile is an option to set a ‘home parkrun’.
 
-**On this map, each orange circle represents the home parkrun location for every unique athlete or volunteer participating in the Great Field parkrun. The number in each circle represents the total number of unique athletes and volunteers from each location who have visited us.** 
+**On this map, each orange circle represents the home parkrun location for every unique athlete or volunteer participating in the Great Field parkrun. The number in each circle represents the total number of unique athletes and volunteers from each location who have visited us.**
 
 **The blue circle is the location of the Great Field parkrun; we have 1183 people who call this home! (myself included)**
 
@@ -28,4 +27,3 @@ There were about 7 or 8 records whose home run no longer is an active event, whi
 The rest of the number comprises **5137 parkrunners representing 535 different UK locations**. Unsuprisingly a good number of those ahtletes are visitors from other parkruns nearby (Weymouth, Yeovil, Bridport, Upton park, Poole etc) but you can see from the map that there are plenty from further afield! in fact we’ve also had 71 folks who come from other parkrun global territories — 45 of those from Australia! 🦘🇦🇺
 
 This data isn’t going to be 100% accurate. Many people won’t have updated their ‘home parkrun’ since they initially registered, and ultimately, people can choose to lie if they want. Still, given that we speak to our visitors in real life at every event, I’m pretty sure most inaccuracies are small. Seeing just how many people have visited our little community-powered event and where they've come from has been both fun and mind-boggling! Making the map was also a nice fun little exercise. I'm sure I'll return soon with more TGF parkrun related data nerdery.
-

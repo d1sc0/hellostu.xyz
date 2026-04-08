@@ -7,7 +7,6 @@ description: 'Wearing a panda mask in a self-portrait series, reflecting on dist
 postImage:
   src: 'post_images/52weeks/52_2023_11_FULL.jpg'
   alt: 'me sat at the kitchen table in a panda mask'
-socialImage: '/social_images/26-panda.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'mask']
 ---
 

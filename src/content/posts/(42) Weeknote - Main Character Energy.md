@@ -7,7 +7,6 @@ description: A day-by-day breakdown of the week that was. This note covers the p
 postImage:
   src: 'post_images/42-main-character-energyFULL.jpg'
   alt: 'An AI-generated image of a graffiti wall showing a strong male hero character centre frame'
-socialImage: '/social_images/42-main-character-energy.jpg'
 tags:
   - weeknote
   - work

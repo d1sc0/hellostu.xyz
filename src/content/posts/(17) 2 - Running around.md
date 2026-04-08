@@ -5,7 +5,6 @@ description: 'Collaborative self-portrait, experimenting with duality, connectio
 postImage:
   src: 'post_images/52weeks/52_2023_2_FULL.jpg'
   alt: 'stu stands in the street after a run'
-socialImage: '/social_images/17-running-around.jpg'
 pubDate: 2023-01-29
 tags: ['52weeks', 'photography', 'creativity', 'self', 'running']
 ---

@@ -7,7 +7,6 @@ description: The weekly notes—This week, I bring you not one, not two, but THR
 postImage:
   src: post_images/44-bullet-trainRIGHT.jpg
   alt: a sketch image of a fast moving bullet train - lines have been added to create the sense of motion
-socialImage: /social_images/44-bullet-train.jpg
 tags:
   - weeknote
   - work

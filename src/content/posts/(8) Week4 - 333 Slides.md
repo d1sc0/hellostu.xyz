@@ -7,7 +7,6 @@ description: 'I summarize the week just gone, including completing an ODI course
 postImage:
   src: 'post_images/8-333.jpg'
   alt: '3 lego stormtrooper minifigs sitting and having a cuppa'
-socialImage: '/social_images/8-333.jpg'
 tags: ['weeknote']
 ---
 

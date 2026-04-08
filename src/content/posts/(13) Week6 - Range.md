@@ -7,7 +7,6 @@ description: 'Reflecting on a busy, challenging week and thoughts on being a mul
 postImage:
   src: 'post_images/hackney_animalFULL.jpg'
   alt: 'a wig lying on the pavement'
-socialImage: '/social_images/12-range.jpg'
 tags: ['weeknote', 'rarenote']
 ---
 

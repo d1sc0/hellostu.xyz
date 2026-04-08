@@ -7,7 +7,6 @@ description: 'I share late notes from a busy week, feeling refreshed after Easte
 postImage:
   src: 'post_images/monkeyRIGHT.gif'
   alt: 'monkey sat at a desk smashing a laptop'
-socialImage: '/social_images/7-computer-monkey.jpg'
 tags: ['weeknote']
 ---
 

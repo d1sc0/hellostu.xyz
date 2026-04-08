@@ -7,7 +7,6 @@ description: an overview of the last week of November. Contains reflections abou
 postImage:
   src: post_images/47-trainFULL.jpg
   alt: a photo of a sticker that reads Hello my name is Stuart stuck to the back of a seat in an empty train carriage
-socialImage: /social_images/47-train.jpg
 tags:
   - weeknote
   - work

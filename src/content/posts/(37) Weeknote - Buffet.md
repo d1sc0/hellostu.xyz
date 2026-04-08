@@ -7,7 +7,6 @@ description: 'A weeknote covering the period 7th-14th June. This week was an ass
 postImage:
   src: 'post_images/37-man-at-buffet.jpg'
   alt: 'a black and white cartoon of a man standing at a buffet table looking a little overhelmed'
-socialImage: '/social_images/37-man-at-buffet.jpg'
 tags: ['weeknote', 'website', 'social', 'work', 'training']
 ---
 

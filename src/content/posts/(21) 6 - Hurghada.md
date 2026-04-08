@@ -7,7 +7,6 @@ description: 'Capturing a self-portrait on a beach in Egypt, reflecting on trave
 postImage:
   src: 'post_images/52weeks/52_2023_6_FULL.jpg'
   alt: 'me standing on a beach peering from behind a surf board'
-socialImage: '/social_images/21-hurghada.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'travel', 'egypt']
 ---
 

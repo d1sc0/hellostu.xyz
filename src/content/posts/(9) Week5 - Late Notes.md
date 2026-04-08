@@ -7,7 +7,6 @@ description: I share late notes from a busy week. Highlights include a productiv
 postImage:
   src: post_images/9-pocket-watch.jpg
   alt: an old antique pocket watch held in the hand
-socialImage: /social_images/9-pocket-watch.jpg
 tags:
   - weeknote
 ---

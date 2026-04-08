@@ -7,7 +7,6 @@ description: 'I reflect on homesickness after two years of splitting my life bet
 postImage:
   src: 'post_images/one-man-islandFULL.jpg'
   alt: 'one man sitting on a rock in the ocean'
-socialImage: '/social_images/3-homesick.jpg'
 tags: ['life', 'homesick', 'reflection']
 ---
 

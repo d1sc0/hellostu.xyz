@@ -7,7 +7,6 @@ description: 'My thoughts after taking a trip to LocalGovCamp in Bristol'
 postImage:
   src: 'post_images/localgovcampRIGHT.jpg'
   alt: 'no tents at localgovcamp'
-socialImage: '/social_images/1-localgovcamp.jpg'
 tags: ['work', 'localgovcamp']
 ---
 

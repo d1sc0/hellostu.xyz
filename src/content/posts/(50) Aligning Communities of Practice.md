@@ -7,7 +7,6 @@ description: Some thoughts on how to use learning design theory to align goals a
 postImage:
   src: post_images/50-CoPFULL.jpg
   alt: a photo of me standing in an AI-generated office filled with beautiful plants...my ideal mind palace
-socialImage: /social_images/50-CoP.jpg
 tags:
   - LearningDesign
   - CommunitiesOfPractice

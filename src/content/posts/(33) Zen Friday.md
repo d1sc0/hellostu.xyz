@@ -7,7 +7,6 @@ description: 'An audio note covering work, fitness, friendships, and achieving 1
 postImage:
   src: 'post_images/33-zen-friday.jpg'
   alt: 'a photo of concentric circles of gravel from a zen garden'
-socialImage: '/social_images/33-zen-friday.jpg'
 tags:
   [
     'podcast',

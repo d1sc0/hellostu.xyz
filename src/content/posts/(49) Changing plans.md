@@ -7,7 +7,6 @@ description: Posting about updated plans for my Birthday at the end of the month
 postImage:
   src: post_images/49-new-plansFULL.jpg
   alt: a kitchen selfie with me giving peace fingers wearing my lovely orange vaga hat
-socialImage: /social_images/49-new-plans.jpg
 tags:
   - life
   - birthday

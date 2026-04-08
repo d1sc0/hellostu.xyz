@@ -7,7 +7,6 @@ description: 'Reflections in self-portrait series, exploring identity, perceptio
 postImage:
   src: 'post_images/52weeks/52_2023_3_FULL.jpg'
   alt: 'a closeup picture of my face'
-socialImage: '/social_images/18-skip-intro.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'closeup']
 ---
 

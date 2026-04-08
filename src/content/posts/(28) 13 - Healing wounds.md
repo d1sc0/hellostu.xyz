@@ -7,7 +7,6 @@ description: 'A self-portrait showing new tattoos beginning to heal, reflecting 
 postImage:
   src: 'post_images/52weeks/52_2023_13_FULL.jpg'
   alt: 'closeup photograph of my arms and new astronaut tattoo'
-socialImage: '/social_images/28-healing-wounds.jpg'
 tags:
   [
     '52weeks',

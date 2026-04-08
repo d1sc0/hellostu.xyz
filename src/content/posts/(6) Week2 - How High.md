@@ -7,7 +7,6 @@ description: 'I tackle a high ropes course, pushing my limits and reflecting on 
 postImage:
   src: 'post_images/high-fivesLEFT.jpg'
   alt: 'high fives high up in a tree'
-socialImage: '/social_images/6-high-fives.jpg'
 tags: ['weeknote']
 ---
 

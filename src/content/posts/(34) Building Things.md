@@ -7,7 +7,6 @@ description: 'Reflecting on the experience and insights gained from rebuilding t
 postImage:
   src: 'post_images/34-old-siteRIGHT.jpg'
   alt: 'screenshot of old website with a TNT block overlayed'
-socialImage: '/social_images/34-old-new-site.jpg'
 tags: ['astro', 'gatsby', 'build', 'design', 'code', 'tech']
 ---
 
@@ -30,4 +29,3 @@ Gatsby served me well, but moving things over to Astro gave me an excuse for a c
 One of the advantages of Astro that I'm keen to explore is that you can mix and match components from [React, Preact, Svelte, Vue and SolidJS](https://docs.astro.build/en/concepts/islands/) on a single page. It’s very unlikely I will need to do that but having the ability to experiment with a bunch of different frameworks so flexibly without having to worry about breaking the more fundamental site components is compelling.
 
 So what’s next? I guess giving the website some attention might encourage me to post and share content on a more frequent basis but given my life has been a little complicated over recent months I’m not going to make promises I can’t keep. It’s been fun though - Let’s build more things…just not in Sharepoint pls 🙏
-

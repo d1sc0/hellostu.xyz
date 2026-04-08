@@ -7,7 +7,6 @@ description: 'A weeknote covering the period 1st-7th June. Reflecting on a week 
 postImage:
   src: 'post_images/36-whitechapelLEFT.jpg'
   alt: 'a black and white high contrast photograph taken on the escalator at Whitechapel station.'
-socialImage: '/social_images/36-whitechapel.jpg'
 tags: ['weeknote', 'london', 'website', 'fitness', 'work']
 ---
 

@@ -7,7 +7,6 @@ description: 'A post about my some website experiments - from ghost blogging thr
 postImage:
   src: 'post_images/robot-unsplashFULL.jpg'
   alt: 'toy robot'
-socialImage: '/social_images/5-tinkering.jpg'
 tags: ['tech', 'experiment', 'website']
 ---
 

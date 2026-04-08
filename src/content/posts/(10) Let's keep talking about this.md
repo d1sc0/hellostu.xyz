@@ -7,7 +7,6 @@ description: 'Discussing Baby Loss Awareness Week, emphasizing the importance of
 postImage:
   src: 'post_images/morganbethanyFULL.jpg'
   alt: 'two tattered teddies sitting by the side of a grave'
-socialImage: '/social_images/10-blaw.jpg'
 tags: ['BLAW', 'babyloss', 'reflection', 'breakthesilence']
 ---
 

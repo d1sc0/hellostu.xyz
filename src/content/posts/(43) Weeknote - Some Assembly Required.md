@@ -7,7 +7,6 @@ description: Some quick reflections on life at work and at home from the week 12
 postImage:
   src: post_images/43-assembly-requiredFULL.jpg
   alt: A black and white of ikea desk parts and fittings layed out on the carpet before me ready for assembly
-socialImage: /social_images/43-assembly-required.jpg
 tags:
   - weeknote
   - work

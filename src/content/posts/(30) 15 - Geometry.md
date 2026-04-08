@@ -7,7 +7,6 @@ description: 'A self-portrait series entry with thoughts on organization, work, 
 postImage:
   src: 'post_images/52weeks/52_2023_15_FULL.jpg'
   alt: 'blacka and white photo in front of two geometric pictures hanging on the wall'
-socialImage: '/social_images/30-geometry.jpg'
 tags:
   [
     '52weeks',

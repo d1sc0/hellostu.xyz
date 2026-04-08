@@ -7,7 +7,6 @@ description: 'Debating falling or flying in self-portrait series with dynamic ba
 postImage:
   src: 'post_images/52weeks/52_2023_7_FULL.jpg'
   alt: 'me falling through a revolving background'
-socialImage: '/social_images/22-revolve.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'dorset']
 ---
 

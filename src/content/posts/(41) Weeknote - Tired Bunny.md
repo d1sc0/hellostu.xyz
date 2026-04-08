@@ -7,7 +7,6 @@ description: A brief look at the good, the bad and the ugly through tired eyes. 
 postImage:
   src: 'post_images/41-tired-bunnyFULL.jpg'
   alt: 'an anime bunny sat on the grass looking sad and tired'
-socialImage: '/social_images/41-tired-bunny-social.jpg'
 tags:
   - weeknote
   - work

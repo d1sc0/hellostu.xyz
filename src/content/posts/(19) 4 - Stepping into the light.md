@@ -7,7 +7,6 @@ description: 'Self-portrait on stairs, exploring light, shadow, and personal jou
 postImage:
   src: 'post_images/52weeks/52_2023_4_FULL.jpg'
   alt: 'a mono picture of me sitting on the stairs'
-socialImage: '/social_images/19-step-into-the-light.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist']
 ---
 

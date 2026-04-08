@@ -7,7 +7,6 @@ description: 'Starting a self-portrait series, setting the tone for personal exp
 postImage:
   src: 'post_images/52weeks/52_2023_1_FULL.jpg'
   alt: 'stu sits in his office in front of a wall with guitars'
-socialImage: '/social_images/16-seeking-inspiration.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self']
 ---
 

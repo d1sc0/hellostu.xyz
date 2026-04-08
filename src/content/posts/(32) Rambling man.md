@@ -7,7 +7,6 @@ description: 'Introducing audio notes and reflections from a walk along the Jura
 postImage:
   src: 'post_images/32-rambling-man.jpg'
   alt: 'a picture of the jurassic coast'
-socialImage: '/social_images/32-rambling-man.jpg'
 tags:
   [
     'podcast',

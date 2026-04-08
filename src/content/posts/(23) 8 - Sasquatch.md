@@ -7,7 +7,6 @@ description: 'Experimenting with lighting in self-portraits, feeling artisticall
 postImage:
   src: 'post_images/52weeks/52_2023_8_FULL.jpg'
   alt: 'black and white photo of me pouting'
-socialImage: '/social_images/23-sasquatch.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'half_naked']
 ---
 

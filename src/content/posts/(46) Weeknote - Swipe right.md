@@ -7,7 +7,6 @@ description: more excuses, some work stuff, cornwall and exploring the world of 
 postImage:
   src: post_images/46-swipe-rightFULL.jpg
   alt: a landscape photograph of the coast of cornwall, taken on the coast path near to Zennor, looking towards St Ives
-socialImage: /social_images/46-swipe-right.jpg
 tags:
   - weeknote
   - work

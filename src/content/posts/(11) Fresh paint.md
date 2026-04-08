@@ -7,7 +7,6 @@ description: 'a post explaining my foray into re-building my blog and my desire 
 postImage:
   src: 'post_images/spraycansFULL.jpg'
   alt: 'lots of spray cans stacked high'
-socialImage: '/social_images/11-fresh-paint.jpg'
 tags: ['data', 'tech', 'experiments', 'climate']
 ---
 

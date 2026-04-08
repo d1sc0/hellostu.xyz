@@ -7,7 +7,6 @@ description: 'Deleting my Flickr account, reflecting on photo-sharing, personal 
 postImage:
   src: 'post_images/bye-bye-flickr/solo-bikeFULL.jpg'
   alt: 'black and white macro photograph of an olympus trip 35m camera'
-socialImage: '/social_images/15-bye-bye-flickr.jpg'
 tags: ['photography', 'flickr', 'tech', 'reflections', 'photos']
 ---
 

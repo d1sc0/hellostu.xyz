@@ -7,7 +7,6 @@ description: 'Sci-fi themed self-portrait, exploring creativity and storytelling
 postImage:
   src: 'post_images/52weeks/52_2023_10_FULL.jpg'
   alt: 'me dazzled by an alien light'
-socialImage: '/social_images/25-theycomeforme.jpg'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'sci-fi']
 ---
 

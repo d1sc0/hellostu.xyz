@@ -7,7 +7,6 @@ description: 'I give advice on what makes a great retrospective: dedicating time
 postImage:
   src: 'post_images/avengers-assembleFULL.jpg'
   alt: 'the avengers assembling'
-socialImage: '/social_images/2-avengers-retro.jpg'
 tags: ['agile', 'delivery', 'teams', 'change']
 ---
 
