@@ -18,10 +18,7 @@ function getFilesRecursive(dir: string, allFiles: string[] = []) {
       file.endsWith('.mdx') ||
       file.endsWith('.astro')
     ) {
-      // Filter out dynamic routes like [slug].astro or [...path].astro
-      if (!file.includes('[') && !file.includes(']')) {
-        allFiles.push(name);
-      }
+      allFiles.push(name);
     }
   });
   return allFiles;
@@ -32,6 +29,7 @@ const PAGE_TITLES: Record<string, string> = {
   index: 'Hello Stu',
   about: 'About Me',
   posts: 'Blog Posts',
+  podcasts: 'Podcasts',
   '404': 'Page Not Found',
 };
 
@@ -95,6 +93,7 @@ export default function ogImageGenerator(): AstroIntegration {
             let title = '';
             let slug = '';
             let postImageSrc = '';
+            let postImageBase64Uri = '';
 
             if (isMarkdown) {
               const fileContent = fs.readFileSync(filePath, 'utf-8');
@@ -105,14 +104,24 @@ export default function ogImageGenerator(): AstroIntegration {
             } else {
               // Handle .astro pages
               const parsedPath = path.parse(filePath);
-              // If it's index.astro, use the parent folder name as the slug
-              slug =
-                parsedPath.name === 'index'
-                  ? path.basename(parsedPath.dir)
-                  : parsedPath.name;
+              const fileName = parsedPath.name;
+              const parentDirName = path.basename(parsedPath.dir);
 
-              // Fallback to "index" if it's the root src/pages/index.astro
-              if (slug === 'pages') slug = 'index';
+              if (fileName === 'index') {
+                // For src/pages/posts/index.astro -> slug 'posts'
+                // For src/pages/index.astro -> slug 'index'
+                slug = parentDirName === 'pages' ? 'index' : parentDirName;
+              } else if (fileName.includes('[') && fileName.includes(']')) {
+                // For dynamic routes like src/pages/posts/[...page].astro -> slug 'posts'
+                // For src/pages/tags/[tag].astro -> slug 'tags'
+                slug = parentDirName;
+              } else {
+                // For static pages like src/pages/about.astro -> slug 'about'
+                slug = fileName;
+              }
+
+              // Ensure the slug is not empty if it's a root dynamic route (e.g., src/pages/[...slug].astro)
+              if (!slug && parentDirName === 'pages') slug = 'index';
 
               title =
                 PAGE_TITLES[slug] ||
@@ -136,7 +145,6 @@ export default function ogImageGenerator(): AstroIntegration {
             await page.setViewport({ width: 1200, height: 630 });
             page.setDefaultNavigationTimeout(60000);
 
-            let postImageBase64Uri = '';
             if (postImageSrc) {
               // If the path is absolute (like our default image), use it directly.
               // Otherwise, resolve it relative to the markdown file.
