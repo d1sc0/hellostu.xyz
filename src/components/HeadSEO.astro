@@ -4,12 +4,18 @@ const { frontmatter, pageMeta } = Astro.props;
 import Fonts from '../components/Fonts.astro';
 const siteURL = 'https://hellostu.xyz';
 
-// Resolve OG Image: Manual > Generated > Default
-const ogImage = frontmatter?.socialImage
-  ? siteURL + frontmatter.socialImage
-  : frontmatter?.slug || pageMeta?.slug
-    ? `${siteURL}/generated_OG_images/${frontmatter?.slug || pageMeta?.slug}.png`
-    : siteURL + (pageMeta?.imageUrl || '/favicon.png');
+// Determine the slug to find the generated OG image.
+// We handle posts (frontmatter) and static pages (pageMeta or URL path).
+const urlPath = Astro.url.pathname.replace(/\/$/, '');
+const urlSlug = urlPath.split('/').pop() || 'index';
+const activeSlug = frontmatter?.slug || pageMeta?.slug || urlSlug;
+
+const ogImage = `${siteURL}/generated_OG_images/${activeSlug}.png`;
+
+const title =
+  pageMeta?.title ||
+  (frontmatter?.title ? `Hello Stu | ${frontmatter.title}` : 'Hello Stu');
+const description = frontmatter?.description || pageMeta?.description || '';
 ---
 
 <head>
@@ -21,35 +27,25 @@ const ogImage = frontmatter?.socialImage
   <meta name="generator" content={Astro.generator} />
   <Fonts />
   <SEO
-    title={pageMeta != undefined
-      ? pageMeta.title
-      : 'Hello Stu | ' + frontmatter.title}
-    description={frontmatter !== undefined
-      ? frontmatter.description
-      : pageMeta.description}
+    title={title}
+    description={description}
     openGraph={{
       basic: {
-        title: pageMeta != undefined ? pageMeta.title : frontmatter.title,
+        title: title,
         type: frontmatter !== undefined ? 'article' : 'website',
         image: ogImage,
       },
       optional: {
-        description:
-          frontmatter !== undefined
-            ? frontmatter.description
-            : pageMeta.description,
+        description: description,
       },
       article: { authors: ['Stuart Mackenzie'] },
     }}
     twitter={{
       creator: '@_disco',
       card: 'summary_large_image',
-      title: pageMeta != undefined ? pageMeta.title : frontmatter.title,
+      title: title,
       image: ogImage,
-      description:
-        frontmatter !== undefined
-          ? frontmatter.description
-          : pageMeta.description,
+      description: description,
     }}
   />
 </head>

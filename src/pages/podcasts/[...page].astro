@@ -11,7 +11,7 @@ export async function getStaticPaths({ paginate }) {
   });
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   const filteredPosts = posts.filter(post =>
-    post.data.tags.includes('audio-note')
+    post.data.tags.includes('audio-note'),
   );
 
   return paginate(filteredPosts, { pageSize: 9 });
@@ -26,7 +26,6 @@ const pageMeta = {
   title: 'Hello Stu | ' + pageTitle,
   description:
     'Audio notes recorded by Stuart Mackenzie and published as a podcast',
-  imageUrl: '/social_images/hellostu-social.jpg',
 };
 ---
 
