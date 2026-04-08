@@ -14,7 +14,10 @@ collections:
     slug: '{{slug}}'
     extension: 'md'
     format: 'yaml-frontmatter'
-    fields:
+    sortable_fields: ['title', 'pubDate']
+    default_sort:
+      - { field: pubDate, direction: descending }
+    fields: &post_fields
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'Slug',
@@ -42,6 +45,18 @@ collections:
         widget: 'list'
         summary: '{{fields.tag}}'
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'posts_mdx'
+    label: 'Blog Posts (MDX)'
+    folder: 'src/content/posts'
+    create: true
+    slug: '{{slug}}'
+    extension: 'mdx'
+    format: 'yaml-frontmatter'
+    sortable_fields: ['title', 'pubDate']
+    default_sort:
+      - { field: pubDate, direction: descending }
+    fields: *post_fields
 
 site_url: https://hellostu.xyz
 display_url: https://hellostu.xyz
