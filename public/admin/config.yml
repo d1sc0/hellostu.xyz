@@ -4,7 +4,6 @@ backend:
   branch: master # Replace with your default branch
 
 media_folder: 'src/assets/post_images'
-public_folder: '../../assets/post_images'
 
 collections:
   - name: 'posts'
@@ -14,6 +13,7 @@ collections:
     slug: '{{slug}}'
     extension: 'md'
     format: 'yaml-frontmatter'
+    media_folder_relative: true
     sortable_fields: ['title', 'pubDate']
     default_sort:
       - { field: pubDate, direction: descending }
@@ -53,6 +53,7 @@ collections:
     slug: '{{slug}}'
     extension: 'mdx'
     format: 'yaml-frontmatter'
+    media_folder_relative: true
     sortable_fields: ['title', 'pubDate']
     default_sort:
       - { field: pubDate, direction: descending }

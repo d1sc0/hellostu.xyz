@@ -146,9 +146,11 @@ export default function ogImageGenerator(): AstroIntegration {
             page.setDefaultNavigationTimeout(60000);
 
             if (postImageSrc) {
-              // If the path is absolute (like our default image), use it directly.
-              // Otherwise, resolve it relative to the markdown file.
-              const fullImagePath = path.isAbsolute(postImageSrc)
+              // Handle root-relative paths starting with /src (for safety)
+              // Otherwise, resolve absolute system paths or relative paths.
+              const fullImagePath = postImageSrc.startsWith('/src')
+                ? path.resolve('.' + postImageSrc)
+                : path.isAbsolute(postImageSrc)
                 ? postImageSrc
                 : path.resolve(path.dirname(filePath), postImageSrc);
 
