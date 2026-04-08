@@ -4,6 +4,7 @@ backend:
   branch: master # Replace with your default branch
 
 media_folder: 'src/content/posts/post_images'
+public_folder: 'post_images'
 
 collections:
   - name: 'posts'
