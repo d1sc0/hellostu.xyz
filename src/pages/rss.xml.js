@@ -22,7 +22,7 @@ export async function GET(context) {
       pubDate: post.data.pubDate,
       description: `${post.data.description}`,
       link: `/posts/${post.id}/`,
-      content: `<p>${post.data.description} <a href="${context.site}posts/${post.slug}/">[read more...]</a></p>
+      content: `<p>${post.data.description} <a href="${context.site}posts/${post.id}/">[read more...]</a></p>
       <p><img src="${context.site}generated_OG_images/${post.data.slug}.png" width="600px" height="315px" alt="Social image for ${post.data.title}" /></p>`,
     })),
   });
