@@ -6,7 +6,6 @@ pubDate: 2023-03-25
 description: 'Late self-portrait taken while running at an Iron Age hillfort, blending history and personal fitness.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_9_FULL.jpg'
-  alt: 'a blurry runner in the distance of an iron age hillfort'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'running']
 ---
 

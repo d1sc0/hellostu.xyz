@@ -6,7 +6,6 @@ pubDate: 2020-02-21
 description: 'Reflecting on a busy, challenging week and thoughts on being a multi-hyphenate, balancing various roles and interests.'
 postImage:
   src: '../../assets/post_images/hackney_animalFULL.jpg'
-  alt: 'a wig lying on the pavement'
 tags: ['weeknote', 'rarenote']
 ---
 

@@ -6,7 +6,6 @@ pubDate: 2017-09-26
 description: 'My thoughts after taking a trip to LocalGovCamp in Bristol'
 postImage:
   src: '../../assets/post_images/localgovcampRIGHT.jpg'
-  alt: 'no tents at localgovcamp'
 tags: ['work', 'localgovcamp']
 ---
 

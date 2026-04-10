@@ -15,7 +15,6 @@ const posts = defineCollection({
     description: z.string(),
     postImage: z.object({
       src: z.string(),
-      alt: z.string(),
     }),
     tags: z.array(z.string()),
     draft: z.boolean().optional(),

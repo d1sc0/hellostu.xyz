@@ -6,7 +6,6 @@ pubDate: 2024-08-30T10:20:00
 description: more excuses, some work stuff, cornwall and exploring the world of dating in a digital age. This note covers the last couple of week until today 30th August 24.
 postImage:
   src: ../../assets/post_images/46-swipe-rightFULL.jpg
-  alt: a landscape photograph of the coast of cornwall, taken on the coast path near to Zennor, looking towards St Ives
 tags:
   - weeknote
   - work

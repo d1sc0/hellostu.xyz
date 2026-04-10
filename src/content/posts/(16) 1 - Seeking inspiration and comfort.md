@@ -6,7 +6,6 @@ pubDate: 2023-01-19
 description: 'Starting a self-portrait series, setting the tone for personal exploration and artistic expression.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_1_FULL.jpg'
-  alt: 'stu sits in his office in front of a wall with guitars'
 tags: ['52weeks', 'photography', 'creativity', 'self']
 ---
 

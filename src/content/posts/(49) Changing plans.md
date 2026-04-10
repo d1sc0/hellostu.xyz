@@ -6,7 +6,6 @@ pubDate: 2025-08-03
 description: Posting about updated plans for my Birthday at the end of the month. A boy just wants to have fun, and this is how I intend to celebrate this year.
 postImage:
   src: ../../assets/post_images/49-new-plansFULL.jpg
-  alt: a kitchen selfie with me giving peace fingers wearing my lovely orange vaga hat
 tags:
   - life
   - birthday

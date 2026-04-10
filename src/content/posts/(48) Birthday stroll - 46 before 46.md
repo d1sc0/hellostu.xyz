@@ -6,7 +6,6 @@ pubDate: 2025-06-08
 description: Plans are forming for a little birthday challenge. Something to keep me fit and an excuse to spend time outdoors in the company of brilliant people
 postImage:
   src: ../../assets/post_images/48-mapRIGHT.jpg
-  alt: a map showing the intended route of my birthday walk route from portland to dorchester depicted by a red line
 tags:
   - life
   - birthday

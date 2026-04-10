@@ -6,7 +6,6 @@ pubDate: 2020-01-28
 description: 'a post explaining my foray into re-building my blog and my desire to both reduce my hosting costs, save the planet and play with the JAM stack'
 postImage:
   src: '../../assets/post_images/spraycansFULL.jpg'
-  alt: 'lots of spray cans stacked high'
 tags: ['data', 'tech', 'experiments', 'climate']
 ---
 

@@ -6,7 +6,6 @@ pubDate: 2024-07-12T15:00:00
 description: A day-by-day breakdown of the week that was. This note covers the period 5th July to 12th July.
 postImage:
   src: '../../assets/post_images/42-main-character-energyFULL.jpg'
-  alt: 'An AI-generated image of a graffiti wall showing a strong male hero character centre frame'
 tags:
   - weeknote
   - work

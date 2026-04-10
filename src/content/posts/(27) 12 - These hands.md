@@ -6,7 +6,6 @@ pubDate: 2023-04-10
 description: 'Exploring new backdrops and monochrome vibes in self-portrait series, reflecting on the artistic process and personal growth.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_12_FULL.jpg'
-  alt: 'black and white photo of me holding my hands up in front of my face'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'mono']
 ---
 

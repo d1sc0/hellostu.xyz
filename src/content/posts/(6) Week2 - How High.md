@@ -6,7 +6,6 @@ pubDate: 2019-03-29
 description: 'I tackle a high ropes course, pushing my limits and reflecting on the experience. I share insights on teamwork, challenge, and progress, plus weekly highlights in study, projects, and social events.'
 postImage:
   src: '../../assets/post_images/high-fivesLEFT.jpg'
-  alt: 'high fives high up in a tree'
 tags: ['weeknote']
 ---
 

@@ -6,7 +6,6 @@ pubDate: 2019-03-25
 description: 'A post about my some website experiments - from ghost blogging throught to static site generators and all the things in between'
 postImage:
   src: '../../assets/post_images/robot-unsplashFULL.jpg'
-  alt: 'toy robot'
 tags: ['tech', 'experiment', 'website']
 ---
 

@@ -6,7 +6,6 @@ pubDate: 2024-07-05T17:40:00
 description: A brief look at the good, the bad and the ugly through tired eyes. Covers the period 28th June to 5th July.
 postImage:
   src: '../../assets/post_images/41-tired-bunnyFULL.jpg'
-  alt: 'an anime bunny sat on the grass looking sad and tired'
 tags:
   - weeknote
   - work

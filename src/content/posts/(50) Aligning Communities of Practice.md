@@ -6,7 +6,6 @@ pubDate: 2026-03-10
 description: Some thoughts on how to use learning design theory to align goals and activities in a Community of Practice. Move from "humaning together" and great vibes to practicing with purpose.
 postImage:
   src: ../../assets/post_images/50-CoPFULL.jpg
-  alt: a photo of me standing in an AI-generated office filled with beautiful plants...my ideal mind palace
 tags:
   - LearningDesign
   - CommunitiesOfPractice

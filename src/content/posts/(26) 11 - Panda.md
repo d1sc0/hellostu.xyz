@@ -6,7 +6,6 @@ pubDate: 2023-04-03
 description: 'Wearing a panda mask in a self-portrait series, reflecting on distractions and maintaining focus.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_11_FULL.jpg'
-  alt: 'me sat at the kitchen table in a panda mask'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'mask']
 ---
 

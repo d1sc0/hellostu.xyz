@@ -4,7 +4,6 @@ slug: 2-running-around
 description: 'Collaborative self-portrait, experimenting with duality, connection, and shared creativity.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_2_FULL.jpg'
-  alt: 'stu stands in the street after a run'
 pubDate: 2023-01-29
 tags: ['52weeks', 'photography', 'creativity', 'self', 'running']
 ---

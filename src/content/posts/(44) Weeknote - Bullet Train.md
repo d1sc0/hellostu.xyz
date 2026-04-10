@@ -6,7 +6,6 @@ pubDate: 2024-08-02T20:20:00
 description: The weekly notes—This week, I bring you not one, not two, but THREE bullet-pointed lists of stuff that covers the period 26 July to 2 August.
 postImage:
   src: ../../assets/post_images/44-bullet-trainRIGHT.jpg
-  alt: a sketch image of a fast moving bullet train - lines have been added to create the sense of motion
 tags:
   - weeknote
   - work

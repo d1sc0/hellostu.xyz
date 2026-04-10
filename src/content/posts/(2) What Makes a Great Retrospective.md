@@ -6,7 +6,6 @@ pubDate: 2017-12-04
 description: 'I give advice on what makes a great retrospective: dedicating time, celebrating successes, fostering team building, encouraging honesty, and focusing on actionable outcomes.'
 postImage:
   src: '../../assets/post_images/avengers-assembleFULL.jpg'
-  alt: 'the avengers assembling'
 tags: ['agile', 'delivery', 'teams', 'change']
 ---
 

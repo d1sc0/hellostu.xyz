@@ -6,7 +6,6 @@ pubDate: 2023-05-24
 description: 'A self-portrait and journal entry revealing a new side project, discussing work-life balance and personal challenges.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_14_FULL.jpg'
-  alt: 'a photo of me in the sea with a wave in front of my face'
 tags:
   [
     '52weeks',

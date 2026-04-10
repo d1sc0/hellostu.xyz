@@ -6,7 +6,6 @@ pubDate: 2018-11-25
 description: 'I reflect on homesickness after two years of splitting my life between Dorset and London, discussing the persistent feelings of anxiety and displacement.'
 postImage:
   src: '../../assets/post_images/one-man-islandFULL.jpg'
-  alt: 'one man sitting on a rock in the ocean'
 tags: ['life', 'homesick', 'reflection']
 ---
 

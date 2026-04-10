@@ -6,7 +6,6 @@ pubDate: 2023-07-14
 description: 'A self-portrait and journal entry exploring organizational structure and working methods, created during a flu bout.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_16_FULL.jpg'
-  alt: 'me with the flu and wrapped in tissues'
 tags:
   [
     '52weeks',

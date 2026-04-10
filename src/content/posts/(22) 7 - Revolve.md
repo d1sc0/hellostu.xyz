@@ -6,7 +6,6 @@ pubDate: 2023-03-05
 description: 'Debating falling or flying in self-portrait series with dynamic backgrounds, exploring movement and change.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_7_FULL.jpg'
-  alt: 'me falling through a revolving background'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'dorset']
 ---
 

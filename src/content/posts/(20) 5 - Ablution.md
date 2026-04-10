@@ -6,7 +6,6 @@ pubDate: 2023-02-18
 description: 'Shower-themed self-portrait, contemplating routine, creativity, and personal rituals.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_5_FULL.jpg'
-  alt: 'a mirror image of me in the shower'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist']
 ---
 

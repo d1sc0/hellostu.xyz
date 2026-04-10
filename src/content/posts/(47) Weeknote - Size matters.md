@@ -6,7 +6,6 @@ pubDate: 2024-11-29T15:30:00
 description: an overview of the last week of November. Contains reflections about scaling things, a lovely day at Product for the People and some random life updates
 postImage:
   src: ../../assets/post_images/47-trainFULL.jpg
-  alt: a photo of a sticker that reads Hello my name is Stuart stuck to the back of a seat in an empty train carriage
 tags:
   - weeknote
   - work

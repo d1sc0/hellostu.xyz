@@ -6,7 +6,6 @@ pubDate: 2023-03-13
 description: 'Experimenting with lighting in self-portraits, feeling artistically unsatisfied and pushing creative boundaries.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_8_FULL.jpg'
-  alt: 'black and white photo of me pouting'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'half_naked']
 ---
 

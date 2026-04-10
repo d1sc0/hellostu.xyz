@@ -6,7 +6,6 @@ pubDate: 2019-10-15
 description: 'Discussing Baby Loss Awareness Week, emphasizing the importance of breaking the silence and sharing personal stories.'
 postImage:
   src: '../../assets/post_images/morganbethanyFULL.jpg'
-  alt: 'two tattered teddies sitting by the side of a grave'
 tags: ['BLAW', 'babyloss', 'reflection', 'breakthesilence']
 ---
 

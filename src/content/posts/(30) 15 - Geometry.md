@@ -6,7 +6,6 @@ pubDate: 2023-06-07
 description: 'A self-portrait series entry with thoughts on organization, work, and personal growth, inspired by geometric art.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_15_FULL.jpg'
-  alt: 'blacka and white photo in front of two geometric pictures hanging on the wall'
 tags:
   [
     '52weeks',

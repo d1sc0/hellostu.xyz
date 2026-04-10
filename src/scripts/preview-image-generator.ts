@@ -29,6 +29,11 @@ async function generatePreviewImages() {
     const filePath = path.join(postsDir, file);
     const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
     const slug = data.slug || path.parse(file).name;
+    const outputPath = path.join(outputDir, `${slug}.png`);
+    if (fs.existsSync(outputPath)) {
+      console.log(`Preview image for ${slug} already exists, skipping.`);
+      continue;
+    }
     let postImageSrc = data.postImage?.src;
     let fullImagePath = '';
     if (postImageSrc) {
@@ -50,7 +55,6 @@ async function generatePreviewImages() {
       /{{postImageHtml}}/g,
       `<img src="${postImageBase64Uri}" class="bg-image" />`,
     );
-    const outputPath = path.join(outputDir, `${slug}.png`);
     const page = await browser.newPage();
     await page.setViewport({ width: 600, height: 315 });
     await page.setContent(html, { waitUntil: 'networkidle2' });

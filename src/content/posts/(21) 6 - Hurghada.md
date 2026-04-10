@@ -6,7 +6,6 @@ pubDate: 2023-02-26
 description: 'Capturing a self-portrait on a beach in Egypt, reflecting on travel and personal moments.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_6_FULL.jpg'
-  alt: 'me standing on a beach peering from behind a surf board'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'travel', 'egypt']
 ---
 

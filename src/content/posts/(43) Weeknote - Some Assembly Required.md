@@ -6,7 +6,6 @@ pubDate: 2024-07-20T10:20:00
 description: Some quick reflections on life at work and at home from the week 12th to the 19th of July.
 postImage:
   src: ../../assets/post_images/43-assembly-requiredFULL.jpg
-  alt: A black and white of ikea desk parts and fittings layed out on the carpet before me ready for assembly
 tags:
   - weeknote
   - work

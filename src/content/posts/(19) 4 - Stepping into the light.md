@@ -6,7 +6,6 @@ pubDate: 2023-02-12
 description: 'Self-portrait on stairs, exploring light, shadow, and personal journeys.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_4_FULL.jpg'
-  alt: 'a mono picture of me sitting on the stairs'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist']
 ---
 

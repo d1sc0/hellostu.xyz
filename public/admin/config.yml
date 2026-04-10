@@ -38,8 +38,7 @@ collections:
         name: 'postImage'
         widget: 'object'
         fields:
-          - { label: 'Image File', name: 'src', widget: 'image' }
-          - { label: 'Alt Text', name: 'alt', widget: 'string' }
+          - { label: 'Post Image', name: 'src', widget: 'image' }
       - label: 'Tags'
         name: 'tags'
         widget: 'list'

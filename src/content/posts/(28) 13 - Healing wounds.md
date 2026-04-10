@@ -6,7 +6,6 @@ pubDate: 2023-05-15
 description: 'A self-portrait showing new tattoos beginning to heal, reflecting on creativity and the healing process.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_13_FULL.jpg'
-  alt: 'closeup photograph of my arms and new astronaut tattoo'
 tags:
   [
     '52weeks',

@@ -6,7 +6,6 @@ pubDate: 2019-04-06
 description: 'I share late notes from a busy week, feeling refreshed after Easter break. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.'
 postImage:
   src: '../../assets/post_images/monkeyRIGHT.gif'
-  alt: 'monkey sat at a desk smashing a laptop'
 tags: ['weeknote']
 ---
 

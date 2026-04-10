@@ -6,7 +6,6 @@ pubDate: 2019-03-15
 description: 'I share highlights from the week: valuable family time, engaging community practice sessions, and progress in my data visualization studies.'
 postImage:
   src: ../../assets/post_images/kermitLEFT.gif
-  alt: kermit the frog at the typewriter
 tags:
   - weeknote
   - reflection

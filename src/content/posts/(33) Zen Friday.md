@@ -6,7 +6,6 @@ pubDate: 2023-10-20
 description: 'An audio note covering work, fitness, friendships, and achieving 100 parkruns, recorded during a hike around Maiden Castle.'
 postImage:
   src: '../../assets/post_images/33-zen-friday.jpg'
-  alt: 'a photo of concentric circles of gravel from a zen garden'
 tags:
   [
     'podcast',

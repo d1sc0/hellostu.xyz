@@ -6,7 +6,6 @@ pubDate: 2024-06-21T19:13:00
 description: 'A weeknote with some reflections on what became a very short week due to sickness. Covers the period 14th-21st June'
 postImage:
   src: '../../assets/post_images/39-ape-FULL.jpg'
-  alt: 'a chimpanzee sits in the long grass picking up insects.'
 tags: ['weeknote', 'sick', 'solstice', 'monkeys', 'work']
 ---
 

@@ -6,7 +6,6 @@ pubDate: 2022-05-15
 description: 'Deleting my Flickr account, reflecting on photo-sharing, personal memories, and new creative platforms.'
 postImage:
   src: '../../assets/post_images/bye-bye-flickr/solo-bikeFULL.jpg'
-  alt: 'black and white macro photograph of an olympus trip 35m camera'
 tags: ['photography', 'flickr', 'tech', 'reflections', 'photos']
 ---
 

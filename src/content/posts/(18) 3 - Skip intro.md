@@ -6,7 +6,6 @@ pubDate: 2023-02-05
 description: 'Reflections in self-portrait series, exploring identity, perception, and the impact of self-view.'
 postImage:
   src: '../../assets/post_images/52weeks/52_2023_3_FULL.jpg'
-  alt: 'a closeup picture of my face'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'closeup']
 ---
 

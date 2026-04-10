@@ -6,7 +6,6 @@ pubDate: 2024-05-30T16:00:00
 description: 'Reflecting on the experience and insights gained from rebuilding the website, focusing on design, technology, and development challenges.'
 postImage:
   src: '../../assets/post_images/34-old-siteRIGHT.jpg'
-  alt: 'screenshot of old website with a TNT block overlayed'
 tags: ['astro', 'gatsby', 'build', 'design', 'code', 'tech']
 ---
 
