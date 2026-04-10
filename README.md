@@ -11,6 +11,7 @@ This is the codebase for [hellostu.xyz](https://hellostu.xyz), a personal websit
 - **SveltiaCMS** for content management (admin at `/admin/`)
 - **Modular Astro components** for posts, layouts, and UI
 - **Open Graph image generator** for social sharing
+- **Preview image generator** for post cards (auto-generated, optimized)
 - **Optimized images** with Astro's `<Image />`
 - **Social sharing, comments, and more**
 
@@ -37,19 +38,21 @@ This is the codebase for [hellostu.xyz](https://hellostu.xyz), a personal websit
 
 ---
 
-## Content Management
-
 - **SveltiaCMS** is configured at `/admin/` (see `src/pages/admin/index.astro` and `public/admin/config.yml`).
 - Posts are stored as Markdown or MDX in `src/content/posts/`.
-- Content schema is defined in `src/content/config.ts` and mirrored in the CMS config.
+- Content schema is defined in `src/content.config.ts` and mirrored in the CMS config.
 - Images for posts are stored in `src/assets/post_images/`.
+- The `alt` field for post images has been removed from the schema and all configs/frontmatter for simplicity.
 
 ---
 
-## OG Image Generator
-
 - Automatically generates Open Graph images for posts and pages during build.
 - See [`docs/og-image-generator.md`](docs/og-image-generator.md) for details.
+
+## Preview Image Generator
+
+- Automatically generates optimized preview images for post cards during build.
+- See [`docs/preview-image-generator.md`](docs/preview-image-generator.md) for details.
 
 ---
 
@@ -60,7 +63,7 @@ This is the codebase for [hellostu.xyz](https://hellostu.xyz), a personal websit
 - `src/layouts/` — Shared layouts
 - `src/pages/` — Route-based pages
 - `src/assets/` — Images and static assets
-- `public/` — Static files, admin config, generated OG images
+- `public/` — Static files, admin config, generated OG images, generated preview images
 - `docs/` — Project and script documentation
 
 ---
@@ -69,7 +72,7 @@ This is the codebase for [hellostu.xyz](https://hellostu.xyz), a personal websit
 
 - **MDX support:** May cause build errors; see notes in workspace instructions.
 - **No automated tests:** Manual QA required.
-- **SveltiaCMS:** Keep `public/admin/config.yml` in sync with content schema.
+- **SveltiaCMS:** Keep `public/admin/config.yml` in sync with content schema (note: no `alt` field for post images).
 - **Manual content migration:** No automated migration tools.
 - **Node version:** Use a compatible Node.js version as per Astro requirements.
 
