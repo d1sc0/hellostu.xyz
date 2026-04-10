@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 
 export async function GET(context) {
   const posts = await getCollection('posts', ({ data }) => {
-    return import.meta.env.PROD ? data.draft !== true : true;
+    return import.meta.env.PROD === 'true' ? data.draft !== true : true;
   });
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
@@ -21,9 +21,9 @@ export async function GET(context) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: `${post.data.description}`,
-      link: `/posts/${post.slug}/`,
+      link: `/posts/${post.id}/`,
       content: `<p>${post.data.description} <a href="${context.site}posts/${post.slug}/">[read more...]</a></p>
-      <p><img src="https://hellostu.xyz${post.data.socialImage}" width="600px" height="300px" /></p>`,
+      <p><img src="${context.site}generated_OG_images/${post.data.slug}.png" width="600px" height="315px" alt="Social image for ${post.data.title}" /></p>`,
     })),
   });
 }

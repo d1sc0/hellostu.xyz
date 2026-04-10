@@ -1,16 +1,16 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import MarkdownPostLayout from '../../layouts/MarkdownPostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => {
-    return import.meta.env.PROD ? data.draft !== true : true;
+    return import.meta.env.PROD === 'true' ? data.draft !== true : true;
   });
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   const postCount = posts.length;
 
   return posts.map((entry, index) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: {
       entry,
       nextPost: index + 1 !== postCount ? posts[index + 1] : null,
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { entry, prevPost, nextPost } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <MarkdownPostLayout

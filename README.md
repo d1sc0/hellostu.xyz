@@ -89,6 +89,7 @@ This is the codebase for [hellostu.xyz](https://hellostu.xyz), a personal websit
 - Expand component library
 - Improve accessibility and performance
 - Add more documentation for custom scripts and integrations
+  +- Re-implement and style JamComments (comment system)
 
 ---
 

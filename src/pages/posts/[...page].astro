@@ -7,7 +7,7 @@ import Pagination from '../../components/Pagination.astro';
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getCollection('posts', ({ data }) => {
-    return import.meta.env.PROD ? data.draft !== true : true;
+    return import.meta.env.PROD === 'true' ? data.draft !== true : true;
   });
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 

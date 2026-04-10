@@ -1,0 +1,31 @@
+<!-- Simple preview image template: just the post image, no overlays or text -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <style>
+  html,
+  body {
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   background: #fff;
+  }
+
+  .bg-image {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   display: block;
+  }
+ </style>
+</head>
+
+<body>
+ {{postImageHtml}}
+</body>
+
+</html>

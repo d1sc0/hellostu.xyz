@@ -8,7 +8,7 @@ import TagPostPreview from './TagPostPreview.astro';
   <div class="content-padding">
     {
       posts.map(post => (
-        <TagPostPreview url={'/posts/' + post.slug} data={post.data} />
+        <TagPostPreview url={'/posts/' + post.id} data={post.data} />
       ))
     }
   </div>

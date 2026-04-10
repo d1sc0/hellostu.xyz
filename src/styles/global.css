@@ -45,7 +45,8 @@ colors
 body {
   position: relative;
   background-color: #ffffff;
-  background-image: linear-gradient(#b1e9ff 1px, transparent 1px),
+  background-image:
+    linear-gradient(#b1e9ff 1px, transparent 1px),
     linear-gradient(to right, #b1e9ff 1px, #ffffff 1px);
   background-size: 20px 20px;
 }
@@ -526,7 +527,8 @@ nav ul li {
   fill: none;
   stroke: #2b2d44;
   stroke-width: 6;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -647,7 +649,6 @@ section.post img[src*='LEFT'] {
   border: 1px #acacac solid;
 }
 
-/*------Commenting Styles--------*/
 ul.jc-Editor-tabs {
   display: none;
 }
@@ -701,6 +702,43 @@ div.jc-CommentList {
 }
 
 /*----------------------------------------------------------------------------------------------*/
+/*------JamComments Safer Custom Styles--------*/
+.jc {
+  --jc-color-accent: #d12e3a;
+  --jc-color-bg: #fffbe6;
+  --jc-border-radius: 10px;
+  --jc-max-width: 700px;
+  --jc-font-family: 'Inter', Arial, sans-serif;
+  --jc-font-size: 1rem;
+}
+
+/* Hide editor tabs if you don't want Write/Preview switching */
+/* ul.jc-Editor-tabs { display: none; } */
+
+/* Fix typo and show attribution */
+small.jc-CommentBox-attribution {
+  display: initial;
+}
+
+/* Button styling for main comment submit button */
+button.jc-CommentBox-button {
+  background-color: #17b5ee;
+  width: 100px;
+  padding: 0.5rem;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Only hide action buttons if you do NOT want reply/edit/delete */
+/* button.jc-Comment-actionButton { display: none; } */
+
+div.jc-CommentList {
+  padding-top: 2rem;
+  overflow: visible;
+}
 /* IMPORTANT: DESKTOP media query - switches on grid layout if page width is wider than 768px   */
 /*--------------------------------------------------------------------------------------------- */
 

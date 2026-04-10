@@ -28,7 +28,7 @@ const dateOptions: object = {
 
 const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
   'en-UK',
-  dateOptions
+  dateOptions,
 );
 
 const isoDate = new Date(frontmatter.pubDate).toISOString();
@@ -51,9 +51,9 @@ const isoDate = new Date(frontmatter.pubDate).toISOString();
     <p class="postDate">
       Published: {formattedPublishDate}
     </p>
-    <p class="e-content">
+    <div class="e-content">
       <slot />
-    </p>
+    </div>
     <p style="display: none;">
       <a href={slug} class="u-url dt-published">{isoDate}</a>
       <a href={siteURL} class="p-author h-card" rel="author">Stuart Mackenzie</a
@@ -64,13 +64,13 @@ const isoDate = new Date(frontmatter.pubDate).toISOString();
       description={frontmatter.description}
       title={frontmatter.title}
     />
-    <p>&nbsp;</p>
+    <!--<p>&nbsp;</p>
     <h2>Comment</h2>
-    <JamComments
+         <JamComments
       dateFormat="d M Y"
       copy={{
         confirmationMessage: 'Comment successfully submitted for moderation!',
       }}
-    />
+    /> -->
   </section>
 </BaseLayout>

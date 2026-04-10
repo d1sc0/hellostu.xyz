@@ -32,8 +32,8 @@ import PostPreview from './PostPreview.astro';
     {
       posts.map(post => (
         <PostPreview
-          url={'/posts/' + post.slug}
           data={post.data}
+          slug={post.slug}
           id={post.id}
         />
       ))
