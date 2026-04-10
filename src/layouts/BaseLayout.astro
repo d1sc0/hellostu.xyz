@@ -22,7 +22,7 @@ const { frontmatter, pageMeta, prevPost, nextPost } = Astro.props;
         {
           prevPost && (
             <div class="prevNav">
-              <a href={`/posts/${prevPost.slug}/`}>
+              <a href={`/posts/${prevPost.id}/`}>
                 &lt&lt {prevPost.data.title}
               </a>
             </div>
@@ -33,7 +33,7 @@ const { frontmatter, pageMeta, prevPost, nextPost } = Astro.props;
         {
           nextPost && (
             <div class="nextNav">
-              <a href={`/posts/${nextPost.slug}/`}>
+              <a href={`/posts/${nextPost.id}/`}>
                 {nextPost.data.title} &gt&gt
               </a>
             </div>
