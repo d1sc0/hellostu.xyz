@@ -1,7 +1,7 @@
 ---
 title: Changing Plans
-draft: false
 slug: changing-plans
+draft: false
 pubDate: 2025-08-03
 description: Posting about updated plans for my Birthday at the end of the month. A boy just wants to have fun, and this is how I intend to celebrate this year.
 postImage:
@@ -39,4 +39,4 @@ Friends and internet stalkers are welcome to join for any of these activities. A
 
 **No regrets. Simples.** ✌️
 
-![a kitchen selfie with me giving peace fingers wearing my lovely orange vaga hat](../../assets/post_images/49-new-plansFULL.jpg)
+![a kitchen selfie with me giving peace fingers wearing my lovely orange vaga hat](../../assets/post_images/49-new-plansFULL.jpg)![](/src/assets/post_images/5225905261_bf2f6ae911_b.jpg)
