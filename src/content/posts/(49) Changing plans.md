@@ -39,4 +39,4 @@ Friends and internet stalkers are welcome to join for any of these activities. A
 
 **No regrets. Simples.** ✌️
 
-![a kitchen selfie with me giving peace fingers wearing my lovely orange vaga hat](../../assets/post_images/49-new-plansFULL.jpg)![](/src/assets/post_images/5225905261_bf2f6ae911_b.jpg)
+![a kitchen selfie with me giving peace fingers wearing my lovely orange vaga hat](../../assets/post_images/49-new-plansFULL.jpg)
