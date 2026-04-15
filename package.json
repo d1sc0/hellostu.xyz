@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && node ./src/scripts/preview-image-generator.ts",
+    "prebuild": "node ./src/scripts/fix-postimage-paths.ts",
+    "build": "npm run prebuild && node ./src/scripts/preview-image-generator.ts && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
