@@ -2,14 +2,14 @@
 title: Testing
 slug: testing
 draft: true
-pubDate: 2026-04-15T09:39:00
+pubDate: 2026-04-15T09:39:00.000Z
 description: Some words
 postImage:
-  src: /src/assets/post_images/pexels-stephen-leonardi-29013116.jpg
+  src: ../../assets/post_images/pexels-stephen-leonardi-29013116_FULL.jpg
 tags:
   - test
 ---
 
 Some words
 
-![](/src/assets/post_images/pexels-diego-hg-34990522.jpg)
+![](../../assets/post_images/pexels-diego-hg-34990522_FULL.jpg)

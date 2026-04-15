@@ -2,10 +2,12 @@
 title: Weeknote - The Uber
 draft: false
 slug: weeknote-the-uber
-pubDate: 2024-06-28T12:50:00
-description: This weeks notes about work, life and random encounters with strangers in an uber adventure. Covers the period 21th-28th June
+pubDate: 2024-06-28T12:50:00.000Z
+description: >-
+  This weeks notes about work, life and random encounters with strangers in an
+  uber adventure. Covers the period 21th-28th June
 postImage:
-  src: ../../assets/post_images/40-stuber.jpg
+  src: ../../assets/post_images/40-stuber_FULL.jpg
 tags:
   - weeknote
   - work

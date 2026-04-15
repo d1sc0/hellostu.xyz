@@ -5,7 +5,7 @@ slug: rambling-man
 pubDate: 2023-10-01
 description: 'Introducing audio notes and reflections from a walk along the Jurassic Coast, touching on life and personal insights.'
 postImage:
-  src: '../../assets/post_images/32-rambling-man.jpg'
+  src: '../../assets/post_images/32-rambling-man_FULL.jpg'
 tags:
   [
     'podcast',

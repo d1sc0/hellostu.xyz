@@ -5,7 +5,7 @@ slug: wk4-333-slides
 pubDate: 2019-04-12
 description: 'I summarize the week just gone, including completing an ODI course and learning about GDPR.'
 postImage:
-  src: '../../assets/post_images/8-333.jpg'
+  src: '../../assets/post_images/8-333_FULL.jpg'
 tags: ['weeknote']
 ---
 

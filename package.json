@@ -3,10 +3,10 @@
   "type": "module",
   "version": "1.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "npm run prebuild && astro dev",
     "start": "astro dev",
-    "prebuild": "node ./src/scripts/fix-postimage-paths.ts",
-    "build": "npm run prebuild && node ./src/scripts/preview-image-generator.ts && astro build",
+    "prebuild": "node ./src/scripts/fix-postimage-paths-final.js && node ./src/scripts/og-image-generator.ts && node ./src/scripts/preview-image-generator.ts",
+    "build": "npm run prebuild && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

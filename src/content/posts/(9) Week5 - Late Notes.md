@@ -2,10 +2,12 @@
 title: Week5 - Late Notes
 draft: false
 slug: wk5-late-notes
-pubDate: 2019-05-01
-description: I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.
+pubDate: 2019-05-01T00:00:00.000Z
+description: >-
+  I share late notes from a busy week. Highlights include a productive work
+  return, attending an AWS event, and discussing feedback methods.
 postImage:
-  src: ../../assets/post_images/9-pocket-watch.jpg
+  src: ../../assets/post_images/9-pocket-watch_FULL.jpg
 tags:
   - weeknote
 ---

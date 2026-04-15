@@ -5,7 +5,7 @@ slug: weeknote-buffet
 pubDate: 2024-06-14T10:25:00
 description: 'A weeknote covering the period 7th-14th June. This week was an assorted buffet including sales work, leadership training, reconnecting socially and making things '
 postImage:
-  src: '../../assets/post_images/37-man-at-buffet.jpg'
+  src: '../../assets/post_images/37-man-at-buffet_FULL.jpg'
 tags: ['weeknote', 'website', 'social', 'work', 'training']
 ---
 

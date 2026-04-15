@@ -5,7 +5,7 @@ slug: zen-friday
 pubDate: 2023-10-20
 description: 'An audio note covering work, fitness, friendships, and achieving 100 parkruns, recorded during a hike around Maiden Castle.'
 postImage:
-  src: '../../assets/post_images/33-zen-friday.jpg'
+  src: '../../assets/post_images/33-zen-friday_FULL.jpg'
 tags:
   [
     'podcast',

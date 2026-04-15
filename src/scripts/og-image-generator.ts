@@ -33,205 +33,134 @@ const PAGE_TITLES: Record<string, string> = {
   '404': 'Page Not Found',
 };
 
-export default function ogImageGenerator(): AstroIntegration {
-  return {
-    name: 'og-image-generator',
-    hooks: {
-      'astro:build:done': async ({ dir, logger }) => {
-        logger.info('Checking for missing Open Graph images...');
-
-        const templatePath = path.resolve('./src/scripts/og-template.html');
-        const templateHtml = fs.readFileSync(templatePath, 'utf-8');
-
-        const outputDir = path.resolve('./public/generated_OG_images');
-        if (!fs.existsSync(outputDir)) {
-          fs.mkdirSync(outputDir, { recursive: true });
-        }
-
-        // Also ensure images are in the build output directory for immediate deployment
-        const buildDir = fileURLToPath(dir);
-        const buildOutputDir = path.join(buildDir, 'generated_OG_images');
-        if (!fs.existsSync(buildOutputDir)) {
-          fs.mkdirSync(buildOutputDir, { recursive: true });
-        }
-
-        const postsDir = path.resolve('./src/content/posts');
-        const pagesDir = path.resolve('./src/pages');
-
-        const allFiles = [
-          ...getFilesRecursive(postsDir),
-          ...getFilesRecursive(pagesDir),
-        ];
-
-        const totalPosts = allFiles.length;
-        let generatedCount = 0;
-
-        // Read favicon once and prepare base64 URI for inlining
-        const faviconPath = path.resolve('./public/favicon.svg');
-        let siteLogoBase64Uri = '';
-        if (fs.existsSync(faviconPath)) {
-          const faviconBase64 = fs.readFileSync(faviconPath).toString('base64');
-          siteLogoBase64Uri = `data:image/svg+xml;base64,${faviconBase64}`;
-        }
-
-        const browser = await puppeteer.launch({
-          headless: 'new',
-          args: [
-            '--allow-file-access-from-files',
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage',
-          ],
-        });
-
-        // Function to process a single file and generate its OG image
-        const processFile = async (filePath: string) => {
-          let page;
-          try {
-            const isMarkdown =
-              filePath.endsWith('.md') || filePath.endsWith('.mdx');
-            let title = '';
-            let slug = '';
-            let postImageSrc = '';
-            let postImageBase64Uri = '';
-
-            if (isMarkdown) {
-              const fileContent = fs.readFileSync(filePath, 'utf-8');
-              const { data } = matter(fileContent);
-              title = data.title;
-              slug = data.slug || path.parse(filePath).name;
-              postImageSrc = data.postImage?.src;
-            } else {
-              // Handle .astro pages
-              const parsedPath = path.parse(filePath);
-              const fileName = parsedPath.name;
-              const parentDirName = path.basename(parsedPath.dir);
-
-              if (fileName === 'index') {
-                // For src/pages/posts/index.astro -> slug 'posts'
-                // For src/pages/index.astro -> slug 'index'
-                slug = parentDirName === 'pages' ? 'index' : parentDirName;
-              } else if (fileName.includes('[') && fileName.includes(']')) {
-                // For dynamic routes like src/pages/posts/[...page].astro -> slug 'posts'
-                // For src/pages/tags/[tag].astro -> slug 'tags'
-                slug = parentDirName;
-              } else {
-                // For static pages like src/pages/about.astro -> slug 'about'
-                slug = fileName;
-              }
-
-              // Ensure the slug is not empty if it's a root dynamic route (e.g., src/pages/[...slug].astro)
-              if (!slug && parentDirName === 'pages') slug = 'index';
-
-              title =
-                PAGE_TITLES[slug] ||
-                slug.charAt(0).toUpperCase() + slug.slice(1);
-
-              // Set the default image for Astro pages
-              postImageSrc = path.resolve(
-                './src/assets/page_images/default-social-image.jpg',
-              );
-            }
-
-            const outputPath = path.join(outputDir, `${slug}.png`);
-
-            // Skip if image already exists
-            if (fs.existsSync(outputPath)) {
-              generatedCount++;
-              return;
-            }
-
-            page = await browser.newPage();
-            await page.setViewport({ width: 1200, height: 630 });
-            page.setDefaultNavigationTimeout(60000);
-
-            if (postImageSrc) {
-              // Handle root-relative paths starting with /src (for safety)
-              // Otherwise, resolve absolute system paths or relative paths.
-              const fullImagePath = postImageSrc.startsWith('/src')
-                ? path.resolve('.' + postImageSrc)
-                : path.isAbsolute(postImageSrc)
-                ? postImageSrc
-                : path.resolve(path.dirname(filePath), postImageSrc);
-
-              if (fs.existsSync(fullImagePath)) {
-                const imageBuffer = fs.readFileSync(fullImagePath);
-                const ext = path
-                  .extname(fullImagePath)
-                  .toLowerCase()
-                  .replace('.', '');
-                const mimeType =
-                  ext === 'svg'
-                    ? 'image/svg+xml'
-                    : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
-                postImageBase64Uri = `data:${mimeType};base64,${imageBuffer.toString(
-                  'base64',
-                )}`;
-              }
-            }
-
-            // Use global regex to replace all occurrences of placeholders
-            let html = templateHtml
-              .replace(/{{title}}/g, title || '')
-              .replace(/{{siteLogoPath}}/g, siteLogoBase64Uri)
-              .replace(
-                /{{postImageHtml}}/g,
-                postImageBase64Uri
-                  ? `<img src="${postImageBase64Uri}" class="bg-image" />`
-                  : '',
-              );
-
-            logger.info(
-              `Generating OG image for ${slug} (${++generatedCount}/${totalPosts})...`,
-            );
-
-            // Use networkidle2 to wait for images and webfonts; it's more resilient than networkidle0
-            await page.setContent(html, {
-              waitUntil: 'networkidle2',
-              timeout: 45000,
-            });
-
-            // Wait for specific font families to be loaded
-            // This is more reliable than just checking 'ready'
-            await page.waitForFunction(
-              () => {
-                return (
-                  document.fonts.check('1em Inter') &&
-                  document.fonts.check('1em "Gochi Hand"') &&
-                  document.fonts.ready
-                );
-              },
-              { timeout: 15000 },
-            );
-
-            // Force a quick layout reflow and wait for rendering stability
-            await page.evaluate(() => document.body.offsetHeight);
-            await new Promise(r => setTimeout(r, 500));
-            const buffer = await page.screenshot();
-
-            // Write to both public (for your repo) and dist (for the current deploy)
-            fs.writeFileSync(outputPath, buffer);
-            fs.writeFileSync(path.join(buildOutputDir, `${slug}.png`), buffer);
-          } catch (error) {
-            logger.error(
-              `Error generating OG image for ${filePath}: ${error.message}`,
-            );
-          } finally {
-            if (page) await page.close(); // Close the page after processing
+// CLI entrypoint for OG image generation
+if (import.meta.url === `file://${process.argv[1]}`) {
+  (async () => {
+    console.log('Generating Open Graph images...');
+    const templatePath = path.resolve('./src/scripts/og-template.html');
+    const templateHtml = fs.readFileSync(templatePath, 'utf-8');
+    const outputDir = path.resolve('./public/generated_OG_images');
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+    const postsDir = path.resolve('./src/content/posts');
+    const pagesDir = path.resolve('./src/pages');
+    const allFiles = [
+      ...getFilesRecursive(postsDir),
+      ...getFilesRecursive(pagesDir),
+    ];
+    const faviconPath = path.resolve('./public/favicon.svg');
+    let siteLogoBase64Uri = '';
+    if (fs.existsSync(faviconPath)) {
+      const faviconBase64 = fs.readFileSync(faviconPath).toString('base64');
+      siteLogoBase64Uri = `data:image/svg+xml;base64,${faviconBase64}`;
+    }
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: [
+        '--allow-file-access-from-files',
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+      ],
+    });
+    let generatedCount = 0;
+    for (const filePath of allFiles) {
+      let page;
+      try {
+        const isMarkdown =
+          filePath.endsWith('.md') || filePath.endsWith('.mdx');
+        let title = '';
+        let slug = '';
+        let postImageSrc = '';
+        let postImageBase64Uri = '';
+        if (isMarkdown) {
+          const fileContent = fs.readFileSync(filePath, 'utf-8');
+          const { data } = matter(fileContent);
+          title = data.title;
+          slug = data.slug || path.parse(filePath).name;
+          postImageSrc = data.postImage?.src;
+        } else {
+          const parsedPath = path.parse(filePath);
+          const fileName = parsedPath.name;
+          const parentDirName = path.basename(parsedPath.dir);
+          if (fileName === 'index') {
+            slug = parentDirName === 'pages' ? 'index' : parentDirName;
+          } else if (fileName.includes('[') && fileName.includes(']')) {
+            slug = parentDirName;
+          } else {
+            slug = fileName;
           }
-        };
-
-        // Process posts in small batches to prevent resource exhaustion and crashes
-        // A limit of 2-3 is usually stable for most systems and CI environments
-        const BATCH_SIZE = 2;
-        for (let i = 0; i < allFiles.length; i += BATCH_SIZE) {
-          const batch = allFiles.slice(i, i + BATCH_SIZE);
-          await Promise.all(batch.map(file => processFile(file)));
+          if (!slug && parentDirName === 'pages') slug = 'index';
+          title =
+            PAGE_TITLES[slug] || slug.charAt(0).toUpperCase() + slug.slice(1);
+          postImageSrc = path.resolve(
+            './src/assets/page_images/default-social-image.jpg',
+          );
         }
-
-        await browser.close(); // Close the browser once all pages are done
-        logger.info('OG image generation complete.');
-      },
-    },
-  };
+        const outputPath = path.join(outputDir, `${slug}.png`);
+        if (fs.existsSync(outputPath)) {
+          generatedCount++;
+          continue;
+        }
+        page = await browser.newPage();
+        await page.setViewport({ width: 1200, height: 630 });
+        page.setDefaultNavigationTimeout(60000);
+        if (postImageSrc) {
+          const fullImagePath = postImageSrc.startsWith('/src')
+            ? path.resolve('.' + postImageSrc)
+            : path.isAbsolute(postImageSrc)
+              ? postImageSrc
+              : path.resolve(path.dirname(filePath), postImageSrc);
+          if (fs.existsSync(fullImagePath)) {
+            const imageBuffer = fs.readFileSync(fullImagePath);
+            const ext = path
+              .extname(fullImagePath)
+              .toLowerCase()
+              .replace('.', '');
+            const mimeType =
+              ext === 'svg'
+                ? 'image/svg+xml'
+                : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
+            postImageBase64Uri = `data:${mimeType};base64,${imageBuffer.toString('base64')}`;
+          }
+        }
+        let html = templateHtml
+          .replace(/{{title}}/g, title || '')
+          .replace(/{{siteLogoPath}}/g, siteLogoBase64Uri)
+          .replace(
+            /{{postImageHtml}}/g,
+            postImageBase64Uri
+              ? `<img src="${postImageBase64Uri}" class="bg-image" />`
+              : '',
+          );
+        console.log(
+          `Generating OG image for ${slug} (${++generatedCount}/${allFiles.length})...`,
+        );
+        await page.setContent(html, {
+          waitUntil: 'networkidle2',
+          timeout: 45000,
+        });
+        await page.waitForFunction(
+          () =>
+            document.fonts.check('1em Inter') &&
+            document.fonts.check('1em "Gochi Hand"') &&
+            document.fonts.ready,
+          { timeout: 15000 },
+        );
+        await page.evaluate(() => document.body.offsetHeight);
+        await new Promise(r => setTimeout(r, 500));
+        const buffer = await page.screenshot();
+        fs.writeFileSync(outputPath, buffer);
+      } catch (error: any) {
+        console.error(
+          `Error generating OG image for ${filePath}: ${error.message}`,
+        );
+      } finally {
+        if (page) await page.close();
+      }
+    }
+    await browser.close();
+    console.log('OG image generation complete.');
+  })();
 }
