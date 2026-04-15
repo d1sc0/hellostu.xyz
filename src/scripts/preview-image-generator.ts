@@ -14,6 +14,7 @@ const postsDir = path.resolve('./src/content/posts');
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
 async function generatePreviewImages() {
+  console.log('Generating preview images...');
   const files = fs.readdirSync(postsDir);
   const templateHtml = fs.readFileSync(templatePath, 'utf-8');
   const browser = await puppeteer.launch({
@@ -63,9 +64,8 @@ async function generatePreviewImages() {
     createdImages.push(`${slug}.png`);
   }
   await browser.close();
-  createdImages.forEach(name => console.log(`Created: ${name}`));
-  console.log(
-    `Preview image generation complete. ${createdImages.length} new images created.`,
+  createdImages.forEach(name =>
+    console.log(`preview-image: ${name} - created`),
   );
 }
 

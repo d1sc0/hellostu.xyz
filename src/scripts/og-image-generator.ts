@@ -158,9 +158,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       }
     }
     await browser.close();
-    createdImages.forEach(name => console.log(`Created: ${name}`));
-    console.log(
-      `OG image generation complete. ${createdImages.length} new images created.`,
+    createdImages.forEach(name =>
+      console.log(`social-image: ${name} - created`),
     );
   })();
 }

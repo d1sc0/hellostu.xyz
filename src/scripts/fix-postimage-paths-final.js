@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const POSTS_DIR = path.join(__dirname, '../../src/content/posts');
 const IMG_DIR = path.join(__dirname, '../../src/assets/post_images');
 
-let totalChanges = 0;
+// No totalChanges needed
 
 function normalizeImagePath(imgPath) {
   if (!imgPath) return imgPath;
@@ -28,7 +28,7 @@ function normalizeImagePath(imgPath) {
     const newPath = path.join(IMG_DIR, newName);
     if (fs.existsSync(oldPath) && !fs.existsSync(newPath)) {
       fs.renameSync(oldPath, newPath);
-      console.log(`Renamed image: ${oldPath} -> ${newPath}`);
+      console.log(`path-renames: ${filename} - updated`);
     }
   }
   return `../../assets/post_images/${newName}`;
@@ -68,7 +68,6 @@ function fixImagePathsInFile(filePath) {
   }
   if (changed > 0) {
     fs.writeFileSync(filePath, content, 'utf8');
-    totalChanges += changed;
   }
 }
 
@@ -86,5 +85,5 @@ function walkDir(dir) {
   });
 }
 
+console.log('Generating path-renames...');
 walkDir(POSTS_DIR);
-console.log(`Total changes made: ${totalChanges}`);
