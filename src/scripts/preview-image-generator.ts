@@ -24,6 +24,7 @@ async function generatePreviewImages() {
     ],
   });
 
+  let createdImages = [];
   for (const file of files) {
     if (!file.endsWith('.md') && !file.endsWith('.mdx')) continue;
     const filePath = path.join(postsDir, file);
@@ -31,7 +32,6 @@ async function generatePreviewImages() {
     const slug = data.slug || path.parse(file).name;
     const outputPath = path.join(outputDir, `${slug}.png`);
     if (fs.existsSync(outputPath)) {
-      console.log(`Preview image for ${slug} already exists, skipping.`);
       continue;
     }
     let postImageSrc = data.postImage?.src;
@@ -60,10 +60,13 @@ async function generatePreviewImages() {
     await page.setContent(html, { waitUntil: 'networkidle2' });
     await page.screenshot({ path: outputPath, type: 'png' });
     await page.close();
-    console.log(`Generated preview image for ${slug}`);
+    createdImages.push(`${slug}.png`);
   }
   await browser.close();
-  console.log('Preview image generation complete.');
+  createdImages.forEach(name => console.log(`Created: ${name}`));
+  console.log(
+    `Preview image generation complete. ${createdImages.length} new images created.`,
+  );
 }
 
 generatePreviewImages();

@@ -64,7 +64,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         '--disable-dev-shm-usage',
       ],
     });
-    let generatedCount = 0;
+    let createdImages = [];
     for (const filePath of allFiles) {
       let page;
       try {
@@ -100,7 +100,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         }
         const outputPath = path.join(outputDir, `${slug}.png`);
         if (fs.existsSync(outputPath)) {
-          generatedCount++;
           continue;
         }
         page = await browser.newPage();
@@ -131,12 +130,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
           .replace(
             /{{postImageHtml}}/g,
             postImageBase64Uri
-              ? `<img src="${postImageBase64Uri}" class="bg-image" />`
+              ? `<img src=\"${postImageBase64Uri}\" class=\"bg-image\" />`
               : '',
           );
-        console.log(
-          `Generating OG image for ${slug} (${++generatedCount}/${allFiles.length})...`,
-        );
         await page.setContent(html, {
           waitUntil: 'networkidle2',
           timeout: 45000,
@@ -152,6 +148,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         await new Promise(r => setTimeout(r, 500));
         const buffer = await page.screenshot();
         fs.writeFileSync(outputPath, buffer);
+        createdImages.push(`${slug}.png`);
       } catch (error: any) {
         console.error(
           `Error generating OG image for ${filePath}: ${error.message}`,
@@ -161,6 +158,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       }
     }
     await browser.close();
-    console.log('OG image generation complete.');
+    createdImages.forEach(name => console.log(`Created: ${name}`));
+    console.log(
+      `OG image generation complete. ${createdImages.length} new images created.`,
+    );
   })();
 }
