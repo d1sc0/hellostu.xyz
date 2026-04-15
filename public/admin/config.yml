@@ -13,7 +13,6 @@ collections:
     slug: '{{slug}}'
     extension: 'md'
     format: 'yaml-frontmatter'
-    media_folder: 'src/assets/post_images'
     media_folder_relative: true
     sortable_fields: ['title', 'pubDate']
     default_sort:
@@ -53,12 +52,8 @@ collections:
     slug: '{{slug}}'
     extension: 'mdx'
     format: 'yaml-frontmatter'
-    media_folder: 'src/assets/post_images'
     media_folder_relative: true
     sortable_fields: ['title', 'pubDate']
     default_sort:
       - { field: pubDate, direction: descending }
     fields: *post_fields
-
-site_url: https://hellostu.xyz
-display_url: https://hellostu.xyz
