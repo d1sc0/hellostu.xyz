@@ -1,7 +1,7 @@
 ---
 title: Testing
 slug: testing
-draft: true
+draft: false
 pubDate: 2026-04-15T09:39:00
 description: Some words
 postImage:
