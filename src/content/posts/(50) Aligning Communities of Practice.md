@@ -1,8 +1,8 @@
 ---
 title: Making them Count - Creating alignment within Communities of Practice
-draft: false
 slug: making-them-count-creating-alignment-within-communities-of-practice
-pubDate: 2026-03-10
+draft: false
+pubDate: 2026-03-10T01:00:00
 description: Some thoughts on how to use learning design theory to align goals and activities in a Community of Practice. Move from "humaning together" and great vibes to practicing with purpose.
 postImage:
   src: ../../assets/post_images/50-CoPFULL.jpg
